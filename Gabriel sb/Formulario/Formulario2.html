@@ -1,15 +1,97 @@
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario 2</title>
     <style>
         body {
-            background-color: ;
+            background-image: url(https://media.tenor.com/9A3TylQYHnAAAAAC/gato-joia-odi.gif);
+            background-size: cover;
+            background-attachment: fixed;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        form {
+            background-color: rgba(0, 0, 0, 1);
+            padding: 20px;
+            border-radius: 8px;
+            max-width: 400px;
+            margin: auto;
+        }
+
+        form {
+            background-color: #45a049;
+            color: white;
+            padding: 10;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button :hover {
+            background-color: #45a049;
         }
     </style>
 </head>
+
 <body>
+    <h2>Formulario de Cadastro</h2>
+    <p>Assista a esse video sobre educação:</p>
+    <a href="https://youtu.be/4KIlSKp9GDs?si=y0c7GLdruubd9FL_" target="_blank">
+        Tutorial 2 - Como abrir uma porta
+    </a>
     
+    <br><br>
+    <form action="/enviar" method="post">
+        <!-- Nome Completo -->
+        <label for="nome">Nome Completo:</label>
+        <input type="text" id="nome" name="nome" required><br><br>
+    
+        <!-- Email -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+    
+        <!-- Telefone -->
+        <label for="telefone">Telefone:</label>
+        <input type="tel" id="telefone" name="telefone" required><br><br>
+    
+        <!-- Senha -->
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" name="senha" required><br><Br>
+    
+        <!-- Data de Nascimento -->
+        <label for="data_nascimento">Data de Nascimento:</label>
+        <input type="date" id="data_nascimento" name="data_nascimento" required><br><br>
+    
+        <!-- Gênero -->
+        <label for="genero">Gênero:</label>
+        <select id="genero" name="genero" required>
+            <option value="masculino">Masculino</option>
+            <option value="feminino">Feminino</option>
+            <option value="outro">Outro</option>
+        </select><br><br>
+    
+        <!-- Endereço -->
+        <label for="endereco">Endereço:</label>
+        <input type="text" id="endereco" name="endereco" required><br><br>
+    
+        <!-- Cidade -->
+        <label for="cidade">Cidade:</label>
+        <input type="text" id="cidade" name="cidade" required><br><br>
+    
+        <!-- Estado -->
+        <label for="estado">Estado:</label>
+        <input type="text" id="estado" name="estado" required><br><br>
+    
+        <!-- CEP -->
+        <label for="cep">CEP:</label>
+        <input type="text" id="cep" name="cep" required><br><br
+
+        <button type="submit">Enviar</button>
+    </form>
 </body>
+
 </html>
