@@ -162,6 +162,28 @@
         </form>
     </section>
 
+    <script>
+        function mostrarConfirmacao() {
+            // Pegando os valores do formulário
+            const nome = document.getElementById("nome").value;
+            const email = document.getElementById("email").value;
+            const assunto = document.getElementById("assunto").value;
+            const mensagem = document.getElementById("mensagem").value;
+
+            // Conteúdo da página de confirmação
+            const conteudoConfirmacao = `
+                <h1>Obrigado pelo envio, ${nome}!</h1>
+                <p>Sua mensagem foi enviada com sucesso. Entraremos em contato pelo e-mail: ${email}.</p>
+                <button onclick="window.location.href='formulario.html'">Voltar ao formulário</button>
+            `;
+
+            // Abre nova aba com a mensagem de confirmação
+            const novaPagina = window.open();
+            novaPagina.document.write(conteudoConfirmacao);
+            novaPagina.document.close();
+        }
+    </script>
+
     <!-- Rodapé -->
     <footer>
         <p>&copy; 2024 Antony Silva. Todos os direitos reservados.</p>
