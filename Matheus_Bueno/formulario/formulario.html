@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Cadastro TI47</title>
+</head>
+<body>
+    <h2>Formulario de Cadastro</h2>
+
+    <form action="/enviar">
+    
+        <label for="nome">Nome Completo</label>
+        <input type="text" id="nome" name="nome"required><br><br>
+
+            <label for="email">Email</label>
+            <input type="email"id="email" name="nome"required><br><br>
+
+            <label for="Telefone">Telefone</label>
+            <input type="tel" id="Telefone" name="telefone" required><br><br>
+
+            <label for="senha">senha</label>
+            <input type="password" id="senha" name="senha"required><br><br>
+
+            <label for="data_nascimento">Data de nascimento</label>
+            <input type="date" id="data_nascimento" name="data_nascimento" required><br><br>
+
+            <label for="genero">Gênero:</label>
+            <select id="genero"name="genero"required>
+                <option value="Masculino">Masculino</option>
+                <option value="feminina">feminino</option>
+                <option value="outro">outro</option>
+                </select><br><br>
+
+                <label for="endreco">Endereço:</label>
+                <input type="text" id="endreco"name="Endereco" required><br>
+
+                <label for="cidade">cidade</label>
+                <input type="text"id="cidade" name="cidade" required><br><br>
+
+                <label for="estado">Estado:</label>
+                <input type="text" id="estado" name="estado" required><br><br>
+         
+                <!-- CEP -->
+                <label for="cep">CEP:</label>
+                <input type="text" id="cep" name="cep" required><br><br>
+         
+                <!-- Botão Enviar -->
+                <button type="submit">Enviar</button><br>
+                
+            </form>
+</body>
+</html>
