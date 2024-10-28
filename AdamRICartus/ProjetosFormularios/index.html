@@ -1,1 +1,98 @@
-bluh blus 
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+<style>
+body
+{
+    font-family: Arial, Helvetica, sans-serif;
+text-align: center;
+color: #fff;}
+form, h2 
+{background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 400px;
+    margin: auto;}
+label, input, select, button 
+{display: block;
+    margin: 10px 0;
+    width: 100%;}
+button
+{background-color: #4CAF50;
+color: white;
+padding: 10px;
+border: none;
+border-radius: 5px;
+cursor: pointer;}    
+button:hover 
+{background-color: #45a049;}
+</style>
+<header>
+    <br><br><br>
+    <h2>Formulário</h2>
+</header>
+    <form action="/enviar" method="post">
+    <div id="name">
+        <label for="name">Nome Completo:</label>
+        <input type="text" id="name" name="name" required>
+        <br><br>
+    </div>
+    <div id="email">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+    </div>
+    <div id="telefone">
+        <label for="telefone">Telefone:</label>
+        <input type="tel" id="telefone" name="telefone" required>
+        <br><br>
+    </div>
+    <div id="senha">
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" name="senha" required>
+        <br><br>
+    </div>
+    <div id="data">
+        <label for="data">Data de Nascimento:</label>
+        <input type="date" id="data" name="data" required>
+        <br><br>
+    </div> 
+    <div id="gender">
+        <label for="gender">Gênero:</label>
+        <select id="gender" name="gender" required>
+            <option value="masculino">Masculino</option>
+            <option value="feminino">Feminino</option>
+            <option value="outro">Outro</option></select>
+            <br><br>
+    </div> 
+    <DIV id="endereco">
+        <label for="endereco">Endereço:</label>
+        <input type="text" id="endereco" name="endereco" required>
+        <br><br>
+    </DIV>
+    <div id="cidade">
+        <label for="cidade">Cidade:</label>
+        <input type="text" name="cidade" id="cidade" required>
+        <br><br>
+    </div>
+    <div id="estado">
+        <label for="estado">Estado:</label>
+        <input type="text" id="estado" name="estado" required>
+            <br><br>
+    </div>
+    <div id="cep">
+        <label for="cep">CEP:</label>
+        <input type="text" id="cep" name="cep" required>
+        <br><br>
+    </div>
+    <footer id="button">
+        <button type="submit">Enviar</button>
+    </footer>
+</form>
+</body>
+</html>
