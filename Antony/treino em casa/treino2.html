@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Apresentação de Antony</title>
+    <style>
+        /* Estilos básicos para melhorar a aparência da página */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #f4f4f4;
+        }
+
+        header, section, footer {
+            width: 80%;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header img {
+            width: 150px;
+            border-radius: 50%;
+            display: block;
+            margin: 0 auto;
+        }
+
+        h1, h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+
+        form label, form input, form textarea {
+            display: block;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        form input, form textarea {
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            padding: 10px;
+            color: white;
+            background-color: #007bff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        footer p {
+            text-align: center;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <!-- Cabeçalho com Nome e Foto -->
+    <header>
+        <h1>Antony Silva</h1>
+        <img src="IMG_20241027_194113_157.jpg" alt="Foto de Antony">
+    </header>
+
+    <!-- Seção de Introdução -->
+    <section>
+        <h2>Sobre Mim</h2>
+        <p>Olá, meu nome é Antony e estou aprendendo HTML para me tornar um desenvolvedor de sites e aplicações. Gosto de explorar novas tecnologias, programar e desenvolver habilidades no mundo da TI!</p>
+    </section>
+
+    <!-- Lista de Hobbies -->
+    <section>
+        <h2>Meus Hobbies</h2>
+        <ul>
+            <li>Programação</li>
+            <li>Jogos</li>
+            <li>Hardware</li>
+            <li>Leitura</li>
+            <li>Filmes</li>
+            <li>Musica</li>
+        </ul>
+    </section>
+
+    <!-- Tabela de Horários -->
+    <section>
+        <h2>Horários de Estudo</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Dia</th>
+                    <th>Horário</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Segunda</td>
+                    <td>8:00 - 12:00</td>
+                </tr>
+                    <td>Terça</td>
+                    <td>8:00 - 12:00</td>
+                <tr>
+                    <td>Quarta</td>
+                    <td>8:00 - 12:00</td>
+                    <tr>
+                        <td> Quinta</td>
+                        <td>8:00 - 12:00</td>
+                </tr>
+                <tr>
+                    <td>Sexta</td>
+                    <td>8:00 - 12:00</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Formulário de Contato -->
+    <section>
+        <h2>Contato</h2>
+        <form action="/enviar" method="post">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="assunto">Assunto:</label>
+            <input type="text" id="assunto" name="assunto">
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <script>
+        function mostrarConfirmacao() {
+            // Pegando os valores do formulário
+            const nome = document.getElementById("nome").value;
+            const email = document.getElementById("email").value;
+            const assunto = document.getElementById("assunto").value;
+            const mensagem = document.getElementById("mensagem").value;
+
+            // Conteúdo da página de confirmação
+            const conteudoConfirmacao = `
+                <h1>Obrigado pelo envio, ${nome}!</h1>
+                <p>Sua mensagem foi enviada com sucesso. Entraremos em contato pelo e-mail: ${email}.</p>
+                <button onclick="window.location.href='formulario.html'">Voltar ao formulário</button>
+            `;
+
+            // Abre nova aba com a mensagem de confirmação
+            const novaPagina = window.open();
+            novaPagina.document.write(conteudoConfirmacao);
+            novaPagina.document.close();
+        }
+    </script>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2024 Antony Silva. Todos os direitos reservados.</p>
+        <p><a href="https://www.instagram.com/tonytws._/">Instagram</a> | <a href="https://www.linkedin.com/in/antony-nelson-da-silva-4b8a56315/">LinkedIn</a></p>
+    </footer>
+</body>
+</html>
