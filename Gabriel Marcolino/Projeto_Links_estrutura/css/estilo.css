@@ -5,6 +5,7 @@ body {
 }
 
 header {
+    
     background-color:rgb(163, 25, 25);
     color: white;
     padding: 1em;
@@ -52,4 +53,7 @@ button {
 .produto img {
     max-width: 100%;
     height: auto;
+}
+h2 {
+    text-align: center;
 }

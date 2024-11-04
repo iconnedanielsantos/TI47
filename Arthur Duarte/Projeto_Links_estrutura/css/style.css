@@ -26,8 +26,15 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: rgb(136, 136, 136);
     text-decoration: none;
+    display: inline-block;
+    transition: 0.1s;
+}
+
+nav ul li a:hover {
+    color: white;
+    transform: scale(1.05);
 }
 
 main {
@@ -37,4 +44,34 @@ main {
 form label {
     display: block;
     margin-top: 5px;
+}
+
+form label {
+    display: block;
+    margin-top: 10px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 0%;
+    margin-top: 5px;
+}
+
+button {
+    background-color: rgb(255, 187, 0);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.produto {
+    border: 1px solid #ddd;
+    padding: 1em;
+    margin: 1em 0;
+    text-align: center;
+}
+
+.produto img {
+    max-width: 100%;
+    height: auto;
 }
