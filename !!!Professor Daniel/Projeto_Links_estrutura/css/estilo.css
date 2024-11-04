@@ -38,9 +38,6 @@ nav ul li a {
     text-decoration: none; /* Remove sublinhado */
 }
 
-nav ul li a:hover {
-    color: white;
-}
 /* Estilo do conteúdo principal */
 main {
     padding: 1em;
