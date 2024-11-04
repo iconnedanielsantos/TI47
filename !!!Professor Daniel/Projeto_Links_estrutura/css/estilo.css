@@ -1,4 +1,13 @@
 /* Estilos gerais */
+
+/*
+Explicação das tags do CSS para melhor compreensão
+body: Define estilos para o corpo da página.
+header: Estilos para o cabeçalho, como cor de fundo e alinhamento.
+nav ul, nav ul li, nav ul li a: Estilos para a lista de navegação e os links.
+form label, form input, button: Estilos para o formulário.
+.produto: Estilos para os contêineres de produtos.
+*/
 body {
     font-family: Arial, sans-serif;
     margin: 0;
