@@ -5,7 +5,7 @@ body {
 }
 
 header {
-    background-color: #4CAF50;
+    background-color:rgb(163, 25, 25);
     color: white;
     padding: 1em;
     text-align: center;
@@ -15,6 +15,7 @@ nav ul {
     list-style-type: none;
     padding: 0;
 }
+
 nav ul li {
     display: inline;
     margin-right: 10px;
@@ -31,7 +32,7 @@ main {
 
 form label {
     display: block;
-    margin: 10px;
+    margin-top: 10px;
 }
 
 form input, form textarea {
@@ -41,7 +42,7 @@ form input, form textarea {
 }
 
 button {
-    background-color: #4CAF50;
+    background-color: red;
     color: white;
     padding: 0.7em;
     border: none;
