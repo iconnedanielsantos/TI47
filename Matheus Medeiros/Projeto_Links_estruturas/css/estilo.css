@@ -1,18 +1,24 @@
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: rgb(61, 61, 61);
-    color: white;
+/* Estilos gerais */
 
+/*
+Explicação das tags do CSS para melhor compreensão 
+body: Define estilos para o corpo da página.
+header: Estilos para o cabeçalho, como cor de fundo e alinhamento.
+nav ul, nav ul li, nav ul li a: Estilos para a lista de navegação e os links.
+form label, form input, button: Estilos para o formulário.
+.produto: Estilos para os contêineres de produtos.
+*/
+body {
+    font-family: Arial,sans-serif;
+    margin: 0;
+    padding:0;
 }
 
 header {
-    background-color:  rgb(255, 187, 0);
+    background-color: #4CAF50;
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
     padding: 1em;
+    text-align: center;
 }
 
 nav ul {
@@ -21,7 +27,7 @@ nav ul {
 }
 
 nav ul li {
-    display: inline;
+    display:inline;
     margin-right: 10px;
 }
 
@@ -36,23 +42,19 @@ main {
 
 form label {
     display: block;
-    margin-top: 5px;
-}
-
-form label {
-    display: block;
     margin-top: 10px;
 }
 
 form input, form textarea {
     width: 100%;
-    padding: 0%;
+    padding: 0.5em;
     margin-top: 5px;
 }
 
 button {
-    background-color: rgb(255, 187, 0);
+    background-color: #4CAF50;
     color: white;
+    padding: 0.7em;
     border: none;
     cursor: pointer;
 }
@@ -68,3 +70,4 @@ button {
     max-width: 100%;
     height: auto;
 }
+
