@@ -6,7 +6,7 @@ body {
 }
 
 header {
-    background-color: #3e26a8;
+    background-color: #5e2b0d;
     color: rgb(255, 255, 255);
     padding: 1em;
     text-align: center;
@@ -23,7 +23,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: rgb(255, 255, 255);
+    color: rgb(255, 249, 249);
     text-decoration: none;
 }
 
@@ -43,7 +43,7 @@ form input, form textarea {
 }
 
 button {
-    background-color: #ff0000;
+    background-color: #6200ff;
     color: white;
     padding: 0.7em;
     border: none;
