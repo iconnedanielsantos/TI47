@@ -17,7 +17,7 @@ body {
 /* Estilo do cabeçalho */
 header {
     background-color: #4CAF50; /* Fundo verde */
-    color: white; /* Texto branco */
+    color: rgb(56, 56, 56); /* Texto branco */
     padding: 1em; /* Espaçamento interno */
     text-align: center; /* Centraliza o texto */
 }
@@ -34,10 +34,13 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white; /* Links em branco */
+    color: rgb(107, 107, 107); /* Links em branco */
     text-decoration: none; /* Remove sublinhado */
 }
 
+nav ul li a:hover {
+    color: white;
+}
 /* Estilo do conteúdo principal */
 main {
     padding: 1em;
