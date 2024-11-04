@@ -46,14 +46,14 @@ form label {
 }
 
 form input, form textarea {
-    width: 100%
+    width: 100%;
     padding: 0.5em;
-    margin-top: 5px
+    margin-top: 5px;
 }
 
 button {
     background-color: #4CAF50;
-    color: white
+    color: white;
     padding: 0.7em;
     border: none;
     cursor: pointer;
