@@ -1,0 +1,18 @@
+body{
+    background-color: bisque;
+}
+header{
+    justify-content: center;
+    display: flex;
+    padding: 20px;
+    width: 100%;
+    background-color: aqua;
+
+}
+#titulo-page{
+background-color: aliceblue;
+}
+.em-cartaz{
+    background-color: aquamarine;
+    padding-top: 5%;
+}
