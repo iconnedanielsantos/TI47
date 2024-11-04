@@ -5,7 +5,7 @@ body {
 }
 
 header {
-    background-color: black;
+    background-color: #4CAF50;
     color: white;
     padding: 1em;
     text-align: center;
@@ -21,7 +21,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: blue;
+    color: white;
     text-decoration: none;
 }
 
@@ -41,7 +41,7 @@ form input, form textarea {
 }
 
 button {
-    background-color: blueviolet;
+    background-color: #4CAF50;
     color: white;
     padding: 0.7em;
     border: none;
