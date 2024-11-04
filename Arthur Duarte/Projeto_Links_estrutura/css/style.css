@@ -26,8 +26,15 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: rgb(136, 136, 136);
     text-decoration: none;
+    display: inline-block;
+    transition: 0.1s;
+}
+
+nav ul li a:hover {
+    color: white;
+    transform: scale(1.05);
 }
 
 main {
