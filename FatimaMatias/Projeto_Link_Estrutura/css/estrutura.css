@@ -6,9 +6,9 @@ body {
 
 header {
     background-color: blue;
-    color: brown;
+    color: #a5882a;
     padding: 1em;
-    text-align: justify;    
+    text-align: center;    
 }
 
 nav ul {
