@@ -7,9 +7,12 @@ header{
     padding: 20px;
     width: 100%;
     background-color: aqua;
-    border-radius: 0 0 30% 30%;
 
 }
 #titulo-page{
 background-color: aliceblue;
+}
+.em-cartaz{
+    background-color: aquamarine;
+    padding-top: 5%;
 }
