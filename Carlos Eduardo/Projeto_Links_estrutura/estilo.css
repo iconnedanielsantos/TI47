@@ -1,3 +1,4 @@
+/* Estilos gerais */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -5,8 +6,8 @@ body {
 }
 
 header {
-    background-color:darkblue;
-    color: white;
+    background-color: #af684c;
+    color: rgba(255, 255, 255, 0.192);
     padding: 1em;
     text-align: center;
 }
@@ -42,11 +43,18 @@ form input, form textarea {
 }
 
 button {
-    background-color: red;
+    background-color: #6cc974;
     color: white;
     padding: 0.7em;
     border: none;
     cursor: pointer;
+}
+
+.produto {
+    border: 1px solid #ddd;
+    padding: 1em;
+    margin: 1em 0;
+    text-align: center;
 }
 
 .produto img {
