@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo de Clique</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background: linear-gradient(135deg, #4e54c8, #8f94fb);
+            color: #fff;
+        }
+        .game-container {
+            text-align: center;
+            background-color: #ffffff10;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            width: 300px;
+        }
+        h1 {
+            font-size: 1.8em;
+            margin-bottom: 15px;
+        }
+        p {
+            font-size: 1.1em;
+            margin-bottom: 20px;
+        }
+        #clickButton {
+            font-size: 1.5em;
+            padding: 15px 30px;
+            margin-top: 20px;
+            background-color: #6a11cb;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.1s ease, background-color 0.3s ease;
+        }
+        #clickButton:hover {
+            background-color: #2575fc;
+        }
+        #clickButton:active {
+            transform: scale(0.95);
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        #clickButton:disabled {
+            background-color: #aaa;
+            cursor: not-allowed;
+        }
+        #score, #timer {
+            font-size: 1.3em;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="game-container">
+        <h1>Jogo de Clique</h1>
+        <p>Clique o máximo que conseguir em 10 segundos!</p>
+        <button id="clickButton" onclick="clickCount()">Clique Aqui!</button>
+        <div id="timer">Tempo: 10s</div>
+        <div id="score">Pontuação: 0</div>
+    </div>
+
+    <script>
+        let count = 0;
+        let timeLeft = 10;
+        let gameStarted = false;
+        const clickButton = document.getElementById("clickButton");
+        const timerDisplay = document.getElementById("timer");
+        const scoreDisplay = document.getElementById("score");
+
+        function clickCount() {
+            if (!gameStarted) {
+                startGame();
+            }
+            count++;
+            scoreDisplay.innerText = "Pontuação: " + count;
+        }
+
+        function startGame() {
+            gameStarted = true;
+            clickButton.disabled = false;
+            const countdown = setInterval(() => {
+                timeLeft--;
+                timerDisplay.innerText = "Tempo: " + timeLeft + "s";
+                
+                if (timeLeft <= 0) {
+                    clearInterval(countdown);
+                    endGame();
+                }
+            }, 1000);
+        }
+
+        function endGame() {
+            clickButton.disabled = true;
+            timerDisplay.innerText = "Tempo: 0s";
+            alert("Fim do jogo! Sua pontuação foi: " + count);
+        }
+    </script>
+</body>
+</html>
