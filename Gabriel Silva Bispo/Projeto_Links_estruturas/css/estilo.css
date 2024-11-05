@@ -1,0 +1,68 @@
+body {
+    font-family:sans-serif;
+    margin: 0;
+    padding: 0;
+    background: none;
+}
+header{
+    background-color:purple;
+    color: black;
+    padding: 1em;
+    text-align: center;
+}
+
+nav ul{
+    list-style: inside;
+    padding: 1em;
+}
+
+nav ul li{
+    display: inline;
+    margin-right: 10px;
+}
+nav ul li a{
+    color:black;
+    text-decoration: none;
+}
+main{
+    padding: 1em;
+}
+form label{
+    display: block;
+    margin-top: 10px;
+}
+form input, form textarea{
+    width: 100%;
+    padding: 0.5em;
+    margin-top: 5px;
+}
+button {
+    background-color: blueviolet;
+    color: black;
+    padding: 0.7em;
+    margin-top: 5px;
+}
+.produto {
+    border: 1px solid #dddd;
+    padding: 1em 0;
+}
+.produto img {
+    max-width: 100%;
+    height: auto;
+}
+.supernova{ 
+    background-image:url(https://media.istockphoto.com/id/1411304340/pt/foto/two-modern-buildings-with-glass-windows-architecture-design-of-buildings-office-space-houses.jpg?s=612x612&w=0&k=20&c=qsYibygh6TlP__O9_6pnUPyXuA9rZ5Tiz6kggV6BxCE=);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.supernova, body{
+    background: none;
+}
+
+.fom-all{
+    background: none !important;
+    box-shadow: none;
+}
+

@@ -1,9 +1,6 @@
 body {
-background-color: black;
-opacity: o.3;
-
-
-
-
-
+    background-image: url(../imagens/background_cinema.jpeg);
+background-repeat: no-repeat;
+background-size: cover;
+background-position: right center;
 }
