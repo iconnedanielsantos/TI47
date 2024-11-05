@@ -1,0 +1,12 @@
+div{
+    text-align: center;
+}
+header{
+    border: groove gray;
+    font-style: italic;
+    max-width: 40%;
+}
+img {
+    max-width: 40%;
+    max-height: 500px
+}
