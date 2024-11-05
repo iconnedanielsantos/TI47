@@ -64,3 +64,36 @@ a{
     transform: scale(1.05);
 }
 
+#imgs {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    flex-wrap: wrap;
+    padding-top: 5%;
+}
+
+#imgs img {
+    max-width: 20%;
+    height: auto;
+    flex: 1;
+    object-fit: cover;
+}
+#imgs :hover{
+    scale: 1.3;
+}
+
+.frase{
+    color: aliceblue;
+    display: flex;
+    justify-self: center;
+    margin-top: 10%;
+    font-size: 50px;
+}
+
+.titulo-tex{
+    color: aliceblue;
+    size: 20%;
+}
+.texto{
+    color: aliceblue;
+}
