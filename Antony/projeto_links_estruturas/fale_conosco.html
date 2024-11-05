@@ -1,35 +1,169 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
+<!DOCTYPE html> <!-- Define o tipo de documento como HTML5 -->
+<html lang="pt-BR"> <!-- Inicia o documento HTML e define o idioma como português do Brasil -->
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fale Conosco</title>
-    <link rel="stylesheet" href="css/estilo.css">
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres como UTF-8 para suportar caracteres especiais -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configura a visualização para dispositivos móveis -->
+    <title>Fale Conosco</title> <!-- Define o título da página que aparece na aba do navegador -->
+    <link rel="stylesheet" href="css/estilo.css"> <!-- Vincula um arquivo CSS externo para estilos adicionais -->
+    <style>
+        /* Estilos do documento, definidos diretamente no HTML */
+
+        /* Estilo Geral */
+        body {
+            background-image: url("imagens/games1.jpg"); /* Imagem de fundo */
+            background-size: cover; /* Ajusta a imagem para cobrir toda a área */
+            background-position: center; /* Centraliza a imagem de fundo */
+            background-repeat: no-repeat; /* Evita repetição da imagem */
+            background-attachment: fixed; /* Fixa a imagem enquanto a página é rolada */
+            color: rgb(255, 255, 255); /* Define a cor do texto como branco */
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif; /* Define a fonte padrão */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        /* Cabeçalho */
+        header {
+            background: rgba(0, 0, 0, 0.6); /* Fundo semitransparente */
+            width: 100%;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para destacar o cabeçalho */
+            display: flex;
+            justify-content: space-between; /* Espaço entre o título e a navegação */
+            align-items: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            color: #ffffff; /* Cor branca */
+            margin: 0;
+            transition: color 0.3s ease; /* Transição suave de cor */
+        }
+
+        nav ul {
+            list-style: none; /* Remove marcadores da lista */
+            display: flex;
+            gap: 20px; /* Espaço entre itens da lista */
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li a {
+            color: #ffffff;
+            text-decoration: none; /* Remove o sublinhado dos links */
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, color 0.3s ease; /* Transição suave de cor e fundo */
+        }
+
+        nav ul li a:hover {
+            background-color: rgba(255, 255, 255, 0.2); /* Fundo levemente transparente no hover */
+            color: #007bff; /* Altera a cor do texto ao passar o mouse */
+        }
+
+        /* Estilo Principal */
+        main {
+            padding: 20px;
+            max-width: 600px;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.7); /* Fundo semitransparente */
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra ao redor */
+            margin-top: 20px;
+        }
+
+        /* Títulos */
+        h2 {
+            font-size: 1.8rem;
+            color: #ffffff;
+            margin-bottom: 20px;
+        }
+
+        /* Formulário */
+        form {
+            display: flex;
+            flex-direction: column; /* Exibe os elementos do formulário em coluna */
+            gap: 15px;
+            width: 100%;
+        }
+
+        label {
+            font-size: 1rem;
+            color: #ffffff;
+            text-align: left; /* Alinha o texto dos rótulos à esquerda */
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            padding: 10px;
+            font-size: 1rem;
+            border-radius: 5px;
+            border: 1px solid #ccc; /* Borda cinza */
+            outline: none;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        textarea:focus {
+            border-color: #007bff; /* Borda azul ao focar */
+            box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2); /* Sombra azul ao focar */
+        }
+
+        textarea {
+            resize: vertical; /* Permite redimensionar o campo apenas na vertical */
+            min-height: 100px;
+        }
+
+        /* Botão de Envio */
+        button[type="submit"] {
+            background-color: #007bff; /* Fundo azul */
+            color: #ffffff; /* Texto branco */
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease; /* Efeito suave no hover */
+            font-size: 1rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra no botão */
+        }
+
+        button[type="submit"]:hover {
+            background-color: #0056b3; /* Fundo azul-escuro no hover */
+            transform: scale(1.05); /* Leve aumento ao passar o mouse */
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Fale Conosco</h1>
+        <h1>Fale Conosco</h1> <!-- Título principal do cabeçalho -->
         <nav>
             <ul>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="fale_conosco.html">Fale Conosco</a></li>
-                <li><a href="produtos.html">Rappers</a></li>
+                <li><a href="index.html">Início</a></li> <!-- Link para a página inicial -->
+                <li><a href="fale_conosco.html">Fale Conosco</a></li> <!-- Link para a página atual -->
+                <li><a href="produtos.html">Rappers</a></li> <!-- Link para a página "Rappers" -->
             </ul>
         </nav>
     </header>
     <main>
-        <h2>Envie sua mensagem</h2>
-        <form action="#" method="post">
-            <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome" required>
-            
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            
-            <label for="mensagem">Seu problema:</label>
-            <textarea id="mensagem" name="mensagem" required></textarea>
-            
-            <button type="submit">Enviar</button>
+        <h2>Envie sua mensagem</h2> <!-- Subtítulo da seção principal -->
+
+        <!-- Formulário de contato -->
+        <form action="#" method="post"> <!-- Define o método e o destino do formulário -->
+            <label for="nome">Nome:</label> <!-- Rótulo para o campo de nome -->
+            <input type="text" id="nome" name="nome" required> <!-- Campo de entrada para o nome -->
+
+            <label for="email">Email:</label> <!-- Rótulo para o campo de email -->
+            <input type="email" id="email" name="email" required> <!-- Campo de entrada para o email -->
+
+            <label for="mensagem">Seu problema:</label> <!-- Rótulo para o campo de mensagem -->
+            <textarea id="mensagem" name="mensagem" required></textarea> <!-- Área de texto para a mensagem -->
+
+            <button type="submit">Enviar</button> <!-- Botão para enviar o formulário -->
         </form>
     </main>
 </body>

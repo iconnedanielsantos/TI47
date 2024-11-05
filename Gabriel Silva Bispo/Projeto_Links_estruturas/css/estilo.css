@@ -2,6 +2,7 @@ body {
     font-family:sans-serif;
     margin: 0;
     padding: 0;
+    background: none;
 }
 header{
     background-color:purple;
@@ -49,3 +50,19 @@ button {
     max-width: 100%;
     height: auto;
 }
+.supernova{ 
+    background-image:url(https://media.istockphoto.com/id/1411304340/pt/foto/two-modern-buildings-with-glass-windows-architecture-design-of-buildings-office-space-houses.jpg?s=612x612&w=0&k=20&c=qsYibygh6TlP__O9_6pnUPyXuA9rZ5Tiz6kggV6BxCE=);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.supernova, body{
+    background: none;
+}
+
+.fom-all{
+    background: none !important;
+    box-shadow: none;
+}
+
