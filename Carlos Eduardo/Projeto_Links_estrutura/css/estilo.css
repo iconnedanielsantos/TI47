@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: rgb(27, 79, 248);
+    color: rgb(10, 6, 1);
+    padding: 1em;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: beige;
+    text-decoration: none;
+}
+
+main {
+    padding:  1em;
+    width: 100;
+
+}
+
+form label {
+    display:  block;
+    margin-top: 10px;   
+}
+
+form input, form textarea {
+    width:  100%;
+    padding: 0.5em;
+    margin-top: 5px;
+}
+
+button {
+    background-color: aquamarine;
+    color: white;
+    padding: 0.7em;
+    border: none;
+    cursor: pointer;
+}
+
+.produto img {
+    width: 15%;
+}
+.produto {
+    margin-left: 35%;
+}

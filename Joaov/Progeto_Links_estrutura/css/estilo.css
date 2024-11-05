@@ -1,11 +1,12 @@
 body {
+    background-color: rgb(209, 209, 209);
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
 
 header {
-    background-color: #4CAF50;
+    background-color: #0a4701;
     color: white;
     padding: 1em;
     text-align: center;
@@ -41,7 +42,7 @@ form input, form textarea {
 }
 
 button {
-    background-color: #4CAF50;
+    background-color: #24772f;
     color: white;
     padding: 0.7em;
     border: none;
