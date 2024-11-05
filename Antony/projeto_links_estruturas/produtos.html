@@ -3,56 +3,196 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Games</title>
+    <title>Rappers Americanos</title>
     <link rel="stylesheet" href="css/estilo.css">
+    <style>
+        /* Estilo Geral */
+        body {
+            background-image: url("imagens/games1.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: rgb(255, 255, 255);
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        /* Cabeçalho */
+        header {
+            background: rgba(0, 0, 0, 0.7);
+            width: 100%;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            color: #ffffff;
+            margin: 0;
+            transition: color 0.3s ease;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li a {
+            color: #ffffff;
+            text-decoration: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+            color: #007bff;
+        }
+
+        /* Conteúdo Principal */
+        main {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Estilo dos "Produtos" */
+        .produto {
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            padding: 15px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: left;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .produto:hover {
+            transform: scale(1.02);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        .produto img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        .produto h3 {
+            color: #fff;
+            font-size: 1.5rem;
+            margin: 0;
+            transition: color 0.3s ease;
+        }
+
+        .produto p {
+            color: #ddd;
+            line-height: 1.6;
+        }
+
+        /* Responsividade */
+        @media (min-width: 600px) {
+            .produto {
+                display: flex;
+                align-items: flex-start;
+                gap: 20px;
+            }
+            .produto img {
+                max-width: 150px;
+                width: auto;
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Rappers americanos</h1>
+        <h1>Rappers Americanos</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Início</a></li>
-                <li><a href="fale_conosco.html">Fale Conosco</a></li>
                 <li><a href="produtos.html">Rappers</a></li>
+                <li><a href="fale_conosco.html">Fale Conosco</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <h2>Melhores da cena</h2>
+        <h2>Melhores da Cena</h2>
+        
+        <!-- Produto 1 -->
         <div class="produto">
-            <img src="imagens/produto1.jpg" alt="Produto 1">
-            <h3> 2 pac</h3>
-            <p>2Pac, também conhecido como Tupac Shakur, foi um rapper, ator e ativista americano, amplamente considerado um dos maiores rappers de todos os tempos. Nascido em 1971, ele se destacou por suas letras poéticas e politicamente engajadas, abordando temas como racismo, pobreza e violência. Sua carreira foi marcada por sucessos como "California Love" e "Changes". 2Pac foi assassinado em 1996, mas sua influência na música e na cultura permanece forte.</p>
+            <img src="imagens/produto1.jpg" alt="2Pac">
+            <div>
+                <h3>2Pac</h3>
+                <p>2Pac, também conhecido como Tupac Shakur, foi um rapper, ator e ativista americano, amplamente considerado um dos maiores rappers de todos os tempos...</p>
+            </div>
         </div>
+        
+        <!-- Produto 2 -->
         <div class="produto">
-            <img src="imagens/produto2.jpg" alt="Produto 2">
-            <h3>Eaze-e </h3>
-            <p>Eazy-E, nome verdadeiro Eric Wright, foi um rapper e produtor musical americano, conhecido como "O Deus do Rap". Nascido em 1964, ele foi um dos membros fundadores do N.W.A e desempenhou um papel crucial na popularização do gangsta rap. Seu estilo distinto e suas letras impactantes em álbuns como "Eazy-Duz-It" ajudaram a moldar o hip-hop dos anos 90. Eazy-E faleceu em 1995, mas continua sendo uma figura icônica no gênero.            </p>
+            <img src="imagens/produto2.jpg" alt="Eazy-E">
+            <div>
+                <h3>Eazy-E</h3>
+                <p>Eazy-E, nome verdadeiro Eric Wright, foi um rapper e produtor musical americano, conhecido como "O Deus do Rap"...</p>
+            </div>
         </div>
+        
+        <!-- Produto 3 -->
         <div class="produto">
-            <img src="imagens/produto3.jpg"alt="Produto 3">
-            <h3>Ice cube </h3>
-            <p>Ice Cube, nascido O'Shea Jackson em 1969, é um rapper, ator e produtor americano. Ele ganhou fama como membro do grupo de rap N.W.A., que popularizou o gangsta rap na costa oeste dos EUA. Com uma carreira solo de sucesso, seus álbuns "AmeriKKKa's Most Wanted" e "Death Certificate" abordam questões sociais e políticas. Além de sua carreira musical, Ice Cube também é conhecido por seus papéis em filmes como "Friday" e "Boyz n the Hood".</p>
+            <img src="imagens/produto3.jpg" alt="Ice Cube">
+            <div>
+                <h3>Ice Cube</h3>
+                <p>Ice Cube, nascido O'Shea Jackson em 1969, é um rapper, ator e produtor americano. Ele ganhou fama como membro do grupo de rap N.W.A...</p>
+            </div>
         </div>
+        
+        <!-- Produto 4 -->
         <div class="produto">
-            <img src="imagens/produto4.jpg"alt="Produto 4">
-            <h3>nothorius BIG</h3>
-            <P>Notorious B.I.G., também conhecido como Biggie Smalls, foi um rapper americano que se destacou na cena do hip-hop durante os anos 90. Nascido em 1972, sua música era caracterizada por seu flow único e letras detalhadas, frequentemente refletindo sua vida nas ruas de Brooklyn. Álbuns como "Ready to Die" e "Life After Death" são considerados clássicos. Biggie foi assassinado em 1997, e seu legado continua a influenciar artistas contemporâneos.</P>
+            <img src="imagens/produto4.jpg" alt="Notorious B.I.G.">
+            <div>
+                <h3>Notorious B.I.G.</h3>
+                <p>Notorious B.I.G., também conhecido como Biggie Smalls, foi um rapper americano que se destacou na cena do hip-hop durante os anos 90...</p>
+            </div>
         </div>
+        
+        <!-- Produto 5 -->
         <div class="produto">
-            <img src="imagens/produto5.jpg"alt="Produto 5">
-            <h3> Eminem</h3>
-            <P>Eminem, nascido Marshall Mathers em 1972, é um rapper, compositor e produtor musical americano. Ele é conhecido por suas letras autobiográficas e seu estilo agressivo. Eminem ganhou fama com o álbum "The Slim Shady LP" e se tornou um dos artistas de rap mais vendidos da história. Com sucessos como "Lose Yourself" e "Stan", ele também é conhecido por seu alter ego, Slim Shady. Eminem é um dos artistas mais influentes da música contemporânea.</P>
-            <div class="produto">
-                <img src="imagens/produto6.jpg"alt="Produto 6">
+            <img src="imagens/produto5.jpg" alt="Eminem">
+            <div>
+                <h3>Eminem</h3>
+                <p>Eminem, nascido Marshall Mathers em 1972, é um rapper, compositor e produtor musical americano. Ele é conhecido por suas letras autobiográficas...</p>
+            </div>
+        </div>
+        
+        <!-- Produto 6 -->
+        <div class="produto">
+            <img src="imagens/produto6.jpg" alt="Juice WRLD">
+            <div>
                 <h3>Juice WRLD</h3>
-                <P>Juice WRLD, nome verdadeiro Jarad Higgins, foi um rapper, cantor e compositor americano que emergiu na cena musical no final da década de 2010. Nascido em 1998, ele se destacou por seu estilo emotivo e letras que lidavam com temas de amor, perda e dependência. Seu sucesso com a faixa "Lucid Dreams" catapultou sua carreira, e seu álbum "Death Race for Love" consolidou seu lugar na indústria. Juice WRLD faleceu em 2019, mas sua música continua a ressoar com fãs em todo o mundo.                </P>
+                <p>Juice WRLD, nome verdadeiro Jarad Higgins, foi um rapper, cantor e compositor americano que emergiu na cena musical no final da década de 2010...</p>
+            </div>
         </div>
+        
+        <!-- Produto 7 -->
         <div class="produto">
-            <img src="imagens/produto7.jpg"alt="Produto 7">
-            <h3>Snoop Doog</h3>
-            <P>Snoop Dogg, nome verdadeiro Calvin Cordozar Broadus Jr., é um rapper, produtor e ator americano, nascido em 1971. Ele se tornou uma figura icônica na cena do hip-hop dos anos 90, conhecido por seu estilo relaxado e voz suave. Snoop ganhou fama com seu álbum de estreia, "Doggystyle", que apresenta clássicos como "Gin and Juice" e "What's My Name?". Seu trabalho é caracterizado pela fusão de gangsta rap com melodias cativantes, além de seu estilo de vida descontraído e seu amor pela cultura canábica. Ao longo de sua carreira, Snoop também se aventurou em atuações e na produção de programas de TV, consolidando sua influência na cultura pop. Ele continua a ser uma figura ativa e respeitada na música, colaborando com diversos artistas e explorando novos gêneros.</P>
-    </div>
+            <img src="imagens/produto7.jpg" alt="Snoop Dogg">
+            <div>
+                <h3>Snoop Dogg</h3>
+                <p>Snoop Dogg, nome verdadeiro Calvin Cordozar Broadus Jr., é um rapper, produtor e ator americano, nascido em 1971...</p>
+            </div>
+        </div>
+        
     </main>
 </body>
 </html>
