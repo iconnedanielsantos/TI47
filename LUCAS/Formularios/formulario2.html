@@ -1,49 +1,54 @@
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
 <style>
- 
+      /* Estilo para o fundo da página */
 body {
-    font-family: 'Roboto', sans-serif;  
-    background-color: #f4f7fb;  
+    background-image: url('fundo.jpg'); /* Caminho da imagem local */
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fonte mais elegante e moderna */
+    text-align: center;
+    margin: 0;
+    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    margin: 0;
-    color: #555;  
 }
 
-h2 {
-    text-align: center;
-    color: #333;
-    font-size: 24px; 
-    margin-bottom: 20px;
-}
-
-
+/* Estilos para o formulário */
 form {
-    background-color: #ffffff;
-    padding: 30px;
-    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Fundo mais escuro e elegante */
+    padding: 40px;
+    border-radius: 16px; /* Bordas arredondadas mais suaves */
     max-width: 450px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);  
-    border-radius: 12px;
+    width: 100%;
+    margin: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); /* Sombra maior para profundidade */
+    transition: all 0.3s ease-in-out; /* Transição suave ao focar no formulário */
 }
 
+/* Aumentando a fonte em 30% */
+label, input, select, button {
+    font-size: 1.3em; /* Aumento da fonte em 30% */
+}
 
+/* Estilo das labels */
 label {
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 10px;
     display: block;
-    margin-bottom: 8px;
-    color: #333;
-    font-size: 14px;
-    font-weight: 600;  
+    transition: color 0.3s ease;
 }
 
-
+/* Estilo dos campos de entrada e selects */
 input[type="text"],
 input[type="email"],
 input[type="tel"],
@@ -51,56 +56,135 @@ input[type="password"],
 input[type="date"],
 select {
     width: 100%;
-    padding: 12px;
+    padding: 14px;
     margin-bottom: 18px;
-    border: 2px solid #ccc;
-    border-radius: 8px;
-    box-sizing: border-box;
-    background-color: #f9f9f9; 
-    font-size: 14px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    background-color: rgba(255, 255, 255, 0.8);
     color: #333;
-    transition: all 0.3s ease;  
+    font-size: 1em;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
 }
 
-
+/* Efeito de foco nos campos */
 input[type="text"]:focus,
 input[type="email"]:focus,
 input[type="tel"]:focus,
 input[type="password"]:focus,
 input[type="date"]:focus,
 select:focus {
-    border-color: #4CAF50;  
-    background-color: #e8f5e9;  
-    outline: none;
+    border-color: #4CAF50; /* Cor vibrante para foco */
+    background-color: rgba(255, 255, 255, 1); /* Fundo mais claro ao focar */
+    outline: none; /* Remove o contorno padrão */
 }
 
-
+/* Estilo do botão */
 button {
     width: 100%;
-    padding: 12px;
+    padding: 14px;
     background-color: #4CAF50;
-    color: #ffffff;
+    color: #fff;
     border: none;
-    border-radius: 8px;
+    border-radius: 12px; /* Bordas arredondadas mais suaves */
     cursor: pointer;
-    font-size: 16px;
-    font-weight: bold;
-    transition: background-color 0.3s ease, transform 0.3s ease;  
+    font-size: 1.2em;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
 }
 
-
+/* Efeito de hover no botão */
 button:hover {
-    background-color: #45a049;
-    transform: translateY(-2px);  
+    background-color: #45a049; /* Cor de fundo mais escura */
+    transform: translateY(-5px); /* Efeito de elevação */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Sombra maior */
 }
 
-
+/* Efeito de pressionamento no botão */
 button:active {
-    transform: translateY(2px);  
+    transform: translateY(2px); /* Efeito de afundamento */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra mais suave ao clicar */
+}
 
-</style>
+/* Foco no formulário quando um campo está em uso */
+form:focus-within {
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.4); /* Aumenta a sombra quando o formulário é interagido */
+}
+
+/* Transição suave ao carregar o formulário */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+form {
+    animation: fadeIn 0.8s ease-out; /* Animação de entrada suave */
+}
+
+        }
+    </style>
 </head>
 <body>
+
+    <h2>Formulário de Cadastro</h2>
+
+  
+
+    <form action="/enviar" method="post">
+        <!-- Nome Completo -->
+        <label for="nome">Nome Completo:</label>
+        <input type="text" id="nome" name="nome" required>
+
+        <!-- Email -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <!-- Telefone -->
+        <label for="telefone">Telefone:</label>
+        <input type="tel" id="telefone" name="telefone" required>
+
+        <!-- Senha -->
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" name="senha" required>
+
+        <!-- Data de Nascimento -->
+        <label for="data_nascimento">Data de Nascimento:</label>
+        <input type="date" id="data_nascimento" name="data_nascimento" required>
+
+        <!-- Gênero -->
+        <label for="genero">Gênero:</label>
+        <select id="genero" name="genero" required>
+            <option value="masculino">Masculino</option>
+            <option value="feminino">Feminino</option>
+            <option value="outro">Outro</option>
+        </select>
+
+        <!-- Endereço -->
+        <label for="endereco">Endereço:</label>
+        <input type="text" id="endereco" name="endereco" required>
+
+        <!-- Cidade -->
+        <label for="cidade">Cidade:</label>
+        <input type="text" id="cidade" name="cidade" required>
+
+        <!-- Estado -->
+        <label for="estado">Estado:</label>
+        <input type="text" id="estado" name="estado" required>
+
+        <!-- CEP -->
+        <label for="cep">CEP:</label>
+        <input type="text" id="cep" name="cep" required>
+
+        <!-- Botão Enviar -->
+        <button type="submit">Enviar</button>
+    </form>
+
+</body>
     
 </body>
 </html>
