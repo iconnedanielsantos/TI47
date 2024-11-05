@@ -27,8 +27,8 @@ nav ul li a {
 }
 
 main {
-
     padding:  1em;
+    width: 100;
 
 }
 
@@ -52,6 +52,8 @@ button {
 }
 
 .produto img {
-    max-width: 10%;
-    height: auto;
+    width: 15%;
+}
+.produto {
+    margin-left: 35%;
 }

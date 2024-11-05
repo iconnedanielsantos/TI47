@@ -9,14 +9,15 @@ form label, form input, button: Estilos para o formulário.
 .produto: Estilos para os contêineres de produtos.
 */
 body {
+    background-color: #2c2525;
     font-family: Arial,sans-serif;
     margin: 0;
     padding:0;
 }
 
 header {
-    background-color: #4CAF50;
-    color: white;
+    background-color: #a10e0e;
+    color: rgb(41, 34, 34);
     padding: 1em;
     text-align: center;
 }
@@ -32,7 +33,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: rgb(41, 34, 34);
     text-decoration: none;
 }
 
@@ -52,15 +53,15 @@ form input, form textarea {
 }
 
 button {
-    background-color: #4CAF50;
-    color: white;
+    background-color: #a10e0e;
+    color: rgb(41, 34, 34);
     padding: 0.7em;
     border: none;
     cursor: pointer;
 }
 
 .produto {
-    border: 1px solid #ddd;
+    border: 1px solid #2c2525;
     padding: 1em;
     margin: 1em 0;
     text-align: center;
