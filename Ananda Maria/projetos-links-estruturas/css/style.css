@@ -1,0 +1,51 @@
+body{
+    background-color: black;
+    cursor: url(https://ani.cursors-4u.net/cursors/cur-12/cur1080.cur), auto !important;
+}
+header{
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    padding: 5px;
+
+}
+#titulo-page{
+color: aliceblue;
+padding-bottom: 3%;
+font-size: 50px;
+}
+main img{
+    background-color: aqua;
+    display: flex;
+    align-self: center;
+    margin: auto;
+    width: 100%;
+    opacity: 30%;
+}
+#imgnews{
+    opacity: 100%;
+
+}
+.header-baixo{
+    display: flex;
+    justify-content: space-around;
+        width: 100%;
+    }
+a{
+    text-decoration: none;
+    color: aliceblue;
+}
+.header-baixo a{
+    text-decoration: none;
+    font-size: 30px;
+    color: aliceblue;
+    
+    
+}
+.header-baixo a:hover{
+    cursor: url(https://ani.cursors-4u.net/cursors/cur-12/cur1081.cur), auto !important;
+
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+    transform: scale(1.05);
+}
