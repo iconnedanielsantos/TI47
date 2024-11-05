@@ -1,0 +1,74 @@
+/* Estilos gerais */
+
+/*
+Explicação das tags do CSS para melhor compreensão 
+body: Define estilos para o corpo da página.
+header: Estilos para o cabeçalho, como cor de fundo e alinhamento.
+nav ul, nav ul li, nav ul li a: Estilos para a lista de navegação e os links.
+form label, form input, button: Estilos para o formulário.
+.produto: Estilos para os contêineres de produtos.
+*/
+body {
+    background-color: #2c2525;
+    font-family: Arial,sans-serif;
+    margin: 0;
+    padding:0;
+}
+
+header {
+    background-color: #a10e0e;
+    color: rgb(41, 34, 34);
+    padding: 1em;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display:inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: rgb(41, 34, 34);
+    text-decoration: none;
+}
+
+main {
+    padding: 1em;
+}
+
+form label {
+    display: block;
+    margin-top: 10px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 0.5em;
+    margin-top: 5px;
+}
+
+button {
+    background-color: #a10e0e;
+    color: rgb(41, 34, 34);
+    padding: 0.7em;
+    border: none;
+    cursor: pointer;
+}
+
+.produto {
+    border: 1px solid #2c2525;
+    padding: 1em;
+    margin: 1em 0;
+    text-align: center;
+}
+
+.produto img {
+    max-width: 100%;
+    height: auto;
+}
+
