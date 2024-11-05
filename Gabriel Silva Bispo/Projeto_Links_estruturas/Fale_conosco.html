@@ -1,11 +1,57 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fale Conosco</title>
     <link rel="stylesheet" href="css/estilo.css">
+    <style>
+        body {
+            background-image: url(https://tecnoartengenharia.com.br/wp-content/uploads/2024/03/WhatsAppImage20240221at1220522.jpeg);
+            background-size: cover;
+            background-attachment: fixed;
+            color: rgb(2, 1, 1);
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }        
+        form{
+            background-color: rgba(126, 111, 111, 0.26);
+            padding: 20px;
+            border-radius: 8px;
+            max-width: 400px;
+            width: 20%;
+            margin: auto;
+        }
+        label, input, select, button {
+            display: block;
+            margin: 10px 0;
+            width: 20%;
+        }
+        button{
+            background-color: rgba(126, 111, 111, 0.26);
+            color: rgb(255, 255, 255);
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor:pointer
+        }
+        button:hover {
+            background-color: #31085f6c;
+        }
+        header {
+            background: rgba(126, 111, 111, 0.26);
+            width: 100%;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(115, 106, 126, 0.404);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+    </style>
 </head>
+
 <body>
     <header>
         <h1>Fale Conosco</h1>
@@ -13,7 +59,7 @@
             <ul>
                 <li><a href="index.html">Início</a></li>
                 <li><a href="Fale_conosco.html">Fale conosco</li>
-                <li><a href="produtos.html">Produtos</a></li>    
+                <li><a href="produtos.html">Produtos</a></li>
             </ul>
         </nav>
     </header>
@@ -25,7 +71,7 @@
 
             <label for="email">Email:</label>
             <input type="email" id="Email" name="email" required>
-            
+
             <label for="mensagem">Mesagem:</label>
             <textarea id="mensagem" name="Mesagem" required></textarea>
 
@@ -33,4 +79,5 @@
         </form>
     </main>
 </body>
+
 </html>
