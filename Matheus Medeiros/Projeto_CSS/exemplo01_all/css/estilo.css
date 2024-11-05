@@ -1,0 +1,11 @@
+/* CSS Externo para a classe ".caixa" */
+
+.caixa {
+    background-color: #e0e4e8; /*Fundo da caixa */
+    padding: 20px;               /*Espaçamento interno da caixa */
+    border-radius: 8px;          /*Bordas arredondadas */
+    margin: 20px;                /*Espaçamento externo */
+    text-align: center;          /*Alinhamento centralizado do texto */
+    font-family: 'Georgia', serif;
+    color: #333;
+}
