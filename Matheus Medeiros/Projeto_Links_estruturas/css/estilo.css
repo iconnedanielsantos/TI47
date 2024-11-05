@@ -9,6 +9,7 @@ form label, form input, button: Estilos para o formulário.
 .produto: Estilos para os contêineres de produtos.
 */
 body {
+    background-color: #2c2525;
     font-family: Arial,sans-serif;
     margin: 0;
     padding:0;
