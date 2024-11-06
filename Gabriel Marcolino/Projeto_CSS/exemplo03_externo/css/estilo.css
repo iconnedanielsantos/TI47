@@ -1,1 +1,36 @@
-fgr
+body {
+    background-color: rgb(255, 255, 255);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(0, 0, 0);
+}
+
+h1 {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+}
+
+h2 {
+    color: rgb(7, 19, 189);
+    font-weight: bold;
+    text-align: center;
+    font-size: 35px;
+}
+
+p {
+    text-align: center;
+    font-size: 25px;
+}
+
+.image {
+    display: block;
+    margin: 30px auto;
+    width: 250px;
+    height: auto;
+}
+header {
+    background-color: red;
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
