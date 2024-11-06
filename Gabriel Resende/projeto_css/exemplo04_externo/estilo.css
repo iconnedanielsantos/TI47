@@ -1,0 +1,36 @@
+/* Definindo estilos gerais para a página */
+
+body {
+    background-color: #f1f8e9; /* Fundo claro */
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+/* Estilo do título principal */
+h1 {
+    text-align: center;
+    color: #33691e;
+}
+
+/* Estilo dos subtítulos */
+h2 {
+    color: #558b2f;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Estilo dos parágrafos */
+p {
+    text-align: center;
+    font-size: 16px;
+}
+
+/* Estilo da imagem */
+.image {
+    display: block;
+    margin: 20px auto;
+    width: 300px;
+    height: auto;
+}
+
+
