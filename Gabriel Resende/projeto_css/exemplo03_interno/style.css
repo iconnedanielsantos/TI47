@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+    line-height: 1.6;
+    padding: 0;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #c40a0a, #e20202);
+}
+
+h1, h2 {
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+}
+
+h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+
+p {
+    text-align: center;
+    font-size: 1.1em;
+    color: #fff;
+    margin: 15px auto;
+    width: 80%;
+    max-width: 800px;
+    line-height: 1.8;
+}
+
+.highlight {
+    font-weight: bold;
+    color: #e1a34d;
+}
+
+/* Imagem com efeito hover */
+img {
+    display: block;
+    margin: 30px auto;
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease-in-out;
+}
+
+img:hover {
+    transform: scale(1.05);
+}
+
+/* Carrossel de imagens */
+.carousel {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.carousel img {
+    max-width: 20%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.carousel img:hover {
+    transform: scale(1.05);
+}
+
+/* Seção de Modelos */
+.models-section {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.model-card {
+    background: #fff;
+    color: #333;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    text-align: center;
+    padding: 20px;
+}
+
+.model-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.model-card h3 {
+    font-size: 1.5em;
+    margin-top: 20px;
+    color: #000000;
+}
+
+.model-card p {
+    font-size: 1em;
+    margin-top: 10px;
+    color: #030202;
+}
+
+/* Box Interno com Borda Diferente */
+.border-box {
+    border: 5px solid #e1a34d; /* Cor da borda */
+    border-radius: 10px; /* Bordas arredondadas */
+    padding: 20px;
+    margin: 30px auto;
+    width: 80%;
+    max-width: 800px;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.border-box:hover {
+    transform: scale(1.05);
+}
+
+/* Testemunhos */
+.testimonials {
+    background-color: #000000;
+    padding: 50px 20px;
+    margin-top: 40px;
+}
+
+.testimonial {
+    text-align: center;
+    color: #d1d1d1;
+    font-style: italic;
+    margin-bottom: 30px;
+}
+
+.testimonial p {
+    font-size: 1.2em;
+    margin-top: 15px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .models-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .model-card {
+        width: 80%;
+        margin-bottom: 30px;
+    }
+
+    h1 {
+        font-size: 2.5em;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+/* Botão de ação */
+.cta-btn {
+    display: inline-block;
+    background-color: #e1a34d;
+    color: #fff;
+    text-align: center;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border-radius: 30px;
+    text-decoration: none;
+    margin: 30px auto;
+    transition: background-color 0.3s;
+}
+
+.cta-btn:hover  {
+    background-color: #8a3c1e;
+}
