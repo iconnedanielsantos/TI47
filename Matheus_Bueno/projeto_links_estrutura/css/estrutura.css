@@ -1,0 +1,101 @@
+{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+
+}
+
+body {
+font-family: 'Arial'; sans-serif
+background-image: url(background_cinema.jpeg);
+background-size: cover;
+background-position: center center;
+background-attachment: fixed
+color: #333
+line-height: 1.6;
+
+}
+
+header {
+
+background-color: rgba(0, 0, 0, 0.6);
+color: white;
+padding: 50px 0;
+text-align:center
+
+}
+
+header h1 {
+font-size: 2.5em;
+
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+    margin-top: 20px;
+
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+
+}
+
+
+nav ul li a {
+
+color: white;
+text-decoration: none;
+font-size: 1.1em;
+
+}
+
+nav ul li a:hover {
+
+text-decoration: underline;
+color: #f4f4f9;
+
+}
+
+main{
+
+padding: 30px;
+text-align: center;
+
+}
+
+main h2{
+
+font-size: 1.2em;
+margin-bottom: 30px;
+
+}
+
+mainp {
+
+font-size: 1.2em;
+margin-bottom: 30px;
+
+}
+
+
+.produtos h4{
+
+font-size: 1.5em;
+color:#555
+margin: 10px
+display: inline-block
+padding: 5px 20px;
+background-color: #eee;
+border-radius: 5px;
+
+}
+
+.produtos{
+
+margin-bottom: 30px;
+
+}
