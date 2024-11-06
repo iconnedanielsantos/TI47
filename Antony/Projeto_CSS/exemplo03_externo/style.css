@@ -8,7 +8,7 @@ body, html {
 /* Estilo do fundo principal da página */
 .background {
     /* Define a imagem de fundo */
-    background-image: url('images.jpg');
+    background-image: url('imagens/images.jpg');
     /* Ajusta a imagem para cobrir toda a área */
     background-size: cover;
     /* Centraliza a imagem no fundo */
@@ -33,7 +33,7 @@ body, html {
     /* Define a cor do texto */
     color: #ffffff;
     /* Adiciona um fundo semi-transparente */
-    background-color: rgba(0, 0, 0, 0.562);
+    background-color: rgba(0, 0, 0, 0.6);
     /* Adiciona um espaço interno */
     padding: 10px;
     /* Arredonda as bordas */
@@ -45,7 +45,7 @@ body, html {
     /* Define a cor do texto */
     color: #ffffff;
     /* Adiciona um fundo semi-transparente */
-    background-color: rgba(0, 0, 0, 0.651);
+    background-color: rgba(0, 0, 0, 0.6);
     /* Adiciona um espaço interno */
     padding: 10px;
     /* Arredonda as bordas */
@@ -57,7 +57,7 @@ body, html {
     /* Define a cor do texto */
     color: #ffffff;
     /* Adiciona um fundo semi-transparente para contraste */
-    background-color: rgba(0, 0, 0, 0.699);
+    background-color: rgba(0, 0, 0, 0.7);
     /* Adiciona um espaço interno */
     padding: 10px;
     /* Arredonda as bordas */
@@ -74,9 +74,9 @@ body, html {
     /* Arredonda as bordas */
     border-radius: 5px;
     /* Adiciona um espaço interno */
-    padding: 5px;
+    padding: 10px;
     /* Define a margem superior */
-    margin-top: 5px;
+    margin-top: 10px;
     /* Aplica um fundo mais claro para contraste */
     background-color: rgba(255, 255, 255, 0.7);
     /* Define a cor do texto */
