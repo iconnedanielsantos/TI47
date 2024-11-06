@@ -1,10 +1,11 @@
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=
-    , initial-scale=1.0">
-    <title>Pagina com Css Externo, interno e incline</title>
-     <!--
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página com CSS Externo, Interno e Inline</title>
+
+    <!--
 
         Explicação do Código
         
@@ -19,27 +20,26 @@
         Essa abordagem permite visualizar as três formas de aplicar CSS em uma mesma página, destacando onde cada estilo é aplicado.
     -->
 
-        <!-- CSS Externo (Arquivo separado) -->
-        <link rel="stylesheet" href="css/estilo.css">
+    <!-- CSS Externo (Arquivo separado) -->
+    <link rel="stylesheet" href="css/estilo.css">
 
-        <!--Css Interno-->
-        <style>
-            /* Estilos aplicados diretamente dentro da tag <style> */
-                body {
-                    background-color: rgb(255, 255, 255); /* Cor de fundo da pagina */
-                }
-                
-                h1 {
-                    color: #333; /* Cor do texto do titulo*/
-                    font-family: 'Arial ', sans-serif;
-                    text-align: center;
-                }
+    <!-- CSS Interno -->
+    <style>
+        /* Estilos aplicados diretamente dentro da tag <style> */
+        body {
+            background-color: #f4f4f9; /* Cor de fundo da página */
+        }
 
-        </style>
+        h1 {
+            color: #333; /* Cor do texto do título */
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-         <!-- Título da página com estilo CSS Inline -->
-    <h1 style="font-size: 2em; font-weight: bold;">Bem-vindo a cultura negra</h1>
+    <!-- Título da página com estilo CSS Inline -->
+    <h1 style="font-size: 2em; font-weight: bold;">Bem-vindo à nossa Página!</h1>
 
     <!-- Parágrafo com estilo CSS Inline -->
     <p style="color: #555; font-family: 'Verdana', sans-serif; text-align: justify;">
