@@ -52,3 +52,10 @@ main {
     font-weight: bold;
     color: #4CAF50;
 }
+
+.jogo img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
