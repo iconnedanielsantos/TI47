@@ -9,3 +9,20 @@
     font-family: 'Georgia', serif;
     color: #333;
 }
+
+.cta-btn {
+    display: inline-block;
+    background-color: #e1a34d;
+    color: #fff;
+    text-align: center;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border-radius: 30px;
+    text-decoration: none;
+    margin: 30px auto;
+    transition: background-color 0.3s;
+}
+
+.cta-btn:hover {
+    background-color: #8a3c1e;
+}
