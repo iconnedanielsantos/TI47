@@ -1,0 +1,103 @@
+/* Reset básico para remover margens e preenchimentos padrão do navegador */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+/* Estilo do fundo principal da página */
+.background {
+    /* Define a imagem de fundo */
+    background-image: url('imagens/images.jpg');
+    /* Ajusta a imagem para cobrir toda a área */
+    background-size: cover;
+    /* Centraliza a imagem no fundo */
+    background-position: center;
+    /* Mantém a imagem fixa durante a rolagem */
+    background-attachment: fixed;
+    /* Define a altura mínima para ocupar a tela inteira */
+    min-height: 100vh;
+    /* Define a largura total */
+    width: 100%;
+    /* Centraliza o texto dentro da div */
+    text-align: center;
+    /* Utiliza Flexbox para alinhar itens */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centraliza verticalmente */
+    align-items: center; /* Centraliza horizontalmente */
+}
+
+/* Estilos para o título principal da página */
+.main-title {
+    /* Define a cor do texto */
+    color: #ffffff;
+    /* Adiciona um fundo semi-transparente */
+    background-color: rgba(0, 0, 0, 0.6);
+    /* Adiciona um espaço interno */
+    padding: 10px;
+    /* Arredonda as bordas */
+    border-radius: 5px;
+}
+
+/* Estilos para o título das seções de referências */
+.references-title {
+    /* Define a cor do texto */
+    color: #ffffff;
+    /* Adiciona um fundo semi-transparente */
+    background-color: rgba(0, 0, 0, 0.6);
+    /* Adiciona um espaço interno */
+    padding: 10px;
+    /* Arredonda as bordas */
+    border-radius: 5px;
+}
+
+/* Estilos para os parágrafos que descrevem a cultura negra */
+.culture-paragraph {
+    /* Define a cor do texto */
+    color: #ffffff;
+    /* Adiciona um fundo semi-transparente para contraste */
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Adiciona um espaço interno */
+    padding: 10px;
+    /* Arredonda as bordas */
+    border-radius: 5px;
+    /* Define o tamanho e o tipo da fonte */
+    font-size: 17px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* Estilos específicos para os parágrafos de referência */
+.ref-paragraph {
+    /* Adiciona uma borda ao redor do parágrafo */
+    border: 2px solid #1c251e;
+    /* Arredonda as bordas */
+    border-radius: 5px;
+    /* Adiciona um espaço interno */
+    padding: 10px;
+    /* Define a margem superior */
+    margin-top: 10px;
+    /* Aplica um fundo mais claro para contraste */
+    background-color: rgba(255, 255, 255, 0.7);
+    /* Define a cor do texto */
+    color: #333;
+}
+
+/* Estilos para cada seção de referência (cada referência individual) */
+.reference {
+    /* Centraliza o conteúdo */
+    text-align: center;
+    /* Adiciona uma margem inferior para espaçamento entre as referências */
+    margin-bottom: 20px;
+}
+
+/* Estilos para as imagens das referências */
+.reference img {
+    /* Adiciona uma borda ao redor da imagem */
+    border: 5px solid #1c251e;
+    /* Arredonda as bordas da imagem */
+    border-radius: 10px;
+    /* Define a largura e mantém a altura proporcional */
+    width: 300px;
+    height: auto;
+}

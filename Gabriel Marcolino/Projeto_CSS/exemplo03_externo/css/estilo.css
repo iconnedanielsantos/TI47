@@ -1,1 +1,28 @@
-fgr
+body {
+    background-color: rgb(255, 255, 255);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(0, 0, 0);
+}
+
+h1 {
+    text-align: center;
+    color: rgb(3, 1, 109);
+}
+
+h2 {
+    color: rgb(0, 119, 255);
+    font-weight: bold;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    font-size: 18px;
+}
+
+.image {
+    display: block;
+    margin: 30px auto;
+    width: 250px;
+    height: auto;
+}
