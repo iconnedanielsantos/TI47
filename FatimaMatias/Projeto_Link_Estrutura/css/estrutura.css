@@ -1,35 +1,29 @@
 body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin: 0;
-    padding: 0;
+    font-family: monospace;
+    margin: 50;
+    padding: 0%
+}
+ul {
+    font-family: helvética;
 }
 
-header {
-    background-color: blue;
-    color: #a5882a;
-    padding: 1em;
-    text-align: center;    
+li {
+    list-style: circle;
+}
+.list {
+    list-style: square;
 }
 
-nav ul {
-    list-style-type: disc;
-    padding: 0; 
+#msg {
+    font-family: monospace;
 }
 
-
-nav ul li {
-    display: inline-block;
-    margin-right: 10px;
-    
+.light-theme {
+    color: chocolate;
+    color: antiquewhite;
+    background: rgb(1, 10, 39);
 }
 
-nav ul li a {
-    color: aqua;
-    text-decoration: none;
+.header-line{
+    display: inline;
 }
-
-main{
-    padding: 1em;
-}
-
-
