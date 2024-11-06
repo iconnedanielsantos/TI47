@@ -1,0 +1,28 @@
+/* CSS Externo para a classe ".caixa" */
+
+.caixa {
+    background-color: #e0e4e8; /* Fundo da caixa */
+    padding: 20px;            /* Espaçamento interno da caixa */
+    border-radius: 8px;       /* Bordas arredondadas */
+    margin: 20px;             /* Espaçamento externo */
+    text-align: center;       /* Alinhamento centralizado do texto */
+    font-family: 'Georgia', serif;
+    color: #333;
+}
+
+.cta-btn {
+    display: inline-block;
+    background-color: #e1a34d;
+    color: #fff;
+    text-align: center;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border-radius: 30px;
+    text-decoration: none;
+    margin: 30px auto;
+    transition: background-color 0.3s;
+}
+
+.cta-btn:hover {
+    background-color: #8a3c1e;
+}
