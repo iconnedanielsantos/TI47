@@ -1,0 +1,169 @@
+/* Estilos gerais */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9; /* Fundo mais suave */
+    color: #333; /* Cor de texto padrão */
+}
+
+/* Estilo do cabeçalho */
+header {
+    background: linear-gradient(135deg, #4CAF50, #2e7d32); /* Gradiente para o cabeçalho */
+    color: #fff;
+    padding: 2em 1em;
+    text-align: center;
+    border-bottom: 4px solid #388e3c; /* Borda inferior para destaque */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+/* Estilo do menu de navegação */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.1em;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Efeito de hover nos links de navegação */
+nav ul li a:hover {
+    background-color: #388e3c; /* Cor de fundo ao passar o mouse */
+    color: #f4f4f9; /* Cor do texto ao passar o mouse */
+}
+
+/* Estilo do conteúdo principal */
+main {
+    padding: 2em 1em;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Estilo do formulário */
+form {
+    background-color: #fff;
+    padding: 2em;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    margin: 2em auto;
+    max-width: 600px;
+    text-align: left;
+}
+
+form label {
+    display: block;
+    margin-top: 12px;
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    font-size: 1em;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Estilo de foco nos campos de formulário */
+form input:focus, form textarea:focus {
+    border-color: #4CAF50;
+    box-shadow: 0 0 8px rgba(76, 175, 80, 0.6); /* Sombra suave ao focar */
+    outline: none;
+}
+
+/* Estilo do botão */
+button {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.2em;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 15px;
+}
+
+/* Efeito de hover no botão */
+button:hover {
+    background-color: #388e3c;
+    transform: translateY(-3px); /* Eleva o botão */
+}
+
+/* Efeito de pressionamento no botão */
+button:active {
+    transform: translateY(2px); /* Afunda o botão */
+}
+
+/* Estilo dos produtos */
+.produto {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 1.5em;
+    margin: 1.5em 0;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efeito de hover nos produtos */
+.produto:hover {
+    transform: translateY(-5px); /* Eleva o produto ao passar o mouse */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15); /* Aumenta a sombra ao passar o mouse */
+}
+
+.produto img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header {
+        padding: 1.5em 1em;
+    }
+
+    nav ul li {
+        display: block;
+        margin-bottom: 15px;
+    }
+
+    nav ul li a {
+        font-size: 1.2em;
+        padding: 10px;
+    }
+
+    form {
+        padding: 1.5em;
+        margin: 1.5em;
+    }
+
+    .produto {
+        margin: 1em 0;
+        padding: 1.2em;
+    }
+
+    button {
+        width: 100%; /* Botão ocupa toda a largura em dispositivos pequenos */
+    }
+}
