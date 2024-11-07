@@ -1,71 +1,133 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <!--fazer alterações amanhã nas fotos e textos-->
-    <!--os textos e imagens que estão aqui são temporarios-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Receitas de Bolo do Chefe João</title>
-<style>
+    <title>Receita de Bolo do Chefe João</title>
+    <style>
     body {
-      background-image: url('imagens/chapeu.png');
-      background-size: cover; 
-      background-position: center;
-      background-repeat: no-repeat;
-      margin: 0;
-      height: 10vh;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        background-image: url(imagens/chapeu.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        font-family: Arial, sans-serif;
+        color: #333;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
     }
 
-</style>
+    h1 {
+        background-color: rgba(0, 0, 0.4);
+        color: white;
+        padding: 20px;
+        margin-bottom: 20px;
+        font-size: 2rem;
+    }
+
+    img {
+        float: right;
+        margin: 20px 0;
+        width: 50%;
+        height: auto;
+    }
+
+    section {
+        padding: 20px;
+        background-color: rgba(255, 255, 255, 0.7);
+        margin: 20px 0;
+        border-radius: 10px;
+    }
+
+    h2 {
+        color: rgb(0, 0, 0);
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    h3 {
+        font-weight: normal;
+        margin-bottom: 10px;
+    }
+
+    p {
+        font-weight: normal;
+        margin-bottom: 10px;
+        font-size: 1rem;
+    }
+
+    a {
+        color: #F58122;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    a:houver {
+        text-decoration: underline;
+    }
+    </style>
 </head>
-<body style="background-color: rgb(245, 129, 34); font-family: Arial, sans-serif; color: #333;">
+<body>
+    <header>
+        <h1>Receita de bolo de Cenoura</h1>
+    </header>
+    <main>
+        <section>
+            <h2><u>Ingredientes</u></h2>
+        <div>
+            <h3>-Bolo</h3>
+            <ul>
+                <li>2 cenouras descascadas e picadas em pedaços pequenos</li>
+                <li>1 xicara de chá de manteiga</li>
+                <li>3 ovos</li>
+                <li>1/2 xicara de chá de farinha de trigo</li>
+                <li>1 colher de sopa de fermento</li>
+            </ul>
+            <p><strong>Não se esqueça de untar a forma</strong></p>
+        </div>
 
-    <h1 style="background-color: rgba(0, 0, 0, 0.164); color: black;">Receita de Bolo de Cenoura</h1>
+        <div>
+            <h3>-Calda de Chocolate</h3>
+            <ul>
+                <li>3 colheres de sopa de manteiga</li>
+                <li>3 colheres de sopa de açúcar</li>
+                <li>2 colheres de sopa de chocolate em pó</li>
+                <li>1/2 xicara de leite</li>
+            </ul>
+        </div>
+        </section>
 
-    <img src="imagens/bolo_cenoura.jpg" alt="bolo_cenoura"
-    style="float: right; margin: 5px auto; width: 600px; height: auto;">
+        <section>
+            <h2><u>Modo de Preparo</u></h2>
+            <div>
+                <h3>-Bolo</h3>
+                <ol>
+                    <li>Em um liquidificador, bata as cenouras, a manteiga e os ovos.</li>
+                    <li>Em um recipiente, coloque o creme de cenouras e adicione o açúcar e a farinha. Misture bem.</li>
+          <li>Junte o fermento e misture mais um pouco.</li>
+          <li>Despeje a massa em uma forma untada e leve ao forno médio por aproximadamente 45 minutos.</li>
+        </ol>
+    </div>
 
-    <h2 style="color: rgb(0, 0, 0); font-weight: bold; text-align: left;"><u>Ingredientes</u></h2>
+    <div>
+      <h3>- Calda de Chocolate</h3>
+      <ol>
+        <li>Em uma panela, coloque todos os ingredientes da cobertura e cozinhe, mexendo continuamente, até formar uma cobertura lisa.</li>
+        <li>Desenforme o bolo e cubra com a cobertura de chocolate.</li>
+        <li>Finalize o bolo e aproveite! (o_o)/</li>
+      </ol>
+    </div>
+  </section>
+</main>
 
-    <p style="text-align: left; font-weight: bold;"><h2>-Bolo</h2></p>
+<footer>
+  <p>Para mais receitas, <a href="#">clique aqui</a>.</p>
+</footer>
 
-    <h3>2 cenouras descascadas e picadas em pedaços pequenos </h3>
-    <h3>1 chicara de chá de Manteiga</h3>
-    <h3>3 ovos</h3>
-    <h3>1 meia chicara de chá de farinha de trigo</h3>
-    <h3>1 colher de sopa de fermento</h3>
-
-    <p style="text-align: left; font-weight: bold;">
-    (Não se esqueça de untar a forma)
-    </p>
-
-<br>
-
-    <p style="text-align: left; font-weight: bold;"><h2>-Calda de Chocolate</h2></p>
-
-    <h3>3 colheres de sopa de Manteiga</h3>
-    <h3>3 colheres de sopa de açúcar</h3>
-    <h3>2 colheres de sopa de chocolate em pó</h3>
-    <h3>1 meia chicara de leite</h3>
-
-<br>
-
-    <h2 style="color: rgb(0, 0, 0); font-weight: bold; text-align: left;"><u>Modo de Preparo</u></h2>
-
-    <p style="text-align: left; font-weight: bold;"><h2>-Bolo</h2></p>
-    
-    <h3>1- Em uma liquidificador, bata as cenouras, a margarina e os ovos</h3>
-    <h3>2- Em um recipiente, coloque o creme de cenouras e adicione o açúcar e a farinha e misture bem</h3>
-    <h3>3- Junte o fermento e misture um pouco mais</h3>
-    <h3>4- Despeje a massa em uma forma de sua preferencia que esteja untada, e leve para o forno médio por aproximadamente, 45 minutos. </h3>
-
-<br>
-
-    <p style="text-align: left; font-weight: bold;"><h2>-Calda de Chocolate</h2></p>
-
-    <h3>1- Em uma panela, coloque todos os ingredientes da cobertura e cozinhe, misturando continuamente, até que forme uma cobertura lisa</h3>
-    <h3>2- Desenforme o bolo e cubra com a cobertura</h3>
-    <h3>3- Coloque a cobertura no bolo e aproveite o bolo \(o_o)/</h3>
-    
 </body>
 </html>
