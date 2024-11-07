@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rappers Americanos</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <style>
+        /* Estilo Geral */
+        body {
+            background-image: url("imagens/games1.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: rgb(255, 255, 255);
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        /* Cabeçalho */
+        header {
+            background: rgba(0, 0, 0, 0.7);
+            width: 100%;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            color: #ffffff;
+            margin: 0;
+            transition: color 0.3s ease;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li a {
+            color: #ffffff;
+            text-decoration: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+            color: #007bff;
+        }
+
+        /* Conteúdo Principal */
+        main {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Estilo dos "Produtos" */
+        .produto {
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            padding: 15px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: left;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .produto:hover {
+            transform: scale(1.02);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        .produto img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        .produto h3 {
+            color: #fff;
+            font-size: 1.5rem;
+            margin: 0;
+            transition: color 0.3s ease;
+        }
+
+        .produto p {
+            color: #ddd;
+            line-height: 1.6;
+        }
+
+        /* Responsividade */
+        @media (min-width: 600px) {
+            .produto {
+                display: flex;
+                align-items: flex-start;
+                gap: 20px;
+            }
+
+            .produto img {
+                max-width: 150px;
+                width: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Cenario Feminino</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="Pagina01.html">Cenario Masculino</a></li>
+                <li><a href="Pagina02.html">Cenario Feminino</a></li>
+                <li><a href="Pagina03.html">Produtores</a></li>
+                <li><a href="Pagina04.html">Grupos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Melhores da Cena</h2>
+
+        <!-- Produto 1 -->
+        <div class="produto">
+            <img src="imagens/produ1.jpg" alt="Foto do DRE">
+            <div>
+                <h3>Dr. Dre</h3>
+                <p>
+                    Um dos mais renomados produtores da história do hip-hop, Dr. Dre é conhecido por seu trabalho com
+                    artistas como Snoop Dogg, Tupac Shakur e Eminem. Ele ajudou a popularizar o gangsta rap e o som do
+                    West Coast com batidas marcantes e um estilo distinto que combina linhas de baixo pesadas com
+                    samples bem trabalhados.
+                </p>
+            </div>
+        </div>
+
+        <!-- Produto 2 -->
+        <div class="produto">
+            <img src="imagens/produ2.jpg" alt="Foto do DJ Premier">
+            <div>
+                <h3>DJ Premier</h3>
+                <p>DJ Premier é famoso por suas batidas cruas e uso de scratches e samples de jazz e funk. Como membro
+                    do grupo Gang Starr, ele ajudou a moldar o hip-hop da Costa Leste com um estilo autêntico e
+                    influente, trabalhando com artistas como Nas, Jay-Z e The Notorious B.I.G.
+                </p>
+            </div>
+        </div>
+
+        <!-- Produto 3 -->
+        <div class="produto">
+            <img src="imagens/produ3.jpg" alt="Foto do J Dilla">
+            <div>
+                <h3> J Dilla</h3>
+                <p>Conhecido por seu estilo suave e experimental, J Dilla é um dos produtores mais influentes e
+                    cultuados do hip-hop underground. Suas produções revolucionaram o uso de batidas, com batidas fora
+                    do tempo padrão e samples únicos, inspirando muitos produtores após sua morte precoce.</p>
+            </div>
+        </div>
+
+        <!-- Produto 4 -->
+        <div class="produto">
+            <img src="imagens/produ4.jpg" alt="Foto do RZA">
+            <div>
+                <h3>RZA</h3>
+                <p>Como membro e produtor do Wu-Tang Clan, RZA trouxe um som sombrio e distinto ao hip-hop da Costa
+                    Leste. Ele mistura samples de filmes de kung fu, soul e funk com batidas cruas, criando um estilo
+                    único que influenciou não só o hip-hop, mas também o cinema e a moda.</p>
+            </div>
+        </div>
+
+        <!-- Produto 5 -->
+        <div class="produto">
+            <img src="imagens/produ5.jpg" alt="Foto do Pharrell Williams E The Neptunes">
+            <div>
+                <h3>Pharrell Williams e The Neptunes</h3>
+                <p>Com seu parceiro Chad Hugo, Pharrell formou The Neptunes, uma dupla de produção conhecida por seu som
+                    futurista e inovador. Eles foram responsáveis por sucessos de diversos gêneros, colaborando com
+                    artistas como Jay-Z, Snoop Dogg e Clipse.</p>
+            </div>
+        </div>
+
+        <!-- Produto 6 -->
+        <div class="produto">
+            <img src="imagens/produ6.jpg" alt="Timbaland">
+            <div>
+                <h3>Timbaland</h3>
+                <p>.Timbaland trouxe uma nova dimensão ao hip-hop e R&B, com batidas complexas e arranjos inovadores.
+                    Ele é conhecido por trabalhar com Missy Elliott, Aaliyah e Justin Timberlake, criando um estilo
+                    único e dançante que influencia produções até hoje.</p>
+            </div>
+        </div>
+
+        <!-- Produto 7 -->
+        <div class="produto">
+            <img src="imagens/produ7.jpg" alt="Metro Boomin">
+            <div>
+                <h3>Metro Boomin</h3>
+                <p> Representante da nova geração, Metro Boomin se destacou com seu som trap e colaborações com rappers
+                    como Future, 21 Savage e Travis Scott. Seu estilo é marcado por batidas pesadas e atmosferas
+                    sombrias, que definem o hip-hop contemporâneo.</p>
+            </div>
+        </div>
+
+    </main>
+</body>
+
+</html>
