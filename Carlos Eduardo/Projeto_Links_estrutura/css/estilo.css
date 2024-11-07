@@ -53,6 +53,7 @@ button {
 
 .produto img {
     width: 15%;
+    display: block;
 }
 .produto {
     margin-left: 35%;
