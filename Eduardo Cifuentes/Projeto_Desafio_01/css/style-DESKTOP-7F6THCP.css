@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+background-color: rgb(59, 59, 59);
+color: white;
+padding: 1em;
+text-align: center;
+}
+
+nav.menu {
+    position: relative;
+    background-image: url('https://lh5.googleusercontent.com/proxy/U67UbWcIoo_RUTx0zt2LFJdVK99FgZZmXHWtXs9-1UPQknhyWZu6mG0wJw2Nu6Z8RyUeIIFYkkW8hRCt-GwP-n_YDtt5Vh3gR5NtKVsMSH_Cuh3G8J1E-6C-yex6nwhHzybg5QQ=w1200-h630-p-k-no-nu');
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    color: white;
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    color: white;
+}
+
+nav ul {
+list-style-type: none;
+padding: 0;
+text-align: center;
+}
+
+nav ul li {
+display: inline;
+margin-right: 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px;
+    background-color: rgba(0,0,0, 0.5);
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    }
+
+
+nav ul li a:hover {
+    background-color: rgba(0,0,0, 0.8);
+}
+
+main {
+    padding: 1em;
+}
+
+form label {
+display: block;
+margin-top: 10px;
+}
+
+form input, form textarea {
+width: 100%;
+padding: 0.5em;
+margin-top: 5px;
+}
+
+button {
+background-color: rgb(255, 255, 255);
+color: rgb(255, 94, 0);
+padding: 0.7em;
+border: none;
+cursor: pointer;
+}
+
+.produto {
+border: 1px solid #ddd;
+padding: 1em;
+margin: 1em 0;
+text-align: center;
+}
+
+.produto img {
+max-width: 100%;
+height: auto;
+}

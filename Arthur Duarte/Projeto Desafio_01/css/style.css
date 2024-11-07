@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: black;
+    padding: 1em;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-top: 77%;
+    margin-right: 10px;
+    
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+
+}
+
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-top: 35px;
+    font-size: 45px;
+    font-style: bold;
+}
+
+div.item {
+    margin-top: 65px;
+    margin-left: auto;
+    text-align: center;
+}
+
+div.item-information {
+    margin-left: -740px;
+    font-size: 19px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
