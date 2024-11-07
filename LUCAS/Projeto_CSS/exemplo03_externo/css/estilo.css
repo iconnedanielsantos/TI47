@@ -1,0 +1,81 @@
+/* Estilos gerais para a página */
+body {
+    background-color: #f9fbe7; /* Fundo suave e claro */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fonte mais moderna */
+    color: #444; /* Cor do texto mais suave */
+    line-height: 1.6; /* Melhor espaçamento entre as linhas */
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo do título principal */
+h1 {
+    text-align: center;
+    color: #4caf50; /* Cor verde mais vibrante */
+    font-size: 3rem; /* Tamanho maior para o título */
+    margin-top: 40px;
+    text-transform: uppercase; /* Letra maiúscula para destacar */
+    font-weight: 700; /* Negrito mais forte */
+    letter-spacing: 2px; /* Espaçamento entre as letras para um visual mais moderno */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Sombra sutil para dar profundidade */
+}
+
+/* Estilo dos subtítulos */
+h2 {
+    color: #81c784; /* Tom de verde suave */
+    font-weight: 600; /* Negrito, mas menos intenso */
+    text-align: center;
+    font-size: 1.8rem;
+    margin: 20px 0; /* Espaçamento acima e abaixo */
+    text-transform: capitalize; /* Primeira letra maiúscula */
+    letter-spacing: 1px;
+}
+
+/* Estilo dos parágrafos */
+p {
+    text-align: center;
+    font-size: 1rem;
+    color: #555; /* Cor de texto mais suave */
+    margin: 15px auto;
+    max-width: 700px; /* Limita a largura do parágrafo */
+    padding: 0 20px; /* Adiciona um pouco de espaço nas laterais */
+}
+
+/* Estilo da imagem */
+.image {
+    display: block;
+    margin: 20px auto;
+    width: 90%; /* Mais responsivo em telas menores */
+    max-width: 350px; /* Tamanho máximo da imagem */
+    height: auto;
+    border-radius: 8px; /* Cantos arredondados para um visual mais moderno */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para destacar a imagem */
+    transition: transform 0.3s ease; /* Animação de zoom ao passar o mouse */
+}
+
+/* Efeito de zoom na imagem ao passar o mouse */
+.image:hover {
+    transform: scale(1.05); /* Aumenta ligeiramente a imagem */
+}
+
+/* Estilo de links (se houver) */
+a {
+    color: #4caf50; /* Cor verde para links */
+    text-decoration: none; /* Remove sublinhado */
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #2c6e2f; /* Cor mais escura para o hover */
+}
+
+/* Adiciona um pequeno efeito de transição em todos os textos */
+h1, h2, p {
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+h1:hover, h2:hover, p:hover {
+    transform: translateY(-5px); /* Efeito de elevação sutil ao passar o mouse */
+    color: #388e3c; /* Cor mais escura ao passar o mouse */
+}
