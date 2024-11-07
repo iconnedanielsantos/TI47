@@ -134,5 +134,32 @@ footer {
 footer p {
     color: #ccc;
 }
- 
+
+
+.franquias {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    
+
+}
+
+.logo-franquias {
+    background-color: #2d2d2d;
+    border-radius: 8%;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+    transition: transform 0.3s ease;
+    
+}
+
+.logo-franquias img {
+    width: 98%;
+    height: center;
+}
+
+.franquias :hover {
+    transform: scale(1.05);
+}
+
 
