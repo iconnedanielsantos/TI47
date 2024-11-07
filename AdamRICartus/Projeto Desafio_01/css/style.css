@@ -1,0 +1,14 @@
+header {
+    background-image: url(../Imagens/Fundo.jpg);
+    background-attachment: unset;
+    background-size: cover;
+}
+body {
+    background-color: black;
+}
+h1 {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-shadow: 2px 2px 5px white;
+    color: rgb(0, 0, 0);
+}
