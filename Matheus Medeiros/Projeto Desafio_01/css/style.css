@@ -57,7 +57,9 @@ a{
     justify-content: space-between;
 } 
 
-i {
+.i {
     background-color: rgb(97, 202, 202);
-    width: 1%;
+    width: 100%;
+    display: flex;
+    justify-self: center;
 }
