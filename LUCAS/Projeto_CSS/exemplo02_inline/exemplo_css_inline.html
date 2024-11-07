@@ -5,6 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LENDAS DO FUTEBOL BRASILEIRO</title>
     <style>
+
+
+
+body,
+        html {
+            margin: 0;
+            /* Remove margens do body */
+            padding: 0;
+            /* Remove preenchimento do body */
+            height: 100%;
+            /* Garante que o body e html ocupem 100% da altura */
+        }
+
+        .background {
+            background-image: url('rei.jpg');
+            /* Define a imagem de fundo */
+            background-size: cover;
+            /* Cobre toda a área */
+            background-position: center;
+            /* Centraliza a imagem */
+            background-attachment: fixed;
+            /* Mantém a imagem fixa durante a rolagem */
+            min-height: 100vh;
+            /* Garante que a div tenha pelo menos a altura da tela */
+            width: 100%;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            /* Centraliza o conteúdo verticalmente */
+            align-items: center;
+            /* Centraliza o conteúdo horizontalmente */
+        }
+
         /* Estilos gerais para a página */
         body {
             background-color: #f0f4c3; /* Fundo suave e claro */
@@ -99,9 +133,11 @@
 </head>
 <body>
 
+    <div class="background">
+
     <h1>LENDAS DO FUTEBOL BRASILEIRO</h1>
 
-    <h2>Personalização de FUTEBOL</h2>
+    <h2>Rei do FUTEBOL</h2>
 
     <p>O futebol brasileiro, que encantou o mundo, ainda é lembrado por sua beleza e pela habilidade única dos jogadores, fazendo até os que não gostavam do esporte assistirem.</p>
 
@@ -116,6 +152,6 @@
     <blockquote>
         "O FUTURO DO FUTEBOL ESTÁ NO BRASIL"
     </blockquote>
-
+</div>
 </body>
 </html>
