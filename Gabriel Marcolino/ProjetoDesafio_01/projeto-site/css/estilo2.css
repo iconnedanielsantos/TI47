@@ -105,10 +105,10 @@ nav ul li a {
     background-color: #8a0707;
     color: #fff;
     border: none;
-    padding: 15px 20px;
-    border-radius: 5px;
+    padding: 18px 22px;
+    border-radius: 9px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 20px;
     transition: background-color 0.3s ease;
 }
 
