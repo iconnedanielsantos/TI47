@@ -1,32 +1,59 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
+    <!-- Declara o tipo de documento HTML e define o idioma principal como português do Brasil -->
 
 <head>
     <meta charset="UTF-8">
+    <!-- Define o conjunto de caracteres como UTF-8 para suportar caracteres especiais -->
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Configura a viewport para ajustar o layout à largura da tela do dispositivo, melhorando a responsividade -->
+
     <title>Rappers Americanos</title>
+    <!-- Define o título da página que será exibido na aba do navegador -->
+
     <link rel="stylesheet" href="css/estilo.css">
+    <!-- Vincula o arquivo CSS externo para estilizar a página -->
+
     <style>
-        /* Estilo Geral */
+        /* Estilos CSS diretamente no HTML para personalizações adicionais */
         body {
             background-image: url("imagens/games1.jpg");
+            /* Define uma imagem de fundo para o corpo da página */
+
             background-size: cover;
+            /* Ajusta a imagem para cobrir toda a área da página */
+
             background-position: center;
+            /* Centraliza a imagem de fundo */
+
             background-repeat: no-repeat;
+            /* Impede que a imagem se repita */
+
             background-attachment: fixed;
+            /* Fixa a imagem ao fundo da página */
+
             color: rgb(255, 255, 255);
+            /* Define a cor do texto como branco */
+
             margin: 0;
             padding: 0;
             font-family: Arial, sans-serif;
+            /* Define a fonte padrão para o corpo da página */
+
             text-align: center;
         }
 
-        /* Cabeçalho */
+        /* Estilos para o cabeçalho */
         header {
             background: rgba(0, 0, 0, 0.7);
+            /* Define um fundo semi-transparente para o cabeçalho */
+
             width: 100%;
             padding: 20px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            /* Adiciona sombra ao cabeçalho */
         }
 
         header h1 {
@@ -34,12 +61,17 @@
             color: #ffffff;
             margin: 0;
             transition: color 0.3s ease;
+            /* Transição para o efeito de mudança de cor */
         }
 
         nav ul {
             list-style: none;
+            /* Remove a marcação de lista */
+
             display: flex;
             justify-content: center;
+            /* Centraliza os itens do menu horizontalmente */
+
             gap: 20px;
             margin: 0;
             padding: 0;
@@ -47,47 +79,67 @@
 
         nav ul li a {
             color: #ffffff;
+            /* Define a cor do link como branco */
+
             text-decoration: none;
             padding: 10px 15px;
             border-radius: 5px;
+            /* Bordas arredondadas */
+
             transition: background-color 0.3s ease, color 0.3s ease;
+            /* Transição suave para mudanças de cor */
         }
 
         nav ul li a:hover {
             background-color: rgba(255, 255, 255, 0.2);
+            /* Fundo levemente escuro ao passar o mouse */
+
             color: #007bff;
         }
 
-        /* Conteúdo Principal */
+        /* Estilos do conteúdo principal */
         main {
             padding: 20px;
             max-width: 1200px;
+            /* Limita a largura máxima para facilitar a leitura */
+
             margin: 0 auto;
             background: rgba(0, 0, 0, 0.6);
+            /* Fundo semi-transparente para contraste */
+
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            /* Adiciona sombra ao contêiner principal */
         }
 
-        /* Estilo dos "Produtos" */
+        /* Estilo para os elementos "produto" */
         .produto {
             background-color: rgba(255, 255, 255, 0.1);
+            /* Fundo levemente transparente para destacar cada item */
+
             border-radius: 10px;
             padding: 15px;
             margin-bottom: 20px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            /* Sombra para dar profundidade */
+
             text-align: left;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
+            /* Transição para efeitos de escala e sombra */
         }
 
         .produto:hover {
             transform: scale(1.02);
             box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+            /* Efeito de zoom e sombra ao passar o mouse */
         }
 
         .produto img {
             width: 100%;
             height: auto;
             border-radius: 10px;
+            /* Bordas arredondadas nas imagens */
+
             margin-bottom: 10px;
         }
 
@@ -96,14 +148,16 @@
             font-size: 1.5rem;
             margin: 0;
             transition: color 0.3s ease;
+            /* Transição suave para a cor do título */
         }
 
         .produto p {
             color: #ddd;
             line-height: 1.6;
+            /* Cor e espaçamento entre as linhas do parágrafo */
         }
 
-        /* Responsividade */
+        /* Responsividade para telas maiores */
         @media (min-width: 600px) {
             .produto {
                 display: flex;
@@ -120,9 +174,13 @@
 </head>
 
 <body>
+    <!-- Corpo da página -->
+
     <header>
+        <!-- Cabeçalho da página -->
         <h1>Cenario Feminino</h1>
         <nav>
+            <!-- Navegação principal -->
             <ul>
                 <li><a href="index.html">Início</a></li>
                 <li><a href="Pagina01.html">Cenario Masculino</a></li>
@@ -132,85 +190,74 @@
             </ul>
         </nav>
     </header>
+
     <main>
+        <!-- Conteúdo principal da página -->
         <h2>Melhores da Cena</h2>
 
-        <!-- Produto 1 -->
+        <!-- Produto 1: MC Lyte -->
         <div class="produto">
             <img src="imagens/produto1.1.jpg" alt="Mc Lyte">
             <div>
                 <h3>Mc Lyte</h3>
-                <p>
-                    Uma das pioneiras, MC Lyte abriu caminho para as mulheres no rap na década de 1980. Conhecida por
-                    suas rimas habilidosas e letras poderosas, ela ajudou a moldar o papel das mulheres no rap com
-                    álbuns como Lyte as a Rock.</p>
+                <p>Uma das pioneiras, MC Lyte abriu caminho para as mulheres no rap na década de 1980...</p>
             </div>
         </div>
 
-        <!-- Produto 2 -->
+        <!-- Produto 2: Queen Latifah -->
         <div class="produto">
-            <img src="imagens/produto2.1.jpg" alt="Eazy-E">
+            <img src="imagens/produto2.1.jpg" alt="Queen Latifah">
             <div>
                 <h3>Queen Latifah</h3>
-                <p>Além de ser uma das vozes femininas mais reconhecidas no hip-hop, Queen Latifah também se tornou
-                    atriz e empresária. Com seu álbum All Hail the Queen e hits como "U.N.I.T.Y.", ela trouxe temas como
-                    igualdade e empoderamento para o centro das atenções....</p>
+                <p>Além de ser uma das vozes femininas mais reconhecidas no hip-hop...</p>
             </div>
         </div>
 
-        <!-- Produto 3 -->
+        <!-- Produto 3: Salt-N-Pepa -->
         <div class="produto">
-            <img src="imagens/produto3.1.jpg" alt="Ice Cube">
+            <img src="imagens/produto3.1.jpg" alt="Salt-N-Pepa">
             <div>
                 <h3>Salt-N-Pepa</h3>
-                <p>Este grupo, formado por Cheryl "Salt" James, Sandra "Pepa" Denton e DJ Spinderella, foi um dos
-                    primeiros a ganhar fama internacional. Elas abordaram temas de empoderamento feminino e sexualidade
-                    em músicas como "Push It" e "Shoop".</p>
+                <p>Este grupo, formado por Cheryl "Salt" James, Sandra "Pepa" Denton...</p>
             </div>
         </div>
 
-        <!-- Produto 4 -->
+        <!-- Produto 4: Missy Elliott -->
         <div class="produto">
-            <img src="imagens/produto4.1.jpg" alt="Notorious B.I.G.">
+            <img src="imagens/produto4.1.jpg" alt="Missy Elliott">
             <div>
                 <h3>Missy Elliott</h3>
-                <p>Com um estilo único e inovador, Missy Elliott conquistou fãs no mundo todo e é considerada uma das
-                    maiores produtoras e rappers da história do hip-hop. Suas músicas, videoclipes e produções
-                    redefiniram o gênero, e ela foi a primeira mulher no Hall da Fama dos Compositores de Rap.</p>
+                <p>Com um estilo único e inovador, Missy Elliott conquistou fãs no mundo todo...</p>
             </div>
         </div>
 
-        <!-- Produto 5 -->
+        <!-- Produto 5: Lauryn Hill -->
         <div class="produto">
-            <img src="imagens/produto5.1.jpg" alt="Eminem">
+            <img src="imagens/produto5.1.jpg" alt="Lauryn Hill">
             <div>
                 <h3>Lauryn Hill</h3>
-                <p>Membro do grupo Fugees e artista solo de sucesso, Lauryn Hill é conhecida pelo clássico álbum The
-                    Miseducation of Lauryn Hill. Suas letras abordam temas de amor, espiritualidade e racismo, e ela é
-                    respeitada por sua autenticidade e profundidade.</p>
+                <p>Membro do grupo Fugees e artista solo de sucesso...</p>
             </div>
         </div>
 
-        <!-- Produto 6 -->
+        <!-- Produto 6: Nicki Minaj -->
         <div class="produto">
-            <img src="imagens/produto6.1.jpg" alt="Juice WRLD">
+            <img src="imagens/produto6.1.jpg" alt="Nicki Minaj">
             <div>
-                <h3> Nicki Minaj</h3>
-                <p>Com uma carreira cheia de hits, Nicki Minaj é uma das rappers mais bem-sucedidas da era moderna. Suas
-                    rimas afiadas e presença de palco ajudaram a abrir portas para muitas artistas contemporâneas.</p>
+                <h3>Nicki Minaj</h3>
+                <p>Com uma carreira cheia de hits, Nicki Minaj é uma das rappers mais bem-sucedidas...</p>
             </div>
         </div>
 
-        <!-- Produto 7 -->
+        <!-- Produto 7: Cardi B -->
         <div class="produto">
-            <img src="imagens/produto7.1.jpg" alt="Snoop Dogg">
+            <img src="imagens/produto7.1.jpg" alt="Cardi B">
             <div>
                 <h3>Cardi B</h3>
-                <p> Cardi B alcançou a fama rapidamente com o hit "Bodak Yellow" e é conhecida por seu estilo autêntico e carismático. Ela também trouxe uma nova perspectiva sobre a vida e a luta de mulheres de bairros mais pobres no cenário do hip-hop.</p>
+                <p>Cardi B alcançou a fama rapidamente com o hit "Bodak Yellow"...</p>
             </div>
         </div>
-
     </main>
 </body>
-
 </html>
+```
