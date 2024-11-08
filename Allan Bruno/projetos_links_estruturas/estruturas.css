@@ -25,3 +25,67 @@ nav ul li a{
     color:lightblue;
     text-decoration: none;
 }
+
+header {
+    background-color: rgb(2, 112, 66);
+    color: rgb(9, 255, 0);
+    padding: 20px;
+    text-align: center;
+}
+.img-jogo{
+    display: flex;
+    justify-self: center;
+}
+.conteudo{
+    display: flex;
+    justify-self: center;
+    flex-direction: column;
+    
+}
+
+
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.content{
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+}
+
+
+footer {
+    background-color: rgb(0, 24, 68);
+    color: rgb(14, 27, 219);
+    text-align: center;
+    padding: 15px 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+footer p {
+    margin: 5px;
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: rgb(10, 31, 216);
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+main{
+    text-align: center;
+    color: rgb(5, 17, 0);
+}
+
+

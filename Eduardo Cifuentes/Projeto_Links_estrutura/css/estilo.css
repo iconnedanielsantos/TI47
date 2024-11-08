@@ -13,13 +13,16 @@ text-align: center;
 
 nav.menu {
     position: relative;
-    background-image: url('https://i.pinimg.com/564x/fb/5c/e0/fb5ce01bc86cb63a47bb1312750adf9d.jpg');
+    background-image: url('https://lh5.googleusercontent.com/proxy/U67UbWcIoo_RUTx0zt2LFJdVK99FgZZmXHWtXs9-1UPQknhyWZu6mG0wJw2Nu6Z8RyUeIIFYkkW8hRCt-GwP-n_YDtt5Vh3gR5NtKVsMSH_Cuh3G8J1E-6C-yex6nwhHzybg5QQ=w1200-h630-p-k-no-nu');
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    color: white;
     background-size: cover;
     background-position: center;
     padding: 20px;
     color: white;
 }
-
 
 nav ul {
 list-style-type: none;
@@ -33,14 +36,15 @@ margin-right: 10px;
 }
 
 nav ul li a {
-color: white;
-text-decoration: none;
-font-size: 18px;
-padding: 10px 15px;
-background-color: rgba(0,0,0, 0.5);
-border-radius: 5px;
-transition: background-color 0.3s ease;
-}
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px;
+    background-color: rgba(0,0,0, 0.5);
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    }
+
 
 nav ul li a:hover {
     background-color: rgba(0,0,0, 0.8);

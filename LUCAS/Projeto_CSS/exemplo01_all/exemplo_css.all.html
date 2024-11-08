@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página com CSS Externo, Interno e Inline</title>
+
+    <!--
+
+        Explicação do Código
+        
+        CSS Externo:
+        O estilo da classe .caixa está definido no arquivo estilo.css. Ele aplica um fundo, espaçamento e bordas arredondadas à div com o parágrafo.
+
+        CSS Interno:
+        No <style> dentro do <head>, estilos adicionais são aplicados ao <body> e ao <h1>. Esses estilos afetam toda a página e o título sem precisar de um arquivo externo.
+
+        CSS Inline:
+        O estilo inline foi usado diretamente nas tags <h1> e <p> dentro do <body>, onde aplicamos o tamanho da fonte, cor, e outros detalhes diretamente nos elementos.
+        Essa abordagem permite visualizar as três formas de aplicar CSS em uma mesma página, destacando onde cada estilo é aplicado.
+    -->
+
+    <!-- CSS Externo (Arquivo separado) -->
+    <link rel="stylesheet" href="css/estilo.css">
+
+    <!-- CSS Interno -->
+    <style>
+        /* Estilos aplicados diretamente dentro da tag <style> */
+        body {
+            background-color: #f4f4f9; /* Cor de fundo da página */
+        }
+
+        h1 {
+            color: #333; /* Cor do texto do título */
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- Título da página com estilo CSS Inline -->
+    <h1 style="font-size: 2em; font-weight: bold;">Bem-vindo à nossa Página!</h1>
+
+    <!-- Parágrafo com estilo CSS Inline -->
+    <p style="color: #555; font-family: 'Verdana', sans-serif; text-align: justify;">
+        Esta página demonstra o uso de CSS nas três formas: externo, interno e inline.
+    </p>
+    
+    <div class="caixa">
+        <p>Este parágrafo está dentro de uma caixa estilizada com CSS externo.</p>
+    </div>
+</body>
+</html>
