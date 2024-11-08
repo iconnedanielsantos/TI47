@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página Inicial</title>
-    <link rel="stylesheet" href="css/estilo.css">
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres para UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Torna a página responsiva -->
+    <title>Cultura Hip-Hop</title> <!-- Título da página que aparece na aba do navegador -->
+    <link rel="stylesheet" href="css/estilo.css"> <!-- Vincula um arquivo CSS externo (opcional) -->
 
     <style>
         /* Estilo geral */
         body {
-            background-image: url("imagens/games1.jpg");
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            color: rgb(255, 255, 255);
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
+            background-image: url("imagens/games1.jpg"); /* Define a imagem de fundo da página */
+            background-size: cover; /* Faz a imagem de fundo cobrir toda a tela */
+            background-position: center; /* Centraliza a imagem de fundo */
+            background-repeat: no-repeat; /* Evita a repetição da imagem de fundo */
+            background-attachment: fixed; /* Fixa a imagem de fundo */
+            color: rgb(255, 255, 255); /* Define a cor do texto como branco */
+            margin: 0; /* Remove as margens da página */
+            padding: 0; /* Remove o preenchimento da página */
+            font-family: Arial, sans-serif; /* Define a fonte padrão */
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -26,95 +26,96 @@
 
         /* Cabeçalho */
         header {
-            background: rgba(0, 0, 0, 0.6); /* Fundo escuro com opacidade */
-            width: 100%;
-            padding: 20px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            background: rgba(0, 0, 0, 0.6); /* Fundo escuro com transparência para o cabeçalho */
+            width: 100%; /* Faz o cabeçalho ocupar toda a largura da página */
+            padding: 20px; /* Espaçamento interno no cabeçalho */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para criar efeito de profundidade */
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
 
         header h1 {
-            font-size: 2.5rem;
-            margin: 0;
-            color: #ffffff;
-            transition: color 0.3s ease;
+            font-size: 2.5rem; /* Tamanho da fonte para o título */
+            margin: 0; /* Remove margens ao redor do título */
+            color: #ffffff; /* Cor do texto do título */
+            transition: color 0.3s ease; /* Transição suave na mudança de cor */
         }
 
         /* Links de navegação */
         nav ul {
-            list-style: none;
-            display: flex;
-            gap: 20px;
+            list-style: none; /* Remove os marcadores da lista */
+            display: flex; /* Exibe os itens da lista em linha */
+            gap: 20px; /* Espaçamento entre os links */
             margin: 0;
             padding: 0;
         }
 
         nav ul li a {
-            color: #ffffff;
-            text-decoration: none;
-            padding: 10px 15px;
-            border-radius: 5px;
-            transition: background-color 0.3s ease, color 0.3s ease;
+            color: #ffffff; /* Cor do texto dos links */
+            text-decoration: none; /* Remove o sublinhado dos links */
+            padding: 10px 15px; /* Espaçamento interno dos links */
+            border-radius: 5px; /* Arredonda as bordas dos links */
+            transition: background-color 0.3s ease, color 0.3s ease; /* Transição suave para as cores */
         }
 
         nav ul li a:hover {
-            background-color: rgba(255, 255, 255, 0.2);
-            color: #007bff;
+            background-color: rgba(255, 255, 255, 0.2); /* Fundo claro ao passar o mouse */
+            color: #007bff; /* Cor do texto ao passar o mouse */
         }
 
         /* Títulos */
         h2 {
-            font-size: 1.8rem;
-            color: #ffffff;
+            font-size: 1.8rem; /* Tamanho da fonte para o subtítulo */
+            color: #ffffff; /* Cor do texto do subtítulo */
             margin: 20px 0 10px;
         }
 
         /* Parágrafo */
         p {
-            font-size: 1.2rem;
-            color: #ffffff;
+            font-size: 1.2rem; /* Tamanho da fonte para o parágrafo */
+            color: #ffffff; /* Cor do texto do parágrafo */
             margin-bottom: 20px;
         }
 
         /* Botão estilizado */
         .button {
-            background-color: #007bff;
-            color: #fff;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-            transition: background-color 0.3s ease, transform 0.3s ease;
+            background-color: #007bff; /* Cor de fundo do botão */
+            color: #fff; /* Cor do texto do botão */
+            padding: 10px 20px; /* Espaçamento interno do botão */
+            border: none; /* Remove a borda do botão */
+            border-radius: 5px; /* Bordas arredondadas */
+            cursor: pointer; /* Define o cursor como "mãozinha" */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra para o botão */
+            transition: background-color 0.3s ease, transform 0.3s ease; /* Transições suaves */
         }
 
         .button:hover {
-            background-color: #0056b3;
-            transform: scale(1.05); /* Efeito de aumento no hover */
+            background-color: #0056b3; /* Cor do botão ao passar o mouse */
+            transform: scale(1.05); /* Aumenta levemente o botão ao passar o mouse */
         }
 
         /* Transição suave para links e cabeçalho */
         header:hover h1 {
-            color: #007bff;
+            color: #007bff; /* Muda a cor do título no hover */
         }
 
         /* Conteúdo principal */
         main {
             padding: 20px;
-            max-width: 800px;
-            background: rgba(0, 0, 0, 0.7); /* Fundo com opacidade para destaque */
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            max-width: 800px; /* Largura máxima para o conteúdo principal */
+            background: rgba(0, 0, 0, 0.7); /* Fundo com transparência */
+            border-radius: 10px; /* Arredonda as bordas */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra ao redor */
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Seja bem-vindo ao mundo do hiphop</h1>
+        <h1>Seja bem-vindo ao mundo do hiphop</h1> <!-- Título da página -->
         <nav>
             <ul>
+                <!-- Links de navegação -->
                 <li><a href="index.html">Início</a></li>
                 <li><a href="Pagina01.html">Cenario Masculino</a></li>
                 <li><a href="Pagina02.html">Cenario Feminino</a></li>
@@ -124,11 +125,12 @@
         </nav>
     </header>
     <main>
-        <h2>Nosso conteúdo de qualidade em conhecimento ao mundo do hiphop</h2>
-        <p>Conheça melhor o hiphop</p>
+        <h2>Nosso conteúdo de qualidade em conhecimento ao mundo do hiphop</h2> <!-- Subtítulo principal -->
+        <p>Conheça melhor o hiphop</p> <!-- Parágrafo com introdução -->
 
+        <!-- Botão estilizado que leva a um link externo -->
         <a href="https://www.youtube.com/watch?v=p3HthOfHy78" target="_blank">
-        <button class="button">Saiba Mais</button>
+            <button class="button">Saiba Mais</button>
         </a>
     </main>
 </body>
