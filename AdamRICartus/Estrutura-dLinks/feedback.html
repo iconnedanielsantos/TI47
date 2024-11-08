@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Produtos</title>
+    <link rel="stylesheet" href="../Estrutura-dLinks/css/style.css">
 </head>
 <body>
     <header>
@@ -11,25 +12,25 @@
             <ul>
                 <li><a href="index.html">Início</a></li>
                 <li><a href="feedback.html">Feedback</a></li>
-                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="blocos.html">Blocos</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <h2>
-
+            Mande seu Feedback!
         </h2>
-        <form action="">
-           <label for=""></label>
-           <input type="text">
+        <form action="#" method="post">
+           <label for="nome">Nome:</label>
+           <input type="text" id="nome" name="nome" required>
 
-           <label for=""></label>
-           <input type="text">
+           <label for="emmail">Email:</label>
+           <input type="text" id="email" name="email" required>
 
-           <label for=""></label>
-           <textarea name="" id="" cols="30" rows="10"></textarea>
+           <label for="">Deixe seu Feedback!</label>
+           <textarea name="feedback" id="feedback" required></textarea>
 
-           <button></button>
+           <button type="submit">Enviar</button>
         </form>
     </main>
     

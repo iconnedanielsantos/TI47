@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página com CSS Externo, Interno e Inline</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
     <!--
 
@@ -25,7 +28,7 @@
      <style>
         /* Estilos aplicados diretamente dentro da tag <style> */
         body {
-            background: #f4f4f9; /*Cor de fundo da página*/
+            background: #000000; /*Cor de fundo da página*/
         }
 
         h1 {
@@ -33,20 +36,40 @@
             font-family: 'Arial', sans-serif;
             text-align: center;
         }
+
+        header {
+            background-color: rgb(0, 0, 0);
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+         /* Estilo do botão */
+         button {
+            padding: 15px 32px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
      </style>
 </head>
-<body>
-    <!-- Título da página com estilo CSS Inline -->
-     <h1 style="font-size: 2em; font-weight: bold;">Bem-vindo à nossa Página</h1>
-
-     <!-- Parágrafo com estilo CSS Inline -->
-    <p style="color: #555; font-family: 'Verdana',sans-serif; text-align: justify;">
-        Esta página demonstra o uso de CSS nas três formas: externo, interno e inline.
-    </p>
-
-    <div class="caixa">
-        <p>Este parágrafo está dentro de uma caixa estilizada com o CSS externo.</p>
+<body><header>
+            <img src="https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/5e3cf24e53a1fb96410ddbe7d17ca96f.svg" alt="Imagem1" style="display: flex; justify-self:start;">
+            
+            <li><a href="Explorar"> Explorar</a> </li>
+    </header>
+    <div>
+        <img src="https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/949e0a50124a889b098f73cedc29fb3b.jpg" alt="Imagem" style="width: 100%;">
     </div>
+    
+    <!-- Título da página com estilo CSS Inline -->
+     <h1 style="font-size: 12px; font-weight: bold;">Red Dead Redemption é um jogo de ação e aventura em mundo aberto que se passa no Velho Oeste americano, em 1911. A história acompanha John Marston, um ex-criminoso que é forçado pelo governo a rastrear e capturar membros de sua antiga gangue para garantir a segurança de sua família. Enquanto percorre vastas paisagens desérticas e cidades em expansão, Marston enfrenta dilemas morais e confrontos violentos, simbolizando o fim de uma era e a chegada da modernidade. O jogo combina narrativa profunda com missões variadas e atividades paralelas, criando uma experiência imersiva e emocional no Velho Oeste.</h1>
+
+     <div><button>Clique Aqui</button> <style></style></div>
       
 </body>
 </html>

@@ -1,0 +1,53 @@
+body {
+    background-color: rgb(8, 136, 248); 
+    font-family: arial, sans-serif, color black;
+}
+
+h1 {
+    text-align: center; color: rgb(243, 146, 19);
+}
+
+img {
+    display: block;
+    margin: 50px auto;
+    width: 300px; 
+    height: auto;
+}
+
+h2 {
+    text-align: center;
+    color: rgb(243, 146, 19);
+}
+
+h3 {
+    text-align: center;
+    color: rgb(243, 146, 19);
+}
+
+p {
+    text-align: center;
+    color: rgb(243, 146, 19)
+}
+
+p {
+    text-align: center;
+    color: rgb(243, 146, 19);
+}
+
+p {
+    text-align: center;
+    color: rgb(243, 146, 19);
+}
+
+img {
+    display: block;
+    margin: 50px auto;
+    width: 300px;
+    height: auto;
+
+}
+
+h4 {
+    text-align: center;
+    color: rgb(243, 146, 19);
+}

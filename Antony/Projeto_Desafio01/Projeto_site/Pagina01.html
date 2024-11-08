@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres para UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Torna a página responsiva -->
+    <title>Rappers Americanos</title> <!-- Título da página que aparece na aba do navegador -->
+    <link rel="stylesheet" href="css/estilo.css"> <!-- Vincula um arquivo CSS externo (opcional) -->
+    <style>
+        /* Estilo Geral */
+        body {
+            background-image: url("imagens/games1.jpg"); /* Define a imagem de fundo da página */
+            background-size: cover; /* Faz a imagem de fundo cobrir toda a tela */
+            background-position: center; /* Centraliza a imagem de fundo */
+            background-repeat: no-repeat; /* Evita a repetição da imagem de fundo */
+            background-attachment: fixed; /* Fixa a imagem de fundo */
+            color: rgb(255, 255, 255); /* Define a cor do texto como branco */
+            margin: 0; /* Remove as margens da página */
+            padding: 0; /* Remove o preenchimento da página */
+            font-family: Arial, sans-serif; /* Define a fonte padrão */
+            text-align: center; /* Centraliza o conteúdo do texto */
+        }
+
+        /* Cabeçalho */
+        header {
+            background: rgba(0, 0, 0, 0.7); /* Fundo escuro com transparência para o cabeçalho */
+            width: 100%; /* Faz o cabeçalho ocupar toda a largura da página */
+            padding: 20px; /* Espaçamento interno no cabeçalho */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para criar efeito de profundidade */
+        }
+
+        header h1 {
+            font-size: 2.5rem; /* Tamanho da fonte para o título */
+            color: #ffffff; /* Cor do texto do título */
+            margin: 0; /* Remove margens ao redor do título */
+            transition: color 0.3s ease; /* Transição suave na mudança de cor */
+        }
+
+        nav ul {
+            list-style: none; /* Remove os marcadores da lista */
+            display: flex; /* Exibe os itens da lista em linha */
+            justify-content: center; /* Centraliza os itens na horizontal */
+            gap: 20px; /* Espaçamento entre os links */
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li a {
+            color: #ffffff; /* Cor do texto dos links */
+            text-decoration: none; /* Remove o sublinhado dos links */
+            padding: 10px 15px; /* Espaçamento interno dos links */
+            border-radius: 5px; /* Arredonda as bordas dos links */
+            transition: background-color 0.3s ease, color 0.3s ease; /* Transição suave para as cores */
+        }
+
+        nav ul li a:hover {
+            background-color: rgba(255, 255, 255, 0.2); /* Fundo claro ao passar o mouse */
+            color: #007bff; /* Cor do texto ao passar o mouse */
+        }
+
+        /* Conteúdo Principal */
+        main {
+            padding: 20px;
+            max-width: 1200px; /* Largura máxima para o conteúdo principal */
+            margin: 0 auto; /* Centraliza o conteúdo na tela */
+            background: rgba(0, 0, 0, 0.6); /* Fundo com transparência */
+            border-radius: 10px; /* Arredonda as bordas */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra ao redor */
+        }
+
+        /* Estilo dos "Produtos" */
+        .produto {
+            background-color: rgba(255, 255, 255, 0.1); /* Fundo com transparência para os cards */
+            border-radius: 10px; /* Bordas arredondadas */
+            padding: 15px; /* Espaçamento interno do card */
+            margin-bottom: 20px; /* Espaçamento inferior entre os cards */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para o card */
+            text-align: left; /* Alinhamento do texto à esquerda */
+            transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transições suaves para os efeitos */
+        }
+
+        .produto:hover {
+            transform: scale(1.02); /* Aumenta levemente o card ao passar o mouse */
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Sombra mais intensa no hover */
+        }
+
+        .produto img {
+            width: 100%; /* Largura completa para a imagem */
+            height: auto; /* Altura proporcional */
+            border-radius: 10px; /* Arredonda as bordas da imagem */
+            margin-bottom: 10px; /* Espaçamento inferior */
+        }
+
+        .produto h3 {
+            color: #fff; /* Cor do texto do título do card */
+            font-size: 1.5rem; /* Tamanho do título */
+            margin: 0; /* Remove margens */
+            transition: color 0.3s ease; /* Transição suave na cor do título */
+        }
+
+        .produto p {
+            color: #ddd; /* Cor do texto do parágrafo no card */
+            line-height: 1.6; /* Espaçamento entre linhas */
+        }
+
+        /* Responsividade */
+        @media (min-width: 600px) {
+            .produto {
+                display: flex; /* Exibe o conteúdo em linha em telas maiores */
+                align-items: flex-start;
+                gap: 20px; /* Espaçamento entre a imagem e o texto */
+            }
+            .produto img {
+                max-width: 150px; /* Limita a largura da imagem em telas grandes */
+                width: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Cenario Masculino</h1> <!-- Título do cabeçalho -->
+        <nav>
+            <ul>
+                <!-- Links de navegação -->
+                <li><a href="index.html">Início</a></li>
+                <li><a href="Pagina01.html">Cenario Masculino</a></li>
+                <li><a href="Pagina02.html">Cenario Feminino</a></li>
+                <li><a href="Pagina03.html">Produtores</a></li>
+                <li><a href="Pagina04.html">Grupos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Melhores da Cena</h2> <!-- Subtítulo principal -->
+
+        <!-- Produto 1 -->
+        <div class="produto">
+            <img src="imagens/produto1.jpg" alt="2Pac"> <!-- Imagem do rapper -->
+            <div>
+                <h3>2Pac</h3> <!-- Nome do rapper -->
+                <p>2Pac, também conhecido como Tupac Shakur, foi um rapper, ator e ativista americano, amplamente considerado um dos maiores rappers de todos os tempos...</p> <!-- Descrição -->
+
+            </div>
+        </div>
+        
+        <!-- Produto 2 -->
+        <div class="produto">
+            <img src="imagens/produto2.jpg" alt="Eazy-E">
+            <div>
+                <h3>Eazy-E</h3>
+                <p>Eazy-E, nome verdadeiro Eric Wright, foi um rapper e produtor musical americano, conhecido como "O Deus do Rap"...</p>
+            </div>
+        </div>
+        
+        <!-- Produto 3 -->
+        <div class="produto">
+            <img src="imagens/produto3.jpg" alt="Ice Cube">
+            <div>
+                <h3>Ice Cube</h3>
+                <p>Ice Cube, nascido O'Shea Jackson em 1969, é um rapper, ator e produtor americano. Ele ganhou fama como membro do grupo de rap N.W.A...</p>
+            </div>
+        </div>
+        
+        <!-- Produto 4 -->
+        <div class="produto">
+            <img src="imagens/produto4.jpg" alt="Notorious B.I.G.">
+            <div>
+                <h3>Notorious B.I.G.</h3>
+                <p>Notorious B.I.G., também conhecido como Biggie Smalls, foi um rapper americano que se destacou na cena do hip-hop durante os anos 90...</p>
+            </div>
+        </div>
+        
+        <!-- Produto 5 -->
+        <div class="produto">
+            <img src="imagens/produto5.jpg" alt="Eminem">
+            <div>
+                <h3>Eminem</h3>
+                <p>Eminem, nascido Marshall Mathers em 1972, é um rapper, compositor e produtor musical americano. Ele é conhecido por suas letras autobiográficas...</p>
+            </div>
+        </div>
+        
+        <!-- Produto 6 -->
+        <div class="produto">
+            <img src="imagens/produto6.jpg" alt="Juice WRLD">
+            <div>
+                <h3>Juice WRLD</h3>
+                <p>Juice WRLD, nome verdadeiro Jarad Higgins, foi um rapper, cantor e compositor americano que emergiu na cena musical no final da década de 2010...</p>
+            </div>
+        </div>
+        
+        <!-- Produto 7 -->
+        <div class="produto">
+            <img src="imagens/produto7.jpg" alt="Snoop Dogg">
+            <div>
+                <h3>Snoop Dogg</h3>
+                <p>Snoop Dogg, nome verdadeiro Calvin Cordozar Broadus Jr., é um rapper, produtor e ator americano, nascido em 1971...</p>
+            </div>
+        </div>
+        
+    </main>
+</body>
+</html>
