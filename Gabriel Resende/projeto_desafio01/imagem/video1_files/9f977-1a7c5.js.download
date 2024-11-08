@@ -1,0 +1,2 @@
+(window.LVWebpackJsonp=window.LVWebpackJsonp||[]).push([[713],{3741:function(c,n,t){"use strict";t.r(n),t.d(n,"default",(function(){return r}));var e=t(12),o=t(57);function r(c){const n=function(c){const{locale:n}=Object(e.d)(c),{client:t}=c.app.$publicAsm;return{checkPlpExclusivity:async function(e){const r={method:"get",url:Object(o.c)(c,"/".concat(n,"/plp/exclusive/check/").concat(e))},{data:data}=await t(r),{exclusive:l=!1}=data;return l}}}(c);return async function(c){return await n.checkPlpExclusivity(c)}}}}]);
+//# sourceMappingURL=_nuxt/11609517983/9f977-1a7c5.js.map
