@@ -335,65 +335,261 @@ footer {
 .mais-produtos button:hover {
     background-color: #e76f51;
 }
-
-/* Responsividade */
-@media (max-width: 768px) {
-    .categoria-item {
-        width: 45%;
-        margin-bottom: 20px;
-    }
-
-    .produto-item {
-        width: 45%;
-    }
-
-    .produtos h3 {
-        font-size: 2.2em;
-    }
-}
+ /* Estrutura Básica */
 #contato {
-    background-color: #f9f9f9;
-    padding: 2rem;
+    padding: 3rem 1rem;
+    background-color: #f1f5f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
     max-width: 600px;
-    margin: auto;
+    background-color: white;
+    padding: 2rem;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
 #contato h2 {
-    text-align: center;
-    margin-bottom: 1rem;
+    font-size: 2rem;
     color: #333;
+    margin-bottom: 0.5rem;
 }
 
-#contato form {
+#contato p {
+    color: #666;
+    margin-bottom: 2rem;
+}
+
+/* Formulário */
+form {
     display: flex;
     flex-direction: column;
 }
 
-#contato label {
-    margin-top: 1rem;
-    color: #555;
+.form-group {
+    margin-bottom: 1.5rem;
+    text-align: left;
 }
 
-#contato input, #contato textarea {
+label {
+    display: block;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+input, textarea {
+    width: 100%;
     padding: 0.8rem;
-    margin-top: 0.5rem;
-    border: 1px solid #ddd;
+    border: 1px solid #ccc;
     border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
 }
 
-#contato button {
-    margin-top: 1.5rem;
-    padding: 0.8rem;
+input:focus, textarea:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+/* Mensagem de Erro */
+.error-message {
+    font-size: 0.875rem;
+    color: #e63946;
+    display: none;
+}
+
+/* Botão */
+button[type="submit"] {
     background-color: #4CAF50;
     color: white;
     border: none;
     border-radius: 5px;
+    padding: 1rem;
+    font-size: 1.1rem;
     cursor: pointer;
-    font-size: 1rem;
+    transition: background-color 0.3s;
 }
 
-#contato button:hover {
+button[type="submit"]:hover {
     background-color: #45a049;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 1rem;
+    }
+  /* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f9;
+}
+
+/* Navegação */
+nav {
+    background-color: #111;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+}
+
+/* Cabeçalho */
+header {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('header-image.jpg') center/cover no-repeat;
+    color: #fff;
+    padding: 3rem 1rem;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.8rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+/* Seções Principais */
+main {
+    padding: 2rem 1rem;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Introdução */
+#introducao {
+    text-align: center;
+    margin-bottom: 2rem;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#introducao h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+/* Desfiles */
+#ultimos-desfiles {
+    background-color: #f9f9f9;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+#ultimos-desfiles h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    color: #333;
+}
+
+.desfile {
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    border-bottom: 1px solid #ddd;
+}
+
+.desfile h3 {
+    font-size: 1.5rem;
+    color: #555;
+    margin-bottom: 0.5rem;
+}
+
+/* Galeria de Fotos */
+#galeria {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.galeria-fotos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.galeria-fotos img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.galeria-fotos img:hover {
+    transform: scale(1.05);
+}
+
+/* Depoimentos */
+#depoimentos {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#depoimentos h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    color: #333;
+}
+
+blockquote {
+    font-size: 1.1rem;
+    margin: 1.5rem auto;
+    padding: 1.5rem;
+    max-width: 600px;
+    border-left: 5px solid #4CAF50;
+    color: #555;
+    background-color: #f9f9f9;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #111;
+    color: #fff;
+    font-size: 0.9rem;
+    margin-top: 2rem;
 }
