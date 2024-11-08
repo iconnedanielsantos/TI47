@@ -1,0 +1,97 @@
+/* Reset básico para garantir que as margens e paddings não interfiram */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos para o body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Estilos para a barra de pesquisa */
+.search-bar {
+    display: flex;
+    justify-content: center;  /* Centraliza horizontalmente */
+    align-items: center;      /* Alinha verticalmente */
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+.search-bar input {
+    width: 50%;              /* Largura de 50% da tela */
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.search-bar input:focus {
+    border-color: #007BFF;
+}
+
+/* Estilos para o container dos cartões */
+.cards-container {
+    display: flex;
+    justify-content: center;  /* Centraliza os cards na horizontal */
+    gap: 20px;                /* Espaçamento entre os cards */
+    padding: 20px;
+    flex-wrap: wrap;          /* Permite que os cards quebrem para a linha seguinte em telas menores */
+    max-width: 1200px;        /* Limita a largura máxima do container */
+    margin: 0 auto;           /* Centraliza o container de cartões na tela */
+}
+
+/* Estilos para cada cartão */
+.card {
+    width: 250px;             /* Define a largura do cartão */
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    transition: transform 0.3s ease;  /* Efeito de transição ao passar o mouse */
+}
+
+.card:hover {
+    transform: translateY(-5px);  /* Levanta o cartão ao passar o mouse */
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.card h3 {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.card p {
+    font-size: 14px;
+    color: #555;
+}
+
+/* Responsividade - ajusta o layout em telas menores */
+@media (max-width: 768px) {
+    .search-bar input {
+        width: 80%;  /* Aumenta a largura da barra de pesquisa em telas pequenas */
+    }
+
+    .cards-container {
+        flex-direction: column;  /* Organiza os cards em uma coluna em telas pequenas */
+        align-items: center;     /* Centraliza os cards em telas pequenas */
+    }
+
+    .card {
+        width: 80%;  /* Faz os cards ocuparem 80% da largura da tela em dispositivos móveis */
+        margin-bottom: 20px;  /* Adiciona margem entre os cards */
+    }
+}
