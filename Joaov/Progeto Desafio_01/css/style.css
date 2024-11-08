@@ -12,7 +12,7 @@ body {
     flex-direction: column;
     justify-content:flex-start;
     text-align: center;
-    background-image: url(imagens/tela_carrinha.png);
+    background-image: url(imagens/BandeiraFranciscoMorato.png);
     
 }
 
@@ -30,3 +30,48 @@ nav ul li a {
     color: white;
     text-decoration: none;
 }
+
+.botao {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    padding: 1px 1px;
+    font-size: 16px;
+    background-color: rgba(100, 148, 237, 0);
+    color: rgba(0, 0, 0, 0);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0);
+}
+
+.botao2 {
+    background-color: rgb(147, 147, 148);
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgb(0, 0, 0);
+}
+
+.icone {
+    width: 30px;
+    height: 30px;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.preto {
+    color: black;
+}
+
+img {
+    float: right;
+    margin: 20px;
+    width: 10%;
+    height: auto;
+}
+
