@@ -9,12 +9,12 @@
     <style>
         /* Estilo Geral */
         body {
-            background-image: url("imagens/games1.jpg");
+            background-image: url("imagens/games1.jpg"); /* Definindo a imagem de fundo */
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
             background-attachment: fixed;
-            color: rgb(255, 255, 255);
+            color: rgb(255, 255, 255); /* Cor do texto */
             margin: 0;
             padding: 0;
             font-family: Arial, sans-serif;
@@ -23,19 +23,20 @@
 
         /* Cabeçalho */
         header {
-            background: rgba(0, 0, 0, 0.7);
+            background: rgba(0, 0, 0, 0.7); /* Fundo semi-transparente */
             width: 100%;
             padding: 20px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
         }
 
         header h1 {
-            font-size: 2.5rem;
-            color: #ffffff;
+            font-size: 2.5rem; /* Tamanho do título */
+            color: #ffffff; /* Cor do texto */
             margin: 0;
-            transition: color 0.3s ease;
+            transition: color 0.3s ease; /* Transição suave ao passar o mouse */
         }
 
+        /* Menu de Navegação */
         nav ul {
             list-style: none;
             display: flex;
@@ -46,16 +47,17 @@
         }
 
         nav ul li a {
-            color: #ffffff;
+            color: #ffffff; /* Cor do texto dos links */
             text-decoration: none;
             padding: 10px 15px;
             border-radius: 5px;
             transition: background-color 0.3s ease, color 0.3s ease;
         }
 
+        /* Efeito de hover nos links */
         nav ul li a:hover {
-            background-color: rgba(255, 255, 255, 0.2);
-            color: #007bff;
+            background-color: rgba(255, 255, 255, 0.2); /* Cor de fundo ao passar o mouse */
+            color: #007bff; /* Cor do texto ao passar o mouse */
         }
 
         /* Conteúdo Principal */
@@ -63,27 +65,29 @@
             padding: 20px;
             max-width: 1200px;
             margin: 0 auto;
-            background: rgba(0, 0, 0, 0.6);
+            background: rgba(0, 0, 0, 0.6); /* Fundo semi-transparente para o conteúdo */
             border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
         }
 
-        /* Estilo dos "Produtos" */
+        /* Estilo dos "Produtos" (produtores) */
         .produto {
-            background-color: rgba(255, 255, 255, 0.1);
+            background-color: rgba(255, 255, 255, 0.1); /* Fundo claro e semi-transparente */
             border-radius: 10px;
             padding: 15px;
             margin-bottom: 20px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
             text-align: left;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efeito de transformação e sombra */
         }
 
+        /* Efeito de hover nos produtos */
         .produto:hover {
-            transform: scale(1.02);
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+            transform: scale(1.02); /* Leve aumento no tamanho */
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Sombra mais intensa */
         }
 
+        /* Estilo da imagem do produto */
         .produto img {
             width: 100%;
             height: auto;
@@ -91,6 +95,7 @@
             margin-bottom: 10px;
         }
 
+        /* Título do produto */
         .produto h3 {
             color: #fff;
             font-size: 1.5rem;
@@ -98,12 +103,31 @@
             transition: color 0.3s ease;
         }
 
+        /* Descrição do produto */
         .produto p {
-            color: #ddd;
+            color: #ddd; /* Cor do texto */
             line-height: 1.6;
         }
 
-        /* Responsividade */
+        /* Estilo do botão "Saiba mais" */
+        .botao-saiba-mais {
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            font-size: 1rem;
+            display: inline-block;
+            margin-top: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        /* Efeito de hover no botão */
+        .botao-saiba-mais:hover {
+            background-color: #0056b3;
+        }
+
+        /* Responsividade para telas maiores (600px ou mais) */
         @media (min-width: 600px) {
             .produto {
                 display: flex;
@@ -112,7 +136,7 @@
             }
 
             .produto img {
-                max-width: 150px;
+                max-width: 150px; /* Tamanho máximo da imagem */
                 width: auto;
             }
         }
@@ -120,32 +144,35 @@
 </head>
 
 <body>
+    <!-- Cabeçalho com título e navegação -->
     <header>
-        <h1>Cenario Feminino</h1>
+        <h1>Produtores</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Início</a></li>
-                <li><a href="Pagina01.html">Cenario Masculino</a></li>
-                <li><a href="Pagina02.html">Cenario Feminino</a></li>
+                <li><a href="Pagina01.html">Cenário Masculino</a></li>
+                <li><a href="Pagina02.html">Cenário Feminino</a></li>
                 <li><a href="Pagina03.html">Produtores</a></li>
                 <li><a href="Pagina04.html">Grupos</a></li>
             </ul>
         </nav>
     </header>
+
+    <!-- Conteúdo Principal -->
     <main>
         <h2>Melhores da Cena</h2>
 
         <!-- Produto 1 -->
         <div class="produto">
-            <img src="imagens/produ1.jpg" alt="Foto do DRE">
+            <img src="imagens/produ1.jpg" alt="Foto do Dr. Dre">
             <div>
                 <h3>Dr. Dre</h3>
-                <p>
-                    Um dos mais renomados produtores da história do hip-hop, Dr. Dre é conhecido por seu trabalho com
+                <p>Um dos mais renomados produtores da história do hip-hop, Dr. Dre é conhecido por seu trabalho com
                     artistas como Snoop Dogg, Tupac Shakur e Eminem. Ele ajudou a popularizar o gangsta rap e o som do
                     West Coast com batidas marcantes e um estilo distinto que combina linhas de baixo pesadas com
                     samples bem trabalhados.
                 </p>
+                <a href="https://pt.wikipedia.org/wiki/Dr._Dre" class="botao-saiba-mais" target="_blank">Saiba mais</a>
             </div>
         </div>
 
@@ -156,8 +183,8 @@
                 <h3>DJ Premier</h3>
                 <p>DJ Premier é famoso por suas batidas cruas e uso de scratches e samples de jazz e funk. Como membro
                     do grupo Gang Starr, ele ajudou a moldar o hip-hop da Costa Leste com um estilo autêntico e
-                    influente, trabalhando com artistas como Nas, Jay-Z e The Notorious B.I.G.
-                </p>
+                    influente, trabalhando com artistas como Nas, Jay-Z e The Notorious B.I.G.</p>
+                <a href="https://pt.wikipedia.org/wiki/DJ_Premier" class="botao-saiba-mais" target="_blank">Saiba mais</a>
             </div>
         </div>
 
@@ -165,10 +192,9 @@
         <div class="produto">
             <img src="imagens/produ3.jpg" alt="Foto do J Dilla">
             <div>
-                <h3> J Dilla</h3>
-                <p>Conhecido por seu estilo suave e experimental, J Dilla é um dos produtores mais influentes e
-                    cultuados do hip-hop underground. Suas produções revolucionaram o uso de batidas, com batidas fora
-                    do tempo padrão e samples únicos, inspirando muitos produtores após sua morte precoce.</p>
+                <h3>J Dilla</h3>
+                <p>Conhecido por seu estilo suave e experimental, J Dilla é um dos produtores mais influentes e cultuados do hip-hop underground. Suas produções revolucionaram o uso de batidas, com batidas fora do tempo padrão e samples únicos, inspirando muitos produtores após sua morte precoce.</p>
+                <a href="https://pt.wikipedia.org/wiki/J_Dilla" class="botao-saiba-mais" target="_blank">Saiba mais</a>
             </div>
         </div>
 
@@ -177,42 +203,38 @@
             <img src="imagens/produ4.jpg" alt="Foto do RZA">
             <div>
                 <h3>RZA</h3>
-                <p>Como membro e produtor do Wu-Tang Clan, RZA trouxe um som sombrio e distinto ao hip-hop da Costa
-                    Leste. Ele mistura samples de filmes de kung fu, soul e funk com batidas cruas, criando um estilo
-                    único que influenciou não só o hip-hop, mas também o cinema e a moda.</p>
+                <p>Como membro e produtor do Wu-Tang Clan, RZA trouxe um som sombrio e distinto ao hip-hop da Costa Leste. Ele mistura samples de filmes de kung fu, soul e funk com batidas cruas, criando um estilo único que influenciou não só o hip-hop, mas também o cinema e a moda.</p>
+                <a href="https://pt.wikipedia.org/wiki/RZA" class="botao-saiba-mais" target="_blank">Saiba mais</a>
             </div>
         </div>
 
         <!-- Produto 5 -->
         <div class="produto">
-            <img src="imagens/produ5.jpg" alt="Foto do Pharrell Williams E The Neptunes">
+            <img src="imagens/produ5.jpg" alt="Foto de Pharrell Williams e The Neptunes">
             <div>
                 <h3>Pharrell Williams e The Neptunes</h3>
-                <p>Com seu parceiro Chad Hugo, Pharrell formou The Neptunes, uma dupla de produção conhecida por seu som
-                    futurista e inovador. Eles foram responsáveis por sucessos de diversos gêneros, colaborando com
-                    artistas como Jay-Z, Snoop Dogg e Clipse.</p>
+                <p>Com seu parceiro Chad Hugo, Pharrell formou The Neptunes, uma dupla de produção conhecida por seu som futurista e inovador. Eles foram responsáveis por sucessos de diversos gêneros, colaborando com artistas como Jay-Z, Snoop Dogg e Clipse.</p>
+                <a href="https://pt.wikipedia.org/wiki/Pharrell_Williams" class="botao-saiba-mais" target="_blank">Saiba mais</a>
             </div>
         </div>
 
         <!-- Produto 6 -->
         <div class="produto">
-            <img src="imagens/produ6.jpg" alt="Timbaland">
+            <img src="imagens/produ6.jpg" alt="Foto de Timbaland">
             <div>
                 <h3>Timbaland</h3>
-                <p>.Timbaland trouxe uma nova dimensão ao hip-hop e R&B, com batidas complexas e arranjos inovadores.
-                    Ele é conhecido por trabalhar com Missy Elliott, Aaliyah e Justin Timberlake, criando um estilo
-                    único e dançante que influencia produções até hoje.</p>
+                <p>Timbaland trouxe uma nova dimensão ao hip-hop e R&B, com batidas complexas e arranjos inovadores. Ele é conhecido por trabalhar com Missy Elliott, Aaliyah e Justin Timberlake, criando um estilo único e dançante que influencia produções até hoje.</p>
+                <a href="https://pt.wikipedia.org/wiki/Timbaland" class="botao-saiba-mais" target="_blank">Saiba mais</a>
             </div>
         </div>
 
         <!-- Produto 7 -->
         <div class="produto">
-            <img src="imagens/produ7.jpg" alt="Metro Boomin">
+            <img src="imagens/produ7.jpg" alt="Foto de Metro Boomin">
             <div>
                 <h3>Metro Boomin</h3>
-                <p> Representante da nova geração, Metro Boomin se destacou com seu som trap e colaborações com rappers
-                    como Future, 21 Savage e Travis Scott. Seu estilo é marcado por batidas pesadas e atmosferas
-                    sombrias, que definem o hip-hop contemporâneo.</p>
+                <p>Representante da nova geração, Metro Boomin se destacou com seu som trap e colaborações com rappers como Future, 21 Savage e Travis Scott. Seu estilo é marcado por batidas pesadas e atmosferas sombrias, que definem o hip-hop contemporâneo.</p>
+                <a href="https://pt.wikipedia.org/wiki/Metro_Boomin" class="botao-saiba-mais" target="_blank">Saiba mais</a>
             </div>
         </div>
 
