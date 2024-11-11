@@ -82,7 +82,7 @@ header ul li a{
     display: flex;
     justify-content: center;
     gap: 1rem;
-    flax-wrap: wrap;
+    flex-wrap: wrap;
 }
 .services, .plano{
     background:#e0e0e0;
