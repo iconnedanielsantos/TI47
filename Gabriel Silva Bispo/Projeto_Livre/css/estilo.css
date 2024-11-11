@@ -7,7 +7,7 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    color: #000000;
+    color: #d4cfcf;
     background-color: #0e0e0e;
     background-image: url("../Images/academia.jpg");
     background-size: cover;
@@ -28,9 +28,16 @@ header ul li{
     display: inline-block;
     margin:0 40px;
 }
-header ul li a{
+
+a{
     color: #ffffff;
     text-decoration: none;
+    transition: 0.2s;
+}
+
+a:hover{
+    color: blue;
+    transform: scale(1.05);
 }
 
 
@@ -107,7 +114,7 @@ header ul li a{
 }
 
 footer{
-    background: #333;
+    background: #fff7f7;
     color: #fff;
     text-align: center;
     padding: 1rem;
