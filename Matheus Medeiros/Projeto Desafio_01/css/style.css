@@ -115,6 +115,7 @@ article {
 
 .card {
     display: flex;
+    margin-bottom: 5%;
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -122,20 +123,21 @@ article {
     width: 125px;
     align-items: center;
     gap: 20px;
+    margin: 1%;
+}
+
+.descricao{
+    display: flex;
+    background-color: #000000;
+
 }
 
 .imgjgdr {
-    width: 125px;
-    /* Faz a imagem ocupar toda a largura do card */
-    /* Mantém a proporção da imagem */
-    border-radius: 8px;
-    /* Bordas arredondadas na imagem */
-    margin-bottom: 15px;
-    /* Espaço abaixo da imagem */
-    display: inline-block;
-    margin-right: 10px;
-    float: left;
-    margin-right: 10px;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 20px;
 
 }
 
@@ -173,4 +175,27 @@ article {
 
 .laterais {
     width: 100%;
+}
+
+.meias {
+    width: 100%
+}
+
+.atacantes {
+    width: 100%;
+}
+
+.card .info {
+    display: flex;
+    flex-direction: column;
+}
+
+.card h2 {
+    margin: 0;
+    font-size: 15px;
+}
+
+.card p {
+    color: #555;
+    font-size: 10px;
 }
