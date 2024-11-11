@@ -114,22 +114,14 @@ article {
 }
 
 .card {
+    display: flex;
     background-color: #fff;
-    /* Fundo branco para o card */
-    /* Largura máxima do card */
-    border-radius: 8px;
-    /* Bordas arredondadas */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    /* Sombra suave */
-    padding: 50px;
-    padding-top: 1px;
-    display: inline-block;
-    margin-right: 10px;
-    float: left;
-    margin-right: 10px;
-    margin: 1%;
-    width: 150px;
-    height: 200px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 125px;
+    align-items: center;
+    gap: 20px;
 }
 
 .imgjgdr {
@@ -151,9 +143,9 @@ article {
     display: flex;
     flex-direction: column;
     float: left;
-    margin-right: 10px;
+    margin-right: 200px;
     background-color: #555;
-    width: 70%;
+    width: 100%;
     row-gap: 10%;
 }
 
@@ -163,4 +155,22 @@ article {
 }
 .img-jog{
     display: flex;
+}
+
+.linhas {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.linhas1 {
+    flex: 1 1 100%;
+    margin: 100px;
+}
+
+.goleiros {
+    width: 100%;
+}
+
+.laterais {
+    width: 100%;
 }
