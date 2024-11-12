@@ -23,7 +23,7 @@ header {
     justify-self: center;
     top: -5%;
     width: 70%;
-    left: 10%;
+    left: 25%;
     position: sticky;
     right: 70%;
 }
@@ -113,7 +113,7 @@ article {
     line-height: 1.8;
 }
 
-.card {
+/* .card {
     display: flex;
     margin-bottom: 5%;
     background-color: #fff;
@@ -124,7 +124,63 @@ article {
     align-items: center;
     gap: 20px;
     margin: 1%;
+} */
+
+/* .card {
+    display: flex;
+    margin-bottom: 5%;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 125px; 
+    height: 200px;
+    align-items: center;
+    justify-content: center; 
+    gap: 20px;
+    margin: 1%;
+    box-sizing: border-box;
+} */
+
+#div-geral {
+
 }
+
+.goleiro, .zagueiro, .laterais, .atacantes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+}
+
+/* .card {
+    display: flex;
+    margin-bottom: 5%;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 125px; 
+    height: 200px;
+    align-items: center;
+    justify-content: center; 
+    gap: 20px;
+    margin: 1%;
+    box-sizing: border-box;
+    flex-shrink: 0;
+} */
+
+
+.imgjgdr {
+    width: 80px;
+    height: auto;
+}
+
+.titulo, .subtitulo {
+    text-align: center;
+}
+
 
 .descricao{
     display: flex;
@@ -132,23 +188,19 @@ article {
 
 }
 
-.imgjgdr {
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    margin-bottom: 20px;
-
-}
-
 #div-geral {
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     float: left;
     margin-right: 200px;
     background-color: #555;
     width: 100%;
-    row-gap: 10%;
+    row-gap: 10%; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
 }
 
 
@@ -185,17 +237,95 @@ article {
     width: 100%;
 }
 
-.card .info {
+/* Ajustando o card */
+.card {
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /* Faz com que o conteúdo dentro do card seja empilhado verticalmente */
+    align-items: center;  /* Centraliza o conteúdo dentro do card */
+    justify-content: center; /* Centraliza o conteúdo dentro do card */
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    width: 220px; /* Tamanho fixo para os cards */
+    height: 320px; /* Tamanho fixo para os cards */
+    margin: 15px; /* Espaçamento entre os cards */
+    box-sizing: border-box;
+    text-align: center;
+    overflow: hidden; /* Garante que nada saia da borda do card */
+    transition: all 0.3s ease;
 }
 
+/* Aumentando o tamanho da imagem */
+.card .imgjgdr {
+    width: 100%; /* Aumenta a largura da imagem */
+    height: 100%; /* Aumenta a altura da imagem */
+    object-fit: cover; /* Mantém a proporção da imagem sem distorção */
+    margin-bottom: 15px; /* Espaço abaixo da imagem */
+}
+
+/* Títulos dos jogadores */
 .card h2 {
-    margin: 0;
-    font-size: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0;
+    color: #333;
 }
 
+/* Descrição do jogador dentro do card */
 .card p {
+    font-size: 14px;
     color: #555;
-    font-size: 10px;
+    margin: 5px 0;
+}
+
+/* Efeito hover no card */
+.card:hover {
+    transform: translateY(-5px); /* Efeito de elevação */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra mais forte */
+}
+
+/* Alinhando os cards dentro das seções */
+.goleiro, .zagueiro, .laterais, .atacantes, .meias {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centraliza os cards dentro da seção */
+    gap: 20px; /* Espaçamento entre os cards */
+    padding: 20px;
+}
+
+/* Layout das linhas dentro das seções */
+.linhas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Ajustando o layout das seções */
+.linhas1 {
+    flex: 1 1 100%;
+    display: flex;
+    justify-content: center; /* Centraliza os cards dentro da linha */
+}
+
+/* Responsividade para telas pequenas */
+@media screen and (max-width: 768px) {
+    .card {
+        width: 160px; /* Reduz o tamanho dos cards em telas pequenas */
+        height: 240px; /* Ajusta a altura dos cards */
+    }
+
+    .card .imgjgdr {
+        width: 120px;  /* Tamanho da imagem ajustado para telas menores */
+        height: 120px; /* Ajuste da altura da imagem */
+    }
+
+    .card h2 {
+        font-size: 16px;  /* Ajuste no tamanho do título */
+    }
+
+    .card p {
+        font-size: 12px;  /* Ajuste no tamanho da descrição */
+    }
 }
