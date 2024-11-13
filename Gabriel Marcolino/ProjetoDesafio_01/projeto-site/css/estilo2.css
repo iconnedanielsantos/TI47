@@ -1,13 +1,44 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     margin: 0;
     padding:20px;
 }
 
 h1 {
+    font-family: 'Franklin Gothic Medium';
     text-align: center;
-    color: black;
+    color: rgb(255, 255, 255);
+    font-size: 55px;
+}
+
+
+div {
+    text-align: center;
+}
+
+header {
+    background-color: rgb(19, 13, 75);
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+
+nav ul {
+    font-size: 45px;
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium';
+}
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
 }
 
 .products {
@@ -17,11 +48,13 @@ h1 {
 }
 
 .product-card {
-    background-color: red;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    box-shadow: 0 3px 1px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     transition: transform 0.3s ease;
+    width: 700px;
+    height:783px ;
 }
 
 .product-card:hover {
@@ -29,8 +62,10 @@ h1 {
 }
 
 .product-image img {
-    width: 100%;
+    width:70%;
     height: auto;
+    border-radius: 20px;
+
 }
 
 .product-details {
@@ -39,33 +74,44 @@ h1 {
 }
 
 .product-details h2 {
-    font-size: 18px;
-    color: #333;
+    font-family: 'Franklin Gothic Medium';
+    font-size: 40px;
+    color: #000000;
     margin: 0;
 }
 
 .product-details p {
-    color: #777;
-    font-size: 14px;
+    font-family: 'Franklin Gothic Medium';
+    color: #2b2b2b;
+    font-size: 30px;
 }
 
 .product-price {
     font-size: 20px;
-    color: #27ae60;
+    color: #940d0d;
     margin: 10px 0;
 }
 
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+    gap: 22px;
+}
+
 .buy-button {
-    background-color: #27ae60;
+    font-family: 'Franklin Gothic Medium';
+    background-color: #8a0707;
     color: #fff;
     border: none;
-    padding: 10px 15px;
-    border-radius: 5px;
+    padding: 18px 22px;
+    border-radius: 9px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 20px;
     transition: background-color 0.3s ease;
 }
 
 .buy-button:hover {
-    background-color: #219150;
+    background-color: #740000;
 }
