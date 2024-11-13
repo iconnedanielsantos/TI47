@@ -1,99 +1,76 @@
-<!doctype html>
-
-<!--
-<!doctype html>: Declara o tipo do documento, especificando que este é um documento HTML5. Isso ajuda o navegador a interpretar o conteúdo corretamente.
-html
--->
-
-<html lang="pt-br">
-<!--
-<html lang="pt-br">: Define a linguagem principal do conteúdo da página como português brasileiro. Isso é importante para acessibilidade e SEO (otimização de busca), pois ajuda os navegadores e motores de busca a processar o texto na língua correta.
-html
--->
+<!DOCTYPE html>
+<html lang="pt-BR">
 
 <head>
-    <!--
-<head>: Esta seção contém informações sobre o documento que não são exibidas diretamente na página, mas são essenciais para a estrutura, design e indexação do site.
-html
--->
-
-    <meta charset="utf-8">
-    <!--
-<meta charset="utf-8">: Define a codificação de caracteres como UTF-8, que suporta uma vasta gama de caracteres de diferentes idiomas e símbolos especiais. É essencial para garantir que todos os caracteres apareçam corretamente na página.
-html
--->
-
-    <title>CTec - Cursos de Tecnologia</title>
-    <!--
-<title>: Define o título da página, que será exibido na aba do navegador e também utilizado pelos motores de busca como título principal para a página nos resultados de pesquisa. Um título único e conciso contribui para o SEO.
-html
--->
-
-    <meta name="description" content="Desenvolvimento de cursos de tecnologia">
-    <!--
-<meta name="description">: Fornece uma breve descrição da página, que pode aparecer nos resultados de pesquisa do Google. Essa descrição deve ser objetiva e relevante, pois influencia a taxa de clique na página.
-html
--->
-
+    <meta charset="UTF-8">
+    <meta name="description" content="Desenvolvimento de curso de tecnologia ">
+    <title>C-Tec curso de Tecnologia</title>
     <meta name="keywords"
-        content="cursos, tecnologia, ti, informática, html5, css3, senac, desenvolvimento, web, websites, php, sql, mysql">
-    <!--
-<meta name="keywords">: Inclui palavras-chave associadas ao conteúdo da página. Embora os motores de busca modernos deem pouca importância a essa tag, ela ainda pode ser usada para contexto adicional.
-html
--->
-
-    <link rel="short icon" href="favicon.ico">
-    <!--
-<link rel="short icon">: Define o favicon, um pequeno ícone associado à página, geralmente exibido na aba do navegador ao lado do título. Ele é importante para branding e facilita a identificação visual da página.
-html
--->
-
-    <link href="bootstrap-4.4.1/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-    <!--
-<link rel="stylesheet">: Link para o arquivo CSS do Bootstrap, uma biblioteca popular de estilos para desenvolver layouts responsivos e modernos. Ele facilita a criação de layouts adaptáveis e estilizados sem precisar escrever muito CSS.
-html
--->
-
-    <link href="meus_estilos.css" rel="stylesheet" type="text/css">
-    <!--
-<link href="meus_estilos.css">: Importa um arquivo CSS personalizado chamado meus_estilos.css, onde você pode incluir estilos específicos para essa página, complementando o estilo do Bootstrap.
-html
--->
-
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!--
-<meta name="viewport">: Configura a página para ser responsiva. width=device-width ajusta a largura da página à largura do dispositivo, e initial-scale=1 define o nível de zoom inicial. shrink-to-fit=no evita que a página encolha além do limite.
-html
--->
-
-    <link rel="stylesheet" type="text/css" href="galeria/engine1/style.css">
-    <script src="galeria/engine1/jquery.js"></script>
-    <!--
-<link> e <script> (Wowslider): O link carrega o arquivo CSS do Wowslider, uma biblioteca de galeria de imagens, enquanto o script carrega o jQuery, uma biblioteca JavaScript essencial para o funcionamento do Wowslider. Esses arquivos permitem que galerias e animações de imagens funcionem na página.
-html
--->
-
-
-    <link href="lightbox2/dist/css/lightbox.min.css" rel="stylesheet" type="text/css">
-    <!--
-<link href="lightbox2/dist/css/lightbox.min.css">: Importa o CSS para o Lightbox2, uma biblioteca que permite a exibição de imagens em uma sobreposição, ideal para exibir imagens em uma galeria.
-html
--->
-
-    <link href="fontawesome-6.4.2/css/all.css" rel="stylesheet" type="text/css">
-    <script src="fontawesome-6.4.2/js/all.js"></script>
-    <!--
-<link> e <script> (Font Awesome): Esses elementos importam os arquivos CSS e JavaScript do Font Awesome, uma biblioteca de ícones. Eles permitem adicionar ícones e símbolos personalizados, melhorando a experiência visual da página.
-html
--->
-
+        content="cursos, tecnologia, ti, informatica, html5, css3, senac, desenvolvimento, web, websites, php, sql, mysql">
+        <link rel="short icon" href="favicon.ico">
+        <link href="bootstrap-4.4.1/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <link href="meus_estilos.css" rel="stylesheet" type="text/css">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" type="text/css" href="galeria/engine1/style.css">
+        <link href="lightbox2/dist/css/lightbox.min.css" rel="stylesheet" type="text/css">
+        <link href="fontawesome-6.4.2/css/all.css" rel="stylesheet" type="text/css">
+        <script src="fontawesome-6.4.2/js/all.js"></script>
+    
 </head>
-<!--
-</head>: Finaliza a seção <head>, que inclui todas as informações estruturais e recursos necessários para o carregamento correto da página antes de seu conteúdo ser exibido.
--->
 
 <body>
+    <div class="container">
 
+        <div class="row">
+
+
+
+            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-6">
+
+                <section>
+
+                    <h2 class="fonte-zero">Logo CTec</h2>
+
+                    <a href="index.html"><img src="imagens/logo-ctec.png" alt="Logo CTec" class="img-fluid"
+                            title="Logo CTec"></a>
+
+                </section>
+
+            </div>
+
+
+
+            <div class="col-xl-8 col-lg-8 col-md-8 col-sm-8 col-12 nome-empresa">
+
+                <section>
+
+                    <h2 class="fonte-zero">Cursos de Tecnologia</h2>
+
+                    Cursos de Tecnologia
+
+                </section>
+
+            </div>
+
+
+
+        </div>
+
+    </div>
+    <header>
+        <h1>Home, Empresa, Cursos, Tecnologia da Informação, Adminstração, Logística, Contato e Localizar</h1>
+        <nav>
+            <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Empresa</a></li>
+            <li><a href="">cursos</a></li>
+            <li><a href="">Contato</a></li>
+            <form class="search-form">
+                <input type="submit">Search</button>
+            </form>
+        </ul>
+    </nav>
+    </header>
 </body>
 
 </html>
