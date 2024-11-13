@@ -1,0 +1,44 @@
+
+.fonte-zero {
+    padding: 0px;
+    list-style-type: none;
+    margin: 0px;
+    height: 0px;
+    display: none;
+
+}
+
+nav{
+    background-color:#2e373e;
+    padding: 10px;
+    
+}
+
+nav ul {
+    margin-top: 10px;
+    list-style: none;
+    display: inline;
+    
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+    font-size: 20px;
+}
+
+
+li {
+    color: white;
+    text-decoration:none;
+    display:inline-flex;
+    transition: 0.3s;
+}
+
+.busca {
+    text-align: right;
+    margin-top: -30px;
+    padding: 10px;
+
+    
+}

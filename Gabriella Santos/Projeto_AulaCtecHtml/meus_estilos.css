@@ -1,6 +1,6 @@
 header{
     background-color:rgb(54, 53, 53);
-    color: aliceblue;
+    color: rgb(255, 255, 255);
     padding:1em;
     text-align: end;
 }
@@ -21,6 +21,35 @@ nav ul li{
     margin-right: 10px;
 }
 nav ul li a{
-    color:rgb(146, 134, 134);
+    color:rgb(255, 255, 255);
     text-decoration: none;
 }
+
+.search-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+}
+
+.search-bar {
+    padding: 8px;
+    width: 200px;
+    border-radius: 4px 0 0 4px;
+    font-size: 16px;
+}
+
+.search-button {
+    padding: 8px 12 px;
+    background-color: rgb(23, 151, 151);
+    color: aliceblue;
+    border: 1px solid #3caf63;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+nav ul div{
+    list-style: inside;
+    padding: 1em;
+}
+
