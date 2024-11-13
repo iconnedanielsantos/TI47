@@ -1,0 +1,331 @@
+body {
+    background-color: #ffffff;
+}
+
+header {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    height: 85px;
+    /* Altura */
+    position: fixed;
+    margin-top: -1%;
+    left: 1px;
+    position: sticky;
+
+}
+
+#icon-img {
+    display: flex;
+    position: fixed;
+    justify-self: center;
+    top: -5%;
+    width: 70%;
+    left: 25%;
+    position: sticky;
+    right: 70%;
+}
+
+.LadoA {
+    color: #ffffff;
+    display: flex;
+    justify-self: start;
+    flex-direction: row;
+    padding-left: 20%;
+    gap: 75px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+a {
+
+    text-decoration: none;
+    color: inherit;
+}
+
+#img-icon {
+    justify-self: center;
+}
+
+.LadoB {
+    padding-right: 20%;
+    color: #ffffff;
+    display: flex;
+    justify-self: end;
+    flex-direction: row;
+    gap: 75px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+#pad-nav {
+    display: flex;
+    padding-top: 5%;
+    justify-content: space-between;
+}
+
+.i {
+    background-color: rgb(97, 202, 202);
+    width: 100%;
+    display: flex;
+    justify-self: center;
+}
+
+article {
+    -webkit-flex: 3;
+    -ms-flex: 3;
+    flex: 3;
+    background-color: #f1f1f1;
+    padding: 125px;
+}
+
+#imgtreino {
+    width: 100%;
+}
+
+.titulo {
+    font-size: 2.5rem;
+    /* Tamanho do texto */
+    color: #000000;
+    /* Cor do título */
+    font-weight: bold;
+    margin-bottom: 15px;
+    /* Espaço abaixo do título */
+}
+
+/* Estilo para o subtítulo (h2) */
+.subtitulo {
+    font-size: 1.8rem;
+    color: #000000;
+    /* Cor mais suave para o subtítulo */
+    font-weight: normal;
+    margin-bottom: 20px;
+    /* Espaço abaixo do subtítulo */
+}
+
+/* Estilo para o texto (p) */
+.texto {
+    font-size: 1rem;
+    color: #555;
+    /* Cor mais clara para o texto */
+    line-height: 1.8;
+}
+
+/* .card {
+    display: flex;
+    margin-bottom: 5%;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 125px;
+    align-items: center;
+    gap: 20px;
+    margin: 1%;
+} */
+
+/* .card {
+    display: flex;
+    margin-bottom: 5%;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 125px; 
+    height: 200px;
+    align-items: center;
+    justify-content: center; 
+    gap: 20px;
+    margin: 1%;
+    box-sizing: border-box;
+} */
+
+#div-geral {
+
+}
+
+.goleiro, .zagueiro, .laterais, .atacantes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+}
+
+/* .card {
+    display: flex;
+    margin-bottom: 5%;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 125px; 
+    height: 200px;
+    align-items: center;
+    justify-content: center; 
+    gap: 20px;
+    margin: 1%;
+    box-sizing: border-box;
+    flex-shrink: 0;
+} */
+
+
+.imgjgdr {
+    width: 80px;
+    height: auto;
+}
+
+.titulo, .subtitulo {
+    text-align: center;
+}
+
+
+.descricao{
+    display: flex;
+    background-color: #000000;
+
+}
+
+#div-geral {
+    /* display: flex;
+    flex-direction: column;
+    float: left;
+    margin-right: 200px;
+    background-color: #555;
+    width: 100%;
+    row-gap: 10%; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.container {
+    width: 100%;
+}
+.img-jog{
+    display: flex;
+}
+
+.linhas {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.linhas1 {
+    flex: 1 1 100%;
+    margin: 100px;
+}
+
+.goleiros {
+    width: 100%;
+}
+
+.laterais {
+    width: 100%;
+}
+
+.meias {
+    width: 100%
+}
+
+.atacantes {
+    width: 100%;
+}
+
+/* Ajustando o card */
+.card {
+    display: flex;
+    flex-direction: column; /* Faz com que o conteúdo dentro do card seja empilhado verticalmente */
+    align-items: center;  /* Centraliza o conteúdo dentro do card */
+    justify-content: center; /* Centraliza o conteúdo dentro do card */
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    width: 220px; /* Tamanho fixo para os cards */
+    height: 320px; /* Tamanho fixo para os cards */
+    margin: 15px; /* Espaçamento entre os cards */
+    box-sizing: border-box;
+    text-align: center;
+    overflow: hidden; /* Garante que nada saia da borda do card */
+    transition: all 0.3s ease;
+}
+
+/* Aumentando o tamanho da imagem */
+.card .imgjgdr {
+    width: 100%; /* Aumenta a largura da imagem */
+    height: 100%; /* Aumenta a altura da imagem */
+    object-fit: cover; /* Mantém a proporção da imagem sem distorção */
+    margin-bottom: 15px; /* Espaço abaixo da imagem */
+}
+
+/* Títulos dos jogadores */
+.card h2 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0;
+    color: #333;
+}
+
+/* Descrição do jogador dentro do card */
+.card p {
+    font-size: 14px;
+    color: #555;
+    margin: 5px 0;
+}
+
+/* Efeito hover no card */
+.card:hover {
+    transform: translateY(-5px); /* Efeito de elevação */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra mais forte */
+}
+
+/* Alinhando os cards dentro das seções */
+.goleiro, .zagueiro, .laterais, .atacantes, .meias {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centraliza os cards dentro da seção */
+    gap: 20px; /* Espaçamento entre os cards */
+    padding: 20px;
+}
+
+/* Layout das linhas dentro das seções */
+.linhas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Ajustando o layout das seções */
+.linhas1 {
+    flex: 1 1 100%;
+    display: flex;
+    justify-content: center; /* Centraliza os cards dentro da linha */
+}
+
+/* Responsividade para telas pequenas */
+@media screen and (max-width: 768px) {
+    .card {
+        width: 160px; /* Reduz o tamanho dos cards em telas pequenas */
+        height: 240px; /* Ajusta a altura dos cards */
+    }
+
+    .card .imgjgdr {
+        width: 120px;  /* Tamanho da imagem ajustado para telas menores */
+        height: 120px; /* Ajuste da altura da imagem */
+    }
+
+    .card h2 {
+        font-size: 16px;  /* Ajuste no tamanho do título */
+    }
+
+    .card p {
+        font-size: 12px;  /* Ajuste no tamanho da descrição */
+    }
+}
