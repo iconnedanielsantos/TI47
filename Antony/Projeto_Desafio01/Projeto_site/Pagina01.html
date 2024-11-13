@@ -1,116 +1,132 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8"> <!-- Define a codificação de caracteres para UTF-8 -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Torna a página responsiva -->
-    <title>Rappers Americanos</title> <!-- Título da página que aparece na aba do navegador -->
-    <link rel="stylesheet" href="css/estilo.css"> <!-- Vincula um arquivo CSS externo (opcional) -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rappers Americanos</title>
+    <link rel="stylesheet" href="css/estilo.css">
     <style>
         /* Estilo Geral */
         body {
-            background-image: url("imagens/games1.jpg"); /* Define a imagem de fundo da página */
-            background-size: cover; /* Faz a imagem de fundo cobrir toda a tela */
-            background-position: center; /* Centraliza a imagem de fundo */
-            background-repeat: no-repeat; /* Evita a repetição da imagem de fundo */
-            background-attachment: fixed; /* Fixa a imagem de fundo */
-            color: rgb(255, 255, 255); /* Define a cor do texto como branco */
-            margin: 0; /* Remove as margens da página */
-            padding: 0; /* Remove o preenchimento da página */
-            font-family: Arial, sans-serif; /* Define a fonte padrão */
-            text-align: center; /* Centraliza o conteúdo do texto */
+            background-image: url("imagens/games1.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: rgb(255, 255, 255);
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            text-align: center;
         }
 
         /* Cabeçalho */
         header {
-            background: rgba(0, 0, 0, 0.7); /* Fundo escuro com transparência para o cabeçalho */
-            width: 100%; /* Faz o cabeçalho ocupar toda a largura da página */
-            padding: 20px; /* Espaçamento interno no cabeçalho */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para criar efeito de profundidade */
+            background: rgba(0, 0, 0, 0.7);
+            width: 100%;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
 
         header h1 {
-            font-size: 2.5rem; /* Tamanho da fonte para o título */
-            color: #ffffff; /* Cor do texto do título */
-            margin: 0; /* Remove margens ao redor do título */
-            transition: color 0.3s ease; /* Transição suave na mudança de cor */
+            font-size: 2.5rem;
+            color: #ffffff;
+            margin: 0;
+            transition: color 0.3s ease;
         }
 
         nav ul {
-            list-style: none; /* Remove os marcadores da lista */
-            display: flex; /* Exibe os itens da lista em linha */
-            justify-content: center; /* Centraliza os itens na horizontal */
-            gap: 20px; /* Espaçamento entre os links */
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
             margin: 0;
             padding: 0;
         }
 
         nav ul li a {
-            color: #ffffff; /* Cor do texto dos links */
-            text-decoration: none; /* Remove o sublinhado dos links */
-            padding: 10px 15px; /* Espaçamento interno dos links */
-            border-radius: 5px; /* Arredonda as bordas dos links */
-            transition: background-color 0.3s ease, color 0.3s ease; /* Transição suave para as cores */
+            color: #ffffff;
+            text-decoration: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, color 0.3s ease;
         }
 
         nav ul li a:hover {
-            background-color: rgba(255, 255, 255, 0.2); /* Fundo claro ao passar o mouse */
-            color: #007bff; /* Cor do texto ao passar o mouse */
+            background-color: rgba(255, 255, 255, 0.2);
+            color: #007bff;
         }
 
         /* Conteúdo Principal */
         main {
             padding: 20px;
-            max-width: 1200px; /* Largura máxima para o conteúdo principal */
-            margin: 0 auto; /* Centraliza o conteúdo na tela */
-            background: rgba(0, 0, 0, 0.6); /* Fundo com transparência */
-            border-radius: 10px; /* Arredonda as bordas */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra ao redor */
+            max-width: 1200px;
+            margin: 0 auto;
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
 
         /* Estilo dos "Produtos" */
         .produto {
-            background-color: rgba(255, 255, 255, 0.1); /* Fundo com transparência para os cards */
-            border-radius: 10px; /* Bordas arredondadas */
-            padding: 15px; /* Espaçamento interno do card */
-            margin-bottom: 20px; /* Espaçamento inferior entre os cards */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para o card */
-            text-align: left; /* Alinhamento do texto à esquerda */
-            transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transições suaves para os efeitos */
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            padding: 15px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: left;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
         .produto:hover {
-            transform: scale(1.02); /* Aumenta levemente o card ao passar o mouse */
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Sombra mais intensa no hover */
+            transform: scale(1.02);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
         }
 
         .produto img {
-            width: 100%; /* Largura completa para a imagem */
-            height: auto; /* Altura proporcional */
-            border-radius: 10px; /* Arredonda as bordas da imagem */
-            margin-bottom: 10px; /* Espaçamento inferior */
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 10px;
         }
 
         .produto h3 {
-            color: #fff; /* Cor do texto do título do card */
-            font-size: 1.5rem; /* Tamanho do título */
-            margin: 0; /* Remove margens */
-            transition: color 0.3s ease; /* Transição suave na cor do título */
+            color: #fff;
+            font-size: 1.5rem;
+            margin: 0;
+            transition: color 0.3s ease;
         }
 
         .produto p {
-            color: #ddd; /* Cor do texto do parágrafo no card */
-            line-height: 1.6; /* Espaçamento entre linhas */
+            color: #ddd;
+            line-height: 1.6;
+        }
+
+        /* Estilo do botão "Saiba mais" */
+        .botao-saiba-mais {
+            display: inline-block;
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        .botao-saiba-mais:hover {
+            background-color: #0056b3;
         }
 
         /* Responsividade */
         @media (min-width: 600px) {
             .produto {
-                display: flex; /* Exibe o conteúdo em linha em telas maiores */
+                display: flex;
                 align-items: flex-start;
-                gap: 20px; /* Espaçamento entre a imagem e o texto */
+                gap: 20px;
             }
             .produto img {
-                max-width: 150px; /* Limita a largura da imagem em telas grandes */
+                max-width: 150px;
                 width: auto;
             }
         }
@@ -118,10 +134,9 @@
 </head>
 <body>
     <header>
-        <h1>Cenario Masculino</h1> <!-- Título do cabeçalho -->
+        <h1>Cenario Masculino</h1>
         <nav>
             <ul>
-                <!-- Links de navegação -->
                 <li><a href="index.html">Início</a></li>
                 <li><a href="Pagina01.html">Cenario Masculino</a></li>
                 <li><a href="Pagina02.html">Cenario Feminino</a></li>
@@ -131,15 +146,15 @@
         </nav>
     </header>
     <main>
-        <h2>Melhores da Cena</h2> <!-- Subtítulo principal -->
+        <h2>Melhores da Cena</h2>
 
         <!-- Produto 1 -->
         <div class="produto">
-            <img src="imagens/produto1.jpg" alt="2Pac"> <!-- Imagem do rapper -->
+            <img src="imagens/produto1.jpg" alt="2Pac">
             <div>
-                <h3>2Pac</h3> <!-- Nome do rapper -->
-                <p>2Pac, também conhecido como Tupac Shakur, foi um rapper, ator e ativista americano, amplamente considerado um dos maiores rappers de todos os tempos...</p> <!-- Descrição -->
-
+                <h3>2Pac</h3>
+                <p>2Pac, também conhecido como Tupac Shakur, foi um rapper, ator e ativista americano, amplamente considerado um dos maiores rappers de todos os tempos...</p>
+                <a href="https://pt.wikipedia.org/wiki/2Pac" class="botao-saiba-mais" target="_blank">Saiba mais</a>
             </div>
         </div>
         
@@ -149,6 +164,7 @@
             <div>
                 <h3>Eazy-E</h3>
                 <p>Eazy-E, nome verdadeiro Eric Wright, foi um rapper e produtor musical americano, conhecido como "O Deus do Rap"...</p>
+                <a href="https://pt.wikipedia.org/wiki/Eazy-E" class="botao-saiba-mais" target="_blank">Saiba mais</a>
             </div>
         </div>
         
@@ -158,6 +174,7 @@
             <div>
                 <h3>Ice Cube</h3>
                 <p>Ice Cube, nascido O'Shea Jackson em 1969, é um rapper, ator e produtor americano. Ele ganhou fama como membro do grupo de rap N.W.A...</p>
+                <a href="https://pt.wikipedia.org/wiki/Ice_Cube" class="botao-saiba-mais" target="_blank">Saiba mais</a>
             </div>
         </div>
         
@@ -167,6 +184,7 @@
             <div>
                 <h3>Notorious B.I.G.</h3>
                 <p>Notorious B.I.G., também conhecido como Biggie Smalls, foi um rapper americano que se destacou na cena do hip-hop durante os anos 90...</p>
+                <a href="https://pt.wikipedia.org/wiki/The_Notorious_B.I.G." class="botao-saiba-mais" target="_blank">Saiba mais</a>
             </div>
         </div>
         
@@ -176,6 +194,7 @@
             <div>
                 <h3>Eminem</h3>
                 <p>Eminem, nascido Marshall Mathers em 1972, é um rapper, compositor e produtor musical americano. Ele é conhecido por suas letras autobiográficas...</p>
+                <a href="https://pt.wikipedia.org/wiki/Eminem" class="botao-saiba-mais" target="_blank">Saiba mais</a>
             </div>
         </div>
         
@@ -185,6 +204,7 @@
             <div>
                 <h3>Juice WRLD</h3>
                 <p>Juice WRLD, nome verdadeiro Jarad Higgins, foi um rapper, cantor e compositor americano que emergiu na cena musical no final da década de 2010...</p>
+                <a href="https://pt.wikipedia.org/wiki/Juice_WRLD" class="botao-saiba-mais" target="_blank">Saiba mais</a>
             </div>
         </div>
         
@@ -194,6 +214,7 @@
             <div>
                 <h3>Snoop Dogg</h3>
                 <p>Snoop Dogg, nome verdadeiro Calvin Cordozar Broadus Jr., é um rapper, produtor e ator americano, nascido em 1971...</p>
+                <a href="https://pt.wikipedia.org/wiki/Snoop_Dogg" class="botao-saiba-mais" target="_blank">Saiba mais</a>
             </div>
         </div>
         
