@@ -1,0 +1,77 @@
+/* Estilo para a forma cinza */
+.search-menu-container {
+    background-color: #444444;
+    padding: 15px;
+    width: auto; /* Faz a forma ocupar 100% da largura */
+    box-sizing: border-box; /* Garante que o padding não afete a largura */
+    display: flex;
+    justify-content: space-between; /* Separar os itens para que o menu fique à esquerda e a barra de pesquisa à direita */
+    align-items: center;
+}
+
+/* Centralizar os itens dentro da forma */
+.menu-search-content {
+    display: flex;
+    width: 100%;
+    justify-content: space-between; /* Garante que o conteúdo do menu fique à esquerda e a barra de pesquisa à direita */
+    align-items: center;
+}
+
+/* Ajuste do container para remover margens automáticas */
+.container {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.menu-links {
+    display: flex;
+    gap: 10px;
+}
+
+.menu-links a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.menu-links a:hover {
+    color: #007bff;
+}
+
+.search-bar input {
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.search-bar {
+    text-align: right;
+}
+
+button {
+    padding: 8px 12px;
+}
+
+.custom-btn {
+    background-color: rgba(255, 153, 0, 0);
+    color: #007bff;
+    border: 2px solid #007bff;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.custom-btn:hover {
+    background-color: #007bff;
+}
+
+.fonte-zero {
+    font-size: 60px;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+    margin-top: 50px;
+}
