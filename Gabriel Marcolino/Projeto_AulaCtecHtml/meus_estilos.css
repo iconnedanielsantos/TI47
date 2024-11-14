@@ -2,8 +2,7 @@
 .search-menu-container {
     background-color: #444444;
     padding: 15px;
-    border-radius: 8px;
-    width: 100%; /* Faz a forma ocupar 100% da largura */
+    width: auto; /* Faz a forma ocupar 100% da largura */
     box-sizing: border-box; /* Garante que o padding não afete a largura */
     display: flex;
     justify-content: space-between; /* Separar os itens para que o menu fique à esquerda e a barra de pesquisa à direita */
@@ -46,4 +45,33 @@
 
 .search-bar {
     text-align: right;
+}
+
+button {
+    padding: 8px 12px;
+}
+
+.custom-btn {
+    background-color: rgba(255, 153, 0, 0);
+    color: #007bff;
+    border: 2px solid #007bff;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.custom-btn:hover {
+    background-color: #007bff;
+}
+
+.fonte-zero {
+    font-size: 60px;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+    margin-top: 50px;
 }
