@@ -22,6 +22,12 @@
 <script src="fontawesome-6.4.2/js/all.js"></script>
 
 <style>
+
+    body, html {
+        margin: 0;
+        padding: 0;
+    }
+
     .search-bar {
         width: 300px;
     }
@@ -29,16 +35,24 @@
             background-color: black;
             color: #00bfae;
             border: 2px solid #00bfae;
+            margin-left: 10px;
     }
     .navbar-nav .nav-item {
             margin-right: 20px;
         }
     .navbar-taskbar {
         background-color: #5a5d5f;
+        width: 100%;
+        box-sizing: border-box;
     }
         .dropdown-menu {
             background-color: #f8f9fa;
         }
+
+main {
+    margin-top: 20px;
+}
+
         .title-right h1 {
             position: absolute;
             right: 20px;
@@ -57,6 +71,45 @@
         .navbar-nav .nav-link:hover {
             color: #00bfae !important;
         }
+    
+        .carousel-container {
+        margin-top: -40px;
+        padding: 20px 0;
+        background-color: #f8f9fa;
+    }
+
+    .carousel-inner img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        background: none;
+        border: none;
+        color: transparent;
+        outline: none;
+    }
+
+    .carousel-control-prev-icon::before {
+        content: '\f053';
+        font-family: 'Font Awesome 5 Free';
+        font-weight: 900;
+    }
+
+    .carousel-control-next-icon::before {
+        content: '\f054';
+        font-family: 'Font Awesome 5 Free';
+        font-weight: 900;
+    }
+    .navbar-nav .nav-link {
+        color: rgb(255, 255, 255) !important;
+        font-size: 16px;
+        font-weight: bold;
+    }
 
     </style>
 
@@ -122,6 +175,34 @@
    
 
     <script src="bootstrap-4.4.1/js/bootstrap.bundle.min.js"></script>
+
+<main>
+    <div class="carousel-container">
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="galeria/data1/images/galeria2.jpg" class="d-block w-100" alt="galeria1">
+                </div>
+                <div class="carousel-item">
+                    <img src="galeria/data1/images/galeria1.jpg" class="d-block w-100" alt="galeria2">
+                </div>
+                <div class="carousel-item">
+                    <img src="galeria/data1/images/galeria3.jpg" class="d-block w-100" alt="galeria3">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                
+            </button>
+        </div>
+    </div>
+
+</main>
+
 
 </body>
 
