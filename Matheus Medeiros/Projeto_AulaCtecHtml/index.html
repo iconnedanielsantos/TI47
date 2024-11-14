@@ -16,16 +16,41 @@ html
         display: none;
     }
     
-    .nav{
-        background-color: black;
+    nav{
+        background-color: #343A40; 
+        color: #FFFFFF; 
+        padding-top: 20px; 
+        padding-bottom: 10px; 
+        font-size: 16px; 
+        text-align: center;
+        display: inline;
+        
     }
 
     .footer{
         background-color: black;
         display: 50%;
         display: flex
+     
+
+        
         
     }
+
+    .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
 </style>
 
 <head>
@@ -131,19 +156,24 @@ html
                 </div>
             </div>
         
-            <div>
-                <nav>
-                    <a href="">Home</a>
-                    <a href="">Empresas</a>
-                    <a href="">Cursos</a>
-                    <a href="">Contato</a>
-                </nav>   
-            </div>
+           
 
         </header>
-    
+     
+        <nav>
+            <a href="Home">Home</a>
+            <a href="Empresas">Empresas</a>
+            <div class="dropdown">
+                <span>Cursos</span>
+                <div class="dropdown-content">
+                <p>Curso1</p>
+                </div>
+              </div>
+            <a href="Contato">Contato</a>
+        </nav>
 
-        <footer class="footer">Vai corinthians</footer>
+
+        
         
     </main>
     </body>
