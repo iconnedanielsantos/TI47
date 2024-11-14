@@ -16,16 +16,36 @@ html
         display: none;
     }
     
-    .nav{
+    .nav a{
         background-color: black;
+        width: 100%;
+        display: center;
+        padding: 3%;
     }
 
     .footer{
         background-color: black;
         display: 50%;
         display: flex
+        pad
+        
         
     }
+
+    .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
 </style>
 
 <head>
@@ -131,11 +151,18 @@ html
                 </div>
             </div>
         
-            <div>
+            <div class="nav aba">
                 <nav>
                     <a href="">Home</a>
                     <a href="">Empresas</a>
-                    <a href="">Cursos</a>
+                    <div class="dropdown">
+                        <span>Cursos</span>
+                        <div class="dropdown-content">
+                        <p>Hello World!</p>
+                        </div>
+                      </div>
+                      
+                    <a href="">a</a>
                     <a href="">Contato</a>
                 </nav>   
             </div>
@@ -143,7 +170,7 @@ html
         </header>
     
 
-        <footer class="footer">Vai corinthians</footer>
+        
         
     </main>
     </body>
