@@ -19,26 +19,13 @@
     <link href="fontawesome-6.4.2/css/all.css" rel="stylesheet" type="text/css">
     <script src="fontawesome-6.4.2/js/all.js"></script>
 
-    <style>
-        .search-menu-container {
-            background-color: #3b3838;
-            padding: 15px;
-            border-radius: 8px; 
-        }
-    </style>
-
 </head>
 <body>
     <main>
-        <header>
-            <h1 class="fonte-zero">CTec - Cursos de Tecnologia</h1>
-        </header>
-        
         <div class="container">
             <div class="row">
                 <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-6"> 
                     <section>
-                        <h2 class="fonte-zero">Logo CTec</h2>
                         <a href="index.html"><img src="imagens/logo-ctec.png"
                             alt="Logo CTec" class="img-fluid" title="Logo CTec"></a>
                     </section>
@@ -47,30 +34,29 @@
                 <div class="col-xl-8 col-lg-8 col-md-8 col-sm-8 col-12 nome-empresa">
                     <section>
                         <h2 class="fonte-zero">Cursos de Tecnologia</h2>
-                        Cursos de Tecnologia
                     </section>
                 </div>
             </div>
         </div>
 
+        <!-- Contêiner cinza para barra de pesquisa e menu -->
         <div class="container mt-3">
-            <div class="search-menu-container d-flex justify-content-between">
- 
-                <h1 class="fonte-zero">Menu: Home, Empresa, Cursos, <br>
-                Tecnologia da informação, <br>
-                Administração, Logistica, Contato e <br>
-                Localizar</h1> <br><br><br>
-                <div class="menu-links text-left">
-                    <a href="home">Home</a> |
-                    <a href="services">Empresa</a> |
-                    <a href="about">Cursos</a> |
-                    <a href="contact">Contato</a>
-                </div>
+            <div class="search-menu-container">
+                <div class="menu-search-content">
+                    <!-- Menu -->
+                    <div class="menu-links">
+                        <a href="home">Home</a>
+                        <a href="services">Empresa</a>
+                        <a href="about">Cursos</a>
+                        <a href="contact">Contato</a>
+                    </div>
 
-                <div class="search-bar">
-                    <form action="/search" method="get">
-                        <input type="text" name="query" placeholder="Search..." class="form-control">
-                    </form>
+                    <!-- Barra de pesquisa -->
+                    <div class="search-bar">
+                        <form action="/search" method="get">
+                            <input type="text" name="query" placeholder="Search..." class="form-control">
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
