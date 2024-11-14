@@ -3,6 +3,58 @@ body {
     margin: 0;
     padding: 0;
 }
+
 header {
-    background-color: black;
+    background-color: rgb(218, 39, 39);
+    color: rgb(56, 56, 56);
+    padding: 1em;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+
+}
+
+main {
+    padding: 1em;
+
+}
+
+form label {
+    display: block;
+    margin-top: 10px;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 0.5em;
+    margin-top: 5px;
+}
+
+button {
+    background-color: aquamarine;
+    color: blue;
+    padding: 0.7em;
+    border: none;
+    cursor: pointer;
+}
+
+.produto {
+    border: 1px solid #ddd;
+    padding: 1em;
+    margin: 1em 0;
+    text-align: center;
+}
+
+.produto img {
+    max-width: 100%;
+    height: auto;
 }
