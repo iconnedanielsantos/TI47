@@ -1,0 +1,24 @@
+.logo {   /*logo*/
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 10px;
+
+}
+
+.textstyle {   /*Css de texto principal*/
+    font-family: Arial, Helvetica, sans-serif;
+
+
+}
+
+.list {  /* css de lista*/
+    list-style: none;
+    /* Remove os marcadores da lista */
+    display: flex;
+    /* Exibe os itens da lista em linha */
+    gap: 20px;
+    /* Espaçamento entre os links */
+    margin: 0;
+    padding: 0;
+}
