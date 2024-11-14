@@ -20,10 +20,51 @@
     <script src="fontawesome-6.4.2/js/all.js"></script>
 
     <style>
+        /* Estilo para a forma cinza */
         .search-menu-container {
-            background-color: #3b3838;
+            background-color: #444444;
             padding: 15px;
-            border-radius: 8px; 
+            border-radius: 8px;
+            width: 100%; /* Faz a forma ocupar 100% da largura */
+            box-sizing: border-box; /* Garante que o padding não afete a largura */
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            border-left: 15px solid #007bff; /* Aumenta a largura da borda esquerda */
+            border-right: 15px solid #007bff; /* Aumenta a largura da borda direita */
+        }
+
+        /* Centralizar os itens dentro da forma */
+        .menu-search-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+
+        /* Ajuste do container para remover margens automáticas */
+        .container {
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        .menu-links {
+            margin-right: 20px;
+            display: flex;
+            gap: 10px;
+        }
+
+        .menu-links a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .menu-links a:hover {
+            color: #444444;
+        }
+
+        .search-bar input {
+            padding: 8px;
         }
     </style>
 
@@ -53,24 +94,24 @@
             </div>
         </div>
 
+        <!-- Contêiner cinza para barra de pesquisa e menu -->
         <div class="container mt-3">
-            <div class="search-menu-container d-flex justify-content-between">
- 
-                <h1 class="fonte-zero">Menu: Home, Empresa, Cursos, <br>
-                Tecnologia da informação, <br>
-                Administração, Logistica, Contato e <br>
-                Localizar</h1> <br><br><br>
-                <div class="menu-links text-left">
-                    <a href="home">Home</a> |
-                    <a href="services">Empresa</a> |
-                    <a href="about">Cursos</a> |
-                    <a href="contact">Contato</a>
-                </div>
+            <div class="search-menu-container">
+                <div class="menu-search-content">
+                    <!-- Menu -->
+                    <div class="menu-links">
+                        <a href="home">Home</a>
+                        <a href="services">Empresa</a>
+                        <a href="about">Cursos</a>
+                        <a href="contact">Contato</a>
+                    </div>
 
-                <div class="search-bar">
-                    <form action="/search" method="get">
-                        <input type="text" name="query" placeholder="Search..." class="form-control">
-                    </form>
+                    <!-- Barra de pesquisa -->
+                    <div class="search-bar">
+                        <form action="/search" method="get">
+                            <input type="text" name="query" placeholder="Search..." class="form-control">
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
