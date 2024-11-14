@@ -1,177 +1,203 @@
 <!doctype html>
-
-<!--
-<!doctype html>: Declara o tipo do documento, especificando que este é um documento HTML5. Isso ajuda o navegador a interpretar o conteúdo corretamente.
-html
--->
-
 <html lang="pt-br">
-<!--
-<html lang="pt-br">: Define a linguagem principal do conteúdo da página como português brasileiro. Isso é importante para acessibilidade e SEO (otimização de busca), pois ajuda os navegadores e motores de busca a processar o texto na língua correta.
-html
--->
-
 <head>
-<!--
-<head>: Esta seção contém informações sobre o documento que não são exibidas diretamente na página, mas são essenciais para a estrutura, design e indexação do site.
-html
--->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Cursos de Tecnologia especializados em áreas como TI, Administração e Logística. Capacite-se para o mercado de trabalho com a CTec.">
+    <meta name="keywords" content="cursos, tecnologia, TI, informática, HTML5, CSS3, desenvolvimento, web, PHP, SQL, MySQL, Senac, capacitação">
     
-<meta charset="utf-8">
-<!--
-<meta charset="utf-8">: Define a codificação de caracteres como UTF-8, que suporta uma vasta gama de caracteres de diferentes idiomas e símbolos especiais. É essencial para garantir que todos os caracteres apareçam corretamente na página.
-html
--->
+    <title>CTec - Cursos de Tecnologia</title>
 
-<title>CTec - Cursos de Tecnologia</title>
-<!--
-<title>: Define o título da página, que será exibido na aba do navegador e também utilizado pelos motores de busca como título principal para a página nos resultados de pesquisa. Um título único e conciso contribui para o SEO.
-html
--->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="bootstrap-4.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="meus_estilos.css" rel="stylesheet">
+    <link href="galeria/engine1/style.css" rel="stylesheet">
+    <link href="lightbox2/dist/css/lightbox.min.css" rel="stylesheet">
+    <link href="fontawesome-6.4.2/css/all.css" rel="stylesheet">
+    <script src="galeria/engine1/jquery.js"></script>
+    <script src="fontawesome-6.4.2/js/all.js"></script>
 
-<meta name="description" content="Desenvolvimento de cursos de tecnologia">
-<!--
-<meta name="description">: Fornece uma breve descrição da página, que pode aparecer nos resultados de pesquisa do Google. Essa descrição deve ser objetiva e relevante, pois influencia a taxa de clique na página.
-html
--->
+    <!-- Adicionando um pouco de animação e interatividade -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
 
-<meta name="keywords" content="cursos, tecnologia, ti, informática, html5, css3, senac, desenvolvimento, web, websites, php, sql, mysql">
-<!--
-<meta name="keywords">: Inclui palavras-chave associadas ao conteúdo da página. Embora os motores de busca modernos deem pouca importância a essa tag, ela ainda pode ser usada para contexto adicional.
-html
--->
+    <!-- Estilos personalizados -->
+    <style>
+        /* Estilo do cabeçalho */
+        header {
+            background-color: #f1f1f1; /* Cabeçalho suave e claro */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease-in-out;
+        }
+        header:hover {
+            background-color: #e0e0e0; /* Efeito de hover para uma leve mudança de cor */
+        }
 
-<link rel="short icon" href="favicon.ico">
-<!--
-<link rel="short icon">: Define o favicon, um pequeno ícone associado à página, geralmente exibido na aba do navegador ao lado do título. Ele é importante para branding e facilita a identificação visual da página.
-html
--->
+        /* Cor do fundo mais suave e clean */
+        body {
+            background-color: #f8f9fa; /* Fundo cinza claro */
+            font-family: 'Arial', sans-serif;
+            color: #333;
+        }
 
-<link href="bootstrap-4.4.1/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-<!--
-<link rel="stylesheet">: Link para o arquivo CSS do Bootstrap, uma biblioteca popular de estilos para desenvolver layouts responsivos e modernos. Ele facilita a criação de layouts adaptáveis e estilizados sem precisar escrever muito CSS.
-html
--->
+        /* Títulos mais suaves */
+        h1, h2 {
+            font-weight: 600;
+        }
 
-<link href="meus_estilos.css" rel="stylesheet" type="text/css">
-<!--
-<link href="meus_estilos.css">: Importa um arquivo CSS personalizado chamado meus_estilos.css, onde você pode incluir estilos específicos para essa página, complementando o estilo do Bootstrap.
-html
--->
+        /* Cartões */
+        .card {
+            border: none;
+            border-radius: 8px;
+            background-color: #fff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s ease-in-out;
+        }
 
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<!--
-<meta name="viewport">: Configura a página para ser responsiva. width=device-width ajusta a largura da página à largura do dispositivo, e initial-scale=1 define o nível de zoom inicial. shrink-to-fit=no evita que a página encolha além do limite.
-html
--->
+        .card:hover {
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Efeito de hover nos cartões */
+        }
 
-<link rel="stylesheet" type="text/css" href="galeria/engine1/style.css">
-<script src="galeria/engine1/jquery.js"></script>
-<!--
-<link> e <script> (Wowslider): O link carrega o arquivo CSS do Wowslider, uma biblioteca de galeria de imagens, enquanto o script carrega o jQuery, uma biblioteca JavaScript essencial para o funcionamento do Wowslider. Esses arquivos permitem que galerias e animações de imagens funcionem na página.
-html
--->
+        /* Botões */
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+            transition: background-color 0.3s ease-in-out;
+        }
 
+        .btn-primary:hover {
+            background-color: #0056b3;
+            border-color: #004085;
+        }
 
-<link href="lightbox2/dist/css/lightbox.min.css" rel="stylesheet" type="text/css">
-<!--
-<link href="lightbox2/dist/css/lightbox.min.css">: Importa o CSS para o Lightbox2, uma biblioteca que permite a exibição de imagens em uma sobreposição, ideal para exibir imagens em uma galeria.
-html
--->
+        /* Formatação da navbar */
+        .navbar {
+            background-color: #343a40;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
 
-<link href="fontawesome-6.4.2/css/all.css" rel="stylesheet" type="text/css">
-<script src="fontawesome-6.4.2/js/all.js"></script>
-<!--
-<link> e <script> (Font Awesome): Esses elementos importam os arquivos CSS e JavaScript do Font Awesome, uma biblioteca de ícones. Eles permitem adicionar ícones e símbolos personalizados, melhorando a experiência visual da página.
-html
--->
+        .navbar-nav .nav-link {
+            color: #f8f9fa !important;
+            padding: 20px 25px; /* Aumentando o espaçamento entre os links do menu */
+            font-weight: bold; /* Tornando o texto mais visível */
+            text-transform: uppercase; /* Transformar o texto para maiúsculas */
+            letter-spacing: 1px;
+            transition: color 0.3s ease, background-color 0.3s ease;
+        }
 
+        .navbar-nav .nav-link:hover {
+            color: #007bff !important;
+            background-color: rgba(0, 123, 255, 0.1);
+        }
+
+        /* Centralizando o menu */
+        .navbar-nav {
+            flex-direction: row;
+            justify-content: center;
+            text-align: center;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #343a40;
+            color: white;
+            padding: 30px 0;
+            text-align: center;
+        }
+
+        footer a {
+            color: #f8f9fa;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            color: #007bff;
+        }
+
+        /* Aumentar o tamanho da logo */
+        .navbar-brand img {
+            max-width: 150px;
+        }
+
+        /* Ajuste para os cards */
+        .card-body {
+            padding: 20px;
+            background-color: #f8f9fa; /* Fundo suave para os cards */
+            border-radius: 8px;
+        }
+
+        /* Títulos dos cards */
+        .card-title {
+            font-weight: 600;
+            color: #333;
+        }
+
+        /* Responsividade */
+        @media (max-width: 767px) {
+            .navbar-nav {
+                flex-direction: column;
+            }
+        }
+    </style>
 </head>
-<!--
-</head>: Finaliza a seção <head>, que inclui todas as informações estruturais e recursos necessários para o carregamento correto da página antes de seu conteúdo ser exibido.
--->
 
 <body>
-
-    <main> <!--Nível de importância da página-->
-          
-        <h1 class="fonte-zero">CTec - Cursos de Tecnologia</h1>
-        
-        <header>
-        
-        <!-- Topo -->
-        <div class="container">
-        <div class="row">
-            
-        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-6">
-        <section>
-        <h2 class="fonte-zero">Logo CTec</h2>
-        <a href="index.html"><img src="imagens/logo-ctec.png" alt="Logo CTec" class="img-fluid" title="Logo CTec"></a>
-        </section>
-        </div>
-                  
-        <div class="col-xl-8 col-lg-8 col-md-8 col-sm-8 col-12 nome-empresa">
-        <section>
-        <h2 class="fonte-zero">Cursos de Tecnologia</h2>
-        Cursos de Tecnologia
-        </section>
-        </div>
-                  
-        </div>
-        </div>
-        <!-- FIM Topo -->
-    
+    <main>
+        <!-- Cabeçalho -->
+        <header class="py-4">
+            <div class="container d-flex justify-content-between align-items-center">
+                <a href="index.html" class="d-flex align-items-center">
+                    <img src="imagens/logo-ctec.png" alt="Logo CTec" class="img-fluid" width="150">
+                    <h1 class="ml-3 font-weight-bold">CTec - Cursos de Tecnologia</h1>
+                </a>
+            </div>
         </header>
-    	
-        <!-- Menu -->
-        
-        <div class="container-fluid bg-dark">
-        <div class="container">
-            
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            
-        <h2 class="fonte-zero">Menu: Home, Empresa, Cursos, Tecnologia da Informação, Adminstração, Logística, Contato e Localizar</h2>
-            
-        <a class="navbar-brand" href="index.html">Home</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-        </button>
-        
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-        <a class="nav-link" href="#">Empresa <span class="sr-only">(current)</span></a>
-        </li>
-        
-        <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        Cursos
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-        <a class="dropdown-item" href="#">Tecnologia da Informação</a>
-        <div class="dropdown-divider"></div>
-        <a class="dropdown-item" href="#">Administração</a>
-        <a class="dropdown-item" href="#">Logística</a>
-        </div>
-        </li>
-        
-        <li class="nav-item active">
-        <a class="nav-link" href="#">Contato <span class="sr-only">(current)</span></a>
-        </li>	
-            
-        </ul>
-        <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form>
-        </div>
-        </nav>	
-            
-        </div>	
-        </div>
-        
-        <!-- FIM Menu -->
 
-</body>
+        <!-- Navegação -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">Home</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Empresa</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Cursos
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Tecnologia da Informação</a>
+                                <a class="dropdown-item" href="#">Administração</a>
+                                <a class="dropdown-item" href="#">Logística</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contato</a>
+                        </li>
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0 ml-3">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Buscar cursos..." aria-label="Buscar">
+                        <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Buscar</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
 
-</html>
+        <!-- Seção de Cursos -->
+        <section class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center mb-4 font-weight-bold text-dark animate__animated animate__fadeIn">Cursos Oferecidos</h2>
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="imagens/cursos/ti.jpg" class="card-img-top" alt="Curso de Tecnologia da Informação">
+                            <div class="card-body">
+                                <h5 class="card-title">Tecnologia da Informação</h5>
+                                <p class="card-text">Aprenda sobre redes, sistemas operacionais, programação e mais com nossos cursos de TI.</p>
+                                <a href="#" class="btn btn-primary">Saiba mais</a>
+                            </div>
+                        </
