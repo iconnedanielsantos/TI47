@@ -2,7 +2,6 @@
 .search-menu-container {
     background-color: #444444;
     padding: 15px;
-    border-radius: 8px;
     width: 100%; /* Faz a forma ocupar 100% da largura */
     box-sizing: border-box; /* Garante que o padding não afete a largura */
     display: flex;
