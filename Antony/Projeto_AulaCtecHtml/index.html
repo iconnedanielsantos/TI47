@@ -1,44 +1,58 @@
 <!doctype html>
 <html lang="pt-BR">
 <head>
-<meta charset="utf-8">
-<title>CTec - Cursos de Tecnologia</title>
+    <!-- Define o tipo de documento como HTML5 -->
+    <meta charset="utf-8">
+    <!-- Define o título da página -->
+    <title>CTec - Cursos de Tecnologia</title>
 
-<meta name="description" content="Desenvolvimento de cursos de tecnologia">
-<meta name="keywords" content="cursos, tecnologia, ti, informática, html5, css3, senac, desenvolvimento, web, websites, php, sql, mysql">
+    <!-- Metadados para descrição e palavras-chave para SEO -->
+    <meta name="description" content="Desenvolvimento de cursos de tecnologia">
+    <meta name="keywords" content="cursos, tecnologia, ti, informática, html5, css3, senac, desenvolvimento, web, websites, php, sql, mysql">
 
+    <!-- Adiciona um favicon (ícone da aba do navegador) -->
+    <link rel="short icon" href="favicon.ico">
+    <!-- Inclui o arquivo CSS do Bootstrap para estilos prontos -->
+    <link href="bootstrap-4.4.1/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <!-- Inclui o arquivo CSS personalizado -->
+    <link href="meus_estilos.css" rel="stylesheet" type="text/css">
 
-<link rel="short icon" href="favicon.ico">
-<link href="bootstrap-4.4.1/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-<link href="meus_estilos.css" rel="stylesheet" type="text/css">
+    <!-- Define que a página será responsiva -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Estilo do carrossel -->
+    <link rel="stylesheet" type="text/css" href="galeria/engine1/style.css">
+    <!-- Biblioteca jQuery -->
+    <script src="galeria/engine1/jquery.js"></script>
 
+    <!-- Inclui o CSS da biblioteca Lightbox para exibição de imagens -->
+    <link href="lightbox2/dist/css/lightbox.min.css" rel="stylesheet" type="text/css">
+    <!-- Inclui o CSS e JS do FontAwesome para ícones -->
+    <link href="fontawesome-6.4.2/css/all.css" rel="stylesheet" type="text/css">
+    <script src="fontawesome-6.4.2/js/all.js"></script>
 
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<link rel="stylesheet" type="text/css" href="galeria/engine1/style.css">
-<script src="galeria/engine1/jquery.js"></script>
-
-<link href="lightbox2/dist/css/lightbox.min.css" rel="stylesheet" type="text/css">
-<link href="fontawesome-6.4.2/css/all.css" rel="stylesheet" type="text/css">
-<script src="fontawesome-6.4.2/js/all.js"></script>
-
-<style>
-    .search-bar {
-        width: 300px;
-    }
-    .search-button {
+    <style>
+        /* Estilo personalizado da barra de busca */
+        .search-bar {
+            width: 300px;
+        }
+        .search-button {
             background-color: black;
             color: #00bfae;
             border: 2px solid #00bfae;
-    }
-    .navbar-nav .nav-item {
+        }
+        /* Espaçamento entre os itens do menu */
+        .navbar-nav .nav-item {
             margin-right: 20px;
         }
-    .navbar-taskbar {
-        background-color: #5a5d5f;
-    }
+        /* Cor de fundo da barra de navegação */
+        .navbar-taskbar {
+            background-color: #5a5d5f;
+        }
+        /* Estilo do menu dropdown */
         .dropdown-menu {
             background-color: #f8f9fa;
         }
+        /* Estilo do título do cabeçalho */
         .title-right h1 {
             position: absolute;
             right: 20px;
@@ -46,10 +60,11 @@
             font-size: 110px;
             font-weight: bold;
         }
-
+        /* Ajuste da margem da imagem no cabeçalho */
         .container img {
             margin-left: -200px;
         }
+        /* Cor e animação dos links no menu */
         .navbar-nav .nav-link {
             color: white !important;
             transition: 0.3s;
@@ -57,33 +72,29 @@
         .navbar-nav .nav-link:hover {
             color: #00bfae !important;
         }
-
-
+        /* Estilos globais */
         * {
             box-sizing: border-box;
             margin: 0;
             padding: 0;
         }
-
+        /* Estilos do carrossel */
         .carrossel-container {
             position: relative;
             width: 100%;
-            max-width: 1600px; /* Limita o tamanho máximo */
+            max-width: 1600px;
             margin: auto;
             overflow: hidden;
         }
-
         .carrossel-imagens {
             display: flex;
             transition: transform 0.5s ease;
         }
-
         .carrossel-imagens img {
             width: 100%;
             height: auto;
             border-radius: 1px;
         }
-
         .carrossel-botao {
             position: absolute;
             top: 50%;
@@ -95,42 +106,37 @@
             cursor: pointer;
             z-index: 10;
         }
-
+        /* Botões do carrossel */
         .carrossel-botao-esquerda {
             left: 0;
         }
-
         .carrossel-botao-direita {
             right: 0;
         }
-
         /* Responsividade */
         @media screen and (max-width: 768px) {
             .carrossel-container {
                 max-width: 100%;
             }
         }
-
-
-
-       
-
     </style>
 
 </head>
 
 <body>
 
-
+    <!-- Cabeçalho principal -->
     <main>
         <header>
             <div class="title-right">
-            <h1 class="fonte-zero">Cursos de Tecnologia</h1>
+                <!-- Título do site -->
+                <h1 class="fonte-zero">Cursos de Tecnologia</h1>
             </div>
         </header>
 
         <div class="container">
             <div class="row">
+                <!-- Logotipo do site -->
                 <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-6">
                     <section>
                         <a href="index.html">
@@ -140,13 +146,12 @@
                 </div>
             </div>
         </div>
-
     </main>
 
-
+    <!-- Barra de navegação -->
     <nav class="navbar navbar-expand-lg navbar-light navbar-taskbar">
         <div class="container-fluid">
-            
+            <!-- Menu principal -->
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
                     <a class="nav-link" href="#">Home</a>
@@ -158,9 +163,10 @@
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Cursos
                     </a>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contato</a>
-                    </li>
+                        <li class="nav-item"> 
+                            <a class="nav-link" href="#">Contato</a>
+                        </li>
+                
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <li><a class="dropdown-item" href="#">Cursos Online</a></li>
                         <li><a class="dropdown-item" href="#">Cursos Presenciais</a></li>
@@ -168,30 +174,31 @@
                     </ul>
                 </li>
             </ul>
-
-            
-                <form class="d-flex">
-                    <input class="form-control me-2 search-bar" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn search-button" type="submit">Search</button>
-                </form>
+            <!-- Barra de busca -->
+            <form class="d-flex">
+                <input class="form-control me-2 search-bar" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn search-button" type="submit">Search</button>
+            </form>
         </div>
     </nav>
-   
 
+    <!-- Biblioteca JavaScript do Bootstrap -->
     <script src="bootstrap-4.4.1/js/bootstrap.bundle.min.js"></script>
 
-
+    <!-- Carrossel de imagens -->
     <div class="carrossel-container">
         <div class="carrossel-imagens">
             <img src="galeria/data1/images/galeria1.jpg" alt="Imagem 1">
             <img src="galeria/data1/images/galeria2.jpg" alt="Imagem 2">
             <img src="galeria/data1/images/galeria3.jpg" alt="Imagem 3">
         </div>
+        <!-- Botões de navegação do carrossel -->
         <button class="carrossel-botao carrossel-botao-esquerda" onclick="moverCarrossel(-1)">&#10094;</button>
         <button class="carrossel-botao carrossel-botao-direita" onclick="moverCarrossel(1)">&#10095;</button>
     </div>
 
     <script>
+        /* Script para controlar o carrossel */
         let indiceAtual = 0;
 
         function moverCarrossel(direcao) {
@@ -215,5 +222,4 @@
     </script>
 
 </body>
-
 </html>
