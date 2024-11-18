@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Especificidade CSS</title>
+  <style>
+    /* Seletor de elemento (especificidade: 0,0,0,1) */
+    p {
+      color: rgb(0, 0, 0);
+    }
+
+    /* Seletor de classe (especificidade: 0,0,1,0) */
+    .texto-vermelho {
+      color: rgb(105, 46, 216);
+    }
+
+    /* Seletor de ID (especificidade: 0,1,0,0) */
+    #texto-destaque {
+      color: rgb(99, 92, 5);
+    }
+
+    /* Seletor com ID e classe combinados (especificidade: 0,1,1,0) */
+    #texto-destaque.texto-vermelho {
+      color: purple;
+    }
+  </style>
+</head>
+<body>
+
+     <div class="texto-vermelho"><h1> Isso é vermelho</h1>
+  <p>Este é um parágrafo com o seletor de elemento.</p>
+  <p class="texto-vermelho">Este parágrafo usa uma classe.</p>
+  <p id="texto-destaque">Este parágrafo usa um ID.</p>
+  <p id="texto-destaque" class="texto-vermelho">Este parágrafo usa um ID e uma classe.</p>
+</body>
+</html>
+
+
