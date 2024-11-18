@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+<meta charset="utf-8">
+<title>CTec - Cursos de Tecnologia</title>
+
+<meta name="description" content="Desenvolvimento de cursos de tecnologia">
+<meta name="keywords" content="cursos, tecnologia, ti, informática, html5, css3, senac, desenvolvimento, web, websites, php, sql, mysql">
+
+<link rel="short icon" href="favicon.ico">
+<link href="bootstrap-4.4.1/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="meus_estilos.css" rel="stylesheet" type="text/css">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<link rel="stylesheet" type="text/css" href="galeria/engine1/style.css">
+<script src="galeria/engine1/jquery.js"></script>
+
+<link href="lightbox2/dist/css/lightbox.min.css" rel="stylesheet" type="text/css">
+
+<link href="fontawesome-6.4.2/css/all.css" rel="stylesheet" type="text/css">
+<script src="fontawesome-6.4.2/js/all.js"></script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+    /* Reset básico e estilos iniciais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+}
+
+/* Cabeçalho com logo e título */
+.container {
+    margin-top: 20px;
+}
+
+.nome-empresa h2 {
+    font-size: 32px;
+    color: #333;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.img-fluid {
+    width: 100%;
+    height: auto;
+}
+
+/* Estilização da seção de menu e pesquisa */
+.search-menu-container {
+    background-color: #f1f1f1; /* Cor de fundo cinza */
+    padding: 20px 0;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.menu-search-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.menu-links {
+    display: flex;
+    gap: 20px;
+}
+
+.menu-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.menu-links a:hover {
+    color: #007bff;
+}
+
+/* Barra de pesquisa */
+.search-bar form {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar .form-control {
+    width: 250px;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 25px;
+}
+
+.search-bar .btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-bar .btn:hover {
+    background-color: #0056b3;
+}
+
+.search-bar .form-control:focus, .search-bar .btn:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+/* Responsividade */
+@media (max-width: 991px) {
+    .menu-search-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menu-links {
+        margin-bottom: 15px;
+    }
+
+    .search-bar form {
+        width: 100%;
+    }
+
+    .search-bar .form-control {
+        width: 80%;
+    }
+}
+</style>
+</head>
+
+<body>
+        <header>
+            <h1 class="fonte-zero">CTec - Cursos de Tecnologia</h1>
+        </header>
+        <div class="container">
+         <div class="row">
+          <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-6">
+            <section>
+                <h2 class="fonte-zero">Logo CTec</h2>
+                <a href="index.html"><img src="imagens/logo-ctec.png" alt="Logo CTec" class="img-fluid" title="Logo CTec"></a>
+        </section>
+         </div>
+
+    <div class="col-xl-8 col-lg-8 col-md-8 col-sm-8 col-12 nome-empresa">
+         <section>
+            <h2 class="fonte-zero">Cursos de Tecnologia</h2>
+        </section>
+     </div>
+         </div>
+          </div>
+      
+          <!--menu de navegação-->
+    <nav>
+        <ul>
+            <li><a href="Home">Home</a></li>
+            <li><a href="Empresa">Empresa</a></li>
+            <li><a href="Cursos">Cursos</a></li>
+            <li><a href="Contatos">Contatos</a></li>
+            <!--barra de pesquissa-->
+            <div class="search-container">
+                <form action="https://www.google.com/search" method="get" target="_blank">
+                    <input type="text" name="q" placeholder="search" required>
+                    <button type="submit">Search</button>
+                </form>
+                
+            </div>
+        </ul>
+    </nav>
+</body>
+
+</html>
