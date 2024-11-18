@@ -24,63 +24,123 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
-    nav {
-        background-color: #333;
-        padding: 10px 0;
+    /* Reset básico e estilos iniciais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+}
+
+/* Cabeçalho com logo e título */
+.container {
+    margin-top: 20px;
+}
+
+.nome-empresa h2 {
+    font-size: 32px;
+    color: #333;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.img-fluid {
+    width: 100%;
+    height: auto;
+}
+
+/* Estilização da seção de menu e pesquisa */
+.search-menu-container {
+    background-color: #f1f1f1; /* Cor de fundo cinza */
+    padding: 20px 0;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.menu-search-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.menu-links {
+    display: flex;
+    gap: 20px;
+}
+
+.menu-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.menu-links a:hover {
+    color: #007bff;
+}
+
+/* Barra de pesquisa */
+.search-bar form {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar .form-control {
+    width: 250px;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 25px;
+}
+
+.search-bar .btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-bar .btn:hover {
+    background-color: #0056b3;
+}
+
+.search-bar .form-control:focus, .search-bar .btn:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+/* Responsividade */
+@media (max-width: 991px) {
+    .menu-search-content {
+        flex-direction: column;
+        align-items: flex-start;
     }
 
-    nav ul {
-        margin-top: 50px;
-        list-style-type: none;
-       display: flex;
-       justify-content: space-between;
-       align-items: center;
-        margin: 0;
-        padding: 0;
-    }
-    
-    nav ul li {
-        display: inline;
-        margin: 0 15px;
+    .menu-links {
+        margin-bottom: 15px;
     }
 
-    nav ul li a {
-        color: #ffffff;
-        text-decoration: none;
-        font-weight: bold;
+    .search-bar form {
+        width: 100%;
     }
 
-    nav ul li a:hover {
-        color: #000000;
+    .search-bar .form-control {
+        width: 80%;
     }
-
-    .search-container {
-        text-align: flex;
-        justify-content: center;
-    }
-
-    input[type=text] {
-        width: 300px;
-        padding: 10px;
-        font-size: 16px;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-    }
-
-    button {
-        padding: 10px 15px;
-        font-size: 16px;
-        background-color: #4caf4f;
-        color: #ffffff;
-        border: #4CAF50;
-        border-radius: 5px;
-        cursor: pointer;
-    }
-
-    button:hover {
-        background-color: #45a049;
-    }
-    </style>
+}
+</style>
 </head>
 
 <body>
@@ -91,14 +151,14 @@
          <div class="row">
           <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-6">
             <section>
-                <h2 class="fonte-zero"></h2><!--logo CTec-->
+                <h2 class="fonte-zero">Logo CTec</h2>
                 <a href="index.html"><img src="imagens/logo-ctec.png" alt="Logo CTec" class="img-fluid" title="Logo CTec"></a>
         </section>
          </div>
 
     <div class="col-xl-8 col-lg-8 col-md-8 col-sm-8 col-12 nome-empresa">
          <section>
-            <h2 class="fonte-zero"></h2><!--cursos de tecnologia-->
+            <h2 class="fonte-zero">Cursos de Tecnologia</h2>
         </section>
      </div>
          </div>
