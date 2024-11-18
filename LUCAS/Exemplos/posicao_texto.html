@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caixas de Texto</title>
+    <style>
+        /* Estilo global para a página */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            overflow: hidden;
+        }
+
+        /* Classe para cada caixa de texto */
+        .caixa {
+            position: absolute;
+            padding: 10px;
+            background-color: rgba(100, 100, 255, 0.8);
+            color: white;
+            border-radius: 8px;
+            text-align: center;
+            font-size: calc(10px + 2vw); /* Redimensiona o texto conforme o tamanho da tela */
+        }
+
+        /* Posições das caixas */
+        .top-left {
+            top: 10px;
+            left: 10px;
+        }
+
+        .top-right {
+            top: 10px;
+            right: 10px;
+        }
+
+        .bottom-left {
+            bottom: 10px;
+            left: 10px;
+        }
+
+        .bottom-right {
+            bottom: 10px;
+            right: 10px;
+        }
+
+        .center {
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Caixas de Texto -->
+    <div class="caixa top-left">Caixa Superior Esquerda</div>
+    <div class="caixa top-right">Caixa Superior Direita</div>
+    <div class="caixa bottom-left">Caixa Inferior Esquerda</div>
+    <div class="caixa bottom-right">Caixa Inferior Direita</div>
+    <div class="caixa center">Caixa Central</div>
+
+</body>
+</html>

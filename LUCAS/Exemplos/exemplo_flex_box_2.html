@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo Flexbox</title>
+    <style>
+        /* Estilos gerais do contêiner flex */
+        .container {
+            display: flex;
+            justify-content: space-around; /* Espaço uniforme entre os itens */
+            align-items: center;           /* Alinha os itens verticalmente ao centro */
+            height: 100vh;                 /* Ocupa a altura total da viewport */
+            background-color: #f0f0f0;
+        }
+
+        /* Estilos dos itens */
+        .item {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            border-radius: 5px;
+            font-size: 18px;
+            width: 100px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+    </div>
+
+</body>
+</html>
