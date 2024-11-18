@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div p {
+            color: gray; /* Especificidade: 0,0,1,1 */
+        }
+
+        .classe{
+            color: orangered; /* Especificidade: 0,0,1,0 */
+        }
+        
+        #id {
+            color: brown; /* Especificidade: 0,1,0,0 */
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p id="id" class="classe">Texto colorido</p>
+    </div>
+</body>
+</html>
