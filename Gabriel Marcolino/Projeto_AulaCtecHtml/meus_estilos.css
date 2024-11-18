@@ -33,12 +33,16 @@
 }
 
 .menu-links {
-    display: flex;
-    gap: 15px;
+    display: flex; /* Ativa o Flexbox */
+    flex-direction: row; /* Alinha os links na horizontal */
+    gap: 15px; /* Espaçamento entre os links */
+    align-items: center; /* Centraliza verticalmente os links dentro do contêiner */
+    justify-content: flex-start; /* Alinha os links à esquerda */
+    text-align: center; /* Centraliza o texto dentro de cada link */
 }
 
+
 .menu-links a {
-    font-family: Verdana;
     font-size: 17px;
     text-decoration: none;
     color: #ffffff;
@@ -48,6 +52,11 @@
     color: #007bff;
 }
 
+a.highlighted {
+    margin-right: 18px;
+    font-size: 20px;
+    color: #ffffff;
+}
 .search-bar input {
     padding: 8px;
     border-radius: 4px;
