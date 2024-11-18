@@ -3,9 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title> Cascata no CSS</title>
+    <style>
+        p {
+            color: blue;
+        }
+
+        .destaque {
+            color: red;
+        }
+
+        #importante {
+            color: rgb(21, 216, 21);
+        }
+        </style>
+    </style>
 </head>
 <body>
-    
+    <p id="importante" class="destaque"> Texto com conflito de estiolo</p>
 </body>
 </html>
