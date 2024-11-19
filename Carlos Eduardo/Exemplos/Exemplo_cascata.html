@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo_Cascata</title>
+    <style>
+p {
+    color: blue; /* regra 1 - p ou tipo, sempre sera sobreposto dentro da cascata  */ 
+}
+
+.destaque {
+    color: black; /* regra 2 - sempre vai ser maior que o p, porem mais fraco que o # */
+
+}
+
+#importante { 
+    color: blueviolet;  /* regra 3 - Sempre vai ser mais forte que p e class = .  */
+}
+    </style>
+</head>
+<body>
+    <p id="importante" class="destaque">Texto com conflito de estilos</p>
+</body>
+</html>
+
+
+  <!-- cascata -
+       sempre vai ser do mais fraco para o mais forte
+       sendo p/tipo sendo o mais fraco dentre eles 
+
+       . = class o  segundo na lista de prioridade que 
+       consegue sobrepor o style normal 
+
+       # = id consegue sobrepor o style dos outros dois
+       sendo o com maior prioridade dentre eles 
+-->

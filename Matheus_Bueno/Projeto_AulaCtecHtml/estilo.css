@@ -1,68 +1,73 @@
-@font-face {
-    font-family:"twcenmteb";
-    src: url("fontes/tw-cen-mt-eb.ttf")format("truetype");
-}  
- body{
-margin: 0px;
-font-family: verdana;
- }
- 
- .fonte-zero {
+@font-face{
+    font-family: "twcenmteb";
+    src:url("fontes/tw-cen-mt-eb.ttf") format("truetype")
+}
 
-font-size: 0px;
-padding: 0px;
-opacity: 0;
-float: none;
-border: 0px;
-display: none;
+body{
+    margin: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 
- }
+.fonte-zero{
+    font-size: 0px;
+    padding: 0px;
+    opacity: 0;
+    float: none;
+    border: 0px;
+    display: none;
+}
 
- .nome-empresa{
+.nome-empresa{
+    font-family: "twcenmteb";
+    font-size: 93px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+}
 
-font-family: "twcenmteb";
-font-size: 93px;
-display: flex;
-align-items: center;
-justify-content: center;
-padding: 5px;
- }
-
- .fundo-rodape{
-
-background-color: #343a40;
-color:#FFFFFF ;
-padding-top: 20px;
-padding-bottom: 10px;
-font-size: 16px;
-text-align: center;
-
- }
+.fundo-rodape{
+    background-color:#343A40;
+    color:#FFFFFF;
+    padding-top: 20PX;
+    padding-bottom: 10px;
+    font-size: 16px;
+    text-align: center;
+}
 
 .icone-rodape{
-font-size: 40px;
+    font-size: 40px;
 }
 
 .vertical-center{
-display: flex;
-align-items: center;
-justify-content: center;
-padding-top: 5px;
-padding-bottom: 5px;
-}
-nav ul {
-list-style: none;
-display: flex;
-justify-content: center;
-padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
-
-
-
-
-
-
-
-
-
+nav {
+    background-color: black;
+   
+}
+.search-bar {
+  display: flex;
+gap: 5px;
+}
+.search-bar input {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.search-bar button {
+  padding: 5px 10px;
+  background-color: #28a745;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.search-bar button:hover {
+    background-color: #218838;
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Cascata</title>
+</head>
+<body>
+
+    <div>
+
+        <style>
+            p {
+               color: blue;
+            }
+            p {
+                color: rgb(21, 139, 139);
+            }
+        </style>
+
+    <!--Cascata-->
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium molestias placeat voluptas accusamus, sit repellendus aliquid animi voluptatibus cumque ut optio ipsam modi distinctio quaerat similique ex earum, architecto qui!</p>
+
+    </div>
+
+    <div>
+
+        <!--Especifidade-->
+         
+         <style>
+            .lorem {
+                color: rgb(184, 76, 76);
+            }
+            p {
+                color: rgb(33, 143, 143);
+            }
+         </style>
+         <h1 class="lorem">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum facere ullam ratione aperiam sapiente recusandae amet doloribus, consequatur facilis nulla sint itaque tenetur, odio quos magni ut assumenda laboriosam excepturi?
+         Repudiandae, magnam voluptatem rerum perferendis animi ipsa totam qui consequatur quas.</h1>
+         
+
+    </div>
+
+    <div>
+
+        <!--Herança-->
+
+        <style>
+            main {
+                color: brown;
+            }
+        </style>
+
+        <main>DDDDDDD<h2> DDDDDDDDDDD </h2>DDDDDDd</main>
+    </div>
+    
+<!--Testamento HTML (Controle de herança)-->
+
+<style> ul {color: darkgreen;}</style>
+    <ul>
+        <li>GGGGGGG</li>
+    </ul>
+    <div>
+
+        <!--Inherit-->
+
+        <style>.inherit h4{color:inherit;}</style>
+        <ul>
+            <li class="inherit">DDDD <h4>DDDDD</h4>DDDDD</li>
+        </ul><!--Inherit-->
+
+    </div>
+
+    <div>
+
+        <!--Initial-->
+        
+        <style> .initial h4 {color: initial;}</style>
+        <ul class="initial">SSSSSSSS <h4>SSSSSS</h4>SSSSSS</ul>
+    </div>
+    
+</body>
+</html>

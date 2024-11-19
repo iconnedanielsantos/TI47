@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Herança</title>
+    <style>
+        /* Propriedade herdável */
+        body {
+            font-family: Arial, sans-serif;
+            color: darkblue;
+        }
+
+        /* Propriedade não herdável diretamente */
+        div {
+            margin: 20px;
+            border: 2px solid gray;
+            padding: 10px;
+        }
+
+        /* Sobrescrevendo a herança */
+        .sem-heranca {
+            color: black; /* Define uma nova cor para esse elemento */
+        }
+    </style>
+</head>
+<body>
+    <h1>Título principal</h1>
+    <p>Este texto herda a cor e a fonte do body.</p>
+
+    <div>
+        <p>Este parágrafo dentro da div também herda as propriedades do body.</p>
+        <span class="sem-heranca">Este texto não herda a cor do body porque foi sobrescrito.</span>
+    </div>
+</body>
+</html>
+
