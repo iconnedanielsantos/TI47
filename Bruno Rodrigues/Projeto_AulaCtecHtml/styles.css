@@ -1,0 +1,29 @@
+/* Estilos para a barra de navegação */
+.navbar {
+    background-color: #808080;  /* Cor de fundo cinza */
+    padding: 10px;
+    width: 200%;  /* Barra ocupa toda a largura da tela */
+    box-sizing: border-box;  /* Inclui padding no cálculo da largura */
+}
+
+.navbar ul {
+    list-style-type: none; /* Remove os marcadores da lista */
+    margin: 0;
+    padding: 0;
+    display: flex;  /* Exibe os itens em linha */
+    justify-content: center;  /* Alinha os itens ao centro */
+}
+
+.navbar li {
+    margin: 0 20px;  /* Espaçamento entre os itens */
+}
+
+.navbar a {
+    color: white;  /* Cor do texto */
+    text-decoration: none;  /* Remove o sublinhado */
+    font-size: 18px;  /* Tamanho da fonte */
+}
+
+.navbar a:hover {
+    color: #FFD700;  /* Cor do texto ao passar o mouse (dourado) */
+}

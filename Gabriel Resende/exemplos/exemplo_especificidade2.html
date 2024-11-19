@@ -1,0 +1,32 @@
+<style>
+    div p {
+    color:grey; /* especificidade: 0,0,1,1 */
+    }
+
+    .classe {
+        color:orange; /* especificidade: 0,0,1,0 */
+    }
+
+    #id {
+        color: purple; /* especifidade: 0,1,0,0 */
+    }
+    </style>
+
+<div>
+    <p id="id" class="classe">texto colorido</p>
+<div>
+    <!--
+A especificidade determina a "força" de uma regra CSS. É calculada com base no tipo de seletor:
+
+Inline styles (atributo style): mais específico.
+ID (#): peso maior.
+Classe (.), atributos e pseudoclasse ( ): peso médio.
+Tags (div, p): peso menor.
+
+Explicação da Especificidade:
+
+A regra de #id (especificidade 0,1,0,0) tem prioridade sobre .classe e div p.
+Resultado: O texto será roxo.
+  -->
+  jniojnon 
+    

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo heranca</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif; /* Herdado */
+            color: darkgreen; /* Herdado */
+        }
+
+        h1 {
+            color: blue; /* Não herdado */
+        }
+
+        p {
+            color: blueviolet; /* Força e herança */
+        }
+    </style>
+</head>
+<body>
+    <h1>Título (não herda cor)</h1> 
+    <p>Parágrafo (herda a cor do body)</p>   
+</body>
+</html>
+
+<!--
+    A herança é o mecanismo pelo qual algumas propriedades CSS são transmitidas dos elementos-pai 
+    para seus elementos-filho. Nem todas as propriedades são herdadas automaticamente, 
+    mas você pode usar inherit para forçar a herança.
+    Explicação da Herança:
+
+    Propriedades como color e font-family são herdadas automaticamente, exceto se sobrescritas.
+    h1 não herda color porque foi especificado black.
+    p herda a cor de body devido ao uso de inherit.
+
+  -->
