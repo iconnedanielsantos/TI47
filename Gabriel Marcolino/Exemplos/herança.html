@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LM Importslife</title>
+  <style>
+    /* Estilo global (propriedades herdáveis) */
+    body {
+      font-family: Verdana, Tahoma, sans-serif; /* Fonte herdável */
+      color: #0044ff; /* Cor do texto herdável */
+    }
+
+    /* Estilo aplicado a elementos específicos */
+    h1 {
+      color: #000000; /* Sobrescreve a cor herdada */
+    }
+
+    p {
+        color: inherit; 
+        font-size: inherit;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Herança no CSS</h1>
+    <p>nesse paragrafo ele vai ficar com a mesma cor do body e aplica um tamanho de fonte específico.</p>
+    <p class="nao-herdado">Este parágrafo tem um estilo de cor proprio e nao fica com a mesma do body.</p>
+  </div>
+</body>
+</html>

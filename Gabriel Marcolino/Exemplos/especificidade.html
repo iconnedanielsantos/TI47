@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exemplo de Especificidade</title>
+  <style>
+    /* Estilo global: seletor de tag */
+    p {
+      color: blue; /* Cor azul */
+    }
+
+    /* Estilo com classe: maior especificidade que o seletor de tag */
+    .importante {
+      color: green; /* Cor verde */
+    }
+
+    /* Estilo com ID: maior especificidade que a classe */
+    #alerta {
+      color: red; /* Cor vermelha */
+    }
+
+    /* Estilo inline: prioridade máxima */
+    /* Será definido no elemento HTML diretamente */
+  </style>
+</head>
+<body>
+  <h1>Exemplo de Especificidade no CSS</h1>
+  
+  <p>Este texto usa o estilo global (cor azul).</p>
+  
+  <p class="importante">Este texto usa o estilo da classe <code>importante</code> (cor verde).</p>
+  
+  <p id="alerta">Este texto usa o estilo do ID <code>alerta</code> (cor vermelha).</p>
+  
+  <p id="alerta" class="importante" style="color: purple;">Este texto usa estilo inline (cor roxa), que tem a maior prioridade.</p>
+</body>
+</html>
