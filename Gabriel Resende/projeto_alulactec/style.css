@@ -1,0 +1,87 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+.search-bar {
+    width: 300px;
+}
+.search-button {
+        background-color: black;
+        color: #00bfae;
+        border: 2px solid #00bfae;
+        margin-left: 10px;
+}
+.navbar-nav .nav-item {
+        margin-right: 20px;
+    }
+.navbar-taskbar {
+    background-color: #5a5d5f;
+    width: 100%;
+    box-sizing: border-box;
+}
+    .dropdown-menu {
+        background-color: #f8f9fa;
+    }
+
+main {
+margin-top: 20px;
+}
+
+    .title-right h1 {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        font-size: 110px;
+        font-weight: bold;
+    }
+
+    .container img {
+        margin-left: -200px;
+    }
+    .navbar-nav .nav-link {
+        color: white !important;
+        transition: 0.3s;
+    }
+    .navbar-nav .nav-link:hover {
+        color: #00bfae !important;
+    }
+
+    .carousel-container {
+    margin-top: -40px;
+    padding: 20px 0;
+    background-color: #f8f9fa;
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+.carousel-control-prev,
+.carousel-control-next {
+    background: none;
+    border: none;
+    color: transparent;
+    outline: none;
+}
+
+.carousel-control-prev-icon::before {
+    content: '\f053';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+}
+
+.carousel-control-next-icon::before {
+    content: '\f054';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+}
+.navbar-nav .nav-link {
+    color: rgb(255, 255, 255) !important;
+    font-size: 16px;
+    font-weight: bold;
+}

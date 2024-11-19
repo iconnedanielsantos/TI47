@@ -1,0 +1,24 @@
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Especificidade CSS</title>
+    <style>
+        p {
+            color: blue;
+        }
+        .texto-vermelho {
+            color: red;
+        }
+        #texto-destaque {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <p>Este é um paragrafo com o seletor e elemento</p>
+    <p class="texto-vermelho">este paragrafo usa uma classe.</p>
+    <p id="texto-destaque">este parágrafo usa um ID.</p>
+    <p id="texto-destaque" class="texto-vermelho">este paragrafo usa um ID e uma classe.</p>
+</body>
+</html>

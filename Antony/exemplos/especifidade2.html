@@ -1,0 +1,17 @@
+<style>
+div p {
+    color: azure; /* Especifidade: 0,0,1,1 */
+}
+
+.classe { 
+    color: orange; /* Especificidade: 0,0,1,0 */
+}
+
+#id {
+    color: purple; /*Especificidade: 0,1,0,0 */
+}
+
+</style>
+<div> 
+<p id="classe" class="classe" > Texto colorido</p> 
+</div>
