@@ -38,11 +38,19 @@ body {
 /* BARRA DE NAVEGAÇÃO   2   */
 /* ======================= */
 .navbar-taskbar2 {
-    background-color: #5eafe6;
+    background-color: #67b2e4;
+    height: 40px;
+    text-align: center;
+    line-height: 40px; /* Centraliza verticalmente o texto */
+    color: rgb(5, 112, 155);      /* Define a cor do texto */
+    font-size: 35px;   /* Define o tamanho da fonte */
+    font-weight: normal; /* Deixa o texto em normal */
 }
 
+
 .navbar-nav .nav-item {
-    margin-right: 10px;
+    margin-right: 5px;
+    
 }
 
 .navbar-nav .nav-link {
@@ -132,6 +140,34 @@ body {
     right: 0;
 }
 
+
+
+/* ========================== */
+/*  Titulo - Ajuste do Cursos*/
+/* ========================== */
+  .title_cursor { 
+    width: 700px ;
+    font-weight: bold;
+    margin: 30px ;
+    font-size: 20px;
+
+  }
+
+
+
+
+  
+/* ========================== */
+/*  Imagens - Ajuste do Cursos*/
+/* ========================== */
+        .imgcursos { 
+    width: 300px;
+    height: 200px;
+    position: fixed;
+    right: 5%;
+    bottom: 0%;
+    margin-top: 60px;
+        }
 /* ========================= */
 /* AJUSTES PARA RESPONSIVIDADE */
 /* ========================= */

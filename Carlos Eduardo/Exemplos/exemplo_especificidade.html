@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Especificidade CSS</title>
+    <style>
+        p {  /* (especificidade :0,0,0,1) sendo o com menor prioridade dentro da especificidade */
+            color: yellowgreen;
+        }
+
+        .texto-rosa { /* (especificidade: 0,0,1,0) sendo o segundo com a maior prioridade dentro da especificidade, consegue sobrepor o P/tipo */
+            color: rgb(190, 61, 255);
+        }
+
+        #texto-destaque {   /* (especificidade: 0,1,0,0) tem a maior prioridade dentre os 2 ultimos ele consegue sobrepor todos os outros 2. */
+            color: brown;
+        }
+
+        #texto-destaque.texto-rosa { /* (especificidade: 0,1,1,0) esse exemplo tem a maior prioridade pois possui dois dos elementos com maior prioridade dentro da especificidade ele consegue sobrepor todos os outros 3 elementos */ 
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <p>Este é um parágrafo com o seletor de elemento.</p>
+    <p class="texto-rosa">Este parágrafo usa uma classe.</p>
+    <p id="texto-destaque">Este parágrafo usa um ID.</p>
+    <p id="texto-destaque" class="texto-rosa">Este parágrafo usa um ID e uma classe.</p>
+</body>
+</html>
+
+<!--
+    Comentários Gerais
+    A especificidade em CSS é uma regra que determina qual estilo será aplicado quando
+    há múltiplas regras que afetam o mesmo elemento. A especificidade é calculada com
+    base no tipo de seletor que você usa: IDs, classes, pseudo-classes, e elementos HTML.
+    Acima está um exemplo, com classe, id elementos, etc.
+    Seletor de elemento: p { color: blue; } — Todos os parágrafos ficam azuis.
+    Seletor de classe: .texto-vermelho { color: red; } — Este estilo tem mais especificidade
+    que o seletor de elemento, então os parágrafos com a classe .texto-vermelho ficam vermelhos.
+    Seletor de ID: #texto-destaque { color: green; } — Este estilo tem ainda mais especificidade
+    que a classe, então um parágrafo com o ID texto-destaque fica verde.
+    Seletor combinado de ID e classe: #texto-destaque.texto-vermelho { color: purple; }
+    Esse seletor tem a maior especificidade e define a cor como roxa no parágrafo que tem tanto
+    o ID texto-destaque quanto a classe .texto-vermelho.
+    No final, o parágrafo com ID e classe aplicados simultaneamente ficará roxo devido à maior
+    especificidade desse seletor.
+-->
