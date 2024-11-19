@@ -27,8 +27,8 @@ body{
 }
 
 .fundo-rodape{
-    background-color: 343A40;
-    color: FFFFFF;
+    background-color:#343A40;
+    color:#FFFFFF;
     padding-top: 20PX;
     padding-bottom: 10px;
     font-size: 16px;
@@ -47,6 +47,27 @@ body{
     padding-bottom: 5px;
 }
 
-nav{
+nav {
     background-color: black;
+   
+}
+.search-bar {
+  display: flex;
+gap: 5px;
+}
+.search-bar input {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.search-bar button {
+  padding: 5px 10px;
+  background-color: #28a745;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.search-bar button:hover {
+    background-color: #218838;
 }
