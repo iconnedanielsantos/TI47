@@ -1,0 +1,39 @@
+<style>
+    body {
+      font-family: Arial, sans-serif; /* Herdado */
+      color: darkblue; /* Herdado */
+    }
+  
+    h1 {
+      color: rgb(0, 0, 0); /* Não herdado */
+    }
+  
+    p {
+      color: inherit; /* Força a herança */
+    }
+  </style>
+      
+  <body>
+    <h1>isso é um Título (não herda cor)</h1> <!-- isso nao erda a cor entao origialmente tem que ser com fonte arial e com a cor preta-->
+    <p>isso é um Parágrafo (herda cor do body)</p><!-- isso é um paragrafo que erda a cor do body entao originalmente tem que ser azul-->
+    <h1> Outro titulo (nao herda cor) <!-- isso nao erda a cor entao originalmente tem que ser com fonte arial e  com cor preta--></h1>
+    <p> outro paragrafo (herda a cor do body) <!-- isso herda a cor do body </p>
+  </body>
+  
+
+<!-- com a tag (inherit) ele força a herança para ser com a cor azul-->
+
+
+  <!--
+    A herança é o mecanismo pelo qual algumas propriedades CSS são transmitidas dos elementos-pai 
+    para seus elementos-filho. Nem todas as propriedades são herdadas automaticamente, 
+    mas você pode usar inherit para forçar a herança.
+    Explicação da Herança:
+
+    Propriedades como color e font-family são herdadas automaticamente, exceto se sobrescritas.
+
+    h1 não herda color porque foi especificado black.
+
+    p herda a cor de body devido ao uso de inherit.
+
+  -->
