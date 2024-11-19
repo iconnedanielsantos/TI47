@@ -23,7 +23,7 @@
 .search-menu-container {
     background-color: #3e3e49;
     padding: 15px;
-    width: auto; /* Faz a forma ocupar 100% da largura */
+    width: 100%; /* Faz a forma ocupar 100% da largura */
     box-sizing: border-box; /* Garante que o padding não afete a largura */
     display: flex;
     justify-content: space-between; /* Separar os itens para que o menu fique à esquerda e a barra de pesquisa à direita */
@@ -40,6 +40,7 @@
 
 /* Ajuste do container para remover margens automáticas */
 .container {
+    width: 100%;
     padding-left: 0;
     padding-right: 0;
 }
@@ -137,4 +138,8 @@ button {
     background-color: #007bff;
     color: white;
 }
+
+
+
+
 
