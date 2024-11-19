@@ -39,10 +39,11 @@ body {
 /* ======================= */
 .navbar-taskbar2 {
     background-color: #5eafe6;
+    height: 40px;
 }
 
 .navbar-nav .nav-item {
-    margin-right: 10px;
+    margin-right: 5px;
 }
 
 .navbar-nav .nav-link {

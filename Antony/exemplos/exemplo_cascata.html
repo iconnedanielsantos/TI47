@@ -6,21 +6,22 @@
   <title>Cascata no CSS</title>
   <style>
     p {
-      color: blue; /* Regra 1 */
+      color: rgb(21, 255, 0); /* Regra 1 */      /*Menor regra*/
     }
 
     .destaque {
-      color: red; /* Regra 2 */
+      color: rgb(170, 8, 219); /* Regra 2 */       /*Segunda Regra*/
     }
 
     #importante {
-      color: green; /* Regra 3 */
+      color: rgb(255, 0, 0); /* Regra 3 */    /* Regra maior */
     }
-
   </style>
 </head>
 <body>
-  <p id="importante" class="destaque">Texto com conflito de estilos</p>
+  <p id="importante" class="destaque">Isso tem que ser vermelho</p> <!-- exemplo de regra maior entao vermelho -->
+  <p id="p" class="destaque"> Texto em conflito - originalmente tem que ser roxo</p>  <!--exemplo de 2 regra entao tem que ser roxo -->
+  <p> isso é um paragrafo com a menor regra de tem entao tem que ser verde</p> <!-- exemplo de regra menor entao tem que ser verde-->
 </body>
 </html>
 
