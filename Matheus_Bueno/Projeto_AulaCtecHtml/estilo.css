@@ -47,8 +47,9 @@ body{
     padding-bottom: 5px;
 }
 
-nav{
+nav {
     background-color: black;
+   
 }
 .search-bar {
   display: flex;
