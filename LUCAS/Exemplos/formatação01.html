@@ -5,25 +5,104 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Introdução à Música Clássica</title>
     <style>
+        /* Reset básico e boas práticas */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            color: #ba0d0d;
-            margin: 10;
-            padding: 0 20px;
-            background-color: #ffffff;
+            font-family: 'Arial', sans-serif;
+            line-height: 1.8;
+            color: #fff; /* Texto branco para melhorar o contraste */
+            background: linear-gradient(135deg, #ff7f50, #ff6347); /* Gradiente vibrante */
+            padding: 20px;
+            overflow-x: hidden; /* Impede rolagem horizontal */
         }
+
         h1 {
-            color: #b5d406;
-            text-align: right;
-            margin-top: 20px;
+            color: #ffeb3b; /* Amarelo vibrante para destaque */
+            text-align: center;
+            margin-top: 50px;
+            font-size: 3rem;
+            font-weight: bold;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Sombra suave para dar profundidade */
         }
+
         h2 {
-            color: #666;
-            margin-top: 20px;
+            color: #ffffff;
+            font-size: 2rem;
+            margin-top: 30px;
+            text-align: center;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2); /* Sombra para destacar */
         }
+
         p {
-            margin: 10px 0;
+            color: #ffffff;
+            font-size: 1.1rem;
+            margin: 15px 0;
+            max-width: 900px;
+            text-align: justify;
+            line-height: 1.6;
+            transition: color 0.3s ease;
+        }
+
+        p:hover {
+            color: #ffeb3b; /* Cor amarela ao passar o mouse para destaque */
+            cursor: pointer; /* Indica que é interativo */
+        }
+
+        .highlight {
+            background-color: rgba(255, 255, 255, 0.1); /* Fundo sutil para destacar */
+            padding: 10px;
+            border-radius: 5px;
+            font-weight: 700;
+            font-style: italic;
+        }
+
+        /* Caixa de destaque para seções importantes */
+        .highlight-box {
+            background-color: rgba(0, 0, 0, 0.3); /* Caixa semitransparente para destaque */
+            border-radius: 8px;
+            padding: 20px;
+            margin-top: 30px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Sombra suave */
+        }
+
+        /* Estilo para links */
+        a {
+            color: #ffeb3b;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #fff; /* Muda a cor para branca ao passar o mouse */
+            text-decoration: underline;
+        }
+
+        /* Responsividade para telas menores */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem; /* Ajuste do tamanho do título */
+            }
+
+            h2 {
+                font-size: 1.8rem; /* Ajuste do tamanho do subtítulo */
+            }
+
+            p {
+                font-size: 1rem; /* Ajuste de fonte para melhor legibilidade */
+            }
+
+            .highlight-box {
+                padding: 15px; /* Reduz o padding nas telas pequenas */
+            }
         }
     </style>
 </head>
