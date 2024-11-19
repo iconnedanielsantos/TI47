@@ -1,0 +1,29 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>cascata no css</title>
+<style>
+ p {
+   color:blue; /* regra 1 */
+ }
+    
+ .destaque {
+  color:green; /* regra 2 */
+ }
+
+ #importante {
+  color:brown /* regra 3 */
+ }
+ </style>
+</head>
+<body>
+<html>
+
+<!--
+   A "cascata" no css refere-se á forma como o navegador resolve conflitos entre múltiplas regras que se aplicam ao mesmo elemento.
+   ele usa três princípios principais: origem do estilo, especificidade e ordem de declaração.
+O texto <p> tem três regras aplicadas. Para decidir qual prevalece:
+Especificidade: O seletor #importante (id) tem maior especificidade do que .destaque (classe) ou p (tipo).
+Resultado: O texto será verde devido ao #importante.
+-->
