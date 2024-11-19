@@ -76,7 +76,7 @@ main {
         font-size: 16px;
         font-weight: bold;
     }
-    {
+                  .shild {
             box-sizing: border-box;
             margin: 0;
             padding: 0;
@@ -103,14 +103,12 @@ main {
 
         .carrossel-botao {
             position: absolute;
-            top: 50%;
+            top: 15%;
             transform: translateY(-50%);
             background-color: transparent;
             border: none;
             cursor: pointer;
-            z-index: 10;
-            width: 0;
-            height: 0;
+            z-index: 20;
         }
 
         .carrossel-botao-esquerda {
@@ -157,11 +155,91 @@ pointer-events: all;
     font-family: 'Arial', sans-serif;
 }
 
-h1 {
+h1,h2,h3 {
     font-size: 40px;
+    margin-left: 20px;
+    padding-left: 20px;
 }
 p {
-    
+    margin-top: 20px;
+    margin-left: 20px;
+    padding-left: 20px;
+    }
+.container-img {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: -130px;
+    gap: 20px;
+}
+.texto {
+    max-width: 60%;
+    margin-right: 1150px;
+}
+.imagem {
+    width: 200px;
+    height: auto;
+}
+
+.btn-detalhes {
+    background-color: white;
+    color: black; 
+    border: 2px solid #ccc;
+    padding: 10px 20px;
+    font-size: 16px; 
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer; 
+    transition: all 0.3s ease;
+    position: absolute;
+    margin-left: 40px;
+    top: 630px;
+}
+
+.btn-detalhes:hover {
+    background-color: #f8f9fa;
+    border-color: #007bff;
+    color: #007bff;
+}
+.btn-detalhes1 {
+    background-color: white;
+    color: black; 
+    border: 2px solid #ccc;
+    padding: 10px 20px;
+    font-size: 16px; 
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer; 
+    transition: all 0.3s ease;
+    position: absolute;
+    margin-left: 40px;
+    top: 930px;
+}
+
+.btn-detalhes1:hover {
+    background-color: #f8f9fa;
+    border-color: #007bff;
+    color: #007bff;
+}
+.btn-detalhes2 {
+    background-color: white;
+    color: black; 
+    border: 2px solid #ccc;
+    padding: 10px 20px;
+    font-size: 16px; 
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer; 
+    transition: all 0.3s ease;
+    position: absolute;
+    margin-left: 40px;
+    top: 1230px;
+}
+
+.btn-detalhes2:hover {
+    background-color: #f8f9fa;
+    border-color: #007bff;
+    color: #007bff;
 }
 </style>
 
@@ -225,12 +303,11 @@ p {
         </div>
     </nav>
    
-
     <script src="bootstrap-4.4.1/js/bootstrap.bundle.min.js"></script>
 
     <div class="carrossel-container">
             <div class="carrossel-imagens">
-                    
+                
                 <img src="galeria/data1/images/galeria1.jpg" alt="Imagem 1">
                 <img src="galeria/data1/images/galeria2.jpg" alt="Imagem 2">
                 <img src="galeria/data1/images/galeria3.jpg" alt="Imagem 3">
@@ -272,12 +349,50 @@ p {
 <p>ㅤ</p>
 <h1>Titulo do Curso</h1>
 
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos suscipit ut doloribus voluptas dolorem pariatur cupiditate quasi magni porro,
-     ex nulla esse! Nulla eum laborum illo, tenetur officiis repellendus natus?
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, porro dolor.
- Sed quam nobis placeat quis. Aspernatur voluptas, eaque dolor alias quis numquam non ea ducimus eveniet beatae, saepe reprehenderit.
-Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+<p> ipsum dolor sit, amet consectetur adipisicing elit. Incidunt tempora eligendi earum maiores assumenda id inventore nulla enim alias atque exercitationem <br>
+ Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex eaque, atque quibusdam mollitia, laborum error excepturi, soluta neque delectus qui ipsa nostrum.<br>
+ Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi illum aspernatur harum sapiente quibusdam sed cupiditate ab dolores eveniet eos et nesciunt<br>
+<div class="container-img">
+    <div class="texto">
+</div>
+<div class="imagem">
+<h2><img src="imagens/html5-p.jpg" alt="html5"></h2>
+</div>
+</div>
 
+<button class="btn-detalhes">+ Detalhes</button>
+
+<p>ㅤ</p>
+<h2>Titulo do Curso</h2>
+
+<p> ipsum dolor sit, amet consectetur adipisicing elit. Incidunt tempora eligendi earum maiores assumenda id inventore nulla enim alias atque exercitationem <br>
+ Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex eaque, atque quibusdam mollitia, laborum error excepturi, soluta neque delectus qui ipsa nostrum.<br>
+ Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi illum aspernatur harum sapiente quibusdam sed cupiditate ab dolores eveniet eos et nesciunt<br>
+<div class="container-img">
+    <div class="texto">
+</div>
+<div class="imagem">
+<h2><img src="imagens/html5-p.jpg" alt="html5"></h2>
+</div>
+</div>
+
+<button class="btn-detalhes1">+ Detalhes</button>
+
+<p>ㅤ</p>
+<h3>Titulo do Curso</h3>
+
+<p> ipsum dolor sit, amet consectetur adipisicing elit. Incidunt tempora eligendi earum maiores assumenda id inventore nulla enim alias atque exercitationem <br>
+ Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex eaque, atque quibusdam mollitia, laborum error excepturi, soluta neque delectus qui ipsa nostrum.<br>
+ Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi illum aspernatur harum sapiente quibusdam sed cupiditate ab dolores eveniet eos et nesciunt<br>
+<div class="container-img">
+    <div class="texto">
+</div>
+<div class="imagem">
+<h2><img src="imagens/html5-p.jpg" alt="html5"></h2>
+</div>
+</div>
+
+<button class="btn-detalhes2">+ Detalhes</button>
 </body>
 
 </html>
