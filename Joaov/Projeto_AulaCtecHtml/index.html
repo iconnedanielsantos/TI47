@@ -21,31 +21,106 @@
 <link href="fontawesome-6.4.2/css/all.css" rel="stylesheet" type="text/css">
 <script src="fontawesome-6.4.2/js/all.js"></script>
 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+    nav {
+        background-color: #333;
+        padding: 10px 0;
+    }
+
+    nav ul {
+        margin-top: 50px;
+        list-style-type: none;
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+    
+    nav ul li {
+        display: inline;
+        margin: 0 15px;
+    }
+
+    nav ul li a {
+        color: #ffffff;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    nav ul li a:hover {
+        color: #000000;
+    }
+
+    .search-container {
+        text-align: flex;
+        justify-content: center;
+    }
+
+    input[type=text] {
+        width: 300px;
+        padding: 10px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    button {
+        padding: 10px 15px;
+        font-size: 16px;
+        background-color: #4caf4f;
+        color: #ffffff;
+        border: #4CAF50;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: #45a049;
+    }
+    </style>
 </head>
 
 <body>
-    <main>
         <header>
             <h1 class="fonte-zero">CTec - Cursos de Tecnologia</h1>
         </header>
         <div class="container">
-        <div class="row">
-        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-6">
-        <section>
-            <h2 class="fonte-zero">Logo CTec</h2>
-
-            <a href="index.html"><img src="imagens/logo-ctec.png" 
-                alt="Logo CTec" class="img-fluid" title="Logo CTec"></a>
+         <div class="row">
+          <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-6">
+            <section>
+                <h2 class="fonte-zero"></h2><!--logo CTec-->
+                <a href="index.html"><img src="imagens/logo-ctec.png" alt="Logo CTec" class="img-fluid" title="Logo CTec"></a>
         </section>
-    </div>
+         </div>
 
-<div class="col-xl-8 col-lg-8 col-md-8 col-sm-8 col-12 nome-empresa">
-    <section>
-        <h2 class="fonte-zero">Cursos de Tecnologia</h2>
-        Cursos de Tecnologia
-    </section>
-</div>
-    </main>
+    <div class="col-xl-8 col-lg-8 col-md-8 col-sm-8 col-12 nome-empresa">
+         <section>
+            <h2 class="fonte-zero"></h2><!--cursos de tecnologia-->
+        </section>
+     </div>
+         </div>
+          </div>
+      
+          <!--menu de navegação-->
+    <nav>
+        <ul>
+            <li><a href="Home">Home</a></li>
+            <li><a href="Empresa">Empresa</a></li>
+            <li><a href="Cursos">Cursos</a></li>
+            <li><a href="Contatos">Contatos</a></li>
+            <!--barra de pesquissa-->
+            <div class="search-container">
+                <form action="https://www.google.com/search" method="get" target="_blank">
+                    <input type="text" name="q" placeholder="search" required>
+                    <button type="submit">Search</button>
+                </form>
+                
+            </div>
+        </ul>
+    </nav>
 </body>
 
 </html>

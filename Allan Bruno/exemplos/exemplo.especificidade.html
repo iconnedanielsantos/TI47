@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Especificidade</title>
+    <style>
+        p{
+            color: rgb(30, 255, 0);
+        }
+
+        .texto-azul{
+            color: blue;
+        }
+
+        #texto-destaque{
+            color: rgb(50, 131, 18);
+        }
+
+        #texto-destaque.texto-azul{
+            color: rgb(119, 0, 255);
+        }
+    </style>
+</head>
+<body>
+    <p>Este é um parágrafo</p>
+    <p class="texto-azul">Este é outro parágrafo</p>
+    <p id="texto-destaque">Mais um parágrafo</p>
+    <p id="texto-destaque" class="texto-azul">Um parágrafo ID e Class</p>
+</body>
+</html>

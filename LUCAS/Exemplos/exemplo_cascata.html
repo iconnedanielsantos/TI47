@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exemplo de Cascata no CSS</title>
+  <style>
+    /* Estilo básico para o layout */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f9;
+      color: #333;
+      margin: 0;
+      padding: 20px;
+      line-height: 1.6;
+    }
+
+    h1, h2 {
+      text-align: center;
+      color: #444;
+    }
+
+    p {
+      font-size: 1.2rem;
+      background-color: #e0e0e0;
+      padding: 10px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+
+    /* Estilos para o parágrafo destacado e o parágrafo com ID importante */
+    .destaque {
+      color: rgba(102, 255, 0, 0.7);
+      font-weight: bold;
+      background-color: rgba(102, 255, 0, 0.1);
+    }
+
+    #importante {
+      color: rgba(86, 87, 26, 0.76);
+      background-color: rgba(184, 33, 33, 0.1);
+      font-weight: bold;
+      font-size: 1.3rem;
+    }
+
+    section h2 {
+      font-size: 1.8rem;
+      border-bottom: 2px solid #bbb;
+      padding-bottom: 5px;
+      margin-top: 30px;
+    }
+    
+    ul, ol {
+      margin-left: 20px;
+    }
+
+  </style>
+</head>
+<body>
+  <h1>Entendendo a Cascata no CSS</h1>
+  
+  <p id="importante" class="destaque">
+    Este texto demonstra como a cascata no CSS resolve conflitos de estilos aplicados ao mesmo elemento.
+  </p>
+
+  
+
+<!--
+A "cascata" no CSS refere-se à forma como o navegador resolve conflitos 
+entre múltiplas regras que se aplicam ao mesmo elemento.
+Ele usa três princípios principais: origem do estilo, especificidade e ordem de declaração.
+O texto <p> tem três regras aplicadas. Para decidir qual prevalece:
+Especificidade: O seletor #importante (id) tem maior especificidade do que .destaque (classe) ou p (tipo).
+Resultado: O texto será verde devido ao #importante.
+-->
