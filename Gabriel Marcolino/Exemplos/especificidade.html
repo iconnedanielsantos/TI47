@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Especificidade Exemplo</title>
+  <style>
+    /* Regra com seletor de tag (menor especificidade) */
+    p {
+      color: rgb(206, 16, 16);
+    }
+
+    /* Regra com seletor de classe (maior especificidade que tag) */
+    .importante {
+      color: rgb(0, 26, 255);
+    }
+
+    /* Regra com seletor de ID (maior especificidade que classe) */
+    #alerta {
+      color: rgb(0, 0, 0);
+    }
+
+    /* Combinação de ID e classe (ainda mais específico) */
+    #alerta.importante {
+      color: goldenrod;
+    }
+
+  </style>
+</head>
+<body>
+  <h1>Especificidade Exemplo no CSS</h1>
+  
+  <!-- Seletor de tag -->
+  <p>Este texto usa o estilo do seletor de tag (cor vermelha).</p>
+  
+  <!-- Seletor de classe -->
+  <p class="importante">Este texto usa o estilo da classe <code>importante</code> (cor azul).</p>
+  
+  <!-- Seletor de ID -->
+  <p id="alerta">Este texto usa o estilo do ID <code>alerta</code> (cor preta).</p>
+  
+  <!-- Combinação de ID e classe -->
+  <p id="alerta" class="importante">Este texto usa a combinação

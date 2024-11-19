@@ -1,0 +1,75 @@
+/* Variáveis para cores e estilos */
+:root {
+    --cor-fundo: #f0f0f0;
+    --cor-caixa: #4CAF50;
+    --cor-texto: #fff;
+    --cor-sombra: rgba(0, 0, 0, 0.1);
+    --cor-destaque: #388E3C;
+    --espaçamento: 20px;
+}
+
+/* Reset básico e boas práticas */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--cor-fundo);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ocupa toda a altura da viewport */
+}
+
+/* Estilos do contêiner flex */
+.container {
+    display: flex;
+    justify-content: space-around; /* Espaço entre os itens */
+    align-items: center;           /* Alinha os itens verticalmente */
+    gap: var(--espaçamento);       /* Adiciona espaçamento entre as caixas */
+    flex-wrap: wrap;               /* Permite que os itens quebrem linha em telas menores */
+    padding: var(--espaçamento);
+    max-width: 1000px;             /* Limita a largura máxima do contêiner */
+    width: 100%;
+}
+
+/* Estilos das caixas (itens flexíveis) */
+.box {
+    background-color: var(--cor-caixa);
+    color: var(--cor-texto);
+    padding: 20px;
+    border-radius: 8px;            /* Bordas arredondadas */
+    text-align: center;
+    font-size: 18px;
+    width: 200px;                  /* Largura inicial das caixas */
+    min-width: 150px;              /* Largura mínima para não ficar muito pequena */
+    box-shadow: 0 4px 8px var(--cor-sombra); /* Sombra suave para destacar as caixas */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transição suave */
+}
+
+/* Efeito de hover nas caixas */
+.box:hover {
+    transform: translateY(-5px);   /* Leve movimento para cima */
+    box-shadow: 0 6px 12px var(--cor-destaque); /* Efeito de destaque com sombra */
+}
+
+/* Responsividade: ajustando o layout para telas menores */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;      /* Organiza as caixas em coluna em telas menores */
+        align-items: center;         /* Alinha as caixas ao centro */
+    }
+
+    .box {
+        width: 80%;                  /* Caixas ocupam 80% da largura disponível */
+    }
+}
+
+@media (max-width: 480px) {
+    .box {
+        width: 90%;                  /* Caixas ocupam 90% da largura em dispositivos muito pequenos */
+    }
+}

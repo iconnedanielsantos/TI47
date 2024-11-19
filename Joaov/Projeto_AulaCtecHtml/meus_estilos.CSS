@@ -1,0 +1,127 @@
+@font-face {
+    font-family: PROJETO;
+    src: url(fontes/tw-cen-mt-eb.ttf)format('truetype');
+    font-weight: bold;
+}
+
+.fonte-zero {
+    font-family: 'PROJETO';
+}
+
+/*estilo da forma ciza*/
+.search-menu-container {
+    background-color: #343A40;
+    justify-content: space-between;
+    padding: 15px;
+    width: auto; 
+    align-items: center;
+    display: flex;
+    box-sizing: border-box;
+}
+
+/*centralizar dentro da forma*/
+.menu-search-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.container {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.menu-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    gap: 15px;
+}
+
+.menu-links a {
+    color: #ffffff;
+    font-size: 17px;
+    text-decoration: none;
+}
+
+.menu-links a:hover {
+    color: #007bff;
+}
+
+a.highlighted {
+    margin-right: 18px;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.search-bar input {
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.search-bar {
+    text-align: right;
+}
+
+button {
+    padding: 8px 12px;
+}
+
+.custom-btn {
+    background-color: #000000;
+    color: #007bff;
+    border: 2px solid #007bff;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.custom-btn:hover {
+    background-color: #007bff;
+}
+
+.fonte-zero {
+    margin-top: 20px;
+    margin: 0;
+    height: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 90px;
+    font-weight: bold;
+}
+
+.dropdow {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdow-content {
+    display: none;
+    position: absolute;
+    background-color: #444444;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px #000000;
+    z-index: 1;
+}
+
+.dropdow-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a:hover {
+    color: white;
+    background-color: #007bff;
+}
