@@ -48,33 +48,5 @@ body{
 }
 
 nav{
-    background-color: #333;
-    padding: 10px;
-}
-
-nav ul {
-
-list-style-type: none;
-display: flex;
-justify-content: center;
-}
-
-nav ul li{
-
-margin: 0 15px;    
-}
-
-nav ul li a{
-color: white;
-text-decoration: none;
-font-weight: bold;
-}
-
-nav .search-box input [type="text"] {
-    padding: 5px;
-}
-
-nav . search-box button {
-padding: 5px;
-
+    background-color: black;
 }
