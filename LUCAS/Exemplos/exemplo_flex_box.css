@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Define a forma como o CSS calcula o tamanho dos elementos */
+}
+
+body {
+    display: flex;                 /* Ativa o Flexbox no corpo, centralizando o contêiner */
+    justify-content: center;       /* Centraliza o contêiner horizontalmente */
+    align-items: center;           /* Centraliza o contêiner verticalmente */
+    min-height: 100vh;             /* Define uma altura mínima de 100% da altura da janela */
+    font-family: Arial, sans-serif; /* Define uma fonte padrão para a página */
+    background-color: #f3f3f3;      /* Define uma cor de fundo clara */
+}
+
+.container {
+    display: flex;                 /* Ativa o Flexbox no contêiner */
+    justify-content: center;       /* Centraliza as caixas horizontalmente dentro do contêiner */
+    align-items: center;           /* Centraliza as caixas verticalmente */
+    gap: 20px;                     /* Define um espaço de 20px entre as caixas */
+}
+
+.box {
+    background-color: #4CAF50;     /* Define a cor de fundo das caixas */
+    color: #fff;                   /* Define a cor do texto como branco */
+    padding: 20px;                 /* Define o preenchimento interno da caixa */
+    font-size: 20px;               /* Define o tamanho da fonte */
+    text-align: center;            /* Centraliza o texto dentro de cada caixa */
+    border-radius: 8px;            /* Arredonda os cantos da caixa */
+    width: 100px;                  /* Define uma largura fixa para as caixas */
+}

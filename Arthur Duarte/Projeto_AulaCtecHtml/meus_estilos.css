@@ -1,44 +1,104 @@
-
+@charset "utf-8";
+/* Carregar fonte sem instalar */
+@font-face {
+  font-family: "twcenmteb";
+  src: url("fontes/tw-cen-mt-eb.ttf") format("truetype");
+}
+body {
+  margin: 0px;
+  font-family: verdana;
+}
 .fonte-zero {
-    padding: 0px;
-    list-style-type: none;
-    margin: 0px;
-    height: 0px;
-    display: none;
-
+  font-size: 0px;
+  padding: 0px;
+  opacity: 0;
+  float: none;
+  border: 0px;
+  display: none;
 }
-
-nav{
-    background-color:#2e373e;
-    padding: 10px;
-    
+.nome-empresa {
+  font-family: "twcenmteb";
+  font-size: 93px;
+  display: flex;
+  align-items: center; /* Alinhamento Vertical */
+  justify-content: center; /* Alinhamento Horizontal */
+  padding: 5px;
 }
-
-nav ul {
-    margin-top: 10px;
-    list-style: none;
-    display: inline;
-    
+.fundo-rodape {
+  background-color: #343A40;
+  color: #FFFFFF;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  font-size: 16px;
+  text-align: center;
 }
-
-nav ul li {
-    display: inline;
-    margin-right: 20px;
+.icone-rodape {
+  font-size: 40px;
+}
+.vertical-center {
+  display: flex;
+  align-items: center; /* horizontal */
+  justify-content: center; /* vertical */
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+/* col-lg */
+@media all and (min-width:992px) and (max-width: 1199px) {
+  .nome-empresa {
+    font-family: "twcenmteb";
+    font-size: 80px;
+    display: flex;
+    align-items: center; /* Alinhamento Vertical */
+    justify-content: center; /* Alinhamento Horizontal */
+    padding: 5px;
+  }
+}
+/* col-md */
+@media all and (min-width:768px) and (max-width: 991px) {
+  .nome-empresa {
+    font-family: "twcenmteb";
+    font-size: 60px;
+    display: flex;
+    align-items: center; /* Alinhamento Vertical */
+    justify-content: center; /* Alinhamento Horizontal */
+    padding: 5px;
+  }
+}
+/* col-sm */
+@media all and (min-width:576px) and (max-width: 767px) {
+  .nome-empresa {
+    font-family: "twcenmteb";
+    font-size: 44px;
+    display: flex;
+    align-items: center; /* Alinhamento Vertical */
+    justify-content: center; /* Alinhamento Horizontal */
+    padding: 5px;
+  }
+}
+/* col */
+@media all and (min-width:361px) and (max-width: 575px) {
+  .nome-empresa {
+    font-family: "twcenmteb";
+    font-size: 44px;
+    display: flex;
+    align-items: center; /* Alinhamento Vertical */
+    justify-content: center; /* Alinhamento Horizontal */
+    padding: 5px;
+  }
+  h2 {
+    font-size: 25px;
+  }
+}
+@media all and (max-width: 360px) {
+  .nome-empresa {
+    font-family: "twcenmteb";
+    font-size: 30px;
+    display: flex;
+    align-items: center; /* Alinhamento Vertical */
+    justify-content: center; /* Alinhamento Horizontal */
+    padding: 5px;
+  }
+  h2 {
     font-size: 20px;
-}
-
-
-li {
-    color: white;
-    text-decoration:none;
-    display:inline-flex;
-    transition: 0.3s;
-}
-
-.busca {
-    text-align: right;
-    margin-top: -30px;
-    padding: 10px;
-
-    
+  }
 }
