@@ -3,36 +3,41 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Exemplo de Especificidade</title>
+  <title>Especificidade Exemplo</title>
   <style>
-    /* Estilo global: seletor de tag */
+    /* Regra com seletor de tag (menor especificidade) */
     p {
-      color: blue; /* Cor azul */
+      color: rgb(206, 16, 16);
     }
 
-    /* Estilo com classe: maior especificidade que o seletor de tag */
+    /* Regra com seletor de classe (maior especificidade que tag) */
     .importante {
-      color: green; /* Cor verde */
+      color: rgb(0, 26, 255);
     }
 
-    /* Estilo com ID: maior especificidade que a classe */
+    /* Regra com seletor de ID (maior especificidade que classe) */
     #alerta {
-      color: red; /* Cor vermelha */
+      color: rgb(0, 0, 0);
     }
 
-    /* Estilo inline: prioridade máxima */
-    /* Será definido no elemento HTML diretamente */
+    /* Combinação de ID e classe (ainda mais específico) */
+    #alerta.importante {
+      color: goldenrod;
+    }
+
   </style>
 </head>
 <body>
-  <h1>Exemplo de Especificidade no CSS</h1>
+  <h1>Especificidade Exemplo no CSS</h1>
   
-  <p>Este texto usa o estilo global (cor azul).</p>
+  <!-- Seletor de tag -->
+  <p>Este texto usa o estilo do seletor de tag (cor vermelha).</p>
   
-  <p class="importante">Este texto usa o estilo da classe <code>importante</code> (cor verde).</p>
+  <!-- Seletor de classe -->
+  <p class="importante">Este texto usa o estilo da classe <code>importante</code> (cor azul).</p>
   
-  <p id="alerta">Este texto usa o estilo do ID <code>alerta</code> (cor vermelha).</p>
+  <!-- Seletor de ID -->
+  <p id="alerta">Este texto usa o estilo do ID <code>alerta</code> (cor preta).</p>
   
-  <p id="alerta" class="importante" style="color: purple;">Este texto usa estilo inline (cor roxa), que tem a maior prioridade.</p>
-</body>
-</html>
+  <!-- Combinação de ID e classe -->
+  <p id="alerta" class="importante">Este texto usa a combinação
