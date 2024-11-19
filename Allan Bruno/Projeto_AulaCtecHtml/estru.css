@@ -1,12 +1,13 @@
 @font-face{
     font-family: "twcenmteb";
-    src:url("fontes/tw-cen-mt-eb.ttf") format("truetype")
+    src:url("fontes/tw-cen-mt-eb.ttf") format("truetype");
 }
 
 body{
     margin: 0px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
 
 .fonte-zero{
     font-size: 0px;
@@ -50,3 +51,4 @@ body{
 nav{
     background-color: black;
 }
+
