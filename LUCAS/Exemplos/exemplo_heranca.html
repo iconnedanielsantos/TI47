@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Herança CSS</title>
+    <style>
+        /* Reset básico e boas práticas */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif; /* Fonte comum para todo o corpo */
+            color: #003366; /* Cor base herdada para os textos */
+            background-color: #f4f4f9; /* Cor de fundo suave */
+            line-height: 1.6; /* Melhora a legibilidade do texto */
+            padding: 20px; /* Espaçamento interno */
+        }
+
+        /* Estilo para o título */
+        h1 {
+            color: #333; /* Cor do título especificada (não herdada) */
+            font-size: 2.5rem; /* Tamanho maior e ajustado para título */
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave no título */
+            font-weight: bold;
+        }
+
+        /* Estilo para parágrafos */
+        p {
+            color: inherit; /* Herda a cor do body, no caso, darkblue */
+            font-size: 1.1rem;
+            max-width: 800px; /* Limita a largura para melhorar a legibilidade */
+            margin-bottom: 20px;
+            line-height: 1.8;
+            transition: color 0.3s ease; /* Transição suave na mudança de cor */
+        }
+
+        /* Efeito de hover nos parágrafos */
+        p:hover {
+            color: #0059b3; /* Muda para um tom de azul mais forte ao passar o mouse */
+            cursor: pointer; /* Indica que o texto é interativo */
+        }
+
+        /* Estilo para links */
+        a {
+            color: #0077cc; /* Cor para links */
+            text-decoration: none; /* Remove o sublinhado */
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline; /* Sublinha ao passar o mouse */
+            color: #005fa3; /* Tom mais escuro de azul */
+        }
+
+        /* Adicionando uma caixa com sombra para destaque */
+        .highlight-box {
+            background-color: #ffffff;
+            border: 1px solid #dcdcdc;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+            margin-top: 30px;
+        }
+
+        /* Estilo de cabeçalho secundário */
+        h2 {
+            color: #003366; /* Cor herdada, mas especificada aqui para uniformidade */
+            font-size: 2rem;
+            margin-top: 20px;
+            text-align: center; /* Centraliza o título secundário */
+            font-weight: bold;
+            text-transform: uppercase; /* Deixa o título em letras maiúsculas */
+        }
+
+        /* Estilo para listas */
+        ul {
+            list-style-type: none; /* Remove marcadores padrão */
+            padding-left: 0;
+        }
+
+        li {
+            padding: 8px;
+            border-bottom: 1px solid #ddd; /* Linhas separando os itens */
+            transition: background-color 0.3s ease;
+        }
+
+        li:hover {
+            background-color: #e0e0e0; /* Destaque no hover */
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+
+            h1 {
+                font-size: 2rem; /* Tamanho de fonte ajustado para dispositivos móveis */
+            }
+
+            p {
+                font-size: 1rem; /* Ajuste do tamanho de fonte */
+            }
+
+            .highlight-box {
+                padding: 15px; /* Reduz a margem interna para telas menores */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Bem-vindo ao Exemplo de Herança CSS</h1>
+
+    <p>Este é um exemplo de como usar a herança de propriedades CSS para criar um layout mais organizado e elegante. O <code>p</code> herda a cor do <code>body</code>, que é definida como <strong>darkblue</strong>, enquanto o título <code>h1</code> recebe uma cor específica de <strong>preto</strong>.</p>
+
+    
+
+    
+
+</body>
+</html>
