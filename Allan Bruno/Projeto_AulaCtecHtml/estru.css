@@ -13,7 +13,7 @@ body{
     font-size: 0px;
     padding: 0px;
     opacity: 0;
-    float: none;
+    float: none; 
     border: 0px;
     display: none;
 }
