@@ -15,6 +15,11 @@ html
         font-size: 0;
         display: none;
     }
+
+    #h2 {
+        font-size: 0;
+        display: none;
+    }
     
     nav{
         background-color: #343A40; 
@@ -136,21 +141,22 @@ html
 
 <body>
     <main>
+        <h1 class="font-zero" id="h2">Ctec - Cursos de Tecnologia</h1>
+        
         <header>
-            <h1 class="font-zero">Ctec - Cursos de Tecnologia</h1>
+            
             <div class="container">
                 <div class="row">
                     <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-6">
                         <section>
-                            <h2 class="font-zero">Logo Ctec</h2>
+                            <h2 class="fonte-zero">Logo Ctec</h2>
                             <a href="index.html"><img src="imagens/logo-ctec.png" alt="Logo Ctec" class="img-fluid" title="Logo Ctec"></a>
                         </section>
                     </div>
                     
                     <div class="col-xl-8 col-lg-8 col-md-8 col-sm-8 col-12 nome-empresa">
                         <section>
-                            <h2 class="font-zero">Cursos De tecnologia</h2>
-                            Cursos De Tecnologia
+                            <h2 class="fonte-zero">Cursos De tecnologia</h2>
                         </section>
                     </div>
                 </div>
@@ -159,19 +165,31 @@ html
            
 
         </header>
-     
-        <nav>
-            <a href="Home">Home</a>
-            <a href="Empresas">Empresas</a>
-            <div class="dropdown">
-                <span>Cursos</span>
-                <div class="dropdown-content">
-                <p>Curso1</p>
-                </div>
-              </div>
-            <a href="Contato">Contato</a>
+        <div class="container-fluid bg-dark">
+        <div class="container">
+            
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <h2 class="fonte-zero">Menu: Home, Empresa, Cursos, Tecnologia da Informação, Administração, Logística, Contato e Localizar</h2>
+
+            <a class="navbar-brand" href="index.html">Home</a> <!--Botão de Home para voltar a pagina inicial-->
+            <button class="navbar-toggler" type="button" data-toogle="collapse" data-target="#navbarSupportedContent" arial-controls="navbarSupportedContent"
+            arial-expanded="false" aria-label="Toggle navegation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Empresa <span class="sr-only">(corrent)</span></a>
+                </li>
+            </ul>
+        </div>
         </nav>
 
+
+        </div>
+        </div>
+        
 
         
         
