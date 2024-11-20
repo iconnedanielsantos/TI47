@@ -15,37 +15,72 @@
 
 <link rel="stylesheet" type="text/css" href="galeria/engine1/style.css">
 <script src="galeria/engine1/jquery.js"></script>
-
 <link href="lightbox2/dist/css/lightbox.min.css" rel="stylesheet" type="text/css">
-
 <link href="fontawesome-6.4.2/css/all.css" rel="stylesheet" type="text/css">
 <script src="fontawesome-6.4.2/js/all.js"></script>
 
 </head>
-
 <body>
     <main>
-        <header>
-            <h1 class="fonte-zero">CTec - Cursos de Tecnologia</h1>
-        </header>
+
         <div class="container">
-        <div class="row">
-        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-6">
-        <section>
-            <h2 class="fonte-zero">Logo CTec</h2>
-
-            <a href="index.html"><img src="imagens/logo-ctec.png" 
-                alt="Logo CTec" class="img-fluid" title="Logo CTec"></a>
+         <div class="row">
+          <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-6">
+            <section>
+                <a href="index.html"><img src="imagens/logo-ctec.png" alt="Logo CTec" class="img-fluid" title="Logo CTec"></a>
         </section>
-    </div>
+         </div>
 
-<div class="col-xl-8 col-lg-8 col-md-8 col-sm-8 col-12 nome-empresa">
-    <section>
-        <h2 class="fonte-zero">Cursos de Tecnologia</h2>
-        Cursos de Tecnologia
-    </section>
-</div>
+    <div class="col-xl-8 col-lg-8 col-md-8 col-sm-8 col-12 nome-empresa">
+         <section>
+            <h2 class="fonte-zero">Cusos de Tecnologia</h2><!--cursos de tecnologia-->
+        </section>
+     </div>
+         </div>
+          </div>
+      
+          <!--faxa cinza para a barra de pesquisa-->
+        <div class="container mt-3">
+            <div class="search-menu-container">
+                <div class="menu-search-content">
+                    <!--menu-->
+                    <div class="menu-links">
+                        <a href="index.html" class="highlighted">Home</a>
+                        <a href="servises">Empresa</a>
+
+                        <div class="dropdown">
+                            <a href="about" class="dropdown-toggle">Cursos</a>
+                            <div class="dropdown-content">
+                                <a href="#"></a>
+                                <a href="#"></a>
+                                <a href="#"></a>
+                            </div>
+                        </div>
+                        <a href="contact">Contato</a>
+                    </div>
+                        <!--barra de pesquisa-->
+                        <div class="search-bar">
+                            <form action="/search" method="get" class="form-inline">
+                                <input type="text" name="query" placeholder="search" class="form-control mr-2">
+                                <button type="submit" class="btn custom-btn">Search</button>
+                            </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+           
     </main>
+    <section>
+        <h2 class="fonte-zero">Galeria de imagens</h2>
+    </section>
+    <div id="wowslider-container1">
+        <div class="ws imagens"><ul>
+            <li><img src="galeria/data1/images/galeria1.jpg" alt="title" id="wows1_0"></li>
+            <li><img src="galeria/data1/images/galeria2.jpg" alt="title" id="wows1_1"></li>
+            <li><img src="galeria/data1/images/galeria3.jpg" alt="title" id="wows1_2"></li>
+        </ul></div>
+        <div class="ws_bullets"></div>
+        <a href="#" title=""></a>
+    </div>
 </body>
-
 </html>

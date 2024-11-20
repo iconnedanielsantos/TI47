@@ -1,0 +1,54 @@
+@font-face{
+    font-family: "twcenmteb";
+    src:url("fontes/tw-cen-mt-eb.ttf") format("truetype");
+}
+
+body{
+    margin: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+.fonte-zero{
+    font-size: 0px;
+    padding: 0px;
+    opacity: 0;
+    float: none; 
+    border: 0px;
+    display: none;
+}
+
+.nome-empresa{
+    font-family: "twcenmteb";
+    font-size: 93px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+}
+
+.fundo-rodape{
+    background-color: 343A40;
+    color: FFFFFF;
+    padding-top: 20PX;
+    padding-bottom: 10px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.icone-rodape{
+    font-size: 40px;
+}
+
+.vertical-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+nav{
+    background-color: black;
+}
+

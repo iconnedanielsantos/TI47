@@ -1,0 +1,128 @@
+@charset "utf-8";
+
+/* Importando fontes */
+@font-face {
+  font-family: "TwCenMT";
+  src: url("fontes/tw-cen-mt-eb.ttf") format("truetype");
+}
+
+/* Estilos Globais */
+body {
+  margin: 0;
+  font-family: 'Verdana', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Classes Utilitárias */
+.fonte-zero {
+  font-size: 0;
+  padding: 0;
+  opacity: 0;
+  display: none;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Estilo para o nome da empresa */
+.nome-empresa {
+  font-family: "TwCenMT", sans-serif;
+  font-size: 6vw; /* Tamanho relativo ao viewport */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+  color: #212529; /* Cor escura para contraste */
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/* Rodapé */
+.fundo-rodape {
+  background-color: #343A40;
+  color: #FFFFFF;
+  padding: 30px 20px;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.icone-rodape {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+/* Ajustes de Responsividade */
+
+/* Large devices (Laptops) */
+@media (max-width: 1199px) {
+  .nome-empresa {
+    font-size: 7vw;
+  }
+}
+
+/* Medium devices (Tablets) */
+@media (max-width: 991px) {
+  .nome-empresa {
+    font-size: 8vw;
+  }
+}
+
+/* Small devices (Phones) */
+@media (max-width: 767px) {
+  .nome-empresa {
+    font-size: 10vw;
+    padding: 15px 0;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+}
+
+/* Extra small devices (Phones in portrait mode) */
+@media (max-width: 575px) {
+  .nome-empresa {
+    font-size: 12vw;
+    padding: 10px 0;
+  }
+
+  h2 {
+    font-size: 1rem;
+  }
+}
+
+/* Muito pequenos dispositivos (Phone smaller than 360px width) */
+@media (max-width: 360px) {
+  .nome-empresa {
+    font-size: 15vw;
+    padding: 5px 0;
+  }
+
+  h2 {
+    font-size: 0.9rem;
+  }
+}
+

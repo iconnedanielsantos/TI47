@@ -19,67 +19,13 @@
     <link href="fontawesome-6.4.2/css/all.css" rel="stylesheet" type="text/css">
     <script src="fontawesome-6.4.2/js/all.js"></script>
 
-    <style>
-        /* Estilo para a forma cinza */
-        .search-menu-container {
-            background-color: #444444;
-            padding: 15px;
-            border-radius: 8px;
-            width: 100%; /* Faz a forma ocupar 100% da largura */
-            box-sizing: border-box; /* Garante que o padding não afete a largura */
-            display: flex;
-            justify-content: left;
-            align-items: center;
-            border-left: 15px solid #007bff; /* Aumenta a largura da borda esquerda */
-            border-right: 15px solid #007bff; /* Aumenta a largura da borda direita */
-        }
-
-        /* Centralizar os itens dentro da forma */
-        .menu-search-content {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 100%;
-        }
-
-        /* Ajuste do container para remover margens automáticas */
-        .container {
-            padding-left: 0;
-            padding-right: 0;
-        }
-
-        .menu-links {
-            margin-right: 20px;
-            display: flex;
-            gap: 10px;
-        }
-
-        .menu-links a {
-            text-decoration: none;
-            color: #fff;
-        }
-
-        .menu-links a:hover {
-            color: #444444;
-        }
-
-        .search-bar input {
-            padding: 8px;
-        }
-    </style>
-
 </head>
 <body>
     <main>
-        <header>
-            <h1 class="fonte-zero">CTec - Cursos de Tecnologia</h1>
-        </header>
-        
         <div class="container">
             <div class="row">
                 <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-6"> 
                     <section>
-                        <h2 class="fonte-zero">Logo CTec</h2>
                         <a href="index.html"><img src="imagens/logo-ctec.png"
                             alt="Logo CTec" class="img-fluid" title="Logo CTec"></a>
                     </section>
@@ -87,8 +33,8 @@
 
                 <div class="col-xl-8 col-lg-8 col-md-8 col-sm-8 col-12 nome-empresa">
                     <section>
-                        <h2 class="fonte-zero">Cursos de Tecnologia</h2>
-                        Cursos de Tecnologia
+                        <h2 class="fonte-chave">Cursos de Tecnologia</h2>
+
                     </section>
                 </div>
             </div>
@@ -100,16 +46,28 @@
                 <div class="menu-search-content">
                     <!-- Menu -->
                     <div class="menu-links">
-                        <a href="home">Home</a>
+                        <a href="index.html" class="highlighted">Home</a>
+                        
                         <a href="services">Empresa</a>
-                        <a href="about">Cursos</a>
+
+                        <div class="dropdown">
+                            <a href="about" class="dropdown-toggle">Cursos</a>
+                            <div class="dropdown-content">
+                                <a href="#">Curso 1</a>
+                                <a href="#">Curso 2</a>
+                                <a href="#">Curso 3</a>
+                            </div>
+                        </div>
+
                         <a href="contact">Contato</a>
                     </div>
 
+                    
                     <!-- Barra de pesquisa -->
                     <div class="search-bar">
-                        <form action="/search" method="get">
-                            <input type="text" name="query" placeholder="Search..." class="form-control">
+                        <form action="/search" method="get" class="form-inline">
+                            <input type="text" name="query" placeholder="Search" class="form-control mr-2">
+                            <button type="submit" class="btn custom-btn">Search</button>
                         </form>
                     </div>
                 </div>
@@ -117,5 +75,57 @@
         </div>
 
     </main>
+</body>
+  <section>
+    <h2 class="fonte-zero">Galeria de imagens</h2>
+    <!-- A seção agrupa o conteúdo relacionado à galeria -->
+  </section>
+
+  <!-- 2. Div da Galeria de Imagens -->
+  <div id="wowslider-container1">
+    
+    <!-- 3. Lista de Imagens -->
+    <div class="ws_images">
+      <ul>
+        <li>
+          <img src="galeria/data1/images/galeria1.jpg" alt="Imagem 1 - Paisagem ao pôr do sol" title="Paisagem ao pôr do sol" id="wows1_0">
+        </li>
+        <li>
+          <img src="galeria/data1/images/galeria2.jpg" alt="Imagem 2 - Floresta verdejante" title="Floresta verdejante" id="wows1_1">
+        </li>
+        <li>
+          <img src="galeria/data1/images/galeria3.jpg" alt="Imagem 3 - Vista noturna da cidade" title="Vista noturna da cidade" id="wows1_2">
+        </li>
+      </ul>
+    </div>
+
+    <!-- 4. Navegação de Miniaturas -->
+    <div class="ws_bullets">
+      <div>
+        <a href="#" title="Paisagem ao pôr do sol">
+          <span><img src="galeria/data1/tooltips/galeria1.jpg" alt="Miniatura 1">1</span>
+        </a>
+        <a href="#" title="Floresta verdejante">
+          <span><img src="galeria/data1/tooltips/galeria2.jpg" alt="Miniatura 2">2</span>
+        </a>
+        <a href="#" title="Vista noturna da cidade">
+          <span><img src="galeria/data1/tooltips/galeria3.jpg" alt="Miniatura 3">3</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- 5. Elemento ws_script -->
+    <div class="ws_script" style="position:absolute;left:-99%">
+      <a href="#">CTec Cursos de Tecnologia</a>
+    </div>
+
+    <!-- 6. Efeito de Sombra -->
+    <div class="ws_shadow"></div>
+
+  </div>
+
+  <!-- 7. Scripts do WowSlider -->
+  <script src="galeria/engine1/wowslider.js"></script>
+  <script src="galeria/engine1/script.js"></script>
 </body>
 </html>

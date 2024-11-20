@@ -1,0 +1,119 @@
+/* Reset de margin e padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #6a11cb, #2575fc); /* Gradiente suave para o fundo */
+    color: #ffffff;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+/* Cabeçalho */
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #ffeb3b; /* Amarelo vibrante */
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4); /* Sombra para o título */
+}
+
+/* Navegação */
+nav {
+    background-color: rgba(0, 0, 0, 0.6); /* Fundo escuro com transparência */
+    border-radius: 5px;
+    margin-bottom: 40px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffeb3b; /* Cor de link amarelo */
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffffff; /* Mudança para branco no hover */
+    text-decoration: underline; /* Sublinhado no hover */
+}
+
+/* Conteúdo */
+.content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #ffeb3b; /* Amarelo nos subtítulos */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.1rem;
+    color: #f0f0f0;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+/* Efeito de hover nos parágrafos */
+p:hover {
+    color: #ffeb3b;
+    cursor: pointer;
+}
+
+/* Adicionando bordas e sombras suaves nas seções */
+section {
+    background-color: rgba(0, 0, 0, 0.3); /* Fundo translúcido */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo para seções com destaque */
+section#origem, section#periodos {
+    border-left: 5px solid #ffeb3b; /* Borda amarela à esquerda */
+    padding-left: 20px;
+}
+
+/* Estilo de responsividade para dispositivos móveis */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+}

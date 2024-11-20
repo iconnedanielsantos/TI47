@@ -1,24 +1,100 @@
-header{
-    background-color:rgb(59, 59, 59);
-    color: black;
-    padding: 1em;
-    text-align: end;
+body {
+  margin: 0px;
+  font-family: verdana;
 }
 
-h1{
-    text-align:start
+/*curso de tecnologia*/
+.nome-empresa {
+  font-family: "twcenmteb";
+  font-size: 93px;
+  display: flex;
+  align-items: center;
+  /*alinhamento vertical*/
+  justify-content: center;
+  /*alinhamento horizontal*/
+  padding: 5px;
 }
 
-nav ul{
-    list-style: inside;
-    padding: 1em;
+/*Rodape*/
+
+
+
+.logo-container{
+
 }
 
-nav ul li{
-    display: inline;
-    margin-right: 10px;
+nav ul {
+  list-style: inside;
+  padding: 1em;
 }
-nav ul li a{
-    color:black;
-    text-decoration: none;
+
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+
 }
+
+nav ul li a {
+  color: rgb(230, 221, 221);
+  text-decoration: none;
+}
+
+.container img {
+  margin-left: 20px;
+  max-width: 1000px;
+}
+
+.fundo-rodape {
+  background-color: #27292b;
+  color: #FFFFFF;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 10px;
+  text-align: center;
+}
+
+.icone-rodape {
+  font-size: 40px;
+}
+
+.vertical-center {
+  display: flex;
+  align-items: center;
+  /*alinhamento vertical*/
+  justify-content: center;
+  /*alinhamento horizontal*/
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+/*fonte oculta*/
+
+.fonte-zero {
+  font-size: 0px;
+  padding: 0px;
+  opacity: 0;
+  float: none;
+  border: 0px;
+  display: none;
+}
+
+/*busca*/
+.search-bar {
+  border-radius:  0px;
+  padding: 10px;
+  width: 200px;
+  display: end;
+}
+
+.search-button {
+  background-color: #4d504f8e;
+  color: rgb(39, 139, 98);
+  border-radius: 0px;
+  padding: 5px 10px;
+}
+
+.search-button:hover {
+  background-color: #0056b3;
+}
+
+

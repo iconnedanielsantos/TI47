@@ -113,20 +113,75 @@ html
             </div>
         </div>
 
-        <nav>
-            <h1 class="fonte-zero">Menu: Home, Empresa, Cursos, Tecnologia da Informação, Adminstração, Lpgística, Contato e Localizar</h1>
-            <ul>
-                <a href="#"><li style="font-size: 22px;">Home</li></a>
-                <a href="#"><li>Empresa</li></a> 
-                <a href="#"><li>cursos</li></a>
-                <a href="#"><li>Contatos</li></a>      
-           
-                <div class="busca">   
-                <input type="text" placeholder="Search" name="Search">
-                    <button class="buscar" type="submit">Search</button> 
-                </div> 
-             </ul>
-        </nav>
+        <div class="container-fluid bg-dark">
+            <div class="container">
+                
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                
+            <h2 class="fonte-zero">Menu: Home, Empresa, Cursos, Tecnologia da Informação, Adminstração, Logística, Contato e Localizar</h2>
+                
+            <a class="navbar-brand" href="index.html">Home</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+            <a class="nav-link" href="#">Empresa <span class="sr-only">(current)</span></a>
+            </li>
+            
+            <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Cursos
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Tecnologia da Informação</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Administração</a>
+            <a class="dropdown-item" href="#">Logística</a>
+            </div>
+            </li>
+            
+            <li class="nav-item active">
+            <a class="nav-link" href="#">Contato <span class="sr-only">(current)</span></a>
+            </li>	
+                
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+            </div>
+            </nav>	
+                
+            </div>	
+            </div>
+
+            <section>
+                <h2 class="fonte-zero"> Galeria de Imagens</h2>
+                <div id="wowslider-container1">
+                    <div class="ws_images">
+                        <h2 class="fonte-zero">imagens em slide</h2>
+                        <ul>
+                            <li><img src="galeria/data1/images/galeria1.jpg" alt="banner-html-css"></li>
+                            <li><img src="galeria/data1/images/galeria2.jpg" alt="banner-extenções"></li>
+                            <li><img src="galeria/data1/images/galeria3.jpg" alt="banner-segurança"></li>
+                        </ul>
+                    </div>
+                    <div class="ws_bullets">
+                        <a href="#" title="miniatura-html-css"><Span><img src="galeria/data1/tooltips/galeria1.jpg" alt="1"></Span></a>
+                        <a href="#" title="miniatura-extenções"><span><img src="galeria/data1/tooltips/galeria2.jpg" alt="2"></span></a>
+                        <a href="#" title="miniatura-segurança"><span><img src="galeria/data1/tooltips/galeria3.jpg" alt="3"></span></a>
+                    </div>
+                    <div class="ws_script" style="position: absolute; left: -99%;"><a href="#">Ctec Cursos de Tecnologia</a></div>
+                    <div class="ws_shadow"></div>
+                    <script src="galeria/engine1/wowslider.js"></script>
+                    <script src="galeria/engine1/script.js"></script>
+                </div>
+            </section>
+
+
     </main>
 </body>
 

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Especificidade CSS</title>
+</head>
+    <style>
+        /* Especificidade baixa: seletor de elemento */
+        p {
+            color: blue;
+        }
+
+        /* Especificidade média: seletor de classe */
+        .importante {
+            color: red;
+        }
+
+        /* Especificidade alta: seletor de ID */
+        #destaque {
+            color: green;
+        }
+
+        /* Especificidade ainda maior: seletor inline */
+        /* Este será o mais prioritário */
+    </style>
+</head>
+<body>
+    <p>Este parágrafo está azul (seletor de elemento).</p>
+    <p class="importante">Este parágrafo está vermelho (seletor de classe).</p>
+    <p id="destaque" class="importante">Este parágrafo está verde (seletor de ID).</p>
+    <p id="destaque" class="importante" style="color: orange;">Este parágrafo está laranja (CSS inline).</p>
+</body>
+</html>
+
+</body>
+</html>
