@@ -38,7 +38,7 @@ body {
 /* Hover: Efeito ao passar o mouse */
 .btn-outline-success:hover {
     background-color: #00aeff; /* Cor de fundo mais escura */
-    color: #ffffff; /* Mantém o texto branco */
+    color: #00aeff; /* Mantém o texto branco */
     border-color: #00aeff;
     transform: scale(1.05); /* Leve ampliação */
 }
@@ -56,5 +56,14 @@ body {
     outline: none; /* Remove a borda padrão */
 }
 
+.destaque{
+  background-color: rgb(185, 227, 255);
+  height: 80px;
+}
 
-
+.subtitulo{
+  font-size: 50px;
+  text-align: center;
+  color: #0068c9;
+ 
+}
