@@ -44,4 +44,29 @@ body {
     padding-bottom: 5px;
 }
 
+@me all and (min-width:992px) and (max-width: 1199px) {
+    .nome-empresa {
+        font-family: "twcenmteb";
+        font-size: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center 
+        padding: 5px;
+    }
+}
+
+@media all and (min-width:768px) and (max-width: 991px) {
+    .nome-empresa {
+      font-family: "twcenmteb";
+      font-size: 60px;
+      display: flex;
+      align-items: center; /* Alinhamento Vertical */
+      justify-content: center; /* Alinhamento Horizontal */
+      padding: 5px;
+    }
+  }
+
+  
+
+
 
