@@ -1,200 +1,188 @@
 <!doctype html>
+
+<!--
+<!doctype html>: Declara o tipo do documento, especificando que este é um documento HTML5. Isso ajuda o navegador a interpretar o conteúdo corretamente.
+html
+-->
+
 <html lang="pt-br">
+<!--
+<html lang="pt-br">: Define a linguagem principal do conteúdo da página como português brasileiro. Isso é importante para acessibilidade e SEO (otimização de busca), pois ajuda os navegadores e motores de busca a processar o texto na língua correta.
+html
+-->
 
 <head>
-    <!-- Definições de metadados e recursos -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Cursos de Tecnologia para o desenvolvimento de habilidades em TI, programação e mais.">
-    <meta name="keywords" content="cursos, tecnologia, ti, informática, desenvolvimento web, php, sql, mysql, administração, logística">
+<!--
+<head>: Esta seção contém informações sobre o documento que não são exibidas diretamente na página, mas são essenciais para a estrutura, design e indexação do site.
+html
+-->
     
-    <title>CTec - Cursos de Tecnologia</title>
+<meta charset="utf-8">
+<!--
+<meta charset="utf-8">: Define a codificação de caracteres como UTF-8, que suporta uma vasta gama de caracteres de diferentes idiomas e símbolos especiais. É essencial para garantir que todos os caracteres apareçam corretamente na página.
+html
+-->
 
-    <!-- Favicon -->
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+<title>CTec - Cursos de Tecnologia</title>
+<!--
+<title>: Define o título da página, que será exibido na aba do navegador e também utilizado pelos motores de busca como título principal para a página nos resultados de pesquisa. Um título único e conciso contribui para o SEO.
+html
+-->
 
-    <!-- Estilos do Bootstrap -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+<meta name="description" content="Desenvolvimento de cursos de tecnologia">
+<!--
+<meta name="description">: Fornece uma breve descrição da página, que pode aparecer nos resultados de pesquisa do Google. Essa descrição deve ser objetiva e relevante, pois influencia a taxa de clique na página.
+html
+-->
 
-    <!-- Estilos personalizados -->
-    <link href="estilos.css" rel="stylesheet">
+<meta name="keywords" content="cursos, tecnologia, ti, informática, html5, css3, senac, desenvolvimento, web, websites, php, sql, mysql">
+<!--
+<meta name="keywords">: Inclui palavras-chave associadas ao conteúdo da página. Embora os motores de busca modernos deem pouca importância a essa tag, ela ainda pode ser usada para contexto adicional.
+html
+-->
 
-    <!-- Font Awesome (Ícones) -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.css" rel="stylesheet">
+<link rel="short icon" href="favicon.ico">
+<!--
+<link rel="short icon">: Define o favicon, um pequeno ícone associado à página, geralmente exibido na aba do navegador ao lado do título. Ele é importante para branding e facilita a identificação visual da página.
+html
+-->
 
-    <!-- Wowslider -->
-    <link href="galeria/engine1/style.css" rel="stylesheet">
-    <script src="galeria/engine1/jquery.js"></script>
+<link href="bootstrap-4.4.1/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<!--
+<link rel="stylesheet">: Link para o arquivo CSS do Bootstrap, uma biblioteca popular de estilos para desenvolver layouts responsivos e modernos. Ele facilita a criação de layouts adaptáveis e estilizados sem precisar escrever muito CSS.
+html
+-->
 
-    <!-- Lightbox -->
-    <link href="lightbox2/dist/css/lightbox.min.css" rel="stylesheet">
+<link href="meus_estilos.css" rel="stylesheet" type="text/css">
+<!--
+<link href="meus_estilos.css">: Importa um arquivo CSS personalizado chamado meus_estilos.css, onde você pode incluir estilos específicos para essa página, complementando o estilo do Bootstrap.
+html
+-->
 
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!--
+<meta name="viewport">: Configura a página para ser responsiva. width=device-width ajusta a largura da página à largura do dispositivo, e initial-scale=1 define o nível de zoom inicial. shrink-to-fit=no evita que a página encolha além do limite.
+html
+-->
 
-    <style>
-        /* Estilos personalizados para o layout */
-        body {
-            font-family: 'Roboto', sans-serif;
-            background-color: #f8f9fa;
-        }
+<link rel="stylesheet" type="text/css" href="galeria/engine1/style.css">
+<script src="galeria/engine1/jquery.js"></script>
+<!--
+<link> e <script> (Wowslider): O link carrega o arquivo CSS do Wowslider, uma biblioteca de galeria de imagens, enquanto o script carrega o jQuery, uma biblioteca JavaScript essencial para o funcionamento do Wowslider. Esses arquivos permitem que galerias e animações de imagens funcionem na página.
+html
+-->
 
-        .header {
-            background-color: #ff7b00d2;
-            color: white;
-            padding: 20px 0;
-        }
 
-        .header .logo img {
-            max-width: 150px;
-        }
+<link href="lightbox2/dist/css/lightbox.min.css" rel="stylesheet" type="text/css">
+<!--
+<link href="lightbox2/dist/css/lightbox.min.css">: Importa o CSS para o Lightbox2, uma biblioteca que permite a exibição de imagens em uma sobreposição, ideal para exibir imagens em uma galeria.
+html
+-->
 
-        .navbar {
-            background-color: #343a40;
-        }
+<link href="fontawesome-6.4.2/css/all.css" rel="stylesheet" type="text/css">
+<script src="fontawesome-6.4.2/js/all.js"></script>
+<!--
+<link> e <script> (Font Awesome): Esses elementos importam os arquivos CSS e JavaScript do Font Awesome, uma biblioteca de ícones. Eles permitem adicionar ícones e símbolos personalizados, melhorando a experiência visual da página.
+html
+-->
 
-        .navbar-brand, .nav-link {
-            color: #fff !important;
-        }
-
-        .nav-item.active .nav-link, .nav-item:hover .nav-link {
-            color: #ff5722 !important;
-        }
-
-        .container-fluid.bg-dark {
-            background-color: #212529 !important;
-        }
-
-        .menu-dropdown {
-            background-color: #007bff;
-        }
-
-        .footer {
-            background-color: #343a40;
-            color: #fff;
-            text-align: center;
-            padding: 20px 0;
-        }
-
-        .footer a {
-            color: #fff;
-            text-decoration: none;
-        }
-
-        .footer a:hover {
-            text-decoration: underline;
-        }
-
-        .carousel img {
-            width: 100%;
-            height: auto;
-        }
-    </style>
 </head>
+<!--
+</head>: Finaliza a seção <head>, que inclui todas as informações estruturais e recursos necessários para o carregamento correto da página antes de seu conteúdo ser exibido.
+-->
 
 <body>
-    <header class="header">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-md-4 logo">
-                    <h2><a href="index.html" class="text-white">CTec</a></h2>
-                    <a href="index.html"><img src="imagens/logo-ctec.png" alt="Logo CTec" class="img-fluid"></a>
-                </div>
-                <div class="col-12 col-md-8">
-                    <h1 class="font-weight-bold">Cursos de Tecnologia</h1>
-                    <p>Qualificação em TI, Desenvolvimento Web, e muito mais!</p>
-                </div>
-            </div>
-        </div>
+    <header>
+        <h1 class="fonte-zero">Ctec Curso de tecnologia</h1>
     </header>
 
-    <nav class="navbar navbar-expand-lg navbar-dark">
+    <main>
         <div class="container">
-            <a class="navbar-brand" href="index.html">Home</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Empresa</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Cursos
-                        </a>
-                        <div class="dropdown-menu menu-dropdown" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Tecnologia da Informação</a>
-                            <a class="dropdown-item" href="#">Administração</a>
-                            <a class="dropdown-item" href="#">Logística</a>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contato</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Localizar</a>
-                    </li>
-                </ul>
+            <div class="row">
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-6">
+                    <section>
+                        <h2 class="fonte-zero">Logo Ctec</h2>
+                        <a href=""><img src="imagens/logo-ctec.png" alt="" class="img-fluid"></a>
+                    </section>
+                </div>
+                <div class="col-xl-8 col-lg-8 col-md-8 col-sm-8 col-12 nome-empresa">
+                    <section>
+                        <h2 class="font-zero">Cursos de Tecnologia</h2> Cursos de Tecnologia
+                    </section>
+                </div>
             </div>
         </div>
-    </nav>
 
-    <main class="container py-5">
-        <section>
-            <h2 class="font-weight-bold mb-4">Bem-vindo à CTec</h2>
-            <p>A CTec oferece cursos de alta qualidade nas áreas de Tecnologia da Informação, Administração, e Logística. Nossos programas são ideais para quem busca desenvolver habilidades práticas e se destacar no mercado de trabalho. Confira abaixo os cursos disponíveis:</p>
-        </section>
-
-        <section>
-            <h3 class="font-weight-bold mb-3">Cursos Disponíveis</h3>
-            <div class="row">
-                <div class="col-md-4 mb-4">
-                    <div class="card shadow-sm">
-                        <img src="imagens/curso-ti.jpg" class="card-img-top" alt="Curso TI">
-                        <div class="card-body">
-                            <h5 class="card-title">Tecnologia da Informação</h5>
-                            <p class="card-text">Aprenda sobre redes, programação, banco de dados e muito mais.</p>
-                            <a href="#" class="btn btn-primary">Saiba Mais</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card shadow-sm">
-                        <img src="imagens/curso-administracao.jpg" class="card-img-top" alt="Curso Administração">
-                        <div class="card-body">
-                            <h5 class="card-title">Administração</h5>
-                            <p class="card-text">Desenvolva habilidades para gerenciar equipes e empresas.</p>
-                            <a href="#" class="btn btn-primary">Saiba Mais</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card shadow-sm">
-                        <img src="imagens/curso-logistica.jpg" class="card-img-top" alt="Curso Logística">
-                        <div class="card-body">
-                            <h5 class="card-title">Logística</h5>
-                            <p class="card-text">Aprenda sobre gestão de estoques, transporte e distribuição.</p>
-                            <a href="#" class="btn btn-primary">Saiba Mais</a>
-                        </div>
-                    </div>
-                </div>
+        <div class="container-fluid bg-dark">
+            <div class="container">
+                
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                
+            <h2 class="fonte-zero">Menu: Home, Empresa, Cursos, Tecnologia da Informação, Adminstração, Logística, Contato e Localizar</h2>
+                
+            <a class="navbar-brand" href="index.html">Home</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+            <a class="nav-link" href="#">Empresa <span class="sr-only">(current)</span></a>
+            </li>
+            
+            <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Cursos
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Tecnologia da Informação</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Administração</a>
+            <a class="dropdown-item" href="#">Logística</a>
             </div>
-        </section>
+            </li>
+            
+            <li class="nav-item active">
+            <a class="nav-link" href="#">Contato <span class="sr-only">(current)</span></a>
+            </li>	
+                
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+            </div>
+            </nav>	
+                
+            </div>	
+            </div>
+
+            <section>
+                <h2 class="fonte-zero"> Galeria de Imagens</h2>
+                <div id="wowslider-container1">
+                    <div class="ws_images">
+                        <h2 class="fonte-zero">imagens em slide</h2>
+                        <ul>
+                            <li><img src="galeria/data1/images/galeria1.jpg" alt="banner-html-css"></li>
+                            <li><img src="galeria/data1/images/galeria2.jpg" alt="banner-extenções"></li>
+                            <li><img src="galeria/data1/images/galeria3.jpg" alt="banner-segurança"></li>
+                        </ul>
+                    </div>
+                    <div class="ws_bullets">
+                        <a href="#" title="miniatura-html-css"><Span><img  src="galeria/data1/tooltips/galeria1.jpg" alt="1"></Span></a>
+                        <a href="#" title="miniatura-extenções"><span><img src="galeria/data1/tooltips/galeria2.jpg" alt="2"></span></a>
+                        <a href="#" title="miniatura-segurança"><span><img src="galeria/data1/tooltips/galeria3.jpg" alt="3"></span></a>
+                    </div>
+                    <div class="ws_script" style="position: absolute; left: -99%;"><a href="#">Ctec Cursos de Tecnologia</a></div>
+                    <div class="ws_shadow"></div>
+                    <script src="galeria/engine1/wowslider.js"></script>
+                    <script src="galeria/engine1/script.js"></script>
+                </div>
+            </section>
+
+
     </main>
-
-    <footer class="footer">
-        <p>&copy; 2024 CTec - Todos os direitos reservados.</p>
-        <p><a href="#">Política de Privacidade</a> | <a href="#">Termos de Uso</a></p>
-    </footer>
-
-    <!-- Scripts do Bootstrap -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-
-    <!-- Lightbox -->
-    <script src="lightbox2/dist/js/lightbox.min.js"></script>
 </body>
 
 </html>

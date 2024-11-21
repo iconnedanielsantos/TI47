@@ -4,7 +4,7 @@
     font-weight: bold;
 }
 
-.fonte-zero {
+.fonte-header {
     font-family: 'Tw Cen MT Extra Bold', sans-serif;
     font-weight: bold;
     color: black;
@@ -21,6 +21,9 @@ header h2 {
     margin: 0;
 }
 
+.fonte-zero{
+   opacity: 0;
+}
 .navbar form {
     margin-left: 0;
 }

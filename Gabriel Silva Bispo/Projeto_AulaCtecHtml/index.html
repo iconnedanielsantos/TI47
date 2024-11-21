@@ -93,63 +93,179 @@ html
 -->
 
 <body>
-    <div class="container">
-
-        <div class="row">
-
-
-
-            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-6">
-
-                <section>
-
-                    <h2 class="fonte-zero">Logo CTec</h2>
-
-                    <a href="index.html"><img src="imagens/logo-ctec.png" alt="Logo CTec" class="img-fluid"
-                            title="Logo CTec"></a>
-
-                </section>
-
+       <!-- Conteúdo principal -->
+       <main>
+        <!-- Cabeçalho com título -->
+        <header>
+            <div class="title-right">
+                <h1 class="fonte-zero">Cursos de Tecnologia</h1>
             </div>
+        </header>
 
-
-
-            <div class="col-xl-8 col-lg-8 col-md-8 col-sm-8 col-12 nome-empresa">
-
-                <section>
-
-                    <h2 class="fonte-zero">Cursos de Tecnologia</h2>
-
-                    <h1>Cursos de Tecnologia</h1>
-
-                </section>
+        <!-- Logo dentro do container -->
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-6">
+                    <section>
+                        <a href="index.html">
+                            <img src="imagens/logo-ctec.png" alt="logo-ctec" class="img-fluid" title="logo-ctec">
+                        </a>
+                    </section>
+                </div>
             </div>
         </div>
+    </main>
 
-    </div>
-    <header>
-        <h1 class="fonte-zero">Home, Empresa, Cursos, Tecnologia da Informação, Adminstração, Logística, Contato e
-            Localizar</h1>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <ul class="container-fluid">
-                <li>
-                    <a href="#">Home</a>
-                    <a  href="#">Empresa</a>
-                    <a  href="#">Contato</a>
-                    <a href="#">cursos</a>
+    <!-- Barra de navegação -->
+    <nav class="navbar navbar-expand-lg navbar-light navbar-taskbar">
+        <div class="container-fluid">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Empresa</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Cursos
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">Cursos Online</a></li>
+                        <li><a class="dropdown-item" href="#">Cursos Presenciais</a></li>
+                        <li><a class="dropdown-item" href="#">Contato</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contato</a>
                 </li>
             </ul>
-             <!-- Barra de busca -->
-             <form class="d-flex align-items-center">
+            <form class="d-flex">
                 <input class="form-control me-2 search-bar" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-light search-button" type="submit">Search</button>
-              </form>
-            </div>
-          </nav>
+                <button class="btn search-button" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
 
-          
-        </nav>
-    </header>
+    <!-- Carrossel de imagens -->
+    <div class="carrossel-container">
+        <div class="carrossel-imagens">
+            <img src="galeria/data1/images/galeria1.jpg" alt="Imagem 1">
+            <img src="galeria/data1/images/galeria2.jpg" alt="Imagem 2">
+            <img src="galeria/data1/images/galeria3.jpg" alt="Imagem 3">
+        </div>
+        <button class="carrossel-botao carrossel-botao-esquerda" onclick="moverCarrossel(-1)">&#10094;</button>
+        <button class="carrossel-botao carrossel-botao-direita" onclick="moverCarrossel(1)">&#10095;</button>
+    </div>
+
+    <!-- Scripts -->
+    <script src="bootstrap-4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Seleciona o carrossel e as imagens
+        const carrosselImagens = document.querySelector('.carrossel-imagens');
+        const imagens = document.querySelectorAll('.carrossel-imagens img');
+        const totalImagens = imagens.length;
+        let contador = 0;
+
+        // Função para mover as imagens automaticamente
+        function moverCarrossel() {
+            contador++;
+            if (contador >= totalImagens) {
+                contador = 0; // Reseta quando chegar ao final
+            }
+            carrosselImagens.style.transform = `translateX(-${contador * 100}%)`;
+        }
+
+        // Muda as imagens a cada 3 segundos
+        setInterval(moverCarrossel, 3000);
+
+        // Funcionalidade dos botões
+        document.querySelector('.carrossel-botao-esquerda').addEventListener('click', () => {
+            contador--;
+            if (contador < 0) {
+                contador = totalImagens - 1;
+            }
+            carrosselImagens.style.transform = `translateX(-${contador * 100}%)`;
+        });
+
+        document.querySelector('.carrossel-botao-direita').addEventListener('click', () => {
+            contador++;
+            if (contador >= totalImagens) {
+                contador = 0;
+            }
+            carrosselImagens.style.transform = `translateX(-${contador * 100}%)`;
+        });
+    </script>
+
+            <!--Segunda Barra-->
+       
+            
+            <div  class="  navbar-taskbar2" >
+                Curso em Destaque
+              </div>
+              
+
+              <br><br>
+
+             <div class="title_cursor"> <h3> Titulo do Curso </h3> </div>
+
+             
+               <div class="paragrafo"><p> "Os cursos são portas de entrada para novos conhecimentos,<br>
+                 habilidades e oportunidades que podem transformar seu futuro.   
+                </p>
+               </div>
+
+                <div class="imgcursos"> <img src="imagens/html5-p.jpg"> </div>
+                <button class="botao-detalhes">+Detalhes</button>
+
+            
+            
+                
+
+
+                    <!-- Container para mover o bloco -->
+    <div class="bloco-cursos">
+        <div class="title_cursor">
+            <h3>Título do Curso</h3>
+        </div>
+
+        <div class="paragrafo">
+            <p>"Os cursos são portas de entrada para novos conhecimentos,<br>
+                habilidades e oportunidades que podem transformar seu futuro."</p>
+        </div>
+
+        <div class="imgcursos">
+            <img src="imagens/html5-p.jpg" alt="Imagem do curso">
+        </div>
+
+        <button class="botao-detalhes">+Detalhes</button>
+    </div>
+
+
+    <div class="bloco-cursos">
+        <div class="title_cursor">
+            <h3>Título do Curso</h3>
+        </div>
+
+        <div class="paragrafo">
+            <p>"Os cursos são portas de entrada para novos conhecimentos,<br>
+                 habilidades e oportunidades que podem transformar seu futuro."</p>
+        </div>
+
+        <div class="imgcursos">
+            <img src="imagens/html5-p.jpg" alt="Imagem do curso">
+        </div>
+
+        <button class="botao-detalhes">+Detalhes</button>
+    </div>
+
+<!--rodape-->
+<footer class="Fundo-rodape">
+    <p>
+        © Copyrigth 2022 -Todos os direitos reservados para Ctec - Cursos de tecnologia.
+    </p>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
-</html>
+</html
