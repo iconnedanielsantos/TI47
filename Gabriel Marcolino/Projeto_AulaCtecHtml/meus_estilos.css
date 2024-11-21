@@ -1,7 +1,13 @@
+@charset "utf-8";
+
 @font-face {
-    font-family: PROJETO;
+    font-family: "PROJETO";
     src: url(fontes/tw-cen-mt-eb.ttf)format('truetype');
     font-weight: bold;
+}
+body {
+    margin: 0px;
+    font-family: verdana;
 }
 
 .fonte-zero {
@@ -12,10 +18,18 @@
         clip: rect(0, 0, 0, 0); /* Esconde visualmente o elemento */
         white-space: nowrap; /* Evita quebra de linha */
         border: 0;          /* Remove bordas que possam existir */
-    
-    
-
 }
+
+.nome-empresa {
+    font-family: "PROJETO";
+    font-size: 93px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+}
+
+
 .fonte-chave {
     font-family: 'PROJETO';
 }
@@ -140,6 +154,68 @@ button {
 }
 
 
-
-
-
+/* col-lg */
+@media all and (min-width:992px) and (max-width: 1199px) {
+  .nome-empresa {
+    font-family: "twcenmteb";
+    font-size: 80px;
+    display: flex;
+    align-items: center; /* Alinhamento Vertical */
+    justify-content: center; /* Alinhamento Horizontal */
+    padding: 5px;
+  }
+}
+/* col-md */
+@media all and (min-width:768px) and (max-width: 991px) {
+  .nome-empresa {
+    font-family: "twcenmteb";
+    font-size: 60px;
+    display: flex;
+    align-items: center; /* Alinhamento Vertical */
+    justify-content: center; /* Alinhamento Horizontal */
+    padding: 5px;
+  }
+}
+/* col-sm */
+@media all and (min-width:576px) and (max-width: 767px) {
+  .nome-empresa {
+    font-family: "twcenmteb";
+    font-size: 44px;
+    display: flex;
+    align-items: center; /* Alinhamento Vertical */
+    justify-content: center; /* Alinhamento Horizontal */
+    padding: 5px;
+  }
+}
+/* col */
+@media all and (min-width:361px) and (max-width: 575px) {
+  .nome-empresa {
+    font-family: "twcenmteb";
+    font-size: 44px;
+    display: flex;
+    align-items: center; /* Alinhamento Vertical */
+    justify-content: center; /* Alinhamento Horizontal */
+    padding: 5px;
+  }
+  h2 {
+    font-size: 25px;
+  }
+}
+@media all and (max-width: 360px) {
+  .nome-empresa {
+    font-family: "twcenmteb";
+    font-size: 30px;
+    display: flex;
+    align-items: center; /* Alinhamento Vertical */
+    justify-content: center; /* Alinhamento Horizontal */
+    padding: 5px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+}
+h3{
+    font-family: "PROJETO";
+    font-size: 70px;
+    text-align: right;
+}
