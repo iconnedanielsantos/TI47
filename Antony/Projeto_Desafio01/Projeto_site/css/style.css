@@ -6,13 +6,10 @@ body {
 }
 
 header {
-<<<<<<<< HEAD:Gabriella Santos/projetinho.links.estruturais/css/estilo.css
     background-color: #0a4175;
     color: white;
-========
     background-color: #5e2b0d;
     color: rgb(255, 255, 255);
->>>>>>>> 50678189da795754ba114154656e53c7ff99d146:Antony/Projeto_Desafio01/Projeto_site/css/style.css
     padding: 1em;
     text-align: center;
 }

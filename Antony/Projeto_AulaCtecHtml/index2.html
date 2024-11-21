@@ -32,6 +32,53 @@
     <!-- Font Awesome -->
     <link href="fontawesome-6.4.2/css/all.css" rel="stylesheet" type="text/css">
     <script src="fontawesome-6.4.2/js/all.js"></script>
+
+    <style>
+    /* Estilo do container do bloco */
+    .bloco-cursos {
+        position: relative; /* Define posição relativa */
+        transform: translateY(-20px); /* Move o bloco 20px para cima */
+        transition: all 0.3s ease; /* Transição suave para possíveis efeitos */
+    }
+
+    /* Estilo adicional para o título */
+    .title_cursor h3 {
+        font-size: 30px;
+        margin: 10px 0;
+    }
+
+    /* Estilo adicional para o parágrafo */
+    .paragrafo {
+        margin: 10px 0;
+        font-size: 16px;
+        line-height: 1.6;
+        margin-left:  20px;
+    }
+
+    /* Estilo da imagem */
+    .imgcursos img {
+        width: 100%; /* Responsivo */
+        max-width: 300px; /* Limite máximo */
+        border-radius: 5px; /* Bordas arredondadas */
+    }
+
+    /* Estilo do botão */
+    .botao-detalhes {
+        background-color: transparent;
+        border: 2px solid black;
+        color: black;
+        padding: 20px 20px;
+        font-size: 16px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+    .botao-detalhes:hover {
+        background-color: black;
+        color: white;
+    }
+</style>
 </head>
 
 <body>
@@ -103,30 +150,101 @@
     <!-- Scripts -->
     <script src="bootstrap-4.4.1/js/bootstrap.bundle.min.js"></script>
     <script>
-        let indiceAtual = 0;
+        // Seleciona o carrossel e as imagens
+        const carrosselImagens = document.querySelector('.carrossel-imagens');
+        const imagens = document.querySelectorAll('.carrossel-imagens img');
+        const totalImagens = imagens.length;
+        let contador = 0;
 
-        function moverCarrossel(direcao) {
-            const imagens = document.querySelectorAll('.carrossel-imagens img');
-            const totalImagens = imagens.length;
-
-            // Atualiza o índice atual com base na direção
-            indiceAtual += direcao;
-
-            // Garante que o índice fique dentro dos limites
-            if (indiceAtual < 0) {
-                indiceAtual = totalImagens - 1;
-            } else if (indiceAtual >= totalImagens) {
-                indiceAtual = 0;
+        // Função para mover as imagens automaticamente
+        function moverCarrossel() {
+            contador++;
+            if (contador >= totalImagens) {
+                contador = 0; // Reseta quando chegar ao final
             }
-
-            // Move as imagens para a posição correta
-            const novoTransform = `translateX(-${indiceAtual * 100}%)`;
-            document.querySelector('.carrossel-imagens').style.transform = novoTransform;
+            carrosselImagens.style.transform = `translateX(-${contador * 100}%)`;
         }
+
+        // Muda as imagens a cada 3 segundos
+        setInterval(moverCarrossel, 3000);
+
+        // Funcionalidade dos botões
+        document.querySelector('.carrossel-botao-esquerda').addEventListener('click', () => {
+            contador--;
+            if (contador < 0) {
+                contador = totalImagens - 1;
+            }
+            carrosselImagens.style.transform = `translateX(-${contador * 100}%)`;
+        });
+
+        document.querySelector('.carrossel-botao-direita').addEventListener('click', () => {
+            contador++;
+            if (contador >= totalImagens) {
+                contador = 0;
+            }
+            carrosselImagens.style.transform = `translateX(-${contador * 100}%)`;
+        });
     </script>
 
             <!--Segunda Barra-->
+       
+            
+            <div  class="  navbar-taskbar2" >
+                Curso em Destaque
+              </div>
+              
 
-            <nav class="navbar navbar-expand-lg navbar-light navbar-taskbar2">
+              <br><br>
+
+             <div class="title_cursor"> <h3> Titulo do Curso </h3> </div>
+
+             
+               <div class="paragrafo"><p> "Os cursos são portas de entrada para novos conhecimentos, habilidades e oportunidades que podem transformar seu futuro.   
+                </p>
+               </div>
+
+                <div class="imgcursos"> <img src="imagens/html5-p.jpg"> </div>
+                <button class="botao-detalhes">+Detalhes</button>
+
+            
+            
+                
+
+
+                    <!-- Container para mover o bloco -->
+    <div class="bloco-cursos">
+        <div class="title_cursor">
+            <h3>Título do Curso</h3>
+        </div>
+
+        <div class="paragrafo">
+            <p>"Os cursos são portas de entrada para novos conhecimentos, habilidades e oportunidades que podem transformar seu futuro."</p>
+        </div>
+
+        <div class="imgcursos">
+            <img src="imagens/html5-p.jpg" alt="Imagem do curso">
+        </div>
+
+        <button class="botao-detalhes">+Detalhes</button>
+    </div>
+
+
+    <div class="bloco-cursos">
+        <div class="title_cursor">
+            <h3>Título do Curso</h3>
+        </div>
+
+        <div class="paragrafo">
+            <p>"Os cursos são portas de entrada para novos conhecimentos, habilidades e oportunidades que podem transformar seu futuro."</p>
+        </div>
+
+        <div class="imgcursos">
+            <img src="imagens/html5-p.jpg" alt="Imagem do curso">
+        </div>
+
+        <button class="botao-detalhes">+Detalhes</button>
+    </div>
+
+
 </body>
 </html>
