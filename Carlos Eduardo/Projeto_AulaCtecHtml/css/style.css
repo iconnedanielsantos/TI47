@@ -1,4 +1,4 @@
-@charset "utf-8"
+@charset "utf-8";
 
 @font-face { 
 font-family: "twcenmteb"; 
@@ -29,7 +29,55 @@ body {
   /* esconde o elemento completamente, sem ocupar espaço.  */
 }
 
-.nome-empresa {
+.fonte-header {
+  font-family: 'Tw Cen MT Extra Bold', sans-serif;
+  font-weight: bold;
+  color: black;
+  font-size: 3.5rem;
+  letter-spacing: 0.1rem;
+  font-size: 50px;
+}
+
+#wows1_0, #wows1_1, #wows1_2{
+  width: 100%;
+}
+
+/* Estilo para as setas com Font Awesome */
+.ws_arrow_left, .ws_arrow_right {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 30px; /* Ajuste o tamanho do ícone */
+  color: white; /* Cor das setas (branco) */
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+  border-radius: 50%; /* Deixa as setas arredondadas */
+}
+
+/* Alinhamento da seta esquerda */
+.ws_arrow_left {
+  left: 10px; /* Posiciona a seta à esquerda */
+}
+
+/* Alinhamento da seta direita */
+.ws_arrow_right {
+  right: 10px; /* Posiciona a seta à direita */
+}
+
+/* Efeito de hover (quando o mouse passa sobre as setas) */
+.ws_arrow_left_link, .ws_arrow_right_link {
+  display: block;
+  text-decoration: none; /* Remove o sublinhado do link */
+  color: inherit; /* Herda a cor do pai (branco) */
+}
+
+.ws_arrow_left_link:hover, .ws_arrow_right_link:hover {
+  background-color: rgba(0, 0, 0, 0.7); /* Escurece o fundo ao passar o mouse */
+}
+
+
+ .nome-empresa {
   font-family: "twcenmteb";
   font-size: 93px;
   display: flex;
@@ -66,4 +114,9 @@ body {
   justify-content: center;
   padding-top: 5px;
   padding-bottom: 5px;
+}
+
+h2 {
+  font-family: verdana;
+  
 }
