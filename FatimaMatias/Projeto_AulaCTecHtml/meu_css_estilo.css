@@ -9,5 +9,64 @@ body {
     margin: 0px;
     font-size: 0px;
     padding: 0px;
-    
+    opacity: 0;
+    float: none;
+    border: 0px;
+    display: none;
 }
+
+.nome-empresa {
+    font-family: "twenmteb";
+    font-size: 93px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+}
+
+.fundo-rodape {
+    background-color: #343A40;
+    color: #FFFFFF;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    font-size: 16px;
+    text-align: center; 
+}
+
+.icone.rodape {
+    font-size: 40px; 
+}
+.vertical-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+@me all and (min-width:992px) and (max-width: 1199px) {
+    .nome-empresa {
+        font-family: "twcenmteb";
+        font-size: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center 
+        padding: 5px;
+    }
+}
+
+@media all and (min-width:768px) and (max-width: 991px) {
+    .nome-empresa {
+      font-family: "twcenmteb";
+      font-size: 60px;
+      display: flex;
+      align-items: center; /* Alinhamento Vertical */
+      justify-content: center; /* Alinhamento Horizontal */
+      padding: 5px;
+    }
+  }
+
+  
+
+
+
