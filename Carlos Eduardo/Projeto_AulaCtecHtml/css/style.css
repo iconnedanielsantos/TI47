@@ -29,7 +29,7 @@ body {
   /* esconde o elemento completamente, sem ocupar espaço.  */
 }
 
-.nome-empresa {
+ .nome-empresa {
   font-family: "twcenmteb";
   font-size: 93px;
   display: flex;
