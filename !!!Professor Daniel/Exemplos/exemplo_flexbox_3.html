@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8"> <!-- Define a codificação de caracteres como UTF-8 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ajusta o layout para telas de diferentes tamanhos -->
+  <title>Exemplo Flexbox</title> <!-- Título da página exibido na aba do navegador -->
+  <style>
+    /* Estilos gerais do corpo */
+    body {
+      font-family: Arial, sans-serif; /* Define a fonte do texto */
+      margin: 0; /* Remove as margens padrão */
+      padding: 0; /* Remove o espaçamento interno padrão */
+      display: flex; /* Torna o body um container flexível */
+      flex-direction: column; /* Organiza os elementos em coluna */
+      align-items: center; /* Centraliza os elementos no eixo cruzado (horizontal aqui) */
+      gap: 20px; /* Espaçamento entre os elementos */
+      background-color: #f4f4f9; /* Define uma cor de fundo clara */
+    }
+
+    /* Estilos gerais do container flexível */
+    .container {
+      display: flex; /* Define o container como flexível */
+      width: 80%; /* Largura de 80% do viewport */
+      height: 300px; /* Altura fixa de 300px */
+      margin: 10px; /* Margem ao redor do container */
+      border: 2px dashed #333; /* Borda pontilhada para visualização */
+      background-color: #e0e0e0; /* Cor de fundo para contraste */
+    }
+
+    /* Estilos para cada item dentro do container */
+    .item {
+      background-color: #007BFF; /* Cor de fundo azul */
+      color: white; /* Cor do texto */
+      font-size: 20px; /* Tamanho do texto */
+      font-weight: bold; /* Texto em negrito */
+      text-align: center; /* Centraliza o texto horizontalmente */
+      line-height: 50px; /* Centraliza o texto verticalmente */
+      width: 50px; /* Largura fixa dos itens */
+      height: 50px; /* Altura fixa dos itens */
+      margin: 5px; /* Margem ao redor dos itens */
+      border-radius: 5px; /* Arredonda as bordas */
+    }
+
+    /* Classes adicionais para exemplos específicos */
+
+    /* Distribui os itens com espaçamento uniforme, deixando o primeiro e último nas extremidades */
+    .justify-space-between {
+      justify-content: space-between;
+    }
+
+    /* Centraliza os itens no eixo principal */
+    .justify-center {
+      justify-content: center;
+    }
+
+    /* Centraliza os itens no eixo cruzado (vertical por padrão) */
+    .align-items-center {
+      align-items: center;
+    }
+
+    /* Alinha os itens ao final do eixo cruzado */
+    .align-items-flex-end {
+      align-items: flex-end;
+    }
+
+    /* Permite que os itens "quebrem linha" caso o espaço horizontal seja insuficiente */
+    .flex-wrap {
+      flex-wrap: wrap;
+    }
+  </style>
+</head>
+<body>
+  <h1>Exemplo de Flexbox</h1> <!-- Título principal da página -->
+
+  <!-- Container com espaçamento uniforme entre os itens -->
+  <div class="container justify-space-between">
+    <div class="item">1</div> <!-- Primeiro item -->
+    <div class="item">2</div> <!-- Segundo item -->
+    <div class="item">3</div> <!-- Terceiro item -->
+  </div>
+  
+  <!-- Container com itens centralizados no eixo principal -->
+  <div class="container justify-center">
+    <div class="item">A</div> <!-- Primeiro item -->
+    <div class="item">B</div> <!-- Segundo item -->
+    <div class="item">C</div> <!-- Terceiro item -->
+  </div>
+  
+  <!-- Container com itens centralizados no eixo cruzado -->
+  <div class="container align-items-center">
+    <div class="item">X</div> <!-- Primeiro item -->
+    <div class="item">Y</div> <!-- Segundo item -->
+    <div class="item">Z</div> <!-- Terceiro item -->
+  </div>
+  
+  <!-- Container com itens alinhados ao final no eixo cruzado -->
+  <div class="container align-items-flex-end">
+    <div class="item">P</div> <!-- Primeiro item -->
+    <div class="item">Q</div> <!-- Segundo item -->
+    <div class="item">R</div> <!-- Terceiro item -->
+  </div>
+  
+  <!-- Container com itens quebrando linha -->
+  <div class="container flex-wrap">
+    <div class="item">1</div> <!-- Primeiro item -->
+    <div class="item">2</div> <!-- Segundo item -->
+    <div class="item">3</div> <!-- Terceiro item -->
+    <div class="item">4</div> <!-- Quarto item -->
+    <div class="item">5</div> <!-- Quinto item -->
+    <div class="item">6</div> <!-- Sexto item -->
+  </div>
+</body>
+</html>
+<!--
+Explicação Adiconal
+1. Propriedade display: flex:
+Transforma o elemento .container em um container flexível, ativando o comportamento Flexbox para os filhos.
+2. Eixos do Flexbox:
+Eixo principal (main axis): É o eixo horizontal por padrão.
+Eixo cruzado (cross axis): É o eixo vertical por padrão.
+3. justify-content:
+Define como os itens são distribuídos ao longo do eixo principal.
+Exemplos:
+space-between: Espaça os itens igualmente, deixando o primeiro e último nas extremidades.
+center: Centraliza os itens.
+4. align-items:
+Define como os itens são alinhados no eixo cruzado.
+Exemplos:
+center: Centraliza verticalmente.
+flex-end: Alinha na parte inferior.
+5. flex-wrap:
+Permite que os itens "quebrem linha" quando não há espaço suficiente.
+Exemplo: no container com flex-wrap, os itens são dispostos em múltiplas linhas.
+6. Estilização adicional:
+Adicionei margens e bordas para ajudar na visualização de espaçamentos e alinhamentos.
+Cores para destacar os itens.
+-->
