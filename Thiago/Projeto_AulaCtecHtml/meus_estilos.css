@@ -1,6 +1,9 @@
+.search-bar {
+    text-align: right;
+}
 /* Estilo para a forma cinza */
 .search-menu-container {
-    background-color: #444444;
+    background-color: #3e3e49;
     padding: 15px;
     width: 100%; /* Faz a forma ocupar 100% da largura */
     box-sizing: border-box; /* Garante que o padding não afete a largura */
@@ -8,7 +11,7 @@
     justify-content: space-between; /* Separar os itens para que o menu fique à esquerda e a barra de pesquisa à direita */
     align-items: center;
 }
-
+ 
 /* Centralizar os itens dentro da forma */
 .menu-search-content {
     display: flex;
@@ -16,33 +19,104 @@
     justify-content: space-between; /* Garante que o conteúdo do menu fique à esquerda e a barra de pesquisa à direita */
     align-items: center;
 }
-
+ 
 /* Ajuste do container para remover margens automáticas */
 .container {
+    width: 100%;
     padding-left: 0;
     padding-right: 0;
 }
-
+ 
 .menu-links {
-    display: flex;
-    gap: 10px;
+    display: flex; /* Ativa o Flexbox */
+    flex-direction: row; /* Alinha os links na horizontal */
+    gap: 15px; /* Espaçamento entre os links */
+    align-items: center; /* Centraliza verticalmente os links dentro do contêiner */
+    justify-content: flex-start; /* Alinha os links à esquerda */
+    text-align: center; /* Centraliza o texto dentro de cada link */
 }
-
+ 
+ 
 .menu-links a {
+    font-size: 17px;
     text-decoration: none;
-    color: #fff;
+    color: #ffffff;
 }
-
+ 
 .menu-links a:hover {
     color: #007bff;
 }
-
+ 
+a.highlighted {
+    margin-right: 18px;
+    font-size: 20px;
+    color: #ffffff;
+}
 .search-bar input {
     padding: 8px;
     border-radius: 4px;
-    border: 1px solid #0a90ce;
+    border: 1px solid #ccc;
 }
-
+ 
 .search-bar {
     text-align: right;
+}
+ 
+button {
+    padding: 8px 12px;
+}
+ 
+.custom-btn {
+    background-color: rgba(255, 153, 0, 0);
+    color: #00aeff;
+    border: 2px solid #00aeff;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+ 
+.custom-btn:hover {
+    background-color: #007bff;
+}
+ 
+.fonte-chave {
+    font-size: 90px;
+    font-weight: bold;
+    text-align: right;
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    height: 100%;
+    margin: 0;
+    margin-top: 20px;
+}
+ 
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+ 
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #444444;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+ 
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+ 
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+ 
+.dropdown-content a:hover {
+    background-color: #007bff;
+    color: white;
 }
