@@ -94,47 +94,119 @@ html
 
 
 <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+<script type="text/javascript" src="engine1/jquery.js"></script>
 
 <body>
     <main>
-        <header class="nome-empresa">
-            <h1 class="font-zero">Ctec - Cursos de Tecnologia</h1>
+        <!-- Título principal da página -->
+        <h1 class="fonte-zero">Ctec - Cursos de Tecnologia</h1>
+        <header>
             <div class="container">
                 <div class="row">
+                    <!-- Coluna para o logo -->
                     <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-6">
                         <section>
+                            <!-- Título oculto para acessibilidade -->
                             <h2 class="fonte-zero">Logo Ctec</h2>
+                            <!-- Link para a página inicial com a logo -->
                             <a href="index.html"><img src="imagens/logo-ctec.png" alt="Logo Ctec" class="img-fluid"
                                     title="Logo Ctec"></a>
                         </section>
                     </div>
-
-                    <div class="col-xl-8 col-lg-8 col-md-8 col-sm-8 col-12 nome-empresa">
+                    <!-- Coluna para o nome da empresa -->
+                    <div class="col-xl-8 col-lg col-md-8 col-sm-8 col-12 nome-empresa">
                         <section>
-                            <h2 class="fonte-zero">Cursos De tecnologia</h2>
+                            <!-- Título oculto para acessibilidade -->
+                            <h2 class="fonte-zero">Cursos De Tecnologia</h2>
+                            <!-- Nome da empresa -->
                             Cursos De Tecnologia
                         </section>
                     </div>
                 </div>
             </div>
         </header>
-       <nav class="fundo-rodape">
-        <div>
-        <a href="">Home</a>
-        <a href="">Empresa</a>
-        <div class="dropdown">
-            <span>Cursos</span>
-            <div class="dropdown-content">
-                <a href="">Link 1</a>
-                <a href="">Lin 2</a>
-                <a href="">Link 3</a>
+        <div class="container-fluid bg-dark">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                    <!-- Título oculto para acessibilidade -->
+                    <h2 class="fonte-zero">Menu: Home, Empresa, Cursos, Tecnologia da Informação, Administração,
+                        Logística, Contato e Localizar</h2>
 
+                    <!-- Link para a página inicial -->
+                    <a class="navbar-brand" href="index.html">Home</a>
+                    <!-- Botão para expandir/colapsar o menu em dispositivos móveis -->
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <!-- Menu de navegação colapsável -->
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                            <!-- Item do menu: Empresa -->
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Empresa <span class="sr-only">(current)</span></a>
+                            </li>
+                            <!-- Item do menu com dropdown: Cursos -->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-toggle="dropdown" aria-expanded="false">
+                                    Cursos
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Tecnologia da Informação</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">Administração</a>
+                                    <a class="dropdown-item" href="#">Logística</a>
+                                </div>
+                            </li>
+                            <!-- Item do menu: Contato -->
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Contato <span class="sr-only">(current)</span></a>
+                            </li>
+                        </ul>
+                        <!-- Formulário de busca -->
+                        <form class="form-inline my-2 my-lg-0">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                        </form>
+                    </div>
+                </nav>
             </div>
-       </div>
-       </nav>  
-    
+        </div>
+        <section>
+            <h2 class="fonte-zero">Galeria de imagens</h2>
+            <div id="wowslider-container1">
+                <div class="ws_images">
+                    <ul>
+                        <li><img src="galeria/data1/images/galeria1.jpg" alt="title" id="wows1_0"></li>
+                        <li><img src="galeria/data1/images/galeria2.jpg" alt="title" id="wows1_1"></li>
+                        <li><img src="galeria/data1/images/galeria3.jpg" alt="title" id="wows1_2"></li>
+                    </ul>
+                </div>
+                <div class="ws_bullets">
+                    <div> <a href="#" title=""><span><img src="galeria/data1/tooltips/galeria1.jpg" alt="1"></span></a>
+                        <a href="#" title=""><span><img src="galeria/data1/tooltips/galeria2.jpg" alt="2"></span></a> <a
+                            href="#" title=""><span><img src="galeria/data1/tooltips/galeria3.jpg" alt="3"></span></a>
+                    </div>
+                </div>
+            </div>
 
+            
+
+        </section>
+
+        <script type="text/javascript" src="engine1/wowslider.js"></script>
+         <script type="text/javascript" src="engine1/script.js"></script>
+      
     </main>
-</body>
 
-</html>
+    <!-- Inclusão dos scripts necessários para o funcionamento do Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+
+</body>

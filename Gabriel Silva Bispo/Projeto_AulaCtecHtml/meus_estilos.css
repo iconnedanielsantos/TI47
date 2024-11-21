@@ -1,14 +1,22 @@
-header {
-  background-color: rgb(59, 59, 59);
-  color: black;
-  padding: 0px;
-  text-align: end;
+body {
+  margin: 0px;
+  font-family: verdana;
 }
 
-
-h1 {
-  text-align: start
+/*curso de tecnologia*/
+.nome-empresa {
+  font-family: "twcenmteb";
+  font-size: 93px;
+  display: flex;
+  align-items: center;
+  /*alinhamento vertical*/
+  justify-content: center;
+  /*alinhamento horizontal*/
+  padding: 5px;
 }
+
+/*Rodape*/
+
 
 nav ul {
   list-style: inside;
@@ -18,46 +26,70 @@ nav ul {
 nav ul li {
   display: inline;
   margin-right: 10px;
+
 }
 
 nav ul li a {
-  color: black;
+  color: rgb(230, 221, 221);
   text-decoration: none;
 }
 
-form{
-  display: flex;
-  align-items: end;
-}
-input[type="text"]{
-  padding: 5px;
-  border:1px,solid #ccc;
-  border-radius: 5px;
-  flex-grow: 1;
+.container img {
+  margin-left: 20px;
+  max-width: 1000px;
 }
 
-button{
-  background-color: #fff;
-  border : 1px solid #ccc;
-  border-radius: 5px;
-  padding:5px;
-  cursor: pointer;
-}
-
-.fa-search{
+.fundo-rodape {
+  background-color: #27292b;
+  color: #FFFFFF;
+  padding-top: 10px;
+  padding-bottom: 10px;
   font-size: 10px;
+  text-align: center;
 }
-.fonte-zero{
+
+.icone-rodape {
+  font-size: 40px;
+}
+
+.vertical-center {
+  display: flex;
+  align-items: center;
+  /*alinhamento vertical*/
+  justify-content: center;
+  /*alinhamento horizontal*/
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+/*fonte oculta*/
+
+.fonte-zero {
   font-size: 0px;
   padding: 0px;
-  opacity: 0px;
+  opacity: 0;
   float: none;
   border: 0px;
   display: none;
 }
 
-.container img {
-  margin-left: 10px;
-  max-width: 1000px;
+/*busca*/
+.search-bar {
+  border-radius:  0px;
+  padding: 10px;
+  width: 200px;
+  display: end;
 }
+
+.search-button {
+  background-color: #4d504f8e;
+  color: rgb(39, 139, 98);
+  border-radius: 0px;
+  padding: 5px 10px;
+}
+
+.search-button:hover {
+  background-color: #0056b3;
+}
+
 
