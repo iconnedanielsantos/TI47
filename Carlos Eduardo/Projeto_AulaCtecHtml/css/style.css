@@ -1,31 +1,67 @@
-@charset "utf-8";
-@font-face { 
-    font-family: "twcenmteb"; 
-    src: url("fontes/tw-cen-mt-eb.ttf") format("truetype"); 
-  
-  } 
+@charset "utf-8"
 
-.fonte-zero {
-    display: none;
-    font-size: 0px;
-    padding: 0px; 
-    opacity: 0; 
-    float: none; 
-    border: 0px; 
+@font-face {
+  font-family: "twcenmteb";
+  src: url("fontes/tw-cen-mt-eb.ttf") format("truetype");
 }
 
 body {
-    margin: 0px;
-    font-family: verdana;
+  margin: 0px;
+  /* remove qualquer margem padrão do navegador ao redor do conteúdo.  */
+  font-family: verdana;
+  /* font-family: verdana; define a fonte padrão da página como Verdana.  */
+}
+
+.fonte-zero {
+  font-size: 0px;
+  /* oculta o texto ao definir o tamanho da fonte como zero. */
+  padding: 0px;
+  /* remove o preenchimento interno.  */
+  opacity: 0;
+  /*  torna o elemento invisível.  */
+  float: none;
+  /* remove qualquer efeito de flutuação.  */
+  border: 0px;
+  /* remove qualquer borda.  */
+  display: none;
+  /* esconde o elemento completamente, sem ocupar espaço.  */
 }
 
 .nome-empresa {
-    font-family: "twcenmteb"; 
-    font-size: 93px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 5px;
+  font-family: "twcenmteb";
+  font-size: 93px;
+  display: flex;
+  align-items: center;
+  /* Alinhamento Vertica. */
+  justify-content: center;
+  /* Alinhamento Horizontal. */
+  padding: 5px;
 }
 
+.fundo-rodape {
+  background-color: #343a40;
+  /* define um fundo escuro.  */
+  color: #FFFFFF;
+  /* altera a cor do texto para branco.  */
+  padding-top: 20px;
+  /* definem o preenchimento vertical.  */
+  padding-bottom: 10px;
+  /* definem o preenchimento vertical.  */
+  font-size: 16px;
+  /* define o tamanho da fonte.  */
+  text-align: center;
+  /* centraliza o texto.  */
+}
 
+.icone-rodape {
+  font-size: 40px;
+  /* Define o tamanho da fonte para .icone-rodape, geralmente usado para ícones.  */
+}
+
+.ventical-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}

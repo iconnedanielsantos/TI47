@@ -1,0 +1,62 @@
+@font-face {
+    font-family: 'Tw Cen MT Extra Bold';
+    src: url('../fontes/tw-cen-mt-eb.ttf') format('truetype');
+    font-weight: bold;
+}
+
+.fonte-zero {
+    font-family: 'Tw Cen MT Extra Bold', sans-serif;
+    font-weight: bold;
+    color: black;
+    font-size: 3.5rem;
+    letter-spacing: 0.1rem;
+}
+
+header {
+    width: 100%;
+    margin: 0;
+}
+
+header h2 {
+    margin: 0;
+}
+
+.navbar form {
+    margin-left: 0;
+}
+
+.btn-outline-dark {
+    border: 2px solid black;
+    color: black;
+}
+
+.btn-outline-dark:hover {
+    background-color: black;
+    color: white;
+}
+nav{
+    width: 100%;
+}
+
+.ws_nav {
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.ws_nav_left {
+    left: 10px;
+    border-top: 15px solid white; 
+}
+
+
+.ws_nav_right {
+    right: 10px;
+    border-bottom: 15px solid white;
+}
+
+.ws_nav_left:hover, .ws_nav_right:hover {
+    opacity: 0.7;
+}
