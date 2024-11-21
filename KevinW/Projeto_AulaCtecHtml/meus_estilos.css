@@ -7,6 +7,7 @@
 body {
   margin: 0px;
   font-family: verdana;
+  
 }
 .fonte-zero {
   font-size: 0px;
@@ -94,11 +95,65 @@ body {
     font-family: "twcenmteb";
     font-size: 30px;
     display: flex;
-    align-items: center; /* Alinhamento Vertical */
+    align-items: center;align-items: center; /* Alinhamento Vertical */
     justify-content: center; /* Alinhamento Horizontal */
     padding: 5px;
   }
   h2 {
     font-size: 20px;
   }
+}
+
+
+.navbar-barra2 {
+  background-color: #87c9f5;
+  padding: 10px;
+ 
+  
+}
+
+.navbar-texto {
+  font-size: 36px;
+  font-family: "twcenmteb";
+  color: #2a6eecec;
+  justify-content: center;
+  text-align:center;
+  align-items: center;
+  
+}
+
+
+
+.navbar-texto2{
+  font-family: "twcenmteb";
+  font-size: 18px;
+    float: left;
+    width: 60%;
+    background: #ffffff;
+    padding: 100px;
+    
+  margin:auto;
+  }
+
+  .navbar-texto3{
+    font-family: "twcenmteb";
+    font-size: 18px;
+      float: left;
+      width: 60%;
+      background: #ffffff;
+      padding: 100px;
+      
+    margin:auto;
+    }
+
+
+.footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1em 0;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  border-color: #343A40
 }
