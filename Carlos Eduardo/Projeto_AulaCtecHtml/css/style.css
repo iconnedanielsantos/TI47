@@ -1,9 +1,11 @@
 @charset "utf-8"
 
-@font-face {
-  font-family: "twcenmteb";
-  src: url("fontes/tw-cen-mt-eb.ttf") format("truetype");
-}
+@font-face { 
+font-family: "twcenmteb"; 
+
+src: url("fontes/tw-cen-mt-eb.ttf") format("truetype"); 
+
+} 
 
 body {
   margin: 0px;
