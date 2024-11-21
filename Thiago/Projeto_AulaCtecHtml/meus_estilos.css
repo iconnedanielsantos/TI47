@@ -5,7 +5,8 @@
 .search-menu-container {
     background-color: #3e3e49;
     padding: 15px;
-    width: 100%; /* Faz a forma ocupar 100% da largura */
+    width: 128%; /* Faz a forma ocupar 100% da largura */
+    margin-left: -157px;
     box-sizing: border-box; /* Garante que o padding não afete a largura */
     display: flex;
     justify-content: space-between; /* Separar os itens para que o menu fique à esquerda e a barra de pesquisa à direita */
