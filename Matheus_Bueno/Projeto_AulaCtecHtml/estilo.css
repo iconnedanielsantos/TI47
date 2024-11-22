@@ -83,83 +83,72 @@ width: 60%;
 background-color: white;
 padding: 100px;
 }
-.imagem-pequena {
-    width: 100px; 
-    height: auto; 
-    border-radius: 8px; 
-    position: relative;
-    right: -600px
+
+.container-img {
+    display: flex;         
+    justify-content: flex-end;  
+    align-items: flex-start; 
 }
 
-.imagem-pequena1 {
-    width: 100px; 
-    height: auto; 
-    border-radius: 8px; 
-    position: relative;
-    right: -600px
-
+.imagem {
+    max-width: 100%;
 }
 
-.footer{
- background-color: #5a5d5f;
-color: rgb(255, 255, 255);
-padding: 70px 0;
-position: relative 
+.imagem-destaque{
+    float: right;
+    margin-left: 20px;
+    margin-top: 20px;
 }
 
-footer.navbar-barra2{
-background-color: #5a5d5f;
+.imagem img{
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-footer.list-unstyled li{
-margin-right: 15px;
+.imagem img{
+    transition: transform 0.3s ease, box-shadow 0.3s ease
 }
 
-footer.list-unstyled li a{
- color: white;
- transition: color 0.3 ease;
+.imagem img:hover{
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
-footer.list-unstyled li a:hover{
- color: #00bfae;
-}
-
-footer.footer-image{
- width: 200px;
-height: auto;
-object-fit: contain;
-transition: color 0.3 ease;
-}
-
-footer .footer-image:hover {
-    transform: scale(1.2); 
-}
-
-footer .footer-images-container {
-    position: absolute;
-    bottom: 30px;
-    right: -225px;
+.container-img{
     display: flex;
-    gap: 200px;
+    justify-content: flex-end;
+    align-items: flex-start;
+    margin: 20px 0;
 }
 
-footer .footer-text {
-    margin-top: 30px;
+.imagem{
+    background-color: #f8f9fa;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.imagem h2{
     text-align: center;
+    margin-bottom: 10px;
 }
 
-.sites-px {
-    position: absolute;
-    bottom: 10px;
-    right: 750px;
-    display: flex;
-    gap: 20px;
-
-
+h2,h3 {
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    color: #333;
+    opacity: 0;
+    animation:  fadeIn 1s forwards;
 }
 
-h5 {
-font-size: 15px;
-position: absolute;
-left: 1300px;
-}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);  /* Inicia a animação com o texto vindo de baixo */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}   
