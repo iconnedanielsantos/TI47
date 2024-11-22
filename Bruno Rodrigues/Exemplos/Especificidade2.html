@@ -5,18 +5,18 @@
     <title>Herança</title>
     <style> 
         p {
-            color: blue;
+            color: blue; /*Seletor de elemento (especificidade: 0,0,0,1)*/
         }
 
-        .texto-vermelho {
+        .texto-vermelho { /*Seletor de classe (especificidade: 0,0,1,0)*/
             color: red;
         }
 
-        #texto-destaque {
+        #texto-destaque {  /*Seletor de ID (especificidade: 0,1,0,0)*/
             color: green;
         }
 
-        #texto-destaque.texto-vermelho {
+        #texto-destaque.texto-vermelho { /*Seletor com ID e classe combinados (especificidade: 0,1,1,0)*/
             color: purple
         }
     </style>
