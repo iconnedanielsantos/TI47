@@ -110,3 +110,56 @@ position: relative
 footer.navbar-barra2{
 background-color: #5a5d5f;
 }
+
+footer.list-unstyled li{
+margin-right: 15px;
+}
+
+footer.list-unstyled li a{
+ color: white;
+ transition: color 0.3 ease;
+}
+
+footer.list-unstyled li a:hover{
+ color: #00bfae;
+}
+
+footer.footer-image{
+ width: 200px;
+height: auto;
+object-fit: contain;
+transition: color 0.3 ease;
+}
+
+footer .footer-image:hover {
+    transform: scale(1.2); 
+}
+
+footer .footer-images-container {
+    position: absolute;
+    bottom: 30px;
+    right: -225px;
+    display: flex;
+    gap: 200px;
+}
+
+footer .footer-text {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.sites-px {
+    position: absolute;
+    bottom: 10px;
+    right: 750px;
+    display: flex;
+    gap: 20px;
+
+
+}
+
+h5 {
+font-size: 15px;
+position: absolute;
+left: 1300px;
+}
