@@ -11,6 +11,10 @@ html
 html
 -->
 <style>
+    #corbutton{
+        alt
+    }
+
     .fonte-zero {
         font-size: 0;
         display: none;
@@ -31,6 +35,16 @@ html
         display: inline;
         
     }
+
+   @font-face {
+    font-family: 'tw-cen-mt-eb';
+    src: url("fontes/tw-cen-mt-eb.ttf") format('truetype');
+    font-weight: bold;
+   }
+   .a6 {
+    font-family: 'tw-cen-mt-eb', sans-serif;
+    font-size: 75px;
+   }
 
     .footer{
         background-color: black;
@@ -157,6 +171,7 @@ html
                     <div class="col-xl-8 col-lg-8 col-md-8 col-sm-8 col-12 nome-empresa">
                         <section>
                             <h2 class="fonte-zero">Cursos De tecnologia</h2>
+                             <h1 class="a6">Cursos De Tecnologia</h2>   
                         </section>
                     </div>
                 </div>
@@ -182,7 +197,27 @@ html
                 <li class="nav-item active">
                     <a class="nav-link" href="#">Empresa <span class="sr-only">(corrent)</span></a>
                 </li>
+
+                <li class="nav-item dropdown"> 
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toogle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Cursos
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Tecnologia da Informação</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Administração</a>
+                    <a class="dropdown-item" href="#">Administração</a>
+                </div>
+                </li>
+                
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Contato <span class="sr-only">(current)</span></a>
+                </li>
             </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button id="corbutton" class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
+            </form>
         </div>
         </nav>
 

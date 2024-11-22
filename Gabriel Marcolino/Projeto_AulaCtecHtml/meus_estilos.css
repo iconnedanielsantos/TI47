@@ -1,221 +1,89 @@
-@charset "utf-8";
-
 @font-face {
     font-family: "PROJETO";
     src: url(fontes/tw-cen-mt-eb.ttf)format('truetype');
     font-weight: bold;
 }
+
 body {
     margin: 0px;
     font-family: verdana;
-}
+  }
 
 .fonte-zero {
-        position: absolute; /* Remove o elemento do fluxo normal */
-        width: 1px;         /* Define uma largura mínima */
-        height: 1px;        /* Define uma altura mínima */
-        overflow: hidden;   /* Oculta o conteúdo extra */
-        clip: rect(0, 0, 0, 0); /* Esconde visualmente o elemento */
-        white-space: nowrap; /* Evita quebra de linha */
-        border: 0;          /* Remove bordas que possam existir */
-}
+    font-size: 0px;
+    padding: 0px;
+    opacity: 0;
+    float: none;
+    border: 0px;
+    display: none;
+  }
 
-.nome-empresa {
+  .nome-empresa {
     font-family: "PROJETO";
     font-size: 93px;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 5px;
-}
-
-
-.fonte-chave {
-    font-family: 'PROJETO';
-}
-/* Estilo para a forma cinza */
-.search-menu-container {
-    background-color: #3e3e49;
-    padding: 15px;
-    width: 100%; /* Faz a forma ocupar 100% da largura */
-    box-sizing: border-box; /* Garante que o padding não afete a largura */
-    display: flex;
-    justify-content: space-between; /* Separar os itens para que o menu fique à esquerda e a barra de pesquisa à direita */
-    align-items: center;
-}
-
-/* Centralizar os itens dentro da forma */
-.menu-search-content {
-    display: flex;
-    width: 100%;
-    justify-content: space-between; /* Garante que o conteúdo do menu fique à esquerda e a barra de pesquisa à direita */
-    align-items: center;
-}
-
-/* Ajuste do container para remover margens automáticas */
-.container {
-    width: 100%;
-    padding-left: 0;
-    padding-right: 0;
-}
-
-.menu-links {
-    display: flex; /* Ativa o Flexbox */
-    flex-direction: row; /* Alinha os links na horizontal */
-    gap: 15px; /* Espaçamento entre os links */
-    align-items: center; /* Centraliza verticalmente os links dentro do contêiner */
-    justify-content: flex-start; /* Alinha os links à esquerda */
-    text-align: center; /* Centraliza o texto dentro de cada link */
-}
-
-
-.menu-links a {
-    font-size: 17px;
-    text-decoration: none;
-    color: #ffffff;
-}
-
-.menu-links a:hover {
-    color: #007bff;
-}
-
-a.highlighted {
-    margin-right: 18px;
-    font-size: 20px;
-    color: #ffffff;
-}
-.search-bar input {
-    padding: 8px;
-    border-radius: 4px;
-    border: 1px solid #ccc;
-}
-
-.search-bar {
-    text-align: right;
-}
-
-button {
-    padding: 8px 12px;
-}
-
-.custom-btn {
-    background-color: rgba(255, 153, 0, 0);
-    color: #00aeff;
-    border: 2px solid #00aeff;
-    padding: 8px 12px;
-    border-radius: 6px;
-    cursor: pointer;
-}
-
-.custom-btn:hover {
-    background-color: #007bff;
-}
-
-.fonte-chave {
-    font-size: 90px;
-    font-weight: bold;
-    text-align: right;
-    display: flex;
-    justify-content: right;
-    align-items: right;
-    height: 100%;
-    margin: 0;
-    margin-top: 20px;
-}
-
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #444444;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-}
-
-.dropdown-content a {
-    color: white;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-.dropdown-content a:hover {
-    background-color: #007bff;
-    color: white;
-}
-
-
-/* col-lg */
-@media all and (min-width:992px) and (max-width: 1199px) {
-  .nome-empresa {
-    font-family: "twcenmteb";
-    font-size: 80px;
-    display: flex;
     align-items: center; /* Alinhamento Vertical */
     justify-content: center; /* Alinhamento Horizontal */
     padding: 5px;
   }
+
+
+/* Estilo do botão */
+.btn-outline-success {
+    color: #00aeff; /* Cor do texto */
+    border-color: #00aeff; /* Cor da borda */
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
 }
-/* col-md */
-@media all and (min-width:768px) and (max-width: 991px) {
-  .nome-empresa {
-    font-family: "twcenmteb";
-    font-size: 60px;
-    display: flex;
-    align-items: center; /* Alinhamento Vertical */
-    justify-content: center; /* Alinhamento Horizontal */
-    padding: 5px;
-  }
+
+/* Hover: Efeito ao passar o mouse */
+.btn-outline-success:hover {
+    background-color: #00aeff; /* Cor de fundo mais escura */
+    color: #00aeff; /* Mantém o texto branco */
+    border-color: #00aeff;
+    transform: scale(1.05); /* Leve ampliação */
 }
-/* col-sm */
-@media all and (min-width:576px) and (max-width: 767px) {
-  .nome-empresa {
-    font-family: "twcenmteb";
-    font-size: 44px;
-    display: flex;
-    align-items: center; /* Alinhamento Vertical */
-    justify-content: center; /* Alinhamento Horizontal */
-    padding: 5px;
-  }
+
+/* Active: Efeito ao clicar */
+.btn-outline-success:active {
+    background-color: #00aeff; /* Cor mais escura ao clicar */
+    border-color: #00aeff;
+    transform: scale(0.95); /* Leve redução para parecer pressionado */
 }
-/* col */
-@media all and (min-width:361px) and (max-width: 575px) {
-  .nome-empresa {
-    font-family: "twcenmteb";
-    font-size: 44px;
-    display: flex;
-    align-items: center; /* Alinhamento Vertical */
-    justify-content: center; /* Alinhamento Horizontal */
-    padding: 5px;
-  }
-  h2 {
-    font-size: 25px;
-  }
+
+/* Foco: Indica que o botão está ativo */
+.btn-outline-success:focus {
+    box-shadow: 0 0 5px 2px rgba(40, 167, 69, 0.5); /* Efeito de foco */
+    outline: none; /* Remove a borda padrão */
 }
-@media all and (max-width: 360px) {
-  .nome-empresa {
-    font-family: "twcenmteb";
-    font-size: 30px;
-    display: flex;
-    align-items: center; /* Alinhamento Vertical */
-    justify-content: center; /* Alinhamento Horizontal */
-    padding: 5px;
-  }
-  h2 {
-    font-size: 20px;
-  }
+
+.destaque{
+  background-color: rgb(185, 227, 255);
+  height: 80px;
 }
-h3{
-    font-family: "PROJETO";
-    font-size: 70px;
-    text-align: right;
+
+.subtitulo{
+  font-size: 50px;
+  text-align: center;
+  color: #0068c9;
+ 
+}
+
+.imagens_cursos{
+  text-align: right;
+  margin-top: 50px;
+  margin-right: 50px;
+}
+
+.imagens_cursos img {
+  width: 500px; /* Ajuste conforme necessário */
+  height: auto; /* Mantém a proporção */
+}
+
+.pesquisa2 {
+  margin-right: -400px;
+
+}
+
+.menus {
+  margin-left: 250px;
 }
