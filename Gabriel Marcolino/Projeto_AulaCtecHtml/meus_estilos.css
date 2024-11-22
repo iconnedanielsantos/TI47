@@ -67,3 +67,23 @@ body {
   color: #0068c9;
  
 }
+
+.imagens_cursos{
+  text-align: right;
+  margin-top: 50px;
+  margin-right: 50px;
+}
+
+.imagens_cursos img {
+  width: 500px; /* Ajuste conforme necessário */
+  height: auto; /* Mantém a proporção */
+}
+
+.pesquisa2 {
+  margin-right: -400px;
+
+}
+
+.menus {
+  margin-left: 250px;
+}
