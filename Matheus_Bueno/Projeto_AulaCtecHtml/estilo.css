@@ -151,4 +151,22 @@ h2,h3 {
         opacity: 1;
         transform: translateY(0);
     }
-}   
+}  
+.btn-detalhes, .btn-detalhes1, .btn-detalhes2 {
+  background-color: #007bff ;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: backgound-color 0.3s, transform 0.3s;
+}
+
+.btn-detalhes:hover, .btn-detalhes1:hover, .btn-detalhes2:hover{
+    background-color: #0056b3;
+    transform: translateY(-5px);
+}
+
+.btn-detalhes:focus, .btn-detalhes1:focus, .btn-detalhes2:focus {
+outline: none;
+}
