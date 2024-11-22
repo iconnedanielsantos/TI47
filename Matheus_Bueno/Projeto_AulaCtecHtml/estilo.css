@@ -93,3 +93,23 @@ padding: 100px;
 .imagem {
     max-width: 100%;
 }
+
+.imagem-destaque{
+    float: right;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.imagem img{
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.imagem img{
+    transition: transform 0.3s ease, box-shadow 0.3s ease
+}
+
+.imagem img:hover{
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
