@@ -37,7 +37,17 @@
     text-align: center; /* Centraliza o texto dentro de cada link */
 }
  
+.title_cursor h3 {
+    font-size: 30px;
+    margin: 30px 0;
+}
  
+.paragrafo {
+    margin: 10px 0;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-left:  -3px;
+}
 .menu-links a {
     font-size: 17px;
     text-decoration: none;
