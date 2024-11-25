@@ -1,9 +1,10 @@
 /* Estilos para a barra de navegação */
 .navbar {
     background-color: #808080;  /* Cor de fundo cinza */
-    padding: 10px;
-    width: 200%;  /* Barra ocupa toda a largura da tela */
-    box-sizing: border-box;  /* Inclui padding no cálculo da largura */
+    padding: 20px; /*Tamanho da barra verticalmente*/
+    width: 3000px;  /* Barra ocupa toda a largura da tela */
+    border: none;
+    
 }
 
 .navbar ul {
@@ -12,18 +13,29 @@
     padding: 0;
     display: flex;  /* Exibe os itens em linha */
     justify-content: center;  /* Alinha os itens ao centro */
+    border: none;
 }
 
 .navbar li {
     margin: 0 20px;  /* Espaçamento entre os itens */
+    border: none;
 }
 
 .navbar a {
     color: white;  /* Cor do texto */
     text-decoration: none;  /* Remove o sublinhado */
     font-size: 18px;  /* Tamanho da fonte */
+    border: none;
 }
 
 .navbar a:hover {
     color: #FFD700;  /* Cor do texto ao passar o mouse (dourado) */
+    border: none;
 }
+
+
+
+
+
+  
+  
