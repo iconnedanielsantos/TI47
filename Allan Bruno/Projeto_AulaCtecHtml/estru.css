@@ -66,3 +66,12 @@ nav{
     align-items: center;
 }
 
+.navbar-texto3{
+    font-family: "twcenmteb";
+    font-size: 18px;
+    float: left;
+    width: 60%;
+    background: #ffffff;
+    padding: 100px;
+    margin: auto;
+}
