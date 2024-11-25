@@ -67,12 +67,12 @@ nav{
 }
 
 
-.footer{
+footer{
     background-color: #333;
     color: white;
     text-align: center;
     padding: 1em 0;
-    position: absolute;
+    position: fixed;
     bottom: 0;
     width: 100%;
     border-color: #343A40;
