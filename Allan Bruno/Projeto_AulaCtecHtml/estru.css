@@ -76,4 +76,5 @@ nav{
     bottom: 0;
     width: 100%;
     border-color: #343A40;
+    display: block;
 }
