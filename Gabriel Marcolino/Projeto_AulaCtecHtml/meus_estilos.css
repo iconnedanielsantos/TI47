@@ -65,5 +65,40 @@ body {
   font-size: 50px;
   text-align: center;
   color: #0068c9;
- 
+ margin-top: auto;
+}
+
+.imagens_cursos{
+  text-align: right;
+  margin-top: 50px;
+  margin-right: 50px;
+}
+
+.imagens_cursos img {
+  width: 500px; /* Ajuste conforme necessário */
+  height: auto; /* Mantém a proporção */
+}
+
+.pesquisa2 {
+  margin-left: auto; /* Empurra para a direita */
+  text-align: right; /* Garante alinhamento */
+}
+
+
+.menus {
+  margin-left: left; /* Empurra para a direita */
+  text-align: left; /* Garante alinhamento */}
+
+
+  .navbar-nav .nav-item {
+    margin-right: 15px; /* Espaçamento entre itens */
+}
+
+.navbar-nav .nav-link {
+    color: #fff; /* Cor do texto */
+    font-size: 16px; /* Tamanho da fonte */
+}
+
+.navbar {
+    padding: 10px 15px; /* Espaçamento interno */
 }

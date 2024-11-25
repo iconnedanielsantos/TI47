@@ -1,0 +1,23 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cascata no CSS</title>
+</head>
+<style>
+    p {
+        color: blue; /*Primeira regra*/
+    }
+
+    .destaque {
+        color: red; /*Segunda regra*/
+    }
+
+    #importante{
+        color: green; /*Terceira regra*/
+    }
+</style>
+<body>
+    <p id="importante" class="destaque">Texto com conflito de estilos</p> </p>    
+</body>
+</html>
