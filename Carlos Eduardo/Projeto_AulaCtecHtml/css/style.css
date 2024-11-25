@@ -120,3 +120,13 @@ h2 {
   font-family: verdana;
   
 }
+
+div h2 {
+  text-align: center;
+}
+
+footer {
+  background-color: #343a40;
+  padding: 7em;
+  
+}
