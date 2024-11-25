@@ -121,6 +121,16 @@ button {
     margin-top: 20px;
 }
  
+.destaque{
+    background-color: rgb(198, 228, 248);
+    height: 80px;
+  }
+.subtitulo{
+    font-size: 50px;
+    text-align: center;
+    color: #0068c9;
+   
+  }
 .dropdown {
     position: relative;
     display: inline-block;
