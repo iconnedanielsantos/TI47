@@ -1,247 +1,39 @@
 <!doctype html>
 <html lang="pt-BR">
 <head>
-<meta charset="utf-8">
-<title>CTec - Cursos de Tecnologia</title>
+    <meta charset="utf-8">
+    <title>CTec - Cursos de Tecnologia</title>
 
-<meta name="description" content="Desenvolvimento de cursos de tecnologia">
-<meta name="keywords" content="cursos, tecnologia, ti, informática, html5, css3, senac, desenvolvimento, web, websites, php, sql, mysql">
+    <!-- Meta tags para descrição e palavras-chave -->
+    <meta name="description" content="Desenvolvimento de cursos de tecnologia">
+    <meta name="keywords" content="cursos, tecnologia, ti, informática, html5, css3, senac, desenvolvimento, web, websites, php, sql, mysql">
 
+    <!-- Ícone da aba do navegador -->
+    <link rel="shortcut icon" href="favicon.ico">
 
-<link rel="short icon" href="favicon.ico">
-<link href="bootstrap-4.4.1/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-<link href="meus_estilos.css" rel="stylesheet" type="text/css">
+    <!-- Bootstrap CSS -->
+    <link href="bootstrap-4.4.1/css/bootstrap.min.css" rel="stylesheet" type="text/css">
 
+    <!-- CSS externo -->
+    <link href="estilo.css" rel="stylesheet" type="text/css">
 
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<link rel="stylesheet" type="text/css" href="galeria/engine1/style.css">
-<script src="galeria/engine1/jquery.js"></script>
+    <!-- Responsividade -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<link href="lightbox2/dist/css/lightbox.min.css" rel="stylesheet" type="text/css">
-<link href="fontawesome-6.4.2/css/all.css" rel="stylesheet" type="text/css">
-<script src="fontawesome-6.4.2/js/all.js"></script>
+    <!-- Estilo do carrossel -->
+    <link rel="stylesheet" type="text/css" href="galeria/engine1/style.css">
 
-<style>
+    <!-- JQuery -->
+    <script src="galeria/engine1/jquery.js"></script>
 
-    body, html {
-        margin: 0;
-        padding: 0;
-    }
+    <!-- Lightbox CSS -->
+    <link href="lightbox2/dist/css/lightbox.min.css" rel="stylesheet" type="text/css">
 
-    .search-bar {
-        width: 300px;
-    }
-    .search-button {
-            background-color: black;
-            color: #00bfae;
-            border: 2px solid #00bfae;
-            margin-left: 10px;
-    }
-    .navbar-nav .nav-item {
-            margin-right: 20px;
-        }
-    .navbar-taskbar {
-        background-color: #5a5d5f;
-        width: 100%;
-        box-sizing: border-box;
-    }
-        .dropdown-menu {
-            background-color: #f8f9fa;
-        }
+    <!-- Font Awesome -->
+    <link href="fontawesome-6.4.2/css/all.css" rel="stylesheet" type="text/css">
+    <script src="fontawesome-6.4.2/js/all.js"></script>
 
-main {
-    margin-top: 20px;
-}
-
-        .title-right h1 {
-            position: absolute;
-            right: 20px;
-            top: 20px;
-            font-size: 110px;
-            font-weight: bold;
-        }
-
-        .container img {
-            margin-left: -200px;
-        }
-        .navbar-nav .nav-link {
-            color: white !important;
-            transition: 0.3s;
-        }
-        .navbar-nav .nav-link:hover {
-            color: #00bfae !important;
-        }
-    .navbar-nav .nav-link {
-        color: rgb(255, 255, 255) !important;
-        font-size: 16px;
-        font-weight: bold;
-    }
-                  .shild {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
-        .carrossel-container {
-            position: relative;
-            width: 100%;
-            max-width: 1600px;
-            margin: auto;
-            overflow: hidden;
-        }
-
-        .carrossel-imagens {
-            display: flex;
-            transition: transform 0.5s ease;
-        }
-
-        .carrossel-imagens img {
-            width: 100%;
-            height: auto;
-            border-radius: 1px;
-        }
-
-        .carrossel-botao {
-            position: absolute;
-            top: 15%;
-            transform: translateY(-50%);
-            background-color: transparent;
-            border: none;
-            cursor: pointer;
-            z-index: 20;
-        }
-
-        .carrossel-botao-esquerda {
-            left: 10px;
-            border-top: 20px solid transparent;
-    border-bottom: 20px solid transparent;
-    border-right: 40px solid #fff; 
-pointer-events: all;
-        }
-
-        .carrossel-botao-direita {
-            right: 10px;
-    border-top: 20px solid transparent;
-    border-bottom: 20px solid transparent;
-    border-left: 40px solid #fff;
-    pointer-events: all;
-        }
-
-        @media screen and (max-width: 768px) {
-            .carrossel-container {
-                max-width: 100%;
-            }
-        }
-        .carrossel-botao-esquerda:hover, .carrossel-botao-direita:hover {
-    border-right-color: #00bfae;
-    border-left-color: #00bfae;
-        }
-
-        .carrossel-botao:focus {
-    outline: none;
-}
-
-.navbar-barra2 {
-        background-color: #a9ddff;
-        width: 100%;
-        box-sizing: border-box;
-        padding: 0px 0;
-}
-.navbar-barra2 .navbar-texto {
-    color: #004a77;
-    font-size: 40px;
-    font-weight: bold;
-    text-align: center;
-    font-family: 'Arial', sans-serif;
-}
-
-h1,h2,h3 {
-    font-size: 40px;
-    margin-left: 20px;
-    padding-left: 20px;
-}
-p {
-    margin-top: 20px;
-    margin-left: 20px;
-    padding-left: 20px;
-    }
-.container-img {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    margin-top: -130px;
-    gap: 20px;
-}
-.texto {
-    max-width: 60%;
-    margin-right: 1150px;
-}
-.imagem {
-    width: 200px;
-    height: auto;
-}
-
-.btn-detalhes {
-    background-color: white;
-    color: black; 
-    border: 2px solid #ccc;
-    padding: 10px 20px;
-    font-size: 16px; 
-    font-weight: bold;
-    border-radius: 5px;
-    cursor: pointer; 
-    transition: all 0.3s ease;
-    position: absolute;
-    margin-left: 40px;
-    top: 850px;
-}
-
-.btn-detalhes:hover {
-    background-color: #f8f9fa;
-    border-color: #007bff;
-    color: #007bff;
-}
-.btn-detalhes1 {
-    background-color: white;
-    color: black; 
-    border: 2px solid #ccc;
-    padding: 10px 20px;
-    font-size: 16px; 
-    font-weight: bold;
-    border-radius: 5px;
-    cursor: pointer; 
-    transition: all 0.3s ease;
-    position: absolute;
-    margin-left: 40px;
-    top: 1470px;
-}
-
-.btn-detalhes1:hover {
-    background-color: #f8f9fa;
-    border-color: #007bff;
-    color: #007bff;
-}
-.btn-detalhes2 {
-    background-color: white;
-    color: black; 
-    border: 2px solid #ccc;
-    padding: 10px 20px;
-    font-size: 16px; 
-    font-weight: bold;
-    border-radius: 5px;
-    cursor: pointer; 
-    transition: all 0.3s ease;
-    position: absolute;
-    margin-left: 40px;
-    top: 1170px;
-}
-
-.btn-detalhes2:hover {
-    background-color: #f8f9fa;
-    border-color: #007bff;
-    color: #007bff;
-}
-</style>
+   
 
 </head>
 
@@ -336,7 +128,7 @@ p {
     </div>
 </div>
 <p>ㅤ</p>
-<h1>Titulo do Curso</h1>
+<h1> Curso 1</h1>
 
 <p> ipsum dolor sit, amet consectetur adipisicing elit. Incidunt tempora eligendi earum maiores assumenda id inventore nulla enim alias atque exercitationem <br>
  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex eaque, atque quibusdam mollitia, laborum error excepturi, soluta neque delectus qui ipsa nostrum.<br>
@@ -352,7 +144,7 @@ p {
 <button class="btn-detalhes">+ Detalhes</button>
 
 <p>ㅤ</p>
-<h2>Titulo do Curso</h2>
+<h2>Curso 2</h2>
 
 <p> ipsum dolor sit, amet consectetur adipisicing elit. Incidunt tempora eligendi earum maiores assumenda id inventore nulla enim alias atque exercitationem <br>
  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex eaque, atque quibusdam mollitia, laborum error excepturi, soluta neque delectus qui ipsa nostrum.<br>
@@ -368,7 +160,7 @@ p {
 <button class="btn-detalhes1">+ Detalhes</button>
 
 <p>ㅤ</p>
-<h3>Titulo do Curso</h3>
+<h3>Curso3</h3>
 
 <p> ipsum dolor sit, amet consectetur adipisicing elit. Incidunt tempora eligendi earum maiores assumenda id inventore nulla enim alias atque exercitationem <br>
  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex eaque, atque quibusdam mollitia, laborum error excepturi, soluta neque delectus qui ipsa nostrum.<br>
@@ -384,4 +176,35 @@ p {
 <button class="btn-detalhes2">+ Detalhes</button>
 </body>
 
+
+     <!-- Rodapé -->
+     <footer>
+        <div class="footer-container">
+            <p>Este site é desenvolvido como projeto de aula, por aluno de Webdesigner, e nao tem como objetivo promover ou denegrir a imagem, marca e ou autoria.</p>
+            <p>&copy; Copyright 2022 - Todos os direitos reservados para Ctec - Cursos de Tecnologia.</p>
+            
+            <div class="imagem-container">
+                <img src="imagens/validation-html5.png" alt="imagem1" class="imagem-pequena">
+                <img src="imagens/validation-css3.gif" alt="Imagem 2" class="imagem-pequena">
+                <img src="imagens/site-responsivo.png" alt="Imagem 3" class="imagem-pequena">
+                <h5> by Antony - aluno T.I senac </h5>
+            </div>
+        
+            <div class="row">
+
+                <div class="col-6 sites-px">
+                    <ul class="list-unstyled d-flex justify-content-start">
+                        <li><a href="https://facebook.com"><i class="fab fa-facebook-square fa-2x"></i></a></li>   
+                        <li><a href="https://facebook.com"><i class="fab fa-twitter-square fa-2x"></i></a></li>
+                        <li><a href="https://facebook.com"><i class="fab fa-youtube-square fa-2x"></i></a></li>
+                        <li><a href="https://facebook.com"><i class="fab fa-instagram-square fa-2x"></i></a></li>
+                        
+                    </ul>
+                </div>
+
+        </div>
+    </footer>
+
+
+    
 </html>
