@@ -4,12 +4,16 @@
     font-weight: bold;
 }
 
+
 .fonte-header {
     font-family: 'Tw Cen MT Extra Bold', sans-serif;
     font-weight: bold;
     color: black;
-    font-size: 3.5rem;
+    font-size: 4rem;
     letter-spacing: 0.1rem;
+    display: flex;
+    align-self: center;
+    padding-top: 8%;
 }
 
 header {
@@ -22,7 +26,7 @@ header h2 {
 }
 
 .fonte-zero{
-   opacity: 0;
+   display: none;
 }
 .navbar form {
     margin-left: 0;
@@ -63,3 +67,4 @@ nav{
 .ws_nav_left:hover, .ws_nav_right:hover {
     opacity: 0.7;
 }
+

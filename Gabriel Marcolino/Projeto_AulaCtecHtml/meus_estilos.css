@@ -1,69 +1,133 @@
+@charset "utf-8";
+
+
 @font-face {
-    font-family: "PROJETO";
-    src: url(fontes/tw-cen-mt-eb.ttf)format('truetype');
-    font-weight: bold;
+  font-family: "twcenmteb";
+  src: url("fontes/tw-cen-mt-eb.ttf") format("truetype");
 }
 
 body {
-    margin: 0px;
-    font-family: verdana;
-  }
+  margin: 0px;
+  font-family: verdana;
+}
 
 .fonte-zero {
-    font-size: 0px;
-    padding: 0px;
-    opacity: 0;
-    float: none;
-    border: 0px;
-    display: none;
-  }
+  font-size: 0px;
+  padding: 0px;
+  opacity: 0;
+  float: none;
+  border: 0px;
+  display: none;
+}
 
+.nome-empresa {
+  font-family: "twcenmteb";
+  font-size: 93px;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  padding: 5px;
+}
+
+.fundo-rodape {
+  background-color: #343A40;
+  color: #FFFFFF;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  font-size: 16px;
+  text-align: center;
+}
+
+.icone-rodape {
+  font-size: 40px;
+}
+
+.vertical-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+
+@media all and (min-width:992px) and (max-width: 1199px) {
   .nome-empresa {
-    font-family: "PROJETO";
-    font-size: 93px;
+    font-family: "twcenmteb";
+    font-size: 80px;
     display: flex;
-    align-items: center; /* Alinhamento Vertical */
-    justify-content: center; /* Alinhamento Horizontal */
+    align-items: center;
+    justify-content: center; 
     padding: 5px;
   }
-
-
-/* Estilo do botão */
-.btn-outline-success {
-    color: #00aeff; /* Cor do texto */
-    border-color: #00aeff; /* Cor da borda */
-    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
 }
 
-/* Hover: Efeito ao passar o mouse */
-.btn-outline-success:hover {
-    background-color: #00aeff; /* Cor de fundo mais escura */
-    color: #00aeff; /* Mantém o texto branco */
-    border-color: #00aeff;
-    transform: scale(1.05); /* Leve ampliação */
+
+@media all and (min-width:768px) and (max-width: 991px) {
+  .nome-empresa {
+    font-family: "twcenmteb";
+    font-size: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    padding: 5px;
+  }
 }
 
-/* Active: Efeito ao clicar */
-.btn-outline-success:active {
-    background-color: #00aeff; /* Cor mais escura ao clicar */
-    border-color: #00aeff;
-    transform: scale(0.95); /* Leve redução para parecer pressionado */
+
+@media all and (min-width:576px) and (max-width: 767px) {
+  .nome-empresa {
+    font-family: "twcenmteb";
+    font-size: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+  }
 }
 
-/* Foco: Indica que o botão está ativo */
-.btn-outline-success:focus {
-    box-shadow: 0 0 5px 2px rgba(40, 167, 69, 0.5); /* Efeito de foco */
-    outline: none; /* Remove a borda padrão */
+
+@media all and (min-width:361px) and (max-width: 575px) {
+  .nome-empresa {
+    font-family: "twcenmteb";
+    font-size: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+  }
+  h2 {
+    font-size: 25px;
+  }
 }
 
-.destaque{
-  background-color: rgb(185, 227, 255);
-  height: 80px;
+
+@media all and (max-width: 360px) {
+  .nome-empresa {
+    font-family: "twcenmteb";
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+  }
+  h2 {
+    font-size: 20px;
+  }
 }
 
-.subtitulo{
-  font-size: 50px;
+/* Centraliza textos com classe customizada */
+.text-center {
   text-align: center;
-  color: #0068c9;
- 
+}
+
+/* Espaçamento entre seções */
+.section-spacing {
+  margin-bottom: 50px;
+}
+
+/* Melhorias para as imagens */
+.curso-imagem img {
+  text-align: right;
+  border-radius: 4px;
 }

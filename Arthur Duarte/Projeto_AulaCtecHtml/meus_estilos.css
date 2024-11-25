@@ -182,19 +182,27 @@ body {
 }
 
 .list-unstyled{
-  display: flex;
-  gap: 20px;
+  text-align: center;
+  gap: 40px;
   color: white;
+  margin-top: 20px;
+  margin-left: 140px;
+  margin-right: 97px;
+
+  
 }
+
 
 .list-unstyled li a{
   color: white;
+
 }
 
-.d-flex-end{
+.list ul{
+  row-gap: 10px;
   
-  bottom: 30px;
-  right: -225px;
-  display: flex;
-  gap: 200px;
 }
+
+
+
+

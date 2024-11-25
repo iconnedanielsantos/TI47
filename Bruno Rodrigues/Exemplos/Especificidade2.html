@@ -1,0 +1,30 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Herança</title>
+    <style> 
+        p {
+            color: blue; /*Seletor de elemento (especificidade: 0,0,0,1)*/
+        }
+
+        .texto-vermelho { /*Seletor de classe (especificidade: 0,0,1,0)*/
+            color: red;
+        }
+
+        #texto-destaque {  /*Seletor de ID (especificidade: 0,1,0,0)*/
+            color: green;
+        }
+
+        #texto-destaque.texto-vermelho { /*Seletor com ID e classe combinados (especificidade: 0,1,1,0)*/
+            color: purple
+        }
+    </style>
+</head>
+
+<body>
+    <p> Texto com seletor de elemento </p>
+    <p class="texto-vermelho">Texto que usa uma classe </p>
+    <p id="texto-destaque">Texto que usa um ID </p>
+</body>
+</html>

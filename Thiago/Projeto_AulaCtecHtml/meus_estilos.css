@@ -35,9 +35,38 @@
     align-items: center; /* Centraliza verticalmente os links dentro do contêiner */
     justify-content: flex-start; /* Alinha os links à esquerda */
     text-align: center; /* Centraliza o texto dentro de cada link */
+
+.navbar-taskbar2 { 
+        display: flex;                /* Usa Flexbox para facilitar o alinhamento */
+        justify-content: center;      /* Alinha o conteúdo horizontalmente ao centro */
+        align-items: center;          /* Alinha o conteúdo verticalmente ao centro */
+        height: 100px;                /* Define uma altura para o container */
+        font-size: 32px;              /* Define um tamanho grande para o texto */
+        font-weight: bold;            /* Deixa o texto em negrito */
+        border: 3px solid #333;       /* Adiciona uma borda ao redor */
+        border-radius: 10px;          /* Deixa as bordas levemente arredondadas */
+        padding: 20px;                /* Adiciona espaço interno */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra leve */
+        background-color: #f9f9f9;    /* Define uma cor de fundo */
+        color: #333;                  /* Define a cor do texto */
+        text-align: center;           /* Garante que o texto esteja centralizado */
+        margin: 20px auto;            /* Centraliza o elemento na página */
+        width: fit-content;           /* Ajusta a largura ao conteúdo */
+      
+    }
 }
  
+.title_cursor h3 {
+    font-size: 30px;
+    margin: 30px 0;
+}
  
+.paragrafo {
+    margin: 10px 0;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-left:  -3px;
+}
 .menu-links a {
     font-size: 17px;
     text-decoration: none;
@@ -92,6 +121,16 @@ button {
     margin-top: 20px;
 }
  
+.destaque{
+    background-color: rgb(198, 228, 248);
+    height: 80px;
+  }
+.subtitulo{
+    font-size: 50px;
+    text-align: center;
+    color: #0068c9;
+   
+  }
 .dropdown {
     position: relative;
     display: inline-block;
