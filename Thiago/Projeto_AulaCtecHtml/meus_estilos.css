@@ -176,3 +176,11 @@ texto {
     width: 200px;
     height: auto;
 }
+
+.container-img {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 10px;
+    gap: 900px;
+}
