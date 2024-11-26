@@ -25,9 +25,10 @@ header h2 {
     margin: 0;
 }
 
-.fonte-zero{
-   display: none;
+.fonte-zero {
+    display: none;
 }
+
 .navbar form {
     margin-left: 0;
 }
@@ -41,7 +42,8 @@ header h2 {
     background-color: black;
     color: white;
 }
-nav{
+
+nav {
     width: 100%;
 }
 
@@ -55,7 +57,7 @@ nav{
 
 .ws_nav_left {
     left: 10px;
-    border-top: 15px solid white; 
+    border-top: 15px solid white;
 }
 
 
@@ -64,7 +66,51 @@ nav{
     border-bottom: 15px solid white;
 }
 
-.ws_nav_left:hover, .ws_nav_right:hover {
+.ws_nav_left:hover,
+.ws_nav_right:hover {
     opacity: 0.7;
 }
 
+.text-center-custom {
+    text-align: center;
+}
+
+.section-separator {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#cursos-em-destaque{
+    font-family: Verdana;
+}
+
+/* footer */
+
+.footer {
+    background-color: grey;
+    color: AliceBlue;
+    padding: 30px 0;
+}
+.footer p {
+    margin-bottom: 10px;
+}
+.footer .social-icons img,
+.footer .icon-images img {
+    width: 30px;
+    margin-right: 20px;
+}
+.footer .social-icons {
+    display: flex;
+    justify-content: flex-start;
+}
+.footer .icon-images {
+    display: flex;
+    justify-content: space-between;
+}
+.footer .container {
+    margin-top: 30px;
+}
+.footer .final-t {
+    text-align: right;
+    margin-top: 20px;
+}
