@@ -11,7 +11,15 @@ html
 html
 -->
 <style>
-    #corbutton{
+    @media (max-width: 768px) {
+        .container {
+            width: 100%;
+            padding: 0;
+        }
+
+    }
+
+    #corbutton {
         alt
     }
 
@@ -24,52 +32,57 @@ html
         font-size: 0;
         display: none;
     }
-    
-    nav{
-        background-color: #343A40; 
-        color: #FFFFFF; 
-        padding-top: 20px; 
-        padding-bottom: 10px; 
-        font-size: 16px; 
+
+    nav {
+        background-color: #343A40;
+        color: #FFFFFF;
+        padding-top: 20px;
+        padding-bottom: 10px;
+        font-size: 16px;
         text-align: center;
         display: inline;
-        
+
     }
 
-   @font-face {
-    font-family: 'tw-cen-mt-eb';
-    src: url("fontes/tw-cen-mt-eb.ttf") format('truetype');
-    font-weight: bold;
-   }
-   .a6 {
-    font-family: 'tw-cen-mt-eb', sans-serif;
-    font-size: 75px;
-   }
+    @font-face {
+        font-family: 'tw-cen-mt-eb';
+        src: url("fontes/tw-cen-mt-eb.ttf") format('truetype');
+        font-weight: bold;
+    }
 
-    .footer{
+    .a6 {
+        font-family: 'tw-cen-mt-eb', sans-serif;
+        font-size: 75px;
+    }
+
+    .footer {
         background-color: black;
         display: 50%;
         display: flex
-     
+    }
 
-        
-        
+    .col {
+        width: 50%;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
     }
 
     .dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  padding: 12px 16px;
-  z-index: 1;
-}
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        padding: 12px 16px;
+        z-index: 1;
+    }
 
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
 </style>
 
 <head>
@@ -154,81 +167,190 @@ html
 -->
 
 <body>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <main>
         <h1 class="font-zero" id="h2">Ctec - Cursos de Tecnologia</h1>
-        
+
         <header>
-            
+
             <div class="container">
                 <div class="row">
                     <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-6">
                         <section>
                             <h2 class="fonte-zero">Logo Ctec</h2>
-                            <a href="index.html"><img src="imagens/logo-ctec.png" alt="Logo Ctec" class="img-fluid" title="Logo Ctec"></a>
+                            <a href="index.html"><img src="imagens/logo-ctec.png" alt="Logo Ctec" class="img-fluid"
+                                    title="Logo Ctec"></a>
                         </section>
                     </div>
-                    
+
                     <div class="col-xl-8 col-lg-8 col-md-8 col-sm-8 col-12 nome-empresa">
                         <section>
                             <h2 class="fonte-zero">Cursos De tecnologia</h2>
-                             <h1 class="a6">Cursos De Tecnologia</h2>   
+                            <h1 class="a6">Cursos De Tecnologia</h2>
                         </section>
                     </div>
                 </div>
             </div>
-        
-           
+
+
 
         </header>
         <div class="container-fluid bg-dark">
-        <div class="container">
-            
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <h2 class="fonte-zero">Menu: Home, Empresa, Cursos, Tecnologia da Informação, Administração, Logística, Contato e Localizar</h2>
+            <div class="container">
 
-            <a class="navbar-brand" href="index.html">Home</a> <!--Botão de Home para voltar a pagina inicial-->
-            <button class="navbar-toggler" type="button" data-toogle="collapse" data-target="#navbarSupportedContent" arial-controls="navbarSupportedContent"
-            arial-expanded="false" aria-label="Toggle navegation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+                <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                    <h2 class="fonte-zero">Menu: Home, Empresa, Cursos, Tecnologia da Informação, Administração,
+                        Logística, Contato e Localizar</h2>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Empresa <span class="sr-only">(corrent)</span></a>
-                </li>
+                    <a class="navbar-brand" href="index.html">Home</a> <!--Botão de Home para voltar a pagina inicial-->
+                    <button class="navbar-toggler" type="button" data-toogle="collapse"
+                        data-target="#navbarSupportedContent" arial-controls="navbarSupportedContent"
+                        arial-expanded="false" aria-label="Toggle navegation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
 
-                <li class="nav-item dropdown"> 
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toogle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Cursos
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Tecnologia da Informação</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Administração</a>
-                    <a class="dropdown-item" href="#">Administração</a>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Empresa <span class="sr-only">(corrent)</span></a>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-toogle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Cursos
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Tecnologia da Informação</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">Administração</a>
+                                    <a class="dropdown-item" href="#">Administração</a>
+                                </div>
+                            </li>
+
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Contato <span class="sr-only">(current)</span></a>
+                            </li>
+                        </ul>
+                        <form class="form-inline my-2 my-lg-0">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                            <button id="corbutton" class="btn btn-outline-primary my-2 my-sm-0"
+                                type="submit">Search</button>
+                        </form>
+                    </div>
+                </nav>
+
+            </div>
+        </div>
+
+        <section>
+            <h2 class="fonte-zero">Galeria de imagens</h2>
+
+            <div id="wowslider-container1">
+                <div class="ws_images">
+                    <ul>
+                        <li><img src="galeria/data1/images/galeria1.jpg" alt="" title="" id="wows1_0"></li>
+                        <li><img src="galeria/data1/images/galeria2.jpg" alt="" title="" id="wows1_1"></li>
+                        <li><img src="galeria/data1/images/galeria3.jpg" alt="" title="" id="wows1_2"></li>
+                    </ul>
                 </div>
-                </li>
-                
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Contato <span class="sr-only">(current)</span></a>
-                </li>
-            </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button id="corbutton" class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
-            </form>
+
+                <div class="ws_bullets">
+                    <div>
+                        <a href="#" title=""><span><img src="galeria/data1/tooltips/galeria1.jpg" alt="">1</span></a>
+                        <a href="#" title=""><span><img src="galeria/data1/tooltips/galeria2.jpg" alt="">2</span></a>
+                        <a href="#" title=""><span><img src="galeria/data1/tooltips/galeria3.jpg" alt="">3/span></a>
+                    </div>
+                </div>
+                <div class="ws_script" style="position: absolute; left: -99%;"><a href="#">CTec Cursos de Tecnologia</a>
+                </div>
+                <div class="ws_shadow"></div>
+            </div>
+            <script src="galeria/engine1/wowslider.js"></script>
+            <script src="galeria/engine1/script.js"></script>
+        </section>
+
+        <div class="container-fluid">
+            <div class="alert alert-primary" role="alert" style="text-align: center;">
+                <h2>Curso em Destaque</h2>
+            </div>
         </div>
-        </nav>
+
+        <div class="container">
+            <section>
+                <div class="row">
+                    <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12">
+                        <h2>Curso de HTML5 e CSS3</h2>
+                        <p>Descrição do curso...</p>
+                        <button type="button" class="btn-outline-secondary">+Detalhes</button>
+                    </div>
+
+                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+                        <a href="imagens/html5-g.jpg" alt="Curso de HTML5" title="Curso de HTML5"
+                            data-lightbox="example-set">
+
+                            <img src="imagens/html5-p.jpg" alt="Curso de HTML5" title="Curso de HTML5"
+                                class="img-fluid">
+                        </a>
+                    </div>
+
+                </div>
+            </section>
+        </div>
+        <br>
+        <div class="container">
+            <section>
+                <div class="row">
+                    <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12">
+                        <h2>Curso de HTML5 e CSS3</h2>
+                        <p>Descrição do curso...</p>
+                        <button type="button" class="btn-outline-secondary">+Detalhes</button>
+                    </div>
+
+                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+                        <a href="imagens/html5-g.jpg" alt="Curso de HTML5" title="Curso de HTML5"
+                            data-lightbox="example-set">
+
+                            <img src="imagens/html5-p.jpg" alt="Curso de HTML5" title="Curso de HTML5"
+                                class="img-fluid">
+                        </a>
+                    </div>
+
+                </div>
+            </section>
+        </div>
+        <br>
+        <div class="container">
+            <section>
+                <div class="row">
+                    <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12">
+                        <h2>Curso de HTML5 e CSS3</h2>
+                        <p>Descrição do curso...</p>
+                        <button type="button" class="btn-outline-secondary">+Detalhes</button>
+                    </div>
+
+                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+                        <a href="imagens/html5-g.jpg" alt="Curso de HTML5" title="Curso de HTML5"
+                            data-lightbox="example-set">
+
+                            <img src="imagens/html5-p.jpg" alt="Curso de HTML5" title="Curso de HTML5"
+                                class="img-fluid">
+                        </a>
+                    </div>
+
+                </div>
+            </section>
+        </div>
 
 
-        </div>
-        </div>
-        
 
-        
-        
+
+
+
+
+
     </main>
-    </body>
-    
-    </html>
+</body>
+
+</html>
