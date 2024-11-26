@@ -52,3 +52,28 @@ nav{
     background-color: black;
 }
 
+.navbar-barra2{
+    background-color: #87c9f5;
+    padding: 10px;
+}
+
+.navbar-texto{
+    font-size: 36px;
+    font-family: "twcenmteb";
+    color: #2a6eecec;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+
+footer{
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border-color: #343A40;
+}

@@ -4,12 +4,16 @@
     font-weight: bold;
 }
 
+
 .fonte-header {
     font-family: 'Tw Cen MT Extra Bold', sans-serif;
     font-weight: bold;
     color: black;
-    font-size: 3.5rem;
+    font-size: 4rem;
     letter-spacing: 0.1rem;
+    display: flex;
+    align-self: center;
+    padding-top: 8%;
 }
 
 header {
@@ -21,9 +25,10 @@ header h2 {
     margin: 0;
 }
 
-.fonte-zero{
-   opacity: 0;
+.fonte-zero {
+    display: none;
 }
+
 .navbar form {
     margin-left: 0;
 }
@@ -37,7 +42,8 @@ header h2 {
     background-color: black;
     color: white;
 }
-nav{
+
+nav {
     width: 100%;
 }
 
@@ -51,7 +57,7 @@ nav{
 
 .ws_nav_left {
     left: 10px;
-    border-top: 15px solid white; 
+    border-top: 15px solid white;
 }
 
 
@@ -60,6 +66,20 @@ nav{
     border-bottom: 15px solid white;
 }
 
-.ws_nav_left:hover, .ws_nav_right:hover {
+.ws_nav_left:hover,
+.ws_nav_right:hover {
     opacity: 0.7;
+}
+
+.text-center-custom {
+    text-align: center;
+}
+
+.section-separator {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#cursos-em-destaque{
+    font-family: Verdana;
 }
