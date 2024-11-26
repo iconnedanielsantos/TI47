@@ -115,19 +115,31 @@ body {
     font-size: 20px;
   }
 }
-
-/* Centraliza textos com classe customizada */
-.text-center {
+ .container-cursos {
+  background-color: rgb(176, 246, 255);
+  color: rgb(0, 140, 255);
   text-align: center;
-}
+  font-size: 50px;
+ }
 
-/* Espaçamento entre seções */
-.section-spacing {
-  margin-bottom: 50px;
-}
+ .titulos-cursos {
+  margin-top: 2%;
+  margin-left: 3%;
+  text-align: left;
+  font-size: 40px
+ }
 
-/* Melhorias para as imagens */
-.curso-imagem img {
-  text-align: right;
-  border-radius: 4px;
+ .texto-cursos {
+  text-align: left;
+  font-size: 25px;
+  margin-left: 3%;
+
+ }
+
+ .botao-cursos {
+  font-size: 22px;
+  color: rgb(136, 136, 136);
+  border: 2px;
+   margin-left: 3%;
+   margin-top: 1%;
 }
