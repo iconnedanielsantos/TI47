@@ -83,3 +83,37 @@ nav {
 #cursos-em-destaque{
     font-family: Verdana;
 }
+
+/* footer */
+
+.footer {
+    background-color: grey;
+    color: AliceBlue;
+    padding: 30px 0;
+}
+.footer p {
+    margin-bottom: 10px;
+}
+.footer .social-icons img,
+.footer .icon-images img {
+    width: 30px;
+    margin-right: 20px;
+}
+.footer .social-icons {
+    display: flex;
+    justify-content: flex-start;
+}
+.footer .icon-images {
+    display: flex;
+    justify-content: space-between;
+}
+.footer .container {
+    margin-top: 30px;
+}
+.footer .final-t {
+    text-align: right;
+    margin-top: 20px;
+}
+.social-icons img{
+    border-radius: 30%;
+}
