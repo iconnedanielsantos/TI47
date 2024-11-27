@@ -97,7 +97,7 @@ body {
   /* definem o preenchimento vertical.  */
   padding-bottom: 10px;
   /* definem o preenchimento vertical.  */
-  font-size: 16px;
+  font-size: 15px;
   /* define o tamanho da fonte.  */
   text-align: center;
   /* centraliza o texto.  */
@@ -118,15 +118,17 @@ body {
 
 h2 {
   font-family: verdana;
+
   
 }
 
-div h2 {
+div h3 {
   text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-footer {
-  background-color: #343a40;
-  padding: 7em;
-  
+
+footer div p {
+  text-align: center;
+  justify-content: inline;
 }

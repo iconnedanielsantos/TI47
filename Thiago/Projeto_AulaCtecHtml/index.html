@@ -141,52 +141,69 @@
               </body>
               
 
-              <br><br>
-              <h1> Curso 1</h1>
-              <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12">
-              <p> Um curso é uma sequência organizada de estudos ou treinamentos projetada para transmitir conhecimentos e habilidades sobre um tema específico. Ele pode ser oferecido em diferentes formatos, como presencial, online ou híbrido, e atende a públicos variados, desde iniciantes até profissionais experientes.
-              </div>
-              <div class="container-img">
-                  <div class="texto">
-              </div>
-              <div class="imagem">
-                  <a href="imagens/html5-g.jpg" target="_blank">
-              <h2><img src="imagens/html5-p.jpg" alt="html5"></h2> </a>
-              </div>
-              </div>
-               
-              <button class="btn-detalhes">+ Detalhes</button>
-              <hr>
-              <p></p>
-              <h2>Curso 2</h2>
-              <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12">
-              <p> Um curso é uma sequência organizada de estudos ou treinamentos projetada para transmitir conhecimentos e habilidades sobre um tema específico. Ele pode ser oferecido em diferentes formatos, como presencial, online ou híbrido, e atende a públicos variados, desde iniciantes até profissionais experientes.
-              </div>
-              <div class="container-img">
-                  <div class="texto">
-              </div>
-              <div class="imagem">
-                  <a href="imagens/html5-g.jpg" target="_blank">
-              <h2><img src="imagens/html5-p.jpg" alt="html5"></h2> </a>
-              </div>
-              </div>
-               
-              <button class="btn-detalhes1">+ Detalhes</button>
-              <hr>
-              <p></p>
-              <h3>Curso3</h3>
-              <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12">
-              <p> Um curso é uma sequência organizada de estudos ou treinamentos projetada para transmitir conhecimentos e habilidades sobre um tema específico. Ele pode ser oferecido em diferentes formatos, como presencial, online ou híbrido, e atende a públicos variados, desde iniciantes até profissionais experientes.
-              </div>
-              <div class="container-img">
-                <div class="texto">
-            </div>
-            <div class="imagem">
-                <a href="imagens/html5-g.jpg" target="_blank">
-            <h2><img src="imagens/html5-p.jpg" alt="html5"></h2> </a>
-            </div>
-            </div>
-            <button class="btn-detalhes1">+ Detalhes</button>
-    </section>
-</body>
-</html>
+            </head>
+            <body>
+                <h1>Curso 1</h1>
+                <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12">
+                    <p class="descricao">Um curso é uma sequência organizada de estudos ou treinamentos projetada para transmitir conhecimentos e habilidades sobre um tema específico. Ele pode ser oferecido em diferentes formatos, como presencial, online ou híbrido, e atende a públicos variados, desde iniciantes até profissionais experientes.</p>
+                </div>
+                <button class="btn-editar" onclick="editarTexto('Curso 1')">Detalhes+</button>
+
+                <div class="container-img">
+                    <div class="texto">
+                </div>
+                <div class="imagem">
+                    <a href="imagens/html5-g.jpg" target="_blank">
+                <h2><img src="imagens/html5-p.jpg" alt="html5"></h2> </a>
+                </div>
+                </div>
+            
+                <h2>Curso 2</h2>
+                <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12">
+                    <p class="descricao">Um curso é uma sequência organizada de estudos ou treinamentos projetada para transmitir conhecimentos e habilidades sobre um tema específico. Ele pode ser oferecido em diferentes formatos, como presencial, online ou híbrido, e atende a públicos variados, desde iniciantes até profissionais experientes.</p>
+                </div>
+                <button class="btn-editar" onclick="editarTexto('Curso 2')">Detalhes+</button>
+
+                <div class="container-img">
+                    <div class="texto">
+                </div>
+                <div class="imagem">
+                    <a href="imagens/html5-g.jpg" target="_blank">
+                <h2><img src="imagens/html5-p.jpg" alt="html5"></h2> </a>
+                </div>
+                </div>
+            
+                <h3>Curso 3</h3>
+                <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12">
+                    <p class="descricao">Um curso é uma sequência organizada de estudos ou treinamentos projetada para transmitir conhecimentos e habilidades sobre um tema específico. Ele pode ser oferecido em diferentes formatos, como presencial, online ou híbrido, e atende a públicos variados, desde iniciantes até profissionais experientes.</p>
+                </div>
+                <button class="btn-editar" onclick="editarTexto('Curso 3')">Detalhes+</button>
+                <div class="container-img">
+                    <div class="texto">
+                </div>
+                <div class="imagem">
+                    <a href="imagens/html5-g.jpg" target="_blank">
+                <h2><img src="imagens/html5-p.jpg" alt="html5"></h2> </a>
+                </div>
+                </div>
+            
+                <script>
+                    function editarTexto(curso) {
+                        // Seleciona o elemento do título e da descrição com base no curso
+                        const titulo = document.querySelector(`${curso.includes('1') ? 'h1' : curso.includes('2') ? 'h2' : 'h3'}`);
+                        const descricao = titulo.nextElementSibling.querySelector('.descricao');
+            
+                        // Solicita novos valores para o título e a descrição
+                        const novoTitulo = prompt('Digite o novo título:', titulo.textContent);
+                        const novaDescricao = prompt('Digite a nova descrição:', descricao.textContent);
+            
+                        // Atualiza o conteúdo do título e da descrição
+                        if (novoTitulo) titulo.textContent = novoTitulo;
+                        if (novaDescricao) descricao.textContent = novaDescricao;
+                    }
+                </script>
+            </body>
+            </html>
+
+
+
