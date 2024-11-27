@@ -114,3 +114,6 @@ nav {
     text-align: right;
     margin-top: 20px;
 }
+.social-icons img{
+    border-radius: 30%;
+}
