@@ -38,12 +38,30 @@
 </head>
 
 <body>
-
-
+    <script>
+        window.addEventListener('mouseover', initLandbot, { once: true });
+        window.addEventListener('touchstart', initLandbot, { once: true });
+        var myLandbot;
+        function initLandbot() {
+          if (!myLandbot) {
+            var s = document.createElement('script');s.type = 'text/javascript';s.async = true;
+            s.addEventListener('load', function() {
+              var myLandbot = new Landbot.Livechat({
+                configUrl: 'https://storage.googleapis.com/landbot.online/v3/H-2697100-8TQB7NI0782R20AD/index.json',
+              });
+            });
+            s.src = 'https://cdn.landbot.io/landbot-3/landbot-3.0.0.js';
+            var x = document.getElementsByTagName('script')[0];
+            x.parentNode.insertBefore(s, x);
+          }
+        }
+        </script>
     <main>
         <header>
             <div class="title-right">
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-6">
             <h1 class="fonte-zero">Cursos de Tecnologia</h1>
+            </div>
             </div>
         </header>
 
@@ -123,58 +141,63 @@
 
 
 <div class="navbar-barra2">
+    
     <div class="navbar-texto">
         Curso em Destaque
     </div>
 </div>
 <p>ㅤ</p>
 <h1> Curso 1</h1>
-
-<p> ipsum dolor sit, amet consectetur adipisicing elit. Incidunt tempora eligendi earum maiores assumenda id inventore nulla enim alias atque exercitationem <br>
- Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex eaque, atque quibusdam mollitia, laborum error excepturi, soluta neque delectus qui ipsa nostrum.<br>
- Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi illum aspernatur harum sapiente quibusdam sed cupiditate ab dolores eveniet eos et nesciunt<br>
+<div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12"> 
+<p> Um curso é uma sequência organizada de estudos ou treinamentos projetada para transmitir conhecimentos e habilidades sobre um tema específico. Ele pode ser oferecido em diferentes formatos, como presencial, online ou híbrido, e atende a públicos variados, desde iniciantes até profissionais experientes.
+</div>
 <div class="container-img">
     <div class="texto">
 </div>
 <div class="imagem">
-<h2><img src="imagens/html5-p.jpg" alt="html5"></h2>
+    <a href="imagens/html5-g.jpg" target="_blank">
+<h2><img src="imagens/html5-p.jpg" alt="html5"></h2> </a>
 </div>
 </div>
 
 <button class="btn-detalhes">+ Detalhes</button>
-
+<hr>
 <p>ㅤ</p>
 <h2>Curso 2</h2>
-
-<p> ipsum dolor sit, amet consectetur adipisicing elit. Incidunt tempora eligendi earum maiores assumenda id inventore nulla enim alias atque exercitationem <br>
- Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex eaque, atque quibusdam mollitia, laborum error excepturi, soluta neque delectus qui ipsa nostrum.<br>
- Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi illum aspernatur harum sapiente quibusdam sed cupiditate ab dolores eveniet eos et nesciunt<br>
+<div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12"> 
+<p> Um curso é uma sequência organizada de estudos ou treinamentos projetada para transmitir conhecimentos e habilidades sobre um tema específico. Ele pode ser oferecido em diferentes formatos, como presencial, online ou híbrido, e atende a públicos variados, desde iniciantes até profissionais experientes.
+</div>
 <div class="container-img">
     <div class="texto">
 </div>
 <div class="imagem">
-<h2><img src="imagens/html5-p.jpg" alt="html5"></h2>
+    <a href="imagens/html5-g.jpg" target="_blank">
+<h2><img src="imagens/html5-p.jpg" alt="html5"></h2> </a>
 </div>
 </div>
 
 <button class="btn-detalhes1">+ Detalhes</button>
-
+<hr>
 <p>ㅤ</p>
 <h3>Curso3</h3>
+<div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12"> 
+<p> Um curso é uma sequência organizada de estudos ou treinamentos projetada para transmitir conhecimentos e habilidades sobre um tema específico. Ele pode ser oferecido em diferentes formatos, como presencial, online ou híbrido, e atende a públicos variados, desde iniciantes até profissionais experientes.
+</div>
 
-<p> ipsum dolor sit, amet consectetur adipisicing elit. Incidunt tempora eligendi earum maiores assumenda id inventore nulla enim alias atque exercitationem <br>
- Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex eaque, atque quibusdam mollitia, laborum error excepturi, soluta neque delectus qui ipsa nostrum.<br>
- Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi illum aspernatur harum sapiente quibusdam sed cupiditate ab dolores eveniet eos et nesciunt<br>
 <div class="container-img">
     <div class="texto">
 </div>
 <div class="imagem">
+    <a href="imagens/html5-g.jpg" target="_blank">
 <h2><img src="imagens/html5-p.jpg" alt="html5"></h2>
+</a>
 </div>
 </div>
 
 <button class="btn-detalhes2">+ Detalhes</button>
 </body>
+
+
 
 
      <!-- Rodapé -->
@@ -195,13 +218,13 @@
                 <div class="col-6 sites-px">
                     <ul class="list-unstyled d-flex justify-content-start">
                         <li><a href="https://facebook.com"><i class="fab fa-facebook-square fa-2x"></i></a></li>   
-                        <li><a href="https://facebook.com"><i class="fab fa-twitter-square fa-2x"></i></a></li>
-                        <li><a href="https://facebook.com"><i class="fab fa-youtube-square fa-2x"></i></a></li>
-                        <li><a href="https://facebook.com"><i class="fab fa-instagram-square fa-2x"></i></a></li>
+                        <li><a href="https://twitter.com"><i class="fab fa-twitter-square fa-2x"></i></a></li>
+                        <li><a href="https://youtube.com"><i class="fab fa-youtube-square fa-2x"></i></a></li>
+                        <li><a href="https://instagram.com"><i class="fab fa-instagram-square fa-2x"></i></a></li>
                         
                     </ul>
                 </div>
-
+            </div>
         </div>
     </footer>
 

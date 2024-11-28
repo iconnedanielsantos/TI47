@@ -116,10 +116,19 @@ body {
   }
 }
 
-.botao{
-  background-color: #343a4000;
-  color: rgb(0, 108, 197);
-  border: blue;
+.botao {
+  background-color: #343a4000; /* Cor de fundo transparente */
+  color: rgb(28, 124, 202); /* Cor do texto */
+  border: 2px solid rgb(28, 124, 202); /* Borda de 2px com a mesma cor do texto */
+  padding: 8px 15px; /* Espaço interno do botão */
+  font-size: 16px; /* Tamanho da fonte */
+  cursor: pointer; /* Indica que é clicável */
+border-radius: 5px;}
+
+.botao:hover {
+  background-color: rgb(28, 124, 202); /* Cor de fundo ao passar o mouse */
+  color: #fff; /* Cor do texto ao passar o mouse */
+  border-color: rgb(28, 124, 202); /* A borda permanece da mesma cor */
 }
 
 .container-cursos {
@@ -205,4 +214,26 @@ h2 {
 .ws_shadow {
   display: none; /* Opcional: remove sombra para bordas limpas */
 }
+
+
+
+.direita, .esquerda {
+  display: flex;
+  flex-direction: row; /* Organiza as imagens em coluna */
+  align-items: center;
+  margin-left: 400px;
+  margin-right: 500px;
+}
+
+.rodape-autenticacao {
+  display: flex;
+  justify-content: space-between; /* Espaça as duas colunas */
+  gap: 20px; /* Espaço entre as colunas */
+}
+
+.imagem {
+  margin-bottom: 10px; /* Espaço entre as imagens */
+  max-width: 100%; /* Garante que as imagens não excedam a largura */
+}
+
 
