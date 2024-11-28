@@ -30,12 +30,13 @@ body {
 }
 
 .fonte-header {
-  font-family: 'Tw Cen MT Extra Bold', sans-serif;
+  font-family: 'twcenmteb', 'sans-rif';
   font-weight: bold;
   color: black;
-  font-size: 3.5rem;
+  font-size: 4rem;
   letter-spacing: 0.1rem;
   font-size: 50px;
+  
 }
 
 #wows1_0, #wows1_1, #wows1_2{
