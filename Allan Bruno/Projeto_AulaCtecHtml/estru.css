@@ -66,14 +66,41 @@ nav{
     align-items: center;
 }
 
-
 footer{
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 1em 0;
-    position: fixed;
+    position: static;
     bottom: 0;
     width: 100%;
-    border-color: #343A40;
+    background-color: #2a2a2a;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 10px;
+    font-family: Arial, Helvetica, sans-serif;
 }
+ 
+.footer-content p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+ 
+.footer-icons {
+    margin: 20px;
+    display: flex;
+    justify-content: flex-start;
+    
+}
+ 
+.footer-icons a img{
+    width: 50px;
+    margin: 0 5px;
+    
+}
+ 
+.footer-certifications{
+    width: 100px;
+    margin: 0 10px;
+    background-color: #87c9f5;
+    
+    
+}
+ 
+
