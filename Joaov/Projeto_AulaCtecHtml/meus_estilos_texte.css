@@ -124,3 +124,20 @@ button {
     color: white;
     background-color: #007bff;
 }
+
+.fundo-rodape {
+    color: #ffffff;
+    background-color: #343A40;
+    text-align: center;
+    padding: 15px;
+    width: 100%; /* para garantir que ocupe toda a largura disponível */
+    align-items: center;
+    display: flex;
+    box-sizing: border-box;
+}
+
+.texto-rodape {
+    text-align: center;
+    align-items: center;
+    display: flex;
+}
