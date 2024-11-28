@@ -5,8 +5,8 @@
 .search-menu-container {
     background-color: #3e3e49;
     padding: 15px;
-    width: 128%; /* Faz a forma ocupar 100% da largura */
-    margin-left: -157px;
+    width: 132%; /* Faz a forma ocupar 100% da largura */
+    margin-left: -57px;
     box-sizing: border-box; /* Garante que o padding não afete a largura */
     display: flex;
     justify-content: space-between; /* Separar os itens para que o menu fique à esquerda e a barra de pesquisa à direita */
@@ -217,13 +217,19 @@ texto {
         }
 
         .btn-editar:hover {
-            background-color: #0056b3;
+            background-color: #000000;
         }
 
          .descricao {
             font-size: 16px; /* Tamanho inicial */
             line-height: 1.6;
         }
+
+        /* Cor padrão */
+.footer-container {
+    color: rgb(255, 255, 255);
+}
+
 
         .container {
             margin: 20px;
@@ -235,5 +241,33 @@ texto {
 
         input[type="range"] {
             margin: 60px 0;
+        }
+
+        .footer-container {
+            font-size: 17px; /* Tamanho base da fonte */
+        }
+        
+        .imagem-container .imagem-pequena {
+            width: 170px; /* Tamanho base das imagens */
+            height: auto;
+        }
+        
+        .footer-container.large-font {
+            font-size: 20px; /* Aumenta o tamanho da fonte */
+        }
+        
+        .imagem-container .imagem-pequena.large-image {
+            width: 150px; /* Aumenta o tamanho das imagens */
+        }
+        
+        .rodape {
+            background-color: #3e3e49;
+            padding: 15px;
+            width: 110%; /* Faz a forma ocupar 100% da largura */
+            margin-left: -57px;
+            box-sizing: border-box; /* Garante que o padding não afete a largura */
+            display: flex;
+            justify-content: space-between; /* Separar os itens para que o menu fique à esquerda e a barra de pesquisa à direita */
+            align-items: center;
         }
     
