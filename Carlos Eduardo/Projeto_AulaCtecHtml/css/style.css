@@ -105,8 +105,11 @@ body {
 
 .icone-rodape {
   font-size: 40px;
-  /* Define o tamanho da fonte para .icone-rodape, geralmente usado para ícones.  */
+  padding-left: 1%;
+  
 }
+
+
 
 .ventical-center {
   display: flex;
@@ -131,4 +134,16 @@ div h3 {
 footer div p {
   text-align: center;
   justify-content: inline;
+}
+
+.creditos {
+  text-align: right;
+}
+
+.img1 {
+  margin-left: 30px;
+}
+
+#logo1 {
+  margin-right: 15px;
 }
