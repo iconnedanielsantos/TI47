@@ -115,12 +115,47 @@ body {
     font-size: 20px;
   }
 }
- .container-cursos {
-  background-color: rgb(176, 246, 255);
-  color: rgb(0, 140, 255);
-  text-align: center;
-  font-size: 50px;
- }
+
+.botao {
+  background-color: #343a4000; /* Cor de fundo transparente */
+  color: rgb(28, 124, 202); /* Cor do texto */
+  border: 2px solid rgb(28, 124, 202); /* Borda de 2px com a mesma cor do texto */
+  padding: 8px 15px; /* Espaço interno do botão */
+  font-size: 16px; /* Tamanho da fonte */
+  cursor: pointer; /* Indica que é clicável */
+border-radius: 5px;}
+
+.botao:hover {
+  background-color: rgb(28, 124, 202); /* Cor de fundo ao passar o mouse */
+  color: #fff; /* Cor do texto ao passar o mouse */
+  border-color: rgb(28, 124, 202); /* A borda permanece da mesma cor */
+}
+
+.container-cursos {
+  width: 100%; /* Ocupa 100% da largura disponível */
+  padding: 10px; /* Adiciona espaço interno em volta do conteúdo */
+  background-color: rgb(176, 223, 255); /* Exemplo de cor de fundo */
+  color: rgb(0, 108, 197); /* Cor do texto */
+  text-align: center; /* Centraliza o texto */
+}
+
+h2 {
+  font-size: 2rem; /* Tamanho da fonte do título */
+  margin: 0; /* Remove margens extras no título */
+}
+
+
+@media (max-width: 1200px) {
+  .container-cursos {
+    font-size: 40px; /* Tamanho menor para telas médias */
+  }
+}
+
+@media (max-width: 768px) {
+  .container-cursos {
+    font-size: 30px; /* Tamanho ainda menor para telas pequenas */
+  }
+}
 
  .titulos-cursos {
   margin-top: 2%;
@@ -143,3 +178,62 @@ body {
    margin-left: 3%;
    margin-top: 1%;
 }
+
+.imagens-cursos {
+  display: flex;
+  flex-direction: column; /* Alinha as imagens verticalmente */
+  align-items: flex-end; /* Alinha as imagens à esquerda */
+  margin-left: 0; /* Garante que estejam no canto esquerdo */
+}
+
+.cursos {
+  width: auto; /* Ajusta o tamanho conforme necessário */
+  max-width: 100%; /* Garante que as imagens não excedam a largura do container */
+  margin-bottom: 10px; /* Espaço entre as imagens */
+}
+
+/* Imagens do carrosel */
+
+#wowslider-container1 {
+  width: 100vw; /* Ocupa 100% da largura da viewport */
+  max-width: 100%; /* Garante que o tamanho máximo seja 100% */
+  margin: 0; /* Remove margens */
+  padding: 0; /* Remove espaçamentos */
+}
+
+.ws_images {
+  width: 100%;
+  height: auto; /* Ajusta a altura de forma proporcional */
+}
+
+.ws_images img {
+  width: 100%; /* Faz a imagem ocupar toda a largura do container */
+  height: auto; /* Mantém a proporção */
+}
+
+.ws_shadow {
+  display: none; /* Opcional: remove sombra para bordas limpas */
+}
+
+
+
+.direita, .esquerda {
+  display: flex;
+  flex-direction: row; /* Organiza as imagens em coluna */
+  align-items: center;
+  margin-left: 400px;
+  margin-right: 500px;
+}
+
+.rodape-autenticacao {
+  display: flex;
+  justify-content: space-between; /* Espaça as duas colunas */
+  gap: 20px; /* Espaço entre as colunas */
+}
+
+.imagem {
+  margin-bottom: 10px; /* Espaço entre as imagens */
+  max-width: 100%; /* Garante que as imagens não excedam a largura */
+}
+
+

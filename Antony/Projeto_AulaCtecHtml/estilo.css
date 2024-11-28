@@ -2,6 +2,7 @@
     *{
         margin: 0;
         padding: 0;
+        
     }
 /* Reseta margens e espaçamentos de todos os elementos da página para maior controle no design. */
 
@@ -43,7 +44,7 @@
 
 
 main {
-    margin-top: 20px;
+    margin-top: ;
 }
 /* Dá um espaçamento superior ao conteúdo principal da página. */
 
