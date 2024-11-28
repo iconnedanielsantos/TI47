@@ -138,6 +138,6 @@ button {
 
 .texto-rodape {
     text-align: center;
-    align-items: center;
+    align-items: 0;
     display: flex;
 }
