@@ -2,7 +2,9 @@
     *{
         margin: 0;
         padding: 0;
+        
     }
+/* Reseta margens e espaçamentos de todos os elementos da página para maior controle no design. */
 
     .search-bar {
         width: 300px;
@@ -20,53 +22,69 @@
     color: black; /* Nova cor do texto */
     border: 2px solid black; /* Nova cor da borda */
 }
-
+ /* Botão de procurar*/
 
 
     .navbar-nav .nav-item {
             margin-right: 20px;
+            /* Cada item dentro da barra de navegação terá um espaço de 20px à direita para espaçamento. */
+
         }
     .navbar-taskbar {
         background-color: #5a5d5f;
         width: 100%;
         box-sizing: border-box;
     }
+    /* Barra de navegação principal: ocupa toda a largura da página, com fundo cinza escuro. */
+
         .dropdown-menu {
             background-color: #f8f9fa;
         }
+        /* Menu suspenso com fundo claro, usado em menus dropdown. */
+
 
 main {
-    margin-top: 20px;
+    margin-top: ;
 }
+/* Dá um espaçamento superior ao conteúdo principal da página. */
 
         .title-right h1 {
             position: absolute;
-            right: 20px;
-            top: 20px;
+            right: -1000px;
+            top: -10px;
             font-size: 110px;
             font-weight: bold;
         }
+        /* Título (h1) grande posicionado no canto superior direito, destacado com tamanho e peso de fonte. */
+
 
         .container img {
             margin-left: -200px;
         }
+        /* As imagens dentro do contêiner têm um deslocamento à esquerda para ajuste de posição. */
+
         .navbar-nav .nav-link {
             color: white !important;
             transition: 0.3s;
         }
         .navbar-nav .nav-link:hover {
             color: #00bfae !important;
+            /* Altera a cor dos links na barra de navegação para verde ao passar o mouse. */
+
         }
     .navbar-nav .nav-link {
         color: rgb(255, 255, 255) !important;
         font-size: 16px;
         font-weight: bold;
     }
+    /* Estilo para os links da barra de navegação, com texto branco e efeito de transição. */
+
                   .shild {
             box-sizing: border-box;
             margin: 0;
             padding: 0;
         }
+/* Classe genérica para garantir que margens e espaçamentos não ultrapassem os limites do contêiner. */
 
         .carrossel-container {
             position: relative;
@@ -75,17 +93,20 @@ main {
             margin: auto;
             overflow: hidden;
         }
+/* Contêiner do carrossel (slider de imagens), ajustando largura, centralização e escondendo imagens fora da tela. */
 
         .carrossel-imagens {
             display: flex;
             transition: transform 0.5s ease;
         }
+/* Agrupamento das imagens do carrossel com transição suave entre elas. */
 
         .carrossel-imagens img {
-            width: 100%;
+            width: 10%;
             height: auto;
             border-radius: 1px;
         }
+/* As imagens do carrossel ocupam toda a largura do contêiner e mantêm proporção. */
 
         .carrossel-botao {
             position: absolute;
@@ -96,6 +117,7 @@ main {
             cursor: pointer;
             z-index: 20;
         }
+/* Botões de navegação do carrossel posicionados sobre ele, com fundo transparente e clicáveis. */
 
         .carrossel-botao-esquerda {
             left: 10px;
@@ -104,6 +126,7 @@ main {
     border-right: 40px solid #fff; 
 pointer-events: all;
         }
+/* Botão para mover o carrossel à esquerda, com forma triangular apontando para a esquerda. */
 
         .carrossel-botao-direita {
             right: 10px;
@@ -112,20 +135,25 @@ pointer-events: all;
     border-left: 40px solid #fff;
     pointer-events: all;
         }
+/* Botão para mover o carrossel à direita, com forma triangular apontando para a direita. */
 
         @media screen and (max-width: 768px) {
             .carrossel-container {
                 max-width: 100%;
             }
         }
+        /* Responsividade: ajusta o carrossel para ocupar 100% da largura em telas menores. */
+
         .carrossel-botao-esquerda:hover, .carrossel-botao-direita:hover {
     border-right-color: #00bfae;
     border-left-color: #00bfae;
         }
+/* Altera a cor dos botões do carrossel ao passar o mouse, indicando interatividade. */
 
         .carrossel-botao:focus {
     outline: none;
 }
+/* Remove o contorno padrão do botão ao ser focado. */
 
 .navbar-barra2 {
         background-color: #a9ddff;
@@ -133,6 +161,8 @@ pointer-events: all;
         box-sizing: border-box;
         padding: 0px 0;
 }
+/* Outra barra de navegação, desta vez com fundo azul claro. */
+
 .navbar-barra2 .navbar-texto {
     color: #004a77;
     font-size: 40px;
@@ -140,17 +170,23 @@ pointer-events: all;
     text-align: center;
     font-family: 'Arial', sans-serif;
 }
+/* Texto estilizado dentro da barra de navegação, centralizado e com cor azul escuro. */
 
 h1,h2,h3 {
     font-size: 40px;
     margin-left: 20px;
     padding-left: 20px;
 }
+/* Estilo geral para títulos, com espaçamento à esquerda. */
+
 p {
     margin-top: 20px;
     margin-left: 20px;
     padding-left: 20px;
     }
+    /* Estilo geral para parágrafos, com espaçamento superior e à esquerda. */
+
+
 .container-img {
     display: flex;
     align-items: center;
@@ -158,14 +194,19 @@ p {
     margin-top: -130px;
     gap: 20px;
 }
+/* Contêiner flexível para imagens, alinhando ao início com espaçamento entre elas. */
+
 .texto {
     max-width: 60%;
     margin-right: 1150px;
 }
+/* Texto com limite de largura e margem direita significativa para organização visual. */
+
 .imagem {
     width: 200px;
     height: auto;
 }
+/* Dimensão padrão para imagens, ajustando largura e mantendo proporção. */
 
 .btn-detalhes {
     background-color: white;
@@ -179,8 +220,9 @@ p {
     transition: all 0.3s ease;
     position: absolute;
     margin-left: 40px;
-    top: 850px;
+    top: 820px;
 }
+/* Botões de detalhes com posições específicas e efeitos de hover. */
 
 .btn-detalhes:hover {
     background-color: #f8f9fa;
@@ -199,7 +241,7 @@ p {
     transition: all 0.3s ease;
     position: absolute;
     margin-left: 40px;
-    top: 1470px;
+    top: 1480px;
 }
 
 .btn-detalhes1:hover {
@@ -219,7 +261,7 @@ p {
     transition: all 0.3s ease;
     position: absolute;
     margin-left: 40px;
-    top: 1170px;
+    top: 1150px;
 }
 
 .btn-detalhes2:hover {
@@ -227,6 +269,7 @@ p {
     border-color: #007bff;
     color: #007bff;
 }
+/* Botões de detalhes com posições específicas e efeitos de hover. */
 
 
 
@@ -274,6 +317,7 @@ footer a:hover {
 
 }
 
+/* Rodapé estilizado. */
 
 .footer {
     background-color: #5a5d5f;
@@ -298,6 +342,7 @@ footer .list-unstyled li a {
 footer .list-unstyled li a:hover {
     color: #00bfae;
 }
+/* Estilo para imagens no rodapé. */
 
 footer .footer-image {
     width: 200px;
@@ -309,6 +354,7 @@ footer .footer-image {
 footer .footer-image:hover {
     transform: scale(1.2); 
 }
+/* Estilo para imagens no rodapé. */
 
 footer .footer-images-container {
     position: absolute;
@@ -323,7 +369,7 @@ footer .footer-text {
     text-align: center;
 }
     
-
+/* estilo para os icones*/
 .sites-px {
     position: absolute;
     bottom: 10px;
