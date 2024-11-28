@@ -1,139 +1,138 @@
+@charset "utf-8";
+
 @font-face {
-    font-family: PROJETO;
-    src: url(fontes/tw-cen-mt-eb.ttf)format('truetype');
-    font-weight: bold;
+    font-family: "twcenmteb";
+    src: url("fontes/tw-cen-mt-eb.ttf")format('truetype');
+}
+
+body {
+    margin: 0px;
+    font-family: verdana;
 }
 
 .fonte-zero {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0,0);
-    white-space: nowrap;
-    border: 0;
-}
-
-.fonte-chave {
-    font-family: 'PROJETO';
-}
-
-/*estilo da forma ciza*/
-.search-menu-container {
-    background-color: #343A40;
-    justify-content: space-between;
-    padding: 16px;
-    width: 139%;
-    align-items: center;
-    display: flex;
-    box-sizing: border-box;
-    margin-left: -225px;
-}
-
-/*centralizar dentro da forma*/
-.menu-search-content {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    align-items: center;
-}
-
-.container {
-    width: 100%;
-    padding-right: 0;
-    padding-left: 0;
-}
-
-.menu-links {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    text-align: center;
-    gap: 15px;
-}
-
-.menu-links a {
-    color: #ffffff;
-    font-size: 17px;
-    text-decoration: none;
-}
-
-.menu-links a:hover {
-    color: #007bff;
-}
-
-a.highlighted {
-    margin-right: 18px;
-    font-size: 20px;
-    color: #ffffff;
-}
-
-.search-bar input {
-    padding: 8px;
-    border-radius: 4px;
-    border: 1px solid #ccc;
-}
-
-.search-bar {
-    text-align: right;
-}
-
-button {
-    padding: 8px 12px;
-}
-
-.custom-btn {
-    background-color: #000000;
-    color: #007bff;
-    border: 2px solid #007bff;
-    padding: 8px 12px;
-    border-radius: 6px;
-    cursor: pointer;
-}
-
-.custom-btn:hover {
-    background-color: #007bff;
-}
-
-.fonte-chave {
-    margin-top: 20px;
-    margin: 0;
-    height: 100%;
-    align-items: right;
-    display: flex;
-    justify-content: right;
-    text-align: right;
-    font-size: 90px;
-    font-weight: bold;
-}
-
-.dropdow {
-    position: relative;
-    display: inline-block;
-}
-
-.dropdown-content {
+    font-size: 0px;
+    padding: 0px;
+    opacity: 0;
+    float: none;
+    border: 0px;
     display: none;
-    position: absolute;
-    background-color: #444444;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px #000000;
-    z-index: 1;
 }
 
-.dropdown-content a {
-    color: white;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
+.nome-empresa {
+    font-family: "twcenmteb";
+    font-size: 93px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
 }
 
-.dropdown:hover .dropdown-content {
-    display: block;
+.fundo-rodape {
+    background-color: #343A40;
+    color: #FFFFFF;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    font-size: 16px;
+    text-align: center;
 }
 
-.dropdown-content a:hover {
-    color: white;
-    background-color: #007bff;
+.icone-rodape {
+    font-size: 40px;
+}
+
+.vertical-rodape {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+@media all and (min-width:992) and (max-width: 1199px) {
+    .nome-empresa {
+        font-family: "twcenmteb";
+        font-size: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 5px;
+    }
+}
+
+@media all and ( min-width:768px) and (max-width: 991px) {
+    .nome-empresa {
+        font-family: "twcenmteb";
+        font-size: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 5px;
+    }
+}
+
+@media all and (min-width:576px) and (max-width: 767px) {
+    .nome-empresa {
+        font-family: "twcenmteb";
+        font-size: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 5px;
+    }
+}
+
+@media all and (min-width:361px) and (max-width: 575px) {
+    .nome-empresa {
+        font-size: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 5px;
+    }
+    h2 {
+        font-size: 25px;
+    }
+}
+
+@media all and (max-width: 360px) {
+    .nome-empresa {
+        font-family: "twcenmteb";
+        font-size: 30px;
+        display: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 5px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+}
+
+.container-cursos {
+    background-color: rgb(176, 246, 255);
+    color: rgb(0, 140, 255);
+    text-align: center;
+    font-size: 50px;
+}
+.titulos-cursos {
+    margin-top: 2%;
+    margin-left: 3%;
+    text-align: left;
+    font-size: 40px;
+}
+
+.texto-cursos {
+    text-align: left;
+    font-size: 25px;
+    margin-left: 3%;
+}
+
+.botao-cursos {
+    font-size: 22px;
+    color: rgb(136, 136, 136);
+    border: 2px;
+    margin-left: 3%;
+    margin-top: 1%; 
 }

@@ -5,8 +5,8 @@
 .search-menu-container {
     background-color: #3e3e49;
     padding: 15px;
-    width: 128%; /* Faz a forma ocupar 100% da largura */
-    margin-left: -157px;
+    width: 132%; /* Faz a forma ocupar 100% da largura */
+    margin-left: -57px;
     box-sizing: border-box; /* Garante que o padding não afete a largura */
     display: flex;
     justify-content: space-between; /* Separar os itens para que o menu fique à esquerda e a barra de pesquisa à direita */
@@ -121,6 +121,16 @@ button {
     margin-top: 20px;
 }
  
+.destaque{
+    background-color: rgb(198, 228, 248);
+    height: 80px;
+  }
+.subtitulo{
+    font-size: 50px;
+    text-align: center;
+    color: #0068c9;
+   
+  }
 .dropdown {
     position: relative;
     display: inline-block;
@@ -150,3 +160,114 @@ button {
     background-color: #007bff;
     color: white;
 }
+
+h1,h2,h3 {
+    font-size: 40px;
+    margin-left: 20px;
+    padding-left: 20px;
+}
+
+texto {
+    max-width: 60%;
+    margin-right: 1150px;
+}
+
+.imagem {
+    width: 200px;
+    height: auto;
+}
+
+.container-img {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 10px;
+    gap: 900px;
+}
+
+.btn-detalhes1 {
+    background-color: white;
+    color: rgb(97, 95, 95); 
+    border: 2px solid #ccc;
+    padding: 10px 20px;
+    font-size: 16px; 
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer; 
+    transition: all 0.3s ease;
+    position: absolute;
+    margin-left: 40px;
+    top: 1470px;
+}
+
+.btn-detalhes1:hover {
+    background-color: #f8f9fa;
+    border-color: #007bff;
+    color: #007bff;
+}
+
+.btn-editar {
+            margin-top: 20px;
+            padding: 20px 30px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 90px;
+        }
+
+        .btn-editar:hover {
+            background-color: #000000;
+        }
+
+         .descricao {
+            font-size: 16px; /* Tamanho inicial */
+            line-height: 1.6;
+        }
+
+        /* Cor padrão */
+.footer-container {
+    color: rgb(255, 255, 255);
+}
+
+
+        .container {
+            margin: 20px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input[type="range"] {
+            margin: 60px 0;
+        }
+
+        .footer-container {
+            font-size: 17px; /* Tamanho base da fonte */
+        }
+        
+        .imagem-container .imagem-pequena {
+            width: 170px; /* Tamanho base das imagens */
+            height: auto;
+        }
+        
+        .footer-container.large-font {
+            font-size: 20px; /* Aumenta o tamanho da fonte */
+        }
+        
+        .imagem-container .imagem-pequena.large-image {
+            width: 150px; /* Aumenta o tamanho das imagens */
+        }
+        
+        .rodape {
+            background-color: #3e3e49;
+            padding: 15px;
+            width: 110%; /* Faz a forma ocupar 100% da largura */
+            margin-left: -57px;
+            box-sizing: border-box; /* Garante que o padding não afete a largura */
+            display: flex;
+            justify-content: space-between; /* Separar os itens para que o menu fique à esquerda e a barra de pesquisa à direita */
+            align-items: center;
+        }
+    

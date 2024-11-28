@@ -134,20 +134,105 @@
             <script src="galeria/engine1/wowslider.js"></script>
             <script src="galeria/engine1/script.js"></script>
 
-            <div  class="  navbar-taskbar2" >
-                Curso em Destaque
-              </div>
+            <body>
+                <div class="destaque">
+                  <h2 class="subtitulo">Cursos em Destaque</h2>
+                </div>
+              </body>
               
 
-              <br><br>
+            </head>
+            <body>
+                <h1>Curso 1</h1>
+                <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12">
+                    <p class="descricao">Um curso é uma sequência organizada de estudos ou treinamentos projetada para transmitir conhecimentos e habilidades sobre um tema específico. Ele pode ser oferecido em diferentes formatos, como presencial, online ou híbrido, e atende a públicos variados, desde iniciantes até profissionais experientes.</p>
+                </div>
+                <button class="btn-editar" onclick="editarTexto('Curso 1')">Detalhes+</button>
 
-             <div class="title_cursor"> <h3> Titulo do Curso </h3> </div>
+                <div class="container-img">
+                    <div class="texto">
+                </div>
+                <div class="imagem">
+                    <a href="imagens/html5-g.jpg" target="_blank">
+                <h2><img src="imagens/html5-p.jpg" alt="html5"></h2> </a>
+                </div>
+                </div>
+            
+                <h2>Curso 2</h2>
+                <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12">
+                    <p class="descricao">Um curso é uma sequência organizada de estudos ou treinamentos projetada para transmitir conhecimentos e habilidades sobre um tema específico. Ele pode ser oferecido em diferentes formatos, como presencial, online ou híbrido, e atende a públicos variados, desde iniciantes até profissionais experientes.</p>
+                </div>
+                <button class="btn-editar" onclick="editarTexto('Curso 2')">Detalhes+</button>
 
-             
-               <div class="paragrafo"><p> "Os cursos são portas de entrada para novos conhecimentos, habilidades e oportunidades que podem transformar seu futuro.   
-                </p>
-               </div>
-               <style>
+                <div class="container-img">
+                    <div class="texto">
+                </div>
+                <div class="imagem">
+                    <a href="imagens/html5-g.jpg" target="_blank">
+                <h2><img src="imagens/html5-p.jpg" alt="html5"></h2> </a>
+                </div>
+                </div>
+            
+                <h3>Curso 3</h3>
+                <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12">
+                    <p class="descricao">Um curso é uma sequência organizada de estudos ou treinamentos projetada para transmitir conhecimentos e habilidades sobre um tema específico. Ele pode ser oferecido em diferentes formatos, como presencial, online ou híbrido, e atende a públicos variados, desde iniciantes até profissionais experientes.</p>
+                </div>
+                <button class="btn-editar" onclick="editarTexto('Curso 3')">Detalhes+</button>
+                <div class="container-img">
+                    <div class="texto">
+                </div>
+                <div class="imagem">
+                    <a href="imagens/html5-g.jpg" target="_blank">
+                <h2><img src="imagens/html5-p.jpg" alt="html5"></h2> </a>
+                </div>
+                </div>
+            
+                <script>
+                    function editarTexto(curso) {
+                        // Seleciona o elemento do título e da descrição com base no curso
+                        const titulo = document.querySelector(`${curso.includes('1') ? 'h1' : curso.includes('2') ? 'h2' : 'h3'}`);
+                        const descricao = titulo.nextElementSibling.querySelector('.descricao');
+            
+                        // Solicita novos valores para o título e a descrição
+                        const novoTitulo = prompt('Digite o novo título:', titulo.textContent);
+                        const novaDescricao = prompt('Digite a nova descrição:', descricao.textContent);
+            
+                        // Atualiza o conteúdo do título e da descrição
+                        if (novoTitulo) titulo.textContent = novoTitulo;
+                        if (novaDescricao) descricao.textContent = novaDescricao;
+                    }
+                </script>
 
-</body>
-</html>
+<footer>
+    <div class="container-fluid rodape">
+    <div class="footer-container">
+        <p>Este site é desenvolvido como projeto de aula, por aluno de Webdesigner, e nao tem como objetivo promover ou denegrir a imagem, marca e ou autoria.</p>
+        <p>&copy; Copyright 2022 - Todos os direitos reservados para Ctec - Cursos de Tecnologia.</p>
+        
+        <div class="imagem-container">
+            <img src="imagens/validation-html5.png" alt="imagem1" class="imagem-pequena">
+            <img src="imagens/validation-css3.gif" alt="Imagem 2" class="imagem-pequena">
+            <img src="imagens/site-responsivo.png" alt="Imagem 3" class="imagem-pequena">
+            <h5> by Thiago - aluno T.I senac </h5>
+        </div>
+    
+        <div class="row">
+
+            <div class="col-6 sites-px">
+                <ul class="list-unstyled d-flex justify-content-start">
+                    <li><a href="https://facebook.com"><i class="fab fa-facebook-square fa-2x"></i></a></li>   
+                    <li><a href="https://facebook.com"><i class="fab fa-twitter-square fa-2x"></i></a></li>
+                    <li><a href="https://facebook.com"><i class="fab fa-youtube-square fa-2x"></i></a></li>
+                    <li><a href="https://facebook.com"><i class="fab fa-instagram-square fa-2x"></i></a></li>
+                    
+                </ul>
+            </div>
+
+    </div>
+</footer>
+
+            </body>
+            </html>
+
+
+

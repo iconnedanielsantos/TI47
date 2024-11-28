@@ -1,188 +1,236 @@
 <!doctype html>
-
-<!--
-<!doctype html>: Declara o tipo do documento, especificando que este é um documento HTML5. Isso ajuda o navegador a interpretar o conteúdo corretamente.
-html
--->
-
-<html lang="pt-br">
-<!--
-<html lang="pt-br">: Define a linguagem principal do conteúdo da página como português brasileiro. Isso é importante para acessibilidade e SEO (otimização de busca), pois ajuda os navegadores e motores de busca a processar o texto na língua correta.
-html
--->
-
+<html lang="pt-BR">
 <head>
-<!--
-<head>: Esta seção contém informações sobre o documento que não são exibidas diretamente na página, mas são essenciais para a estrutura, design e indexação do site.
-html
--->
-    
-<meta charset="utf-8">
-<!--
-<meta charset="utf-8">: Define a codificação de caracteres como UTF-8, que suporta uma vasta gama de caracteres de diferentes idiomas e símbolos especiais. É essencial para garantir que todos os caracteres apareçam corretamente na página.
-html
--->
+    <meta charset="utf-8">
+    <title>CTec - Cursos de Tecnologia</title>
 
-<title>CTec - Cursos de Tecnologia</title>
-<!--
-<title>: Define o título da página, que será exibido na aba do navegador e também utilizado pelos motores de busca como título principal para a página nos resultados de pesquisa. Um título único e conciso contribui para o SEO.
-html
--->
+    <!-- Meta tags para descrição e palavras-chave -->
+    <meta name="description" content="Desenvolvimento de cursos de tecnologia">
+    <meta name="keywords" content="cursos, tecnologia, ti, informática, html5, css3, senac, desenvolvimento, web, websites, php, sql, mysql">
 
-<meta name="description" content="Desenvolvimento de cursos de tecnologia">
-<!--
-<meta name="description">: Fornece uma breve descrição da página, que pode aparecer nos resultados de pesquisa do Google. Essa descrição deve ser objetiva e relevante, pois influencia a taxa de clique na página.
-html
--->
+    <!-- Ícone da aba do navegador -->
+    <link rel="shortcut icon" href="favicon.ico">
 
-<meta name="keywords" content="cursos, tecnologia, ti, informática, html5, css3, senac, desenvolvimento, web, websites, php, sql, mysql">
-<!--
-<meta name="keywords">: Inclui palavras-chave associadas ao conteúdo da página. Embora os motores de busca modernos deem pouca importância a essa tag, ela ainda pode ser usada para contexto adicional.
-html
--->
+    <!-- Bootstrap CSS -->
+    <link href="bootstrap-4.4.1/css/bootstrap.min.css" rel="stylesheet" type="text/css">
 
-<link rel="short icon" href="favicon.ico">
-<!--
-<link rel="short icon">: Define o favicon, um pequeno ícone associado à página, geralmente exibido na aba do navegador ao lado do título. Ele é importante para branding e facilita a identificação visual da página.
-html
--->
+    <!-- CSS externo -->
+    <link href="estilo.css" rel="stylesheet" type="text/css">
 
-<link href="bootstrap-4.4.1/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-<!--
-<link rel="stylesheet">: Link para o arquivo CSS do Bootstrap, uma biblioteca popular de estilos para desenvolver layouts responsivos e modernos. Ele facilita a criação de layouts adaptáveis e estilizados sem precisar escrever muito CSS.
-html
--->
+    <!-- Responsividade -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<link href="meus_estilos.css" rel="stylesheet" type="text/css">
-<!--
-<link href="meus_estilos.css">: Importa um arquivo CSS personalizado chamado meus_estilos.css, onde você pode incluir estilos específicos para essa página, complementando o estilo do Bootstrap.
-html
--->
+    <!-- Estilo do carrossel -->
+    <link rel="stylesheet" type="text/css" href="galeria/engine1/style.css">
 
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<!--
-<meta name="viewport">: Configura a página para ser responsiva. width=device-width ajusta a largura da página à largura do dispositivo, e initial-scale=1 define o nível de zoom inicial. shrink-to-fit=no evita que a página encolha além do limite.
-html
--->
+    <!-- JQuery -->
+    <script src="galeria/engine1/jquery.js"></script>
 
-<link rel="stylesheet" type="text/css" href="galeria/engine1/style.css">
-<script src="galeria/engine1/jquery.js"></script>
-<!--
-<link> e <script> (Wowslider): O link carrega o arquivo CSS do Wowslider, uma biblioteca de galeria de imagens, enquanto o script carrega o jQuery, uma biblioteca JavaScript essencial para o funcionamento do Wowslider. Esses arquivos permitem que galerias e animações de imagens funcionem na página.
-html
--->
+    <!-- Lightbox CSS -->
+    <link href="lightbox2/dist/css/lightbox.min.css" rel="stylesheet" type="text/css">
 
+    <!-- Font Awesome -->
+    <link href="fontawesome-6.4.2/css/all.css" rel="stylesheet" type="text/css">
+    <script src="fontawesome-6.4.2/js/all.js"></script>
 
-<link href="lightbox2/dist/css/lightbox.min.css" rel="stylesheet" type="text/css">
-<!--
-<link href="lightbox2/dist/css/lightbox.min.css">: Importa o CSS para o Lightbox2, uma biblioteca que permite a exibição de imagens em uma sobreposição, ideal para exibir imagens em uma galeria.
-html
--->
-
-<link href="fontawesome-6.4.2/css/all.css" rel="stylesheet" type="text/css">
-<script src="fontawesome-6.4.2/js/all.js"></script>
-<!--
-<link> e <script> (Font Awesome): Esses elementos importam os arquivos CSS e JavaScript do Font Awesome, uma biblioteca de ícones. Eles permitem adicionar ícones e símbolos personalizados, melhorando a experiência visual da página.
-html
--->
+   
 
 </head>
-<!--
-</head>: Finaliza a seção <head>, que inclui todas as informações estruturais e recursos necessários para o carregamento correto da página antes de seu conteúdo ser exibido.
--->
 
 <body>
-    <header>
-        <h1 class="fonte-zero">Ctec Curso de tecnologia</h1>
-    </header>
-
+    <script>
+        window.addEventListener('mouseover', initLandbot, { once: true });
+        window.addEventListener('touchstart', initLandbot, { once: true });
+        var myLandbot;
+        function initLandbot() {
+          if (!myLandbot) {
+            var s = document.createElement('script');s.type = 'text/javascript';s.async = true;
+            s.addEventListener('load', function() {
+              var myLandbot = new Landbot.Livechat({
+                configUrl: 'https://storage.googleapis.com/landbot.online/v3/H-2697100-8TQB7NI0782R20AD/index.json',
+              });
+            });
+            s.src = 'https://cdn.landbot.io/landbot-3/landbot-3.0.0.js';
+            var x = document.getElementsByTagName('script')[0];
+            x.parentNode.insertBefore(s, x);
+          }
+        }
+        </script>
     <main>
+        <header>
+            <div class="title-right">
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-6">
+            <h1 class="fonte-zero">Cursos de Tecnologia</h1>
+            </div>
+            </div>
+        </header>
+
         <div class="container">
             <div class="row">
                 <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-6">
                     <section>
-                        <h2 class="fonte-zero">Logo Ctec</h2>
-                        <a href=""><img src="imagens/logo-ctec.png" alt="" class="img-fluid"></a>
-                    </section>
-                </div>
-                <div class="col-xl-8 col-lg-8 col-md-8 col-sm-8 col-12 nome-empresa">
-                    <section>
-                        <h2 class="font-zero">Cursos de Tecnologia</h2> Cursos de Tecnologia
+                        <a href="index.html">
+                            <img src="imagens/logo-ctec.png" alt="logo-ctec" class="img-fluid" title="logo-ctec">
+                        </a>
                     </section>
                 </div>
             </div>
         </div>
 
-        <div class="container-fluid bg-dark">
-            <div class="container">
-                
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-                
-            <h2 class="fonte-zero">Menu: Home, Empresa, Cursos, Tecnologia da Informação, Adminstração, Logística, Contato e Localizar</h2>
-                
-            <a class="navbar-brand" href="index.html">Home</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>
-            
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-            <a class="nav-link" href="#">Empresa <span class="sr-only">(current)</span></a>
-            </li>
-            
-            <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Cursos
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Tecnologia da Informação</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Administração</a>
-            <a class="dropdown-item" href="#">Logística</a>
-            </div>
-            </li>
-            
-            <li class="nav-item active">
-            <a class="nav-link" href="#">Contato <span class="sr-only">(current)</span></a>
-            </li>	
-                
-            </ul>
-            <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
-            </div>
-            </nav>	
-                
-            </div>	
-            </div>
-
-            <section>
-                <h2 class="fonte-zero"> Galeria de Imagens</h2>
-                <div id="wowslider-container1">
-                    <div class="ws_images">
-                        <h2 class="fonte-zero">imagens em slide</h2>
-                        <ul>
-                            <li><img src="galeria/data1/images/galeria1.jpg" alt="banner-html-css"></li>
-                            <li><img src="galeria/data1/images/galeria2.jpg" alt="banner-extenções"></li>
-                            <li><img src="galeria/data1/images/galeria3.jpg" alt="banner-segurança"></li>
-                        </ul>
-                    </div>
-                    <div class="ws_bullets">
-                        <a href="#" title="miniatura-html-css"><Span><img  src="galeria/data1/tooltips/galeria1.jpg" alt="1"></Span></a>
-                        <a href="#" title="miniatura-extenções"><span><img src="galeria/data1/tooltips/galeria2.jpg" alt="2"></span></a>
-                        <a href="#" title="miniatura-segurança"><span><img src="galeria/data1/tooltips/galeria3.jpg" alt="3"></span></a>
-                    </div>
-                    <div class="ws_script" style="position: absolute; left: -99%;"><a href="#">Ctec Cursos de Tecnologia</a></div>
-                    <div class="ws_shadow"></div>
-                    <script src="galeria/engine1/wowslider.js"></script>
-                    <script src="galeria/engine1/script.js"></script>
-                </div>
-            </section>
-
-
     </main>
+
+
+    <nav class="navbar navbar-expand-lg navbar-light navbar-taskbar">
+        <div class="container-fluid">
+            
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Empresa</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Cursos
+                    </a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contato</a>
+                    </li>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">Cursos Online</a></li>
+                        <li><a class="dropdown-item" href="#">Cursos Presenciais</a></li>
+                        <li><a class="dropdown-item" href="#">Contato</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            
+                <form class="d-flex">
+                    <input class="form-control me-2 search-bar" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn search-button" type="submit">Search</button>
+                </form>
+        </div>
+    </nav>
+   
+   
+    <section>
+        <div id="wowslider-container1">
+            <div class="ws_images">
+                <ul>
+                
+                    <li><img src="galeria/data1/images/galeria1.jpg" alt="Imagem 1"></li>
+                    <li><img src="galeria/data1/images/galeria2.jpg" alt="Imagem 2"></li>
+                    <li><img src="galeria/data1/images/galeria3.jpg" alt="Imagem 3"></li>
+                </ul>
+            </div>
+            <div class="ws_bullets">
+                <a href="#" title="miniatura-html-css"><Span><img src="galeria/data1/tooltips/galeria1.jpg" alt="1"></Span></a>
+                <a href="#" title="miniatura-extenções"><span><img src="galeria/data1/tooltips/galeria2.jpg" alt="2"></span></a>
+                <a href="#" title="miniatura-segurança"><span><img src="galeria/data1/tooltips/galeria3.jpg" alt="3"></span></a>
+            </div>
+            <div class="ws_script" style="position: absolute; left: -99%;"><a href="#">Ctec Cursos de Tecnologia</a></div>
+            <div class="ws_shadow"></div>
+            <script src="galeria/engine1/wowslider.js"></script>
+            <script src="galeria/engine1/script.js"></script>
+        </div>
+    </section>
+
+
+  
+
+
+<div class="navbar-barra2">
+    
+    <div class="navbar-texto">
+        Curso em Destaque
+    </div>
+</div>
+<p>ㅤ</p>
+<h1> Curso 1</h1>
+<div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12"> 
+<p> Um curso é uma sequência organizada de estudos ou treinamentos projetada para transmitir conhecimentos e habilidades sobre um tema específico. Ele pode ser oferecido em diferentes formatos, como presencial, online ou híbrido, e atende a públicos variados, desde iniciantes até profissionais experientes.
+</div>
+<div class="container-img">
+    <div class="texto">
+</div>
+<div class="imagem">
+    <a href="imagens/html5-g.jpg" target="_blank">
+<h2><img src="imagens/html5-p.jpg" alt="html5"></h2> </a>
+</div>
+</div>
+
+<button class="btn-detalhes">+ Detalhes</button>
+<hr>
+<p>ㅤ</p>
+<h2>Curso 2</h2>
+<div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12"> 
+<p> Um curso é uma sequência organizada de estudos ou treinamentos projetada para transmitir conhecimentos e habilidades sobre um tema específico. Ele pode ser oferecido em diferentes formatos, como presencial, online ou híbrido, e atende a públicos variados, desde iniciantes até profissionais experientes.
+</div>
+<div class="container-img">
+    <div class="texto">
+</div>
+<div class="imagem">
+    <a href="imagens/html5-g.jpg" target="_blank">
+<h2><img src="imagens/html5-p.jpg" alt="html5"></h2> </a>
+</div>
+</div>
+
+<button class="btn-detalhes1">+ Detalhes</button>
+<hr>
+<p>ㅤ</p>
+<h3>Curso3</h3>
+<div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12"> 
+<p> Um curso é uma sequência organizada de estudos ou treinamentos projetada para transmitir conhecimentos e habilidades sobre um tema específico. Ele pode ser oferecido em diferentes formatos, como presencial, online ou híbrido, e atende a públicos variados, desde iniciantes até profissionais experientes.
+</div>
+
+<div class="container-img">
+    <div class="texto">
+</div>
+<div class="imagem">
+    <a href="imagens/html5-g.jpg" target="_blank">
+<h2><img src="imagens/html5-p.jpg" alt="html5"></h2>
+</a>
+</div>
+</div>
+
+<button class="btn-detalhes2">+ Detalhes</button>
 </body>
 
+
+
+
+     <!-- Rodapé -->
+<footer class="fundo-rodape">
+    <div class="footer-container">
+        <p>Este site é desenvolvido como projeto de aula, por aluno de Webdesigner, e não tem como objetivo promover ou denegrir a imagem, marca e/ou autoria.</p>
+        <p>&copy; Copyright 2022 - Todos os direitos reservados para Ctec - Cursos de Tecnologia.</p>
+        
+        <div class="imagem-container">
+            <img src="imagens/validation-html5.png" alt="Imagem HTML5" class="imagem-pequena">
+            <img src="imagens/validation-css3.gif" alt="Imagem CSS3" class="imagem-pequena">
+            <img src="imagens/site-responsivo.png" alt="Imagem Site Responsivo" class="imagem-pequena">
+        </div>
+        
+    
+</footer>
+
+        
+            <div class="row">
+
+                <div class="col-6 sites-px">
+                    <ul class="list-unstyled d-flex justify-content-start">
+                        <li><a href="https://facebook.com"><i class="fab fa-facebook-square fa-2x"></i></a></li>   
+                        <li><a href="https://twitter.com"><i class="fab fa-twitter-square fa-2x"></i></a></li>
+                        <li><a href="https://youtube.com"><i class="fab fa-youtube-square fa-2x"></i></a></li>
+                        <li><a href="https://instagram.com"><i class="fab fa-instagram-square fa-2x"></i></a></li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    
 </html>

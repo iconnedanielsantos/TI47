@@ -4,12 +4,16 @@
     font-weight: bold;
 }
 
+
 .fonte-header {
     font-family: 'Tw Cen MT Extra Bold', sans-serif;
     font-weight: bold;
     color: black;
-    font-size: 3.5rem;
+    font-size: 4rem;
     letter-spacing: 0.1rem;
+    display: flex;
+    align-self: center;
+    padding-top: 5%;
 }
 
 header {
@@ -21,9 +25,10 @@ header h2 {
     margin: 0;
 }
 
-.fonte-zero{
-   opacity: 0;
+.fonte-zero {
+    display: none;
 }
+
 .navbar form {
     margin-left: 0;
 }
@@ -37,7 +42,8 @@ header h2 {
     background-color: black;
     color: white;
 }
-nav{
+
+nav {
     width: 100%;
 }
 
@@ -51,7 +57,7 @@ nav{
 
 .ws_nav_left {
     left: 10px;
-    border-top: 15px solid white; 
+    border-top: 15px solid white;
 }
 
 
@@ -60,6 +66,100 @@ nav{
     border-bottom: 15px solid white;
 }
 
-.ws_nav_left:hover, .ws_nav_right:hover {
+.ws_nav_left:hover,
+.ws_nav_right:hover {
     opacity: 0.7;
+}
+
+.text-center-custom {
+    text-align: center;
+}
+
+.section-separator {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#cursos-em-destaque{
+    font-family: Verdana;
+}
+
+/* footer */
+
+.footer {
+    color: AliceBlue;
+    padding: 30px 0;
+}
+.footer p {
+    margin-bottom: 10px;
+}
+.footer .social-icons img{
+    width: 40px;
+    margin-right: 30px;
+}
+.footer .social-icons {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.footer .container {
+    margin-top: 30px;
+}
+.footer .final-t {
+    text-align: right;
+    margin-top: 20px;
+}
+p.cop, p.cop2{
+    display: flex;
+    justify-self: center;
+}
+.social-icons img{
+    border-radius: 30%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.icon-img {
+width: 90px;
+height: 90px;
+margin-left: 40px;
+object-fit: contain;
+}
+
+.social-icons,
+.icon-images {
+display: flex;
+align-items: center;
+justify-content: flex-start;
+}
+
+
+@media (max-width: 767px) {
+    body{
+        scroll-behavior: smooth;
+    }
+    .social-icons img {
+        width: 30px;
+        height: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-self: center;
+    }
+    .icon-img {
+        width: 60px;
+        height: 60px;
+        display: flex;
+        margin: auto;
+    }
+    .cop, .cop2, .final-t{
+        display: flex;
+        margin: auto;
+    }
 }

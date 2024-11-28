@@ -1,29 +1,110 @@
-/* Estilos para a barra de navegação */
-.navbar {
-    background-color: #808080;  /* Cor de fundo cinza */
-    padding: 10px;
-    width: 200%;  /* Barra ocupa toda a largura da tela */
-    box-sizing: border-box;  /* Inclui padding no cálculo da largura */
-}
-
-.navbar ul {
-    list-style-type: none; /* Remove os marcadores da lista */
+/* Resetando margens e paddings */
+* {
     margin: 0;
     padding: 0;
-    display: flex;  /* Exibe os itens em linha */
-    justify-content: center;  /* Alinha os itens ao centro */
-}
+    box-sizing: border-box;
+  }
 
-.navbar li {
-    margin: 0 20px;  /* Espaçamento entre os itens */
-}
+  h1 {
+    font-size: 7em;           /* Tamanho da fonte */
+    color: black;           /* Cor preta */
+    text-align: right;       /* Posição do título */
+    margin-top: 0px;         /* Espaço acima do título */
+}   
 
-.navbar a {
-    color: white;  /* Cor do texto */
-    text-decoration: none;  /* Remove o sublinhado */
-    font-size: 18px;  /* Tamanho da fonte */
-}
 
-.navbar a:hover {
-    color: #FFD700;  /* Cor do texto ao passar o mouse (dourado) */
-}
+   .titulo-site {
+    font-family: Arial, Helvetica, sans-serif; /* Usando fonte */
+    font-size: 6em;                     /* Tamanho da fonte */
+    font-weight: 400;                   /* Peso da fonte, por exemplo, negrito */
+    color: black;                     /* Cor verde */
+    text-align: right;                 /* Posição do texto */
+    margin-right: 200px;                   /* Espaço acima do título */
+    margin-top: 20px;
+
+    
+    }
+  .logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px;
+  }
+
+  /*Estilo para o título*/
+  .titulo {
+    text-align: center;  /* Centraliza o texto */
+    padding: 20px;
+    background-color: none;  /* Cor de fundo para o título */
+    color: black;  /* Cor do texto */
+    margin-top: -100px;  /* Ajuste o valor para aumentar ou diminuir o afastamento do topo */
+    
+ }
+  
+  /* Estilo para a barra */
+  .barra {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #808080; /* Cinza */
+    padding: 20px 15px;
+    margin-top: 30px; /*Cria uma margem afastando ela da borda superior*/
+  }
+  
+  /* Estilo do menu com os itens clicáveis */
+  .menu {
+    display: flex;
+    gap: 30px;
+  }
+  
+  .item {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: color 0.3s;
+  }
+  
+  .item:hover {
+    color: darkblue; /* Cor de destaque ao passar o mouse */
+  }
+  
+  /* Estilo do campo de pesquisa e botão */
+  .pesquisa {
+    display: flex;
+    align-items: right;
+    gap: 5px;
+    margin-left: 1250px;
+    margin-top: -50px;
+  }
+  
+  .campo-pesquisa {
+    padding: 5px;
+    font-size: 16px;
+    border: 5;
+    border-radius: 55px;
+    width: 150px;
+    margin-bottom: 5px;
+  }
+  
+  .botao-pesquisa {
+    padding: 10px 10px;
+    font-size: 14px;
+    background-color: none; /* Cor do botão */
+    color: darkblue; /* Cor da fonte do botão */
+    border: 10px; 
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .botao-pesquisa:hover {
+    background-color: none
+; /* Cor do botão ao passar o mouse */
+  }
+
+
+
+
+
+  
+  
