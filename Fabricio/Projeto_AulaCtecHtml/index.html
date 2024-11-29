@@ -12,76 +12,83 @@ html
 -->
 
 <head>
-<!--
+
+
+    <!--
 <head>: Esta seção contém informações sobre o documento que não são exibidas diretamente na página, mas são essenciais para a estrutura, design e indexação do site.
 html
 -->
-    
-<meta charset="utf-8">
-<!--
+
+    <meta charset="utf-8">
+    <!--
 <meta charset="utf-8">: Define a codificação de caracteres como UTF-8, que suporta uma vasta gama de caracteres de diferentes idiomas e símbolos especiais. É essencial para garantir que todos os caracteres apareçam corretamente na página.
 html
 -->
 
-<title>CTec - Cursos de Tecnologia</title>
-<!--
+
+    <title class="fafah">CTec - Cursos de Tecnologia</title>
+
+
+
+    <!--
 <title>: Define o título da página, que será exibido na aba do navegador e também utilizado pelos motores de busca como título principal para a página nos resultados de pesquisa. Um título único e conciso contribui para o SEO.
 html
 -->
 
-<meta name="description" content="Desenvolvimento de cursos de tecnologia">
-<!--
+    <meta name="description" content="Desenvolvimento de cursos de tecnologia">
+    <!--
 <meta name="description">: Fornece uma breve descrição da página, que pode aparecer nos resultados de pesquisa do Google. Essa descrição deve ser objetiva e relevante, pois influencia a taxa de clique na página.
 html
 -->
 
-<meta name="keywords" content="cursos, tecnologia, ti, informática, html5, css3, senac, desenvolvimento, web, websites, php, sql, mysql">
-<!--
+    <meta name="keywords"
+        content="cursos, tecnologia, ti, informática, html5, css3, senac, desenvolvimento, web, websites, php, sql, mysql">
+    <!--
 <meta name="keywords">: Inclui palavras-chave associadas ao conteúdo da página. Embora os motores de busca modernos deem pouca importância a essa tag, ela ainda pode ser usada para contexto adicional.
 html
 -->
 
-<link rel="short icon" href="favicon.ico">
-<!--
+    <link rel="short icon" href="favicon.ico">
+    <!--
 <link rel="short icon">: Define o favicon, um pequeno ícone associado à página, geralmente exibido na aba do navegador ao lado do título. Ele é importante para branding e facilita a identificação visual da página.
 html
 -->
 
-<link href="bootstrap-4.4.1/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-<!--
+    <link href="bootstrap-4.4.1/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <!--
 <link rel="stylesheet">: Link para o arquivo CSS do Bootstrap, uma biblioteca popular de estilos para desenvolver layouts responsivos e modernos. Ele facilita a criação de layouts adaptáveis e estilizados sem precisar escrever muito CSS.
 html
 -->
 
-<link href="meus_estilos.css" rel="stylesheet" type="text/css">
-<!--
+    <link href="meus_estilos.css" rel="stylesheet" type="text/css">
+    <!--
 <link href="meus_estilos.css">: Importa um arquivo CSS personalizado chamado meus_estilos.css, onde você pode incluir estilos específicos para essa página, complementando o estilo do Bootstrap.
 html
 -->
 
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<!--
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--
 <meta name="viewport">: Configura a página para ser responsiva. width=device-width ajusta a largura da página à largura do dispositivo, e initial-scale=1 define o nível de zoom inicial. shrink-to-fit=no evita que a página encolha além do limite.
 html
 -->
 
-<link rel="stylesheet" type="text/css" href="galeria/engine1/style.css">
-<script src="galeria/engine1/jquery.js"></script>
-<!--
+    <link rel="stylesheet" type="text/css" href="galeria/engine1/style.css">
+    <script src="galeria/engine1/jquery.js"></script>
+    <!--
 <link> e <script> (Wowslider): O link carrega o arquivo CSS do Wowslider, uma biblioteca de galeria de imagens, enquanto o script carrega o jQuery, uma biblioteca JavaScript essencial para o funcionamento do Wowslider. Esses arquivos permitem que galerias e animações de imagens funcionem na página.
 html
 -->
 
 
-<link href="lightbox2/dist/css/lightbox.min.css" rel="stylesheet" type="text/css">
-<!--
+    <link href="lightbox2/dist/css/lightbox.min.css" rel="stylesheet" type="text/css">
+    <!--
 <link href="lightbox2/dist/css/lightbox.min.css">: Importa o CSS para o Lightbox2, uma biblioteca que permite a exibição de imagens em uma sobreposição, ideal para exibir imagens em uma galeria.
 html
 -->
 
-<link href="fontawesome-6.4.2/css/all.css" rel="stylesheet" type="text/css">
-<script src="fontawesome-6.4.2/js/all.js"></script>
-<!--
+    <link href="fontawesome-6.4.2/css/all.css" rel="stylesheet" type="text/css">
+    <script src="fontawesome-6.4.2/js/all.js"></script>
+    <!--
 <link> e <script> (Font Awesome): Esses elementos importam os arquivos CSS e JavaScript do Font Awesome, uma biblioteca de ícones. Eles permitem adicionar ícones e símbolos personalizados, melhorando a experiência visual da página.
 html
 -->
@@ -94,83 +101,246 @@ html
 <body>
 
     <main> <!--Nível de importância da página-->
-          
+
         <h1 class="fonte-zero">CTec - Cursos de Tecnologia</h1>
-        
+
         <header>
-        
-        <!-- Topo -->
-        <div class="container">
-        <div class="row">
-            
-        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-6">
-        <section>
-        <h2 class="fonte-zero">Logo CTec</h2>
-        <a href="index.html"><img src="imagens/logo-ctec.png" alt="Logo CTec" class="img-fluid" title="Logo CTec"></a>
-        </section>
-        </div>
-                  
-        <div class="col-xl-8 col-lg-8 col-md-8 col-sm-8 col-12 nome-empresa">
-        <section>
-        <h2 class="fonte-zero">Cursos de Tecnologia</h2>
-        Cursos de Tecnologia
-        </section>
-        </div>
-                  
-        </div>
-        </div>
-        <!-- FIM Topo -->
-    
+
+            <!-- Topo -->
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-6">
+                        <section>
+                            <h2 class="fonte-zero">Logo CTec</h2>
+                            <a href="index.html"><img src="imagens/logo-ctec.png" alt="Logo CTec" class="img-fluid"
+                                    title="Logo CTec"></a>
+                        </section>
+                    </div>
+
+                    <div class="col-xl-8 col-lg-8 col-md-8 col-sm-8 col-12 nome-empresa">
+                        <section>
+                            <h2 class="fonte-zero">Cursos de Tecnologia</h2>
+                            Cursos de Tecnologia
+                        </section>
+                    </div>
+
+                </div>
+            </div>
+            <!-- FIM Topo -->
+
         </header>
-    	
+
         <!-- Menu -->
-        
+
         <div class="container-fluid bg-dark">
-        <div class="container">
-            
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            
-        <h2 class="fonte-zero">Menu: Home, Empresa, Cursos, Tecnologia da Informação, Adminstração, Logística, Contato e Localizar</h2>
-            
-        <a class="navbar-brand" href="index.html">Home</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-        </button>
-        
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-        <a class="nav-link" href="#">Empresa <span class="sr-only">(current)</span></a>
-        </li>
-        
-        <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        Cursos
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-        <a class="dropdown-item" href="#">Tecnologia da Informação</a>
-        <div class="dropdown-divider"></div>
-        <a class="dropdown-item" href="#">Administração</a>
-        <a class="dropdown-item" href="#">Logística</a>
+            <div class="container">
+
+                <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+                    <h2 class="fonte-zero">Menu: Home, Empresa, Cursos, Tecnologia da Informação, Adminstração,
+                        Logística, Contato e Localizar</h2>
+
+                    <a class="navbar-brand" href="index.html">Home</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Empresa <span class="sr-only">(current)</span></a>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Cursos
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Tecnologia da Informação</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">Administração</a>
+                                    <a class="dropdown-item" href="#">Logística</a>
+                                </div>
+                            </li>
+
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Contato <span class="sr-only">(current)</span></a>
+                            </li>
+
+                        </ul>
+                        <form class="form-inline my-2 my-lg-0">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                        </form>
+                    </div>
+                </nav>
+
+            </div>
         </div>
-        </li>
-        
-        <li class="nav-item active">
-        <a class="nav-link" href="#">Contato <span class="sr-only">(current)</span></a>
-        </li>	
-            
-        </ul>
-        <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form>
-        </div>
-        </nav>	
-            
-        </div>	
-        </div>
-        
+
         <!-- FIM Menu -->
+
+        <!-- Galeria -->
+
+        <!DOCTYPE html>
+        <html lang="pt-BR">
+
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+            <title>Carrossel com Bootstrap</title>
+        </head>
+
+        <body>
+
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="/Fabricio/Projeto_AulaCtecHtml/galeria/data1/images/galeria1.jpg"
+                            class="d-block w-100" alt="Primeiro Slide">
+                        <div class="carousel-caption d-none d-md-block">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/Fabricio/Projeto_AulaCtecHtml/galeria/data1/images/galeria2.jpg"
+                            class="d-block w-100" alt="Segundo Slide">
+                        <div class="carousel-caption d-none d-md-block">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/Fabricio/Projeto_AulaCtecHtml/galeria/data1/images/galeria3.jpg"
+                            class="d-block w-100" alt="Terceiro Slide">
+                        <div class="carousel-caption d-none d-md-block">
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Anterior</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Próximo</span>
+                </a>
+            </div>
+
+            <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        </body>
+
+        </html>
+
+
+
+
+        <div class="container-fluid"></div>
+        <div class="alert alert-primary" role="alert" style="text-align: center;">
+            <h2>Cursos em Destaque</h2>
+        </div>
+        <div class="container">
+            <section>
+                <div class="row">
+                    <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12">
+                        <h2>Curso de HTML5 e CSS</h2>
+                        <p>Descrição do curso. Descrição do curso. Descrição do curso. Descrição do curso. Descrição do
+                            curso.</p>
+                        <button type="button" class="btn btn-outline-secondary">+Detalhes</button>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+                        <a href="imagens/html5-g.jpg" title="Curso de HTML5" data-lightbox="example-set">
+                            <img src="imagens/html5-p.jpg" alt="Curso de HTML5" title="Curso de HTML5"
+                                class="img-fluid"> <br> <br>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="container">
+            <section>
+                <div class="row">
+                    <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12">
+                        <h2>Curso de HTML5 e CSS</h2>
+                        <p>Descrição do curso. Descrição do curso. Descrição do curso. Descrição do curso. Descrição do
+                            curso.</p>
+                        <button type="button" class="btn btn-outline-secondary">+Detalhes</button>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+                        <a href="imagens/html5-g.jpg" title="Curso de HTML5" data-lightbox="example-set">
+                            <img src="imagens/html5-p.jpg" alt="Curso de HTML5" title="Curso de HTML5"
+                                class="img-fluid"> <br> <br>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="container">
+            <section>
+                <div class="row">
+                    <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12">
+                        <h2>Curso de HTML5 e CSS</h2>
+                        <p>Descrição do curso. Descrição do curso. Descrição do curso. Descrição do curso. Descrição do
+                            curso.</p>
+                        <button type="button" class="btn btn-outline-secondary">+Detalhes</button>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+                        <a href="imagens/html5-g.jpg" title="Curso de HTML5" data-lightbox="example-set">
+                            <img src="imagens/html5-p.jpg" alt="Curso de HTML5" title="Curso de HTML5"
+                                class="img-fluid"> <br> <br>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div>
+
+            <main>
+                <div class="container-fluid fundo-rodape" style="background-color: #333; color: #fff; padding: 20px 0; position: relative;">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12" style="position: absolute; bottom: 20px; left: 20px;">
+                                <a href="#"><i class="fab fa-facebook-square" style="color: #fff; font-size: 50px;"></i></a>
+                                <a href="#"><i class="fab fa-twitter-square" style="color: #fff; font-size: 50px; margin-left: 10px;"></i></a>
+                                <a href="#"><i class="fab fa-instagram-square" style="color: #fff; font-size: 50px; margin-left: 10px;"></i></a>
+                                <a href="#"><i class="fab fa-youtube-square" style="color: #fff; font-size: 50px; margin-left: 10px;"></i></a>
+                            </div>
+                            <div class="col-xl-12 col-lg-4 col-md-6 col-sm-12 text-center">
+                                <p class="textocentralizado">Este site é desenvolvido como projeto de aula, por alunos de Webdesigner, e não tem como objetivo promover ou denegrir a imagem, marca e ou autoria.</p>
+                                <p>©Copyright 2022 - Todos os direitos reservados para CTec - Cursos de Tecnologia</p>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xl-12 text-right">
+                                <div style="text-align: right; margin-right: 20px;">
+                                    <img src="imagens/validation-html5.png" alt="Validação HTML5 - W3C" title="Validação HTML5-W3C" style="margin-top: 10px; width: 50px;">
+                                    <img src="imagens/validation-css3.gif" alt="Validação HTML5 - W3C" title="Validação HTML5-W3C" style="margin-top: 10px; width: 50px;">
+                                    <img src="imagens/site-responsivo.png" alt="Validação HTML5 - W3C" title="Validação HTML5-W3C" style="margin-top: 10px; width: 80px;">
+                                </div>
+                                <p style="margin-right: 0;">by Sandromir <a href="mailto:sandromir@ctsdigital.com.br" style="color: #fff;">-Prof T.I SENAC</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                
+                
+    </main>
+
 
 </body>
 
