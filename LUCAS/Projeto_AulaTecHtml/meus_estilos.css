@@ -48,10 +48,9 @@
       /* Menu suspenso com fundo claro, usado em menus dropdown. */
 
 
-     main {
-      margin-top: ;
+     
 
-     }
+     
      /* Dá u espaçamento superior ao conteúdo principal da página. */
 
            .title-right h1 {
@@ -281,3 +280,113 @@
 
                           }
                           
+                          .btn-detalhes2 {
+                            background-color: white;
+                            color: rgb(97, 95, 95);
+                            border: 2px solid #CCC;
+                            padding: 10px 20px;
+                            font-size: 16px;
+                            font-weight: bold;
+                            border-radius: 5px;
+                            cursor: pointer;
+                            transition: all 0.3s ease;
+                            position: absolute;
+                            margin-left: 40px;
+                            top: 1170;
+                            
+                          }
+                          .btn-detalhes2:hover {
+                            background-color: #f8f9fa;
+                            border-color: #007bff;
+                            color: #007bff;
+
+                          }
+                          /* Estilo básico para o rodapé */
+
+                          footer {
+                            background-color: #2e3841;
+                            color: #fff;
+                            padding: 20px;
+                            text-align: center; /* Alimento centralizado do texto. */
+                            position: relative;
+                            bottom: 0;
+                            width: 100%;
+
+                          
+                          }
+
+                        footer .footer-container {
+                          max-width:  1200px; /* Limite de largura */
+                          margin: 0 auto; /* Centraliza o conteúdo */
+
+                        }
+                         
+                        footer a {
+                          color: #00bfae; /* Cor dos links. */
+                          text-decoration:  none; /* remove o sublinhado */
+
+                        }
+                        
+                        footer a:hover {
+                          text-decoration: underline; /* Sublinha os links ao passar o mouse.*/
+
+                        }
+
+                        /* Estilo para as imagens */
+                        .imagem-pequena {
+                          width: 100px; /* Define a largura das imagens */
+                          height: auto; /* Mantém a proporção das imagens */
+                          border-radius: 8px; /* Arreonda os cantos das imagens */
+                          position: relative;
+                          right:  -600px;
+
+                        }
+
+                        .footer {
+                          background-color: #5a5d5f;
+                          color: rgb(255, 255, 255);
+                          padding: 70px 0;
+                          position: relative;
+
+                        }
+
+                        footer .navbar-barra2 {
+                          background-color: #5a5d5f;
+
+                        }
+
+                        footer .list-untyled li {
+                          margin-right: 15px;
+
+                        }
+                        footer .list-untyled li a {
+                          color: white;
+                          transition: color 0.3 ease;
+
+
+                        }
+
+                        footer .footer-images-container {
+                          position: absolute;
+                          bottom: 30px;
+                          right:  -225px;
+                          display: flex;
+                          gap: 200px;
+
+                        }
+                        footer .footer-text {
+                          margin-top: 30px;
+                          text-align: center;
+
+                        }
+
+                        .sites-px {
+                          position: absolute;
+                          bottom: 10px;
+                          right: 750px;
+                          display: flex;
+                          gap: 20px;
+
+
+
+                        }
