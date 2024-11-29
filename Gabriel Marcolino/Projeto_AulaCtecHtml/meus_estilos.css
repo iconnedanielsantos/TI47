@@ -1,182 +1,259 @@
-@charset "utf-8"; /* Define o conjunto de caracteres para UTF-8 */
+@charset "utf-8";
+/* Define o conjunto de caracteres para UTF-8 */
 
 /* Fonte personalizada twcenmteb */
 @font-face {
-  font-family: "twcenmteb"; /* Nome da fonte personalizada */
-  src: url("fontes/tw-cen-mt-eb.ttf") format("truetype"); /* Caminho para o arquivo de fonte */
+  font-family: "twcenmteb";
+  /* Nome da fonte personalizada */
+  src: url("fontes/tw-cen-mt-eb.ttf") format("truetype");
+  /* Caminho para o arquivo de fonte */
 }
 
 /* Estilos gerais para o corpo da página */
 body {
-  margin: 0px; /* Remove margens padrão */
-  font-family: verdana; /* Define a fonte padrão como Verdana */
+  margin: 0px;
+  /* Remove margens padrão */
+  font-family: verdana;
+  /* Define a fonte padrão como Verdana */
 }
 
 /* Estilo para elementos com classe fonte-zero (invisíveis e não exibidos) */
 .fonte-zero {
-  font-size: 0px; /* Tamanho da fonte zero */
-  padding: 0px; /* Remove preenchimento */
-  opacity: 0; /* Torna o elemento totalmente transparente */
-  float: none; /* Remove flutuação */
-  border: 0px; /* Remove bordas */
-  display: none; /* Oculta completamente o elemento */
+  font-size: 0px;
+  /* Tamanho da fonte zero */
+  padding: 0px;
+  /* Remove preenchimento */
+  opacity: 0;
+  /* Torna o elemento totalmente transparente */
+  float: none;
+  /* Remove flutuação */
+  border: 0px;
+  /* Remove bordas */
+  display: none;
+  /* Oculta completamente o elemento */
 }
 
 /* Estilo para o nome da empresa */
 .nome-empresa {
-  font-family: "twcenmteb"; /* Aplica a fonte personalizada */
-  font-size: 93px; /* Define o tamanho da fonte */
-  display: flex; /* Utiliza flexbox */
-  align-items: center; /* Alinha verticalmente os itens */
-  justify-content: center; /* Centraliza os itens horizontalmente */
-  padding: 5px; /* Adiciona espaçamento interno */
+  font-family: "twcenmteb";
+  /* Aplica a fonte personalizada */
+  font-size: 93px;
+  /* Define o tamanho da fonte */
+  display: flex;
+  /* Utiliza flexbox */
+  align-items: center;
+  /* Alinha verticalmente os itens */
+  justify-content: center;
+  /* Centraliza os itens horizontalmente */
+  padding: 5px;
+  /* Adiciona espaçamento interno */
 }
 
 /* Estilo do rodapé */
 .fundo-rodape {
-  background-color: #343A40; /* Cor de fundo do rodapé */
-  color: #FFFFFF; /* Cor do texto no rodapé */
-  padding-top: 20px; /* Espaçamento superior */
-  padding-bottom: 10px; /* Espaçamento inferior */
-  font-size: 16px; /* Tamanho da fonte */
-  text-align: center; /* Centraliza o texto */
+  background-color: #343A40;
+  /* Cor de fundo do rodapé */
+  color: #FFFFFF;
+  /* Cor do texto no rodapé */
+  padding-top: 20px;
+  /* Espaçamento superior */
+  padding-bottom: 10px;
+  /* Espaçamento inferior */
+  font-size: 16px;
+  /* Tamanho da fonte */
+  text-align: center;
+  /* Centraliza o texto */
 }
 
 /* Estilo para ícones grandes no rodapé */
 .icone-rodape {
-  font-size: 40px; /* Tamanho do ícone */
+  font-size: 40px;
+  /* Tamanho do ícone */
 }
 
 /* Centraliza verticalmente elementos */
 .vertical-center {
-  display: flex; /* Utiliza flexbox */
-  align-items: center; /* Alinha verticalmente */
-  justify-content: center; /* Centraliza horizontalmente */
-  padding-top: 5px; /* Espaçamento superior */
-  padding-bottom: 5px; /* Espaçamento inferior */
+  display: flex;
+  /* Utiliza flexbox */
+  align-items: center;
+  /* Alinha verticalmente */
+  justify-content: center;
+  /* Centraliza horizontalmente */
+  padding-top: 5px;
+  /* Espaçamento superior */
+  padding-bottom: 5px;
+  /* Espaçamento inferior */
 }
 
 /* Responsividade para telas entre 992px e 1199px */
 @media all and (min-width:992px) and (max-width: 1199px) {
   .nome-empresa {
-    font-family: "twcenmteb"; /* Mantém a fonte personalizada */
-    font-size: 80px; /* Reduz o tamanho da fonte */
-    display: flex; /* Utiliza flexbox */
-    align-items: center; /* Alinha verticalmente */
-    justify-content: center; /* Centraliza horizontalmente */
-    padding: 5px; /* Espaçamento interno */
+    font-family: "twcenmteb";
+    /* Mantém a fonte personalizada */
+    font-size: 80px;
+    /* Reduz o tamanho da fonte */
+    display: flex;
+    /* Utiliza flexbox */
+    align-items: center;
+    /* Alinha verticalmente */
+    justify-content: center;
+    /* Centraliza horizontalmente */
+    padding: 5px;
+    /* Espaçamento interno */
   }
 }
 
 /* Responsividade para telas entre 768px e 991px */
 @media all and (min-width:768px) and (max-width: 991px) {
   .nome-empresa {
-    font-size: 60px; /* Tamanho menor da fonte */
+    font-size: 60px;
+    /* Tamanho menor da fonte */
   }
 }
 
 /* Responsividade para telas entre 576px e 767px */
 @media all and (min-width:576px) and (max-width: 767px) {
   .nome-empresa {
-    font-size: 44px; /* Fonte ainda menor */
+    font-size: 44px;
+    /* Fonte ainda menor */
   }
 }
 
 /* Responsividade para telas entre 361px e 575px */
 @media all and (min-width:361px) and (max-width: 575px) {
   .nome-empresa {
-    font-size: 44px; /* Fonte ajustada */
+    font-size: 44px;
+    /* Fonte ajustada */
   }
+
   h2 {
-    font-size: 25px; /* Ajusta o tamanho do título */
+    font-size: 25px;
+    /* Ajusta o tamanho do título */
   }
 }
 
 /* Responsividade para telas até 360px */
 @media all and (max-width: 360px) {
   .nome-empresa {
-    font-size: 30px; /* Fonte reduzida */
+    font-size: 30px;
+    /* Fonte reduzida */
   }
+
   h2 {
-    font-size: 20px; /* Fonte menor para o título */
+    font-size: 20px;
+    /* Fonte menor para o título */
   }
 }
 
 /* Botão personalizado */
 .botao {
-  background-color: #343a4000; /* Fundo transparente */
-  color: rgb(28, 124, 202); /* Cor do texto */
-  border: 2px solid rgb(28, 124, 202); /* Borda colorida */
-  padding: 8px 15px; /* Espaçamento interno */
-  font-size: 16px; /* Tamanho da fonte */
-  cursor: pointer; /* Cursor clicável */
-  border-radius: 5px; /* Borda arredondada */
+  background-color: #343a4000;
+  /* Fundo transparente */
+  color: rgb(28, 124, 202);
+  /* Cor do texto */
+  border: 2px solid rgb(28, 124, 202);
+  /* Borda colorida */
+  padding: 8px 15px;
+  /* Espaçamento interno */
+  font-size: 16px;
+  /* Tamanho da fonte */
+  cursor: pointer;
+  /* Cursor clicável */
+  border-radius: 5px;
+  /* Borda arredondada */
 }
 
 /* Hover para o botão */
 .botao:hover {
-  background-color: rgb(28, 124, 202); /* Fundo azul no hover */
-  color: #fff; /* Texto branco no hover */
+  background-color: rgb(28, 124, 202);
+  /* Fundo azul no hover */
+  color: #fff;
+  /* Texto branco no hover */
 }
 
 /* Container de cursos */
 .container-cursos {
-  position: relative; /* Mantém o container no fluxo do documento */
-  width: 100vw; /* Garante que ocupe 100% da largura da viewport */
-  left: 50%; /* Centraliza em relação à viewport */
-  transform: translateX(-50%); /* Ajusta para ocupar corretamente toda a largura da tela */
-  
-  padding: 10px; /* Espaçamento interno */
-  background-color: rgb(176, 223, 255); /* Cor de fundo */
-  color: rgb(0, 108, 197); /* Cor do texto */
-  text-align: center; /* Centraliza o texto */
-  box-sizing: border-box; /* Inclui padding e borda na largura total */
+  position: relative;
+  /* Mantém o container no fluxo do documento */
+  width: 100vw;
+  /* Garante que ocupe 100% da largura da viewport */
+  left: 50%;
+  /* Centraliza em relação à viewport */
+  transform: translateX(-50%);
+  /* Ajusta para ocupar corretamente toda a largura da tela */
+
+  padding: 10px;
+  /* Espaçamento interno */
+  background-color: rgb(176, 223, 255);
+  /* Cor de fundo */
+  color: rgb(0, 108, 197);
+  /* Cor do texto */
+  text-align: center;
+  /* Centraliza o texto */
+  box-sizing: border-box;
+  /* Inclui padding e borda na largura total */
 }
 
 /* Títulos de cursos */
 .titulos-cursos {
-  margin-top: 2%; /* Espaçamento superior */
-  margin-left: 3%; /* Espaçamento à esquerda */
-  text-align: left; /* Alinha texto à esquerda */
-  font-size: 40px; /* Tamanho da fonte */
+  margin-top: 2%;
+  /* Espaçamento superior */
+  margin-left: 3%;
+  /* Espaçamento à esquerda */
+  text-align: left;
+  /* Alinha texto à esquerda */
+  font-size: 40px;
+  /* Tamanho da fonte */
 }
 
 /* Texto dos cursos */
 .texto-cursos {
-  text-align: left; /* Alinha texto à esquerda */
-  font-size: 25px; /* Tamanho da fonte */
-  margin-left: 3%; /* Espaçamento à esquerda */
+  text-align: left;
+  /* Alinha texto à esquerda */
+  font-size: 25px;
+  /* Tamanho da fonte */
+  margin-left: 3%;
+  /* Espaçamento à esquerda */
 }
 
 /* Responsividade para o container de cursos */
 @media (max-width: 1200px) {
   .container-cursos {
-    font-size: 40px; /* Ajusta fonte para telas menores */
+    font-size: 40px;
+    /* Ajusta fonte para telas menores */
   }
 }
 
 @media (max-width: 768px) {
   .container-cursos {
-    font-size: 30px; /* Ajuste adicional para telas pequenas */
+    font-size: 30px;
+    /* Ajuste adicional para telas pequenas */
   }
 }
 
 /* Flexbox no rodapé */
 .rodape-autenticacao {
-  display: flex; /* Ativa o layout flexível */
-  justify-content: space-between; /* Espaço uniforme entre itens */
-  gap: 20px; /* Espaçamento entre itens */
+  display: flex;
+  /* Ativa o layout flexível */
+  justify-content: space-between;
+  /* Espaço uniforme entre itens */
+  gap: 20px;
+  /* Espaçamento entre itens */
   margin-left: 280px;
   margin-right: 280px;
 }
 
 .imagem {
-  margin-bottom: 10px; /* Espaço entre imagens */
-  max-width: 100%; /* Garante que as imagens respeitem o layout */
+  margin-bottom: 10px;
+  /* Espaço entre imagens */
+  max-width: 100%;
+  /* Garante que as imagens respeitem o layout */
 }
 
 .assinatura {
   text-align: right;
-  margin-right: 270px; /* Define a margem fixa */
-  flex-shrink: 0; /* Evita que o elemento encolha em layouts flexíveis */
+  margin-right: 270px;
+  /* Define a margem fixa */
+  flex-shrink: 0;
+  /* Evita que o elemento encolha em layouts flexíveis */
 }
