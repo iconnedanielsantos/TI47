@@ -131,9 +131,6 @@ button {
     text-align: center;
     padding: 15px;
     width: 100%; /* para garantir que ocupe toda a largura disponível */
-    align-items: center;
-    display: flex;
-    box-sizing: border-box;
 }
 
 .texto-rodape {

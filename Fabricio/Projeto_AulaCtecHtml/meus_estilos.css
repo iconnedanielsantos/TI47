@@ -102,3 +102,12 @@ body {
     font-size: 20px;
   }
 }
+.fafah {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.textocentralizado {
+ text-align: center;
+justify-content: inline;
+ 
+}

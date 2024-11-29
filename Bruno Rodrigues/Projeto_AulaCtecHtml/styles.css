@@ -2,42 +2,48 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
   }
 
-  h1 {
-    font-size: 7em;           /* Tamanho da fonte */
-    color: black;           /* Cor preta */
-    text-align: right;       /* Posição do título */
-    margin-top: 0px;         /* Espaço acima do título */
+  .search-bar {
+    width: 300px;
+  }
+
+  .search-button{
+      background-color: black;
+      color: blue;
+      border: 2px solid blue;
+      margin-left: 10px
+
+  }
+  .search-button:hover {
+    background-color: blue;
+    color: black;
+    border: 2px solid black;
 }   
 
 
-   .titulo-site {
-    font-family: Arial, Helvetica, sans-serif; /* Usando fonte */
-    font-size: 6em;                     /* Tamanho da fonte */
-    font-weight: 400;                   /* Peso da fonte, por exemplo, negrito */
-    color: black;                     /* Cor verde */
-    text-align: right;                 /* Posição do texto */
-    margin-right: 200px;                   /* Espaço acima do título */
-    margin-top: 20px;
-
+  .navbar-nav .nav-item {
+          margin-right: 20px;
+    
+   }
+    .fonte-zero {
+      font-size: 0; /* Define a fonte como invisível */
     
     }
-  .logo {
-    position: absolute;
+  .img-fluid {
+    position: fixed;
     top: 0;
     left: 0;
-    padding: 10px;
+    padding: 0;
   }
 
   /*Estilo para o título*/
   .titulo {
     text-align: center;  /* Centraliza o texto */
-    padding: 20px;
+    padding: 10px;
     background-color: none;  /* Cor de fundo para o título */
     color: black;  /* Cor do texto */
-    margin-top: -100px;  /* Ajuste o valor para aumentar ou diminuir o afastamento do topo */
+    margin-top: 110px;  /* Ajuste o valor para aumentar ou diminuir o afastamento do topo */
     
  }
   
@@ -48,13 +54,13 @@
     align-items: center;
     background-color: #808080; /* Cinza */
     padding: 20px 15px;
-    margin-top: 30px; /*Cria uma margem afastando ela da borda superior*/
+    margin-top: 60px; /*Cria uma margem afastando ela da borda superior*/
   }
   
   /* Estilo do menu com os itens clicáveis */
   .menu {
     display: flex;
-    gap: 30px;
+    gap: 50px;
   }
   
   .item {
@@ -83,7 +89,7 @@
     border: 5;
     border-radius: 55px;
     width: 150px;
-    margin-bottom: 5px;
+    margin-bottom: 0px;
   }
   
   .botao-pesquisa {
@@ -101,6 +107,92 @@
     background-color: none
 ; /* Cor do botão ao passar o mouse */
   }
+
+
+  /* Estilo para o contêiner */
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px; /* Para dar algum espaço interno, semelhante ao padding do Bootstrap */
+}
+
+/* Estilo para a linha (row) */
+.row {
+  display: flex; /* Usar flexbox para distribuir as colunas */
+  flex-wrap: wrap; /* Garantir que as colunas se ajustem quando a tela for menor */
+  justify-content: space-between; /* Espaçamento automático entre as colunas */
+}
+
+/* Estilo para as colunas */
+.col-xl-4, .col-lg-4, .col-md-4, .col-sm-4, .col-6 {
+  flex: 0 0 33.33%; /* As colunas ocupam 33.33% da largura em telas grandes, médias e pequenas */
+  padding: 10px;
+}
+
+/* Estilo para a segunda coluna (nome-empresa) */
+.col-xl-8, .col-lg-8, .col-md-8, .col-sm-8, .col-12 {
+  flex: 0 0 66.66%; /* A segunda coluna ocupa 66.66% da largura em telas grandes, médias e pequenas */
+  padding: 5  px;
+}
+
+/* Estilo para garantir que as colunas sejam responsivas em telas menores */
+@media (max-width: 1200px) { /* Para telas grandes */
+  .col-xl-4 {
+      flex: 0 0 33.33%;
+  }
+  .col-xl-8 {
+      flex: 0 0 66.66%;
+  }
+}
+
+@media (max-width: 992px) { /* Para telas médias */
+  .col-lg-4 {
+      flex: 0 0 33.33%;
+  }
+  .col-lg-8 {
+      flex: 0 0 66.66%;
+  }
+}
+
+@media (max-width: 768px) { /* Para telas pequenas */
+  .col-md-4 {
+      flex: 0 0 50%; /* Colunas ocupam metade da largura */
+  }
+  .col-md-8 {
+      flex: 0 0 100%; /* A segunda coluna ocupa toda a largura */
+  }
+}
+
+@media (max-width: 576px) { /* Para telas muito pequenas */
+  .col-sm-4, .col-6 {
+      flex: 0 0 100%; /* Cada coluna ocupa toda a largura */
+  }
+}
+
+@media (max-width: 400px) { /* Para telas menores ainda */
+  .col-12 {
+      flex: 0 0 100%; /* A coluna ocupa toda a largura */
+  }
+}
+
+/* Estilo para a imagem dentro da primeira coluna */
+.img-fluid {
+  width: 20%; /* Torna a imagem responsiva */
+  height: auto; /* Mantém a proporção da imagem */
+}
+
+/* Estilo para o título dentro de cada seção */
+.fonte-zero {
+  font-size: 0; /* Remover qualquer tamanho de fonte, conforme o nome sugere */
+}
+
+/* Estilo para o texto na segunda coluna */
+.nome-empresa section {
+  font-size: 1em; /* Define o tamanho da fonte para a segunda coluna */
+  line-height: 0;
+  color: #333; /* Cor do texto */
+}
+
 
 
 
