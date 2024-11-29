@@ -138,3 +138,7 @@ button {
     align-items: 0;
     display: flex;
 }
+
+.p-maior {
+    font-size: 20px;
+}
