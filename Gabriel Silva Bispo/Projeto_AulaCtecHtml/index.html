@@ -93,179 +93,170 @@ html
 -->
 
 <body>
-       <!-- Conteúdo principal -->
-       <main>
-        <!-- Cabeçalho com título -->
-        <header>
-            <div class="title-right">
-                <h1 class="fonte-zero">Cursos de Tecnologia</h1>
-            </div>
-        </header>
+    <header>
+        <h1 class="fonte-zero">Ctec Curso de tecnologia"</h1>
+    </header>
 
-        <!-- Logo dentro do container -->
+    <main>
         <div class="container">
             <div class="row">
                 <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-6">
                     <section>
-                        <a href="index.html">
-                            <img src="imagens/logo-ctec.png" alt="logo-ctec" class="img-fluid" title="logo-ctec">
-                        </a>
+                        <h2 class="fonte-zero">Logo Ctec</h2>
+                        <a href=""><img style="margin-left: -210px;" src="imagens/logo-ctec.png" alt=""
+                                class="img-fluid"></a>
+                    </section>
+                </div>
+                <div class="col-xl-8 col-lg-8 col-md-8 col-sm-8 col-12 nome-empresa">
+                    <section>
+                        <h2 style="font-size: 95px; color: black;" class="font-zero">Cursos de Tecnologia</h2>
                     </section>
                 </div>
             </div>
         </div>
-    </main>
 
-    <!-- Barra de navegação -->
-    <nav class="navbar navbar-expand-lg navbar-light navbar-taskbar">
-        <div class="container-fluid">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Empresa</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Cursos
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="#">Cursos Online</a></li>
-                        <li><a class="dropdown-item" href="#">Cursos Presenciais</a></li>
-                        <li><a class="dropdown-item" href="#">Contato</a></li>
+        <div class="container-fluid bg-dark">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+                    <h2 class="fonte-zero">Menu: Home, Empresa, Cursos, Tecnologia da Informação, Administração,
+                        Logística, Contato e Localizar</h2>
+
+                    <a class="navbar-brand" href="index.html">Home</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Empresa <span class="sr-only">(current)</span></a>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Cursos
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Tecnologia da Informação</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">Administração</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">Logística</a>
+                                </div>
+                            </li>
+
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Contato <span class="sr-only">(current)</span></a>
+                            </li>
+                        </ul>
+                        <form class="form-inline my-2 my-lg-0">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Search"
+                                aria-label="Search">
+                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                        </form>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+        <section>
+            <h2 class="fonte-zero"> Galeria de Imagens</h2>
+
+            <div id="wowslider-container1">
+                <div class="ws_images">
+                    <h2 class="fonte-zero">imagens em slide</h2>
+                    <ul>
+                        <li><img src="galeria/data1/images/galeria1.jpg" alt="banner-html-css"></li>
+                        <li><img src="galeria/data1/images/galeria2.jpg" alt="banner-extenções"></li>
+                        <li><img src="galeria/data1/images/galeria3.jpg" alt="banner-segurança"></li>
                     </ul>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Contato</a>
-                </li>
-            </ul>
-            <form class="d-flex">
-                <input class="form-control me-2 search-bar" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn search-button" type="submit">Search</button>
-            </form>
-        </div>
-    </nav>
+                </div>
+                <div class="ws_bullets">
+                    <a href="#" title="miniatura-html-css"><Span><img src="galeria/data1/tooltips/galeria1.jpg"
+                                alt="1"></Span></a>
+                    <a href="#" title="miniatura-extenções"><span><img src="galeria/data1/tooltips/galeria2.jpg"
+                                alt="2"></span></a>
+                    <a href="#" title="miniatura-segurança"><span><img src="galeria/data1/tooltips/galeria3.jpg"
+                                alt="3"></span></a>
+                </div>
+                <div class="ws_script" style="position:absolute;left:-99%"><a href="#">Ctec Cursos de Tecnologia</a>
+                </div>
+                <div class="ws_shadow"></div>
+                <script src="galeria/engine1/wowslider.js"></script>
+                <script src="galeria/engine1/script.js"></script>
+            </div>
+        </section>
 
-    <!-- Carrossel de imagens -->
-    <div class="carrossel-container">
-        <div class="carrossel-imagens">
-            <img src="galeria/data1/images/galeria1.jpg" alt="Imagem 1">
-            <img src="galeria/data1/images/galeria2.jpg" alt="Imagem 2">
-            <img src="galeria/data1/images/galeria3.jpg" alt="Imagem 3">
-        </div>
-        <button class="carrossel-botao carrossel-botao-esquerda" onclick="moverCarrossel(-1)">&#10094;</button>
-        <button class="carrossel-botao carrossel-botao-direita" onclick="moverCarrossel(1)">&#10095;</button>
-    </div>
-
-    <!-- Scripts -->
-    <script src="bootstrap-4.4.1/js/bootstrap.bundle.min.js"></script>
-    <script>
-        // Seleciona o carrossel e as imagens
-        const carrosselImagens = document.querySelector('.carrossel-imagens');
-        const imagens = document.querySelectorAll('.carrossel-imagens img');
-        const totalImagens = imagens.length;
-        let contador = 0;
-
-        // Função para mover as imagens automaticamente
-        function moverCarrossel() {
-            contador++;
-            if (contador >= totalImagens) {
-                contador = 0; // Reseta quando chegar ao final
-            }
-            carrosselImagens.style.transform = `translateX(-${contador * 100}%)`;
-        }
-
-        // Muda as imagens a cada 3 segundos
-        setInterval(moverCarrossel, 3000);
-
-        // Funcionalidade dos botões
-        document.querySelector('.carrossel-botao-esquerda').addEventListener('click', () => {
-            contador--;
-            if (contador < 0) {
-                contador = totalImagens - 1;
-            }
-            carrosselImagens.style.transform = `translateX(-${contador * 100}%)`;
-        });
-
-        document.querySelector('.carrossel-botao-direita').addEventListener('click', () => {
-            contador++;
-            if (contador >= totalImagens) {
-                contador = 0;
-            }
-            carrosselImagens.style.transform = `translateX(-${contador * 100}%)`;
-        });
-    </script>
-
-            <!--Segunda Barra-->
-       
-            
-            <div  class="  navbar-taskbar2" >
-                Curso em Destaque
-              </div>
-              
-
-              <br><br>
-
-             <div class="title_cursor"> <h3> Titulo do Curso </h3> </div>
-
-             
-               <div class="paragrafo"><p> "Os cursos são portas de entrada para novos conhecimentos,<br>
-                 habilidades e oportunidades que podem transformar seu futuro.   
-                </p>
-               </div>
-
-                <div class="imgcursos"> <img src="imagens/html5-p.jpg"> </div>
-                <button class="botao-detalhes">+Detalhes</button>
-
-            
-            
-                
-
-
-                    <!-- Container para mover o bloco -->
-    <div class="bloco-cursos">
-        <div class="title_cursor">
-            <h3>Título do Curso</h3>
+        <div class="cursos">
+            <h2 class="fonte-zero">Cursos em Destaque</h2>
+            <h1>Cursos em Destaque</h1>   
         </div>
 
-        <div class="paragrafo">
-            <p>"Os cursos são portas de entrada para novos conhecimentos,<br>
-                habilidades e oportunidades que podem transformar seu futuro."</p>
+        <div class="grid">
+            <selection class="titulo-curso">
+                <h2 style="font-size: 40px;"> Título do Curso</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Expedita tempora, recusandae, ex fugit autem, est sint consequuntur iste ipsum dolorum <br>voluptate! Sunt libero, corrupti quisquam quis vitae adipisci quidem odit.</p>
+                <img src="imagens/html5-p.jpg" alt="">
+
+                <button class="btn-detalhes">+ Detalhes</button>
+            </selection>
         </div>
+        <hr>
+        <div class="grid">
+            <selection class="titulo-curso">
+                <h2 style="font-size: 40px;"> Título do Curso</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Expedita tempora, recusandae, ex fugit autem, est sint consequuntur iste ipsum dolorum <br>voluptate! Sunt libero, corrupti quisquam quis vitae adipisci quidem odit.</p>
+                <img src="imagens/html5-p.jpg" alt="">
 
-        <div class="imgcursos">
-            <img src="imagens/html5-p.jpg" alt="Imagem do curso">
+                <button class="btn-detalhes">+ Detalhes</button>
+            </selection>
         </div>
+        <hr>
+        <div class="grid">
+            <selection class="titulo-curso">
+                <h2 style="font-size: 40px;"> Título do Curso</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Expedita tempora, recusandae, ex fugit autem, est sint consequuntur iste ipsum dolorum <br>voluptate! Sunt libero, corrupti quisquam quis vitae adipisci quidem odit.</p>
+                <img src="imagens/html5-p.jpg" alt="">
 
-        <button class="botao-detalhes">+Detalhes</button>
-    </div>
-
-
-    <div class="bloco-cursos">
-        <div class="title_cursor">
-            <h3>Título do Curso</h3>
+                <button class="btn-detalhes">+ Detalhes</button>
+            </selection>
         </div>
+        
+        <section class="rodape">
+            <p>Este site é desenvolvido como projeto de aula, por alunos de Webdesigner, e nção tem como objetivo promover ou denegrir a imagem, marca e ou autoria.</p>
 
-        <div class="paragrafo">
-            <p>"Os cursos são portas de entrada para novos conhecimentos,<br>
-                 habilidades e oportunidades que podem transformar seu futuro."</p>
-        </div>
+            <p>© Copyright 2022 - TOdos os direitos reservados para CTec - Cursos de Tecnologia.</p>
 
-        <div class="imgcursos">
-            <img src="imagens/html5-p.jpg" alt="Imagem do curso">
-        </div>
+            <div class="row">
+                <DIV class="col-12 text-center">
+                    <ul class="list-unstyled d-flex justify-content-center">
+                        <li><a href="https://facebook.com"><i class="fab fa-facebook-square fa-2x" style="height: 50px;"></i></a></li>
+                        <li><a href="https://x.com"><i class="fab fa-twitter-square fa-2x" style="height: 50px;"></i></a></li>
+                        <li><a href="https://youtube.com"><i class="fab fa-youtube fa-2x" style="height: 50px;"></i></a></li>
+                        <li><a href="https://instagram.com"><i class="fab fa-instagram-square fa-2x" style="height: 50px;"></i></a></li>
+                    </ul>
+            </div>
 
-        <button class="botao-detalhes">+Detalhes</button>
-    </div>
+            <div class="col-6 sites-px">
+                <ul class="list-unstyled d-flex justify-content-start">
+                    <li><img src="imagens/validation-html5.png" alt=""></li>
+                        <li><img src="imagens/validation-css3.gif" alt=""></li>
+                        <li><img src="imagens/site-responsivo.png" alt="" style="margin-top: -24px;"></li>
+                        <li></li>
+                </ul>
+                <p style="text-align: end; margin-right: 136px;">by Sandromir - Prof T.I SENAC</p>
+            </div>
+        </section>
 
-<!--rodape-->
-<footer class="Fundo-rodape">
-    <p>
-        © Copyrigth 2022 -Todos os direitos reservados para Ctec - Cursos de tecnologia.
-    </p>
-</footer>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  
+
+
+
+    </main>
 </body>
 
 </html
