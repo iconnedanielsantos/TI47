@@ -2,47 +2,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NIKE</title>
+    <title>D-LUXX</title>
     <link rel="stylesheet" href="css/estilo.css">
+<!-- Link para fonte personalizada (Google Fonts) -->
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <img src="https://img.icons8.com/?size=80&id=73pmmnXTKwZL&format=png" alt="">
-        <h1>Tudo Sobre A Nike</h1>
-        <nav>
+ <header>
+    <div class="header-container">
+        <img class="logo" src="imagem/D-LUXX.png" alt="Logo da D-LUXX">
+        <h1>D-Luxx</h1>
+        <div class="menu-icon" id="menuIcon">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </div>
+        <nav id="navMenu">
             <ul>
-                 <li><a href="index.html">Início</a></li>
-                 <li><a href="fale_conosco.html">Fale Conosco</a></li>
-                 <li><a href="produtos.html">Produtos NIKE</a></li>
-             </ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="fale_conosco.html">Fale Conosco</a></li>
+                <li><a href="produtos.html">Produtos D-Luxx</a></li>
+            </ul>
         </nav>
-    </header>
+ </header>
+    
     <main>
-        <b style="font-size: 50px;"><center>Swoosh: conheça a história do
-             ícone lendário da Nike</center></b>
-        <p><center>O Swoosh está com a Nike desde que a marca nasceu. Conheça a história desse símbolo icônico.</center></p>
-            
-        <center><div class="produtoIN">
-                <img src="imagem/produtoIN.jpg" alt="Produto IN">
-        </div></center>
+      <!-- Seção de destaque inicial com título chamativo -->
+      <section class="intro">
+        <h2 class="titulo">Bem-vindo à D-Luxx!</h2>
+        <p class="descricao">Explore os melhores produtos, lançamentos incríveis e ofertas imperdíveis.</p>
+    </section>
 
+    <!-- Seção de imagens com lançamentos e produtos em destaque -->
+    <section class="produtos">
+        <h2>Novidades e Lançamentos</h2>
+        <div class="produto-slider">
+            <div class="produto">
+                <img src="imagem/produto1.jpg" alt="Produto 1">
+                <p>Produto 1</p>
+            </div>
+            <div class="produto">
+                <img src="imagem/produto2.jpg" alt="Produto 2">
+                <p>Produto 2</p>
+            </div>
+            <div class="produto">
+                <img src="imagem/produto3.jpg" alt="Produto 3">
+                <p>Produto 3</p>
+            </div>
+        </div>
+    </section>
 
-        <h2>Um pouco sobre nossa historia</h2>
-        <p>Quando Phil Knight decidiu transformar a BRS em outra empresa, precisava de um novo nome e um logo. O primeiro fator veio da mente do primeiro funcionário da Nike, Jeff Johnson, que se 
-            inspirou na deusa grega da vitória. </p>
+    <!-- Seção Black Friday -->
+    <section class="black-friday">
+        <h2>Promoções Black Friday</h2>
+        <div class="promo-slider">
+            <div class="promo">
+                <img src="imagem/produto4.jpg" alt="Promoção 1">
+                <p>Oferta Imperdível!</p>
+            </div>
+            <div class="promo">
+                <img src="imagem/produto5.jpg" alt="Promoção 2">
+                <p>Descontos de até 50%</p>
+            </div>
+        </div>
+    </section>
 
-           <p>Então, só faltava o símbolo da Nike — e é aí que Carolyn entra em cena, com a missão de criar o logo da marca. A designer disse que o objetivo principal do empresário era que o desenho
-             passasse a sensação de movimento.</p>
-            
-            <p>Com essa instrução, ela criou o Swoosh e o apresentou a Knight. Imediatamente, ele não gostou muito do desenho. Porém, precisava do logo com certa rapidez, pois as atividades da Nike
-                 já tinham começado. Assim, aceitou o que Carolyn mostrou com a fala “vou gostar mais com o passar do tempo”. </p>
-            
-            <p>Dito e feito: o logo não só agradou Knight como o mundo inteiro. A Nike tornou-se uma das empresas esportivas mais importantes do planeta, levando o Swoosh para os quatro cantos. </p>
-            
-            <p>A Nike é lembrada por diversos motivos. Entre eles, estão as tecnologias inovadoras dos tênis, a união do esporte e da moda e a quebra de paradigmas. Porém, independentemente de tudo
-                 isso, onde a Nike está, o Swoosh está. </p>
-            
-            <p>O logotipo da Nike pode ser descrito como objetivo, icônico e histórico. Conheça a história da marca e do símbolo que é uma verdadeira joia.</p>
+    <!-- Seção sobre D-LUXX -->
+    <section class="sobre-dluxx">
+        <h2>Sobre a D-LUXX</h2>
+        <p>A D-LUXX é uma linha premium, oferecendo produtos exclusivos e de alta qualidade para quem busca o melhor em estilo e performance.</p>
+        <div class="dluxx-imagem">
+            <img src="imagem/dluxx.jpg" alt="D-LUXX">
+        </div>
+    </section>
     </main>
+
+    <script>
+        // Script para toggle do menu no celular
+        const menuIcon = document.getElementById('menu-icon');
+        const nav = document.getElementById('nav');
+        
+        menuIcon.addEventListener('click', () => {
+            nav.classList.toggle('active');
+            menuIcon.classList.toggle('active');
+        });
+    </script>
 </body>
 </html>
