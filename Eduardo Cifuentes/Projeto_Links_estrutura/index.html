@@ -18,11 +18,17 @@
             <div class="bar"></div>
         </div>
     </div>
-        <nav id="navMenu">
+        <nav>
             <ul>
                 <li><a href="index.html">Início</a></li>
                 <li><a href="fale_conosco.html">Fale Conosco</a></li>
                 <li><a href="produtos.html">Produtos D-Luxx</a></li>
+
+                    <form action="/pesquisar" method="GET">
+                     <input type="text" name="query" placeholder="Pesquise por produtos ou marcas..." class="search-bar">
+                     <button type="submit" class="search-button">🔍</button>
+                    </form>
+                </li>
             </ul>
         </nav>
  </header>
@@ -56,14 +62,22 @@
     <!-- Seção Black Friday -->
     <section class="black-friday">
         <h2>Promoções Black Friday</h2>
+        <p id="countdown">Ofertas terminam em: <span id="timer"></span></p>
         <div class="promo-slider">
-            <div class="promo">
-                <img src="imagem/produto4.jpg" alt="Promoção 1">
-                <p>Oferta Imperdível!</p>
-            </div>
-            <div class="promo">
-                <img src="imagem/produto5.jpg" alt="Promoção 2">
-                <p>Descontos de até 50%</p>
+            <div class="carousel-container">
+                <div class="carousel">
+                    <ul>
+                
+                        <li><img src="imagem/produto6.jpg" alt="Imagem 1"></li>
+                        <li><img src="imagem/produto8.jpg" alt="Imagem 2"></li>
+                        <li><img src="imagem/produto7.jpg" alt="Imagem 3"></li>
+                    </ul>
+                </div>
+                <div class="carousel-indicators">
+                    <span class="indicator active" data-index="0"></span>
+                    <span class="indicator" data-index="1"></span>
+                    <span class="indicator" data-index="2"></span>
+                </div>
             </div>
         </div>
     </section>
@@ -78,15 +92,86 @@
     </section>
     </main>
 
+    <main>
+        <!-- Seção sobre D-LUXX -->
+        <section class="sobre-dluxx">
+            <h2>Sobre a D-LUXX</h2>
+            <p>A D-LUXX é uma marca premium de roupas exclusivas, projetada para aqueles que valorizam qualidade, estilo e sofisticação. Nossa missão é oferecer peças de vestuário que atendem aos mais altos padrões de performance e design, com foco em conforto, durabilidade e elegância.</p>
+            <p>Desde o nosso lançamento, temos trabalhado para oferecer aos nossos clientes roupas que combinam com seu estilo de vida sofisticado, seja para eventos especiais ou para o dia a dia. Nossos produtos são criados com materiais de alta qualidade, refletindo a busca incessante pela perfeição.</p>
+            <div class="dluxx-imagem">
+                <img src="imagem/dluxx1.jpg" alt="Coleção Premium D-LUXX">
+                <img src="imagem/dluxx2.jpg" alt="Estilo e Sofisticação">
+            </div>
+            <p>Explore nossas coleções de roupas para todas as ocasiões, desde peças casuais até trajes mais formais. Oferecemos opções para homens e mulheres, com um toque de luxo em cada detalhe. Venha conhecer a D-LUXX e descubra a verdadeira definição de estilo.</p>
+        </section>
+    </main>
+
+
     <script>
         // Script para toggle do menu no celular
-        const menuIcon = document.getElementById('menu-icon');
+        const menuIcon = document.getElementById('menuIcon');
         const nav = document.getElementById('nav');
         
         menuIcon.addEventListener('click', () => {
             nav.classList.toggle('active');
             menuIcon.classList.toggle('active');
         });
+    </script>
+    <script>
+    // Carrossel automático
+    const carousel = document.querySelector('.carousel');
+    const indicators = document.querySelectorAll('.indicator');
+    let index = 0;
+
+    function showSlide(newIndex) {
+        const items = document.querySelectorAll('.carousel-item');
+        if (newIndex >= items.length) index = 0;
+        else if (newIndex < 0) index = items.length - 1;
+        else index = newIndex;
+
+        carousel.style.transform = `translateX(-${index * 100}%)`;
+        indicators.forEach(indicator => indicator.classList.remove('active'));
+        indicators[index].classList.add('active');
+    }
+
+    function autoSlide() {
+        showSlide(index + 1);
+    }
+
+    let slideInterval = setInterval(autoSlide, 3000);
+
+    indicators.forEach(indicator => {
+        indicator.addEventListener('click', () => {
+            clearInterval(slideInterval);
+            showSlide(Number(indicator.dataset.index));
+            slideInterval = setInterval(autoSlide, 3000);
+        });
+    });
+
+    // Contador regressivo
+    const countdown = document.getElementById('timer');
+    const targetDate = new Date();
+    targetDate.setDate(targetDate.getDate() + 2); // 2 dias de promoção
+
+    function updateCountdown() {
+        const now = new Date();
+        const diff = targetDate - now;
+
+        const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+        countdown.textContent = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+
+        if (diff <= 0) {
+            clearInterval(countdownInterval);
+            countdown.textContent = "Promoção encerrada!";
+        }
+    }
+
+    const countdownInterval = setInterval(updateCountdown, 1000);
+    updateCountdown();
     </script>
 </body>
 </html>
