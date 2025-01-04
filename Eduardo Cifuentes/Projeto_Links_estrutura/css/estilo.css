@@ -384,49 +384,27 @@ nav ul li {
 }
 
 /* Estilos do carrossel */
-.carousel {
-    display: flex;
+.container-slide {
+    width: 104vw;
+    white-space: nowrap;
     overflow: hidden;
-    position: relative;
+    margin-left: -38px;
 }
 
-.carousel ul {
-    display: flex;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    transition: transform 0.5s ease-in-out;
+.paginas-slide {
+    display: inline-block;
+    animation: anima 25s linear infinite;
 }
 
-.carousel li {
-    min-width: 100%; /* Cada item ocupa 100% da largura do container */
-    box-sizing: border-box;
+.paginas-slide img {
+    width: 750px;
 }
 
-.carousel img {
-    width: 100%;
-    display: block;
+@keyframes anima {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
 }
-
-/* Estilo para os indicadores do carrossel */
-.carousel-indicators {
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    bottom: 10px;
-    width: 100%;
-}
-
-.indicator {
-    width: 12px;
-    height: 12px;
-    margin: 0 5px;
-    background-color: #ccc;
-    border-radius: 50%;
-    cursor: pointer;
-}
-
-.indicator.active {
-    background-color: #ffae00; /* Indicador ativo em dourado */
-}
-
