@@ -483,3 +483,7 @@ footer {
     padding: 10px 0;
     font-size: 0.9rem;
 }
+ .content {
+            height: 2000px; /* Simulando conteúdo longo */
+            background: linear-gradient(to bottom, #f9f9f9, #ddd);
+        }
