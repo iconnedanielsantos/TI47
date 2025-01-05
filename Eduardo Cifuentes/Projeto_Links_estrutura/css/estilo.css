@@ -408,3 +408,78 @@ nav ul li {
         transform: translateX(-50%);
     }
 }
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo e fontes */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+}
+/* Cabeçalho */
+.header-container {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #222;
+    position: relative; /* Necessário para usar posicionamento absoluto na logo */
+}
+
+.logo-centralizada {
+    position: absolute; /* Remove do fluxo e fixa a logo dentro do cabeçalho */
+    top: 50%; /* Centraliza verticalmente */
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translate(-50%, -50%); /* Garante o alinhamento central */
+    width: 350px; /* Ajuste o tamanho desejado */
+    height: auto; /* Mantém as proporções da imagem */
+    z-index: 1; /* Garante que a logo fique acima de outros elementos */
+}
+/* Rodapé */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0px;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.footer-coluna {
+    max-width: 300px;
+    margin: 10px;
+    text-align: left;
+}
+
+.footer-coluna h3 {
+    color: #ffae00;
+    margin-bottom: 10px;
+}
+
+.social-links a img {
+    width: 40px;
+    height: 40px;
+    margin: 0 5px;
+    transition: transform 0.3s ease;
+}
+
+.social-links a img:hover {
+    transform: scale(1.1);
+}
+
+.footer-bottom {
+    background-color: #222;
+    color: #fff;
+    padding: 10px 0;
+    font-size: 0.9rem;
+}
