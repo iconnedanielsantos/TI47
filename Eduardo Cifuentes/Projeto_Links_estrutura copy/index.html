@@ -1,0 +1,205 @@
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D-LUXX</title>
+    <link rel="stylesheet" href="css/estilo.css">
+<!-- Link para fonte personalizada (Google Fonts) -->
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+ <header>
+    <div class="header-container">
+        <img class="logo" src="imagem/D-LUXX.png" alt="Logo da D-LUXX">
+        <img class="logo-centralizada" src="imagem/D-LUXX2.png" alt="Logo D-LUXX"> <!-- Imagem centralizada -->
+        <div class="menu-icon" id="menuIcon">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="fale_conosco.html">Fale Conosco</a></li>
+                <li><a href="produtos.html">Produtos D-Luxx</a></li>
+
+                    <form action="/pesquisar" method="GET">
+                     <input type="text" name="query" placeholder="Pesquise por produtos ou marcas..." class="search-bar">
+                     <button type="submit" class="search-button">🔍</button>
+                    </form>
+                    <div class="favoritos">
+                        <li><a href="favoritos.html"></a><i class="fas fa-heart" title="Favoritos"></i></li>
+                    </div>
+                    <div class="carrinho">
+                        <li><a href="carrinho.html"></a><i class="fas fa-shopping-cart" title="Carrinho"></i></li>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+ </header>
+    
+    <main>
+      <!-- Seção de destaque inicial com título chamativo -->
+      <section class="intro">
+        <h2 class="titulo">Bem-vindo à D-Luxx!</h2>
+        <p class="descricao">Explore os melhores produtos, lançamentos incríveis e ofertas imperdíveis.</p>
+    </section>
+
+    <!-- Seção de imagens com lançamentos e produtos em destaque -->
+    <section class="produtos">
+        <h2>Novidades e Lançamentos</h2>
+        <div class="produto-slider">
+            <div class="produto">
+                <img src="imagem/produto1.jpg" alt="Produto 1">
+                <p>Produto 1</p>
+            </div>
+            <div class="produto">
+                <img src="imagem/produto2.jpg" alt="Produto 2">
+                <p>Produto 2</p>
+            </div>
+            <div class="produto">
+                <img src="imagem/produto3.jpg" alt="Produto 3">
+                <p>Produto 3</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Black Friday -->
+    <section class="black-friday">
+        <h2>Promoções Black Friday</h2>
+        <p id="countdown">Ofertas terminam em: <span id="timer"></span></p>
+        <div class="container-slide">
+            <div class="paginas-slide">
+                <img src="./imagem/produto6.jpg" alt="c++">
+                <img src="./imagem/produto7.jpg" alt="c++">
+                <img src="./imagem/produto8.jpg" alt="c++">
+                <!--Repetir imagens-->
+                <img src="./imagem/produto6.jpg" alt="c++">
+                <img src="./imagem/produto7.jpg" alt="c++">
+                <img src="./imagem/produto8.jpg" alt="c++">
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção sobre D-LUXX -->
+    <section class="sobre-dluxx">
+        <h2>Sobre a D-LUXX</h2>
+        <p>A D-LUXX é uma linha premium, oferecendo produtos exclusivos e de alta qualidade para quem busca o melhor em estilo e performance.</p>
+        <div class="dluxx-imagem">
+            <img src="imagem/promoGUCCI.jpg" alt="D-LUXX">
+        </div>
+    </section>
+    </main>
+
+    <main>
+        <!-- Seção sobre D-LUXX -->
+        <section class="sobre-dluxx">
+            <h2>Sobre a D-LUXX</h2>
+            <p>A D-LUXX é uma marca premium de roupas exclusivas, projetada para aqueles que valorizam qualidade, estilo e sofisticação. Nossa missão é oferecer peças de vestuário que atendem aos mais altos padrões de performance e design, com foco em conforto, durabilidade e elegância.</p>
+            <p>Desde o nosso lançamento, temos trabalhado para oferecer aos nossos clientes roupas que combinam com seu estilo de vida sofisticado, seja para eventos especiais ou para o dia a dia. Nossos produtos são criados com materiais de alta qualidade, refletindo a busca incessante pela perfeição.</p>
+            <div class="dluxx-imagem">
+                <img src="imagem/gif.gif" alt="Coleção Premium D-LUXX" width="640">
+                <img src="imagem/dluxx2.jpg" alt="Estilo e Sofisticação">
+            </div>
+            <p>Explore nossas coleções de roupas para todas as ocasiões, desde peças casuais até trajes mais formais. Oferecemos opções para homens e mulheres, com um toque de luxo em cada detalhe. Venha conhecer a D-LUXX e descubra a verdadeira definição de estilo.</p>
+        </section>
+    </main>
+
+
+    <script>
+        // Script para toggle do menu no celular
+        const menuIcon = document.getElementById('menuIcon');
+        const nav = document.getElementById('nav');
+        
+        menuIcon.addEventListener('click', () => {
+            nav.classList.toggle('active');
+            menuIcon.classList.toggle('active');
+        });
+    </script>
+    <script>
+    // Carrossel automático
+    const carousel = document.querySelector('.carousel');
+    const indicators = document.querySelectorAll('.indicator');
+    let index = 0;
+
+    function showSlide(newIndex) {
+        const items = document.querySelectorAll('.carousel-item');
+        if (newIndex >= items.length) index = 0;
+        else if (newIndex < 0) index = items.length - 1;
+        else index = newIndex;
+
+        carousel.style.transform = `translateX(-${index * 100}%)`;
+        indicators.forEach(indicator => indicator.classList.remove('active'));
+        indicators[index].classList.add('active');
+    }
+
+    function autoSlide() {
+        showSlide(index + 1);
+    }
+
+    let slideInterval = setInterval(autoSlide, 3000);
+
+    indicators.forEach(indicator => {
+        indicator.addEventListener('click', () => {
+            clearInterval(slideInterval);
+            showSlide(Number(indicator.dataset.index));
+            slideInterval = setInterval(autoSlide, 3000);
+        });
+    });
+
+    // Contador regressivo
+    const countdown = document.getElementById('timer');
+    const targetDate = new Date();
+    targetDate.setDate(targetDate.getDate() + 2); // 2 dias de promoção
+
+    function updateCountdown() {
+        const now = new Date();
+        const diff = targetDate - now;
+
+        const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+        countdown.textContent = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+
+        if (diff <= 0) {
+            clearInterval(countdownInterval);
+            countdown.textContent = "Promoção encerrada!";
+        }
+    }
+
+    const countdownInterval = setInterval(updateCountdown, 1000);
+    updateCountdown();
+    </script>
+
+<footer>
+    <div class="footer-container">
+        <div class="footer-coluna">
+            <h3>Sobre Nós</h3>
+            <p>A D-LUXX é uma marca premium de roupas exclusivas, focada em qualidade, estilo e sofisticação.</p>
+        </div>
+        <div class="footer-coluna">
+            <h3>Contato</h3>
+            <p>Email: dluxxcontate@gmail.com</p>
+            <p>Telefone: (11) 94688-0781</p>
+            <p>Endereço: Rua Exemplo, 123 - São Paulo, SP</p>
+        </div>
+        <div class="footer-coluna">
+            <h3>Siga-nos</h3>
+            <div class="social-links">
+                <a href="https://instagram.com" target="_blank"><img src="imagem/instagram.png" alt="Instagram"></a>
+                <a href="https://tiktok.com" target="_blank"><img src="imagem/tiktok.png" alt="TikTok"></a>
+                <a href="https://twitter.com" target="_blank"><img src="imagem/twitter.png" alt="Twitter"></a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2025 D-LUXX - Todos os direitos reservados para sua segurança e a segurança da empresa.</p>
+    </div>
+</footer>
+
+</body>
+</html>
