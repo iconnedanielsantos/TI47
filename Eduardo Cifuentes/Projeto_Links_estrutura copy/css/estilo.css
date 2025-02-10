@@ -37,13 +37,13 @@ h1 {
 
 .descricao {
     font-size: 1.2rem;
-    color: #555;
+    color: #555555;
     margin-bottom: 20px;
 }
 
 /* Cabeçalho */
 header {
-    background-color: #222;
+    background: linear-gradient(to right, white, #004f92);
     color: rgb(255, 255, 255);
     padding: 10px 0;
     text-align: center;
@@ -61,11 +61,12 @@ header img {
     width: 130px; /* Logo ajustado */
     height: auto;
     margin-right: 20px;
+    margin-top: -15px;
 }
 
 header h1 {
     font-size: 3rem;
-    color: #ffae00; /* Dourado */
+    color: #004f92; /* Dourado */
     text-transform: uppercase;
     margin-left: -95px;
     flex-grow: 1;
@@ -93,7 +94,7 @@ nav ul {
     display: flex;
     justify-content: center;
     padding: 10px;
-    background-color: #333;
+    background-color: #333333;
     border-top: 2px solid #ffae00;
     padding-left: 1050px;
 }
@@ -110,7 +111,8 @@ nav ul li a {
 }
 nav ul li a:hover {
     text-decoration: underline;
-    color: #ffae00;
+    color: #0094f7;
+    transition: all;
 }
 
 /* Estilo do menu no mobile */
@@ -119,8 +121,8 @@ nav ul {
     display: flex;
     justify-content: space-evenly; /* Ajustado para espaçamento entre itens */
     padding: 10px;
-    background-color: #333;
-    border-top: 2px solid #ffae00;
+    background-color: #333333;
+    border-top: 2px solid #004f92;
 }
 
 nav ul li {
@@ -139,7 +141,7 @@ nav ul li {
         position: absolute;
         top: 60px; /* Para garantir que o menu caiba abaixo do cabeçalho */
         left: 0;
-        background-color: #333;
+        background-color: #333333;
         padding: 10px 0;
         z-index: 10
     }
@@ -152,7 +154,7 @@ nav ul li {
         flex-direction: column;
         width: 100%;
         background-color: #333;
-        border-top: 2px solid #ffae00;
+        border-top: 2px solid #004f92;
         margin-top: 20px;
     }
 
@@ -176,7 +178,7 @@ nav ul li {
 }
 
 .search-button {
-    background-color: #ffae00;
+    background-color: #3870a1;
     border: none;
     padding: 5px 10px;
     border-radius: 4px;
@@ -185,7 +187,7 @@ nav ul li {
 }
 
 .search-button:hover {
-    background-color: #cc9c00;
+    background-color: #2306c9;
 }
 
 /* Seção inicial */
@@ -203,7 +205,8 @@ nav ul li {
 
 .intro h2 {
     font-size: 2.5rem;
-    color: #ffae00; /* Dourado */
+    color: #1a7ace;
+    text-shadow: -1px 0 black, 0 1px black;
 }
 
 .intro .descricao {
@@ -289,7 +292,8 @@ nav ul li {
     font-size: 3rem;
     font-family: 'Raleway', sans-serif;
     margin-bottom: 30px;
-    color: #ffae00;
+    color: #1a7ace;
+    text-shadow: -1px 0 black, 0 1px black;
 }
 
 .promo-slider {
@@ -324,7 +328,8 @@ nav ul li {
 
 .sobre-dluxx h2 {
     font-size: 2rem;
-    color: #ffae00; /* Dourado */
+    color: #1a7ace;
+    text-shadow: -1px 0 black, 0 1px black;
     margin-bottom: 20px;
 }
 
@@ -427,7 +432,7 @@ body {
 .header-container {
     text-align: center;
     padding: 10px 0;
-    background-color: #222;
+    background: linear-gradient(to right, white, #004f92);
     position: relative; /* Necessário para usar posicionamento absoluto na logo */
 }
 
@@ -442,9 +447,9 @@ body {
 }
 /* Rodapé */
 footer {
-    background-color: #333;
-    color: white;
-    padding: 20px 0px;
+    background: linear-gradient(to right, white, #004f92);
+    color: rgb(0, 0, 0);
+    padding: 10px 0px;
     text-align: center;
 }
 
@@ -462,7 +467,7 @@ footer {
 }
 
 .footer-coluna h3 {
-    color: #ffae00;
+    color: #000000;
     margin-bottom: 10px;
 }
 
@@ -478,7 +483,8 @@ footer {
 }
 
 .footer-bottom {
-    background-color: #222;
+    border-top: 2px solid #004f92;
+    background-color: #333;
     color: #fff;
     padding: 10px 0;
     font-size: 0.9rem;
